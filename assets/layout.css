@@ -1,0 +1,68 @@
+/* home page grid template */
+/*============================
+| Small screens / mobile devices |
+==========================*/
+
+.body-grid {
+  max-width: 1300px;
+      margin: 2rem auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+    "t1 t1 t1 "
+    "ms1  ms1  ms1"  
+    "ml1 ml1 ml1"
+    " t2    t2    t2 "
+    "ms2  ms2  ms2"  
+    "ml2 ml2 ml2"
+    " t3    t3    t3 "
+    "ms3  ms3  ms3"  
+    "ml3 ml3 ml3"
+      ;
+  }
+  @media (min-width: 900px) {
+    .body-grid {
+      align-items: center;
+      gap: 1.5rem;
+      grid-template-areas:
+      /* main section 1 */
+      " t1    t1    t1  t1"
+      "ms1  ms1 ml1   ml1"  
+      /* main section 2 */
+      "t2  t2    t2    t2 "
+      "ml2  ml2   ms2 ms2 "
+      /* main section 3 */
+      "t3 t3    t3    t3 "
+      "ms3 ms3  ml3   ml3"
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .body-grid {
+      align-items: center;
+      gap: 3rem;
+      grid-template-areas:
+      /* main section 1 */
+      " t1    t1    t1 "
+      "ms1  ml1   ml1"  
+      /* main section 2 */
+      " t2    t2    t2 "
+      "ml2  ml2   ms2"
+      /* main section 3 */
+      " t3    t3    t3 "
+      "ms3  ml3   ml3"
+    }
+  }
+  /* grid parts for the pages that uses them as the main content*/
+  /* ms = main small and ml = main large   */
+ #title1 {grid-area: t1;}
+ #ms1 {grid-area: ms1; margin: auto;}
+ #ml1 {grid-area: ml1;}
+
+ #title2 {grid-area: t2;}
+ #ms2 {grid-area: ms2; margin: auto;}
+ #ml2 {grid-area: ml2;}
+
+ #title3 {grid-area: t3;}
+ #ms3 {grid-area: ms3; margin: auto;}
+ #ml3 {grid-area: ml3;}
