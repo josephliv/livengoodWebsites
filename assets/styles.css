@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@600&family=Quicksand:wght@400;600;700&display=swap');
 :root {
   /* color varables */
-  --primary: #050a22;
+  --primary: rgb(5, 10, 34);
   --primary-lite: #050a22cc ;
   --secondary: #F1F1E6;
   --secondary-lt: #F1F1E6ee;
@@ -240,7 +240,7 @@ details[open] summary ~ * {
   background-size: auto;
   background-position: bottom center;
   background-repeat: no-repeat;
-  background-color: var(--primary-lite);
+  background-color: #999;
   background-blend-mode: overlay;
 }
 /* top bar with contact info */
@@ -400,6 +400,7 @@ details[open] summary ~ * {
 @media (min-width: 900px) {
   .logo img {
     width: 30em;
+    margin: 4em auto;
   }
   .top-bar-inner {
     display: grid;
@@ -422,6 +423,7 @@ details[open] summary ~ * {
   border-top: 1px dotted var(--light-text-color);
   border-bottom: 1px dotted var(--light-text-color);
   padding: 5px;
+  background-color: #302f4be0;
 }
   .nav-toggle-label {
     display: none;

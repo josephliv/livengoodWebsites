@@ -1,8 +1,9 @@
-<section class="bg">
+
     <h3 >What Our Clients Have To Say</h3>
     <hr>
-    <div class="custom-section testimonials">
+    <div class="custom-section ">
         <article class=" custom-section-item">
+            <img src="/" alt="">
             <p>
                 I appreciated the way that you tailored the class to what I said I needed. I
                 was amazed at how that was done so easily to incorporate the medical
@@ -55,4 +56,3 @@
 
         </article>
     </div>
-</section>

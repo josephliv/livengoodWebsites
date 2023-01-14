@@ -3,9 +3,7 @@
     <p>
     My name is Joseph Livengood, and I am a Web Specialist from Mocksville, North Carolina that offers services nationwide.
     </p>
-    <p>
-    If you are looking for a website Designer near Mocksville, North Carolina that offers fantastic services at competitive prices, you are at the right place.
-    </p>
+    
     <p>
     Honesty and dependability are the top priorities here with Livengood Websites. We offer nationwide services meaning it doesn't matter where you are located, we can help you with a great website design that fits within your budget. Contact Joe today to discuss your project.
     </p>
