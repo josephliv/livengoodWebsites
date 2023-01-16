@@ -805,6 +805,22 @@ background-color: var(--primary);
   display: grid;
   place-items: center;
 }
+/* posts with images */
+.flex-area {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.post-content {
+  width: min(50rem, 80%, 100%);
+}
+.code {
+  background-color: #333;
+  color: gold;
+  padding: 5px;
+}
 /* used on the post page at the top, some have dates and some don't */
 .blog-date {
   text-align: center;

@@ -119,5 +119,11 @@
                 looks like a sailboat icon. Click on the database we just created and click the “import” button
                 and chose the .sql file we downloaded earlier.</p>
         </div>
+
+    </div>
+    <div class="container">
+        <p>
+            Thank you for reading this post, please see my other posts by going to the <a href="/blog">blog page</a> .
+        </p>
     </div>
 </section>

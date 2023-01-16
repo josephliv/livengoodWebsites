@@ -65,6 +65,7 @@
                         </a>
                     
                      <div class="dropdown-content">
+                         <div class="sub-menu-item"><a href="/tips-to-rank-on-google">SEO Tips to rank on Google</a></div>
                          <div class="sub-menu-item"><a href="/How-To-Install-WordPress-Plugins/#hero">WordPress Plugins On localhost</a></div>
                          <div class="sub-menu-item"><a href="/How-To-Fix-Skype-White-Screen/#hero">Fix Skype White Screen</a></div>
                          <div class="sub-menu-item"><a href="/How-To-Move-A-Wordpress-Site/#hero">How To Move A Wordpress Site Without A Plugin</a></div>

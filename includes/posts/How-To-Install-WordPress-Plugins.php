@@ -1,7 +1,6 @@
-
 <section>
     <div class="grid-section">
-        <div >
+        <div>
             <p>After installing apache server and setting it all up to run wordpress, we need to add more to it.
                 WordPress by it self will run but you may want to install updates, more plugins and things like this to
                 test or build your project.</p>
@@ -35,32 +34,38 @@
             <div class="terminal">sudo systemctl status vsftpd</div>
         </div>
         <div>
-            
-                <p>This should display the following</p>
-                <div class="terminal">
-                    <p>vsftpd.service – vsftpd FTP serverLoaded: loaded (/lib/systemd/system/vsftpd.service; enabled;
-                        vendor preset </p>
-                    <p>Active: <span style="color: #00ff33;">active (running)</span> since Tue 2022-07-26 09:47:30 -05;
-                        36min ago</p>
-                    <p>Process: 809 ExecStartPre=/bin/mkdir -p /var/run/vsftpd/empty (code=exited,&gt;</p>
-                    <p>Main PID: 813 (vsftpd)</p>
-                    <p>Tasks: 1 (limit: 18474)</p>
-                    <p>Memory: 948.0K</p>
-                    <p>CGroup: /system.slice/vsftpd.service<br>&nbsp;&nbsp;&nbsp; └─776 /usr/sbin/vsftpd
-                        /etc/vsftpd.conf</p>
-                </div>
-                <p>You noticed that the active (running) will be in green text letting you know it’s good to go.</p>
-                <p>So let’s put it to the test!</p>
-                <p>If you are not already, go ahead and log in to your local WordPress site and try to install a plugin.
-                    It will prompt you to ask for some information, this is what you should put in.</p>
-                <p>FTP credentials should be the same as your Linux login, the username and password you use to log in
-                    and the URL will be the site’s URL that you use locally such as … site.test </p>
-                <p>If you are not sure what your username is, just open the file manager and within the home folder
-                    should have your name listed there.</p>
-                <p>With this correctly entered, the plugin and updates should install without any problems.</p>
-                <p>I hope this helped, let me know in the comments below if you have any snags or problems. Thanks for
-                    reading.</p>
-            
+
+            <p>This should display the following</p>
+            <div class="terminal">
+                <p>vsftpd.service – vsftpd FTP serverLoaded: loaded (/lib/systemd/system/vsftpd.service; enabled;
+                    vendor preset </p>
+                <p>Active: <span style="color: #00ff33;">active (running)</span> since Tue 2022-07-26 09:47:30 -05;
+                    36min ago</p>
+                <p>Process: 809 ExecStartPre=/bin/mkdir -p /var/run/vsftpd/empty (code=exited,&gt;</p>
+                <p>Main PID: 813 (vsftpd)</p>
+                <p>Tasks: 1 (limit: 18474)</p>
+                <p>Memory: 948.0K</p>
+                <p>CGroup: /system.slice/vsftpd.service<br>&nbsp;&nbsp;&nbsp; └─776 /usr/sbin/vsftpd
+                    /etc/vsftpd.conf</p>
+            </div>
+            <p>You noticed that the active (running) will be in green text letting you know it’s good to go.</p>
+            <p>So let’s put it to the test!</p>
+            <p>If you are not already, go ahead and log in to your local WordPress site and try to install a plugin.
+                It will prompt you to ask for some information, this is what you should put in.</p>
+            <p>FTP credentials should be the same as your Linux login, the username and password you use to log in
+                and the URL will be the site’s URL that you use locally such as … site.test </p>
+            <p>If you are not sure what your username is, just open the file manager and within the home folder
+                should have your name listed there.</p>
+            <p>With this correctly entered, the plugin and updates should install without any problems.</p>
+            <p>I hope this helped, let me know in the comments below if you have any snags or problems. Thanks for
+                reading.</p>
+
         </div>
+
+    </div>
+    <div class="container">
+        <p>
+            Thank you for reading this post, please see my other posts by going to the <a href="/blog">blog page</a> .
+        </p>
     </div>
 </section>

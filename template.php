@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <meta name="facebook-domain-verification" content="ne1grlqalvy2ruujnxy18jr7zis2nu" />
    <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -122,6 +123,11 @@ switch ($page) {
     case "/portfolio":
         include 'includes/portfolio.php';
         break;
+    case "/chat-bot":
+    case "/chat-bot/":
+        include 'includes/chat-bot.php';
+        break;
+
     //blog page with posts
     case "/blog":
     case "/blog/":
@@ -130,9 +136,9 @@ switch ($page) {
         include 'includes/blog.php';
         break;
     // Blog post pages
-    case "/chat-bot":
-    case "/chat-bot/":
-        include 'includes/chat-bot.php';
+    case "/tips-to-rank-on-google":
+    case "/tips-to-rank-on-google/":   
+        include 'includes/posts/tips-to-rank-on-google.php';
         break;
     case "/How-To-Install-WordPress-Plugins/":
     case "/How-To-Install-WordPress-Plugins":
