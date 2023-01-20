@@ -11,7 +11,7 @@ $meta_keywords = "Joseph Livengood, Website design, Website development, website
 switch ($page) {
     case "/":
         $site_title = "Website Designer & Developer based in Mocksville and Salisbury NC";
-        $sub_title = "Mocksville and Salisbury website designer that meets your Requirements Within Your Budget.";
+        $sub_title = "Mocksville and Salisbury Business enhancements all in one place.";
         $meta_keywords = "website designer near Mocksville, web designer salisbury nc, website developer near me, Salisbury North carolina website designer, SEO services in Mocksville";
         break;
     // Google was showing a 404 with this url, the testimonials are on the home page
