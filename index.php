@@ -3,9 +3,11 @@ $page = $_SERVER['REQUEST_URI'];
 $site_title = "Joseph Livengood | Website Designs";
 $main_title = "";
 $sub_title = "";
+$externalLinks = 'target="_blank" rel="nofollow noopener"';
 $meta_description = "Web Design and other onine based work";
 $meta_keywords = "Joseph Livengood, Website design, Website development, website designer near Mocksville North Carolina";
-
+// to call the appropiate js files on pages
+$js_path = "";
 // For page rendering
 
 switch ($page) {
@@ -35,6 +37,7 @@ switch ($page) {
         $sub_title = "The Complete online ordering solution";
         $site_title = "Food Ordering App | The Complete Online Ordering Solution";
         $meta_keywords = "best food delivery app, Order Taking App, Restaurant Online ordering app, increase restaurant sales, accept orders online";
+        $js_path = '<script src="/assets/food-app.js" defer></script>';
         break;
         // a page to display when they request services for restaurants. 
         case "/request-service":
@@ -51,10 +54,11 @@ switch ($page) {
     case "/portfolio/":
     case "/portfolio":
         $main_title = "Portfolio";
-        $sub_title = "Recent sites built that are currently being managed by Joe's Digital Services";
+        $sub_title = "Recent sites built that are currently being managed by Livengood Websites";
         $site_title = "Portfolio";
-        $meta_description = "Sites built and maintained by Joseph Livengood";
+        $meta_description = "Sites built and maintained by Livengood Websites";
         $meta_keywords = "Joseph's portfolio, previous work, website portfolio, reviews";
+        $js_path = '<script src="/assets/portfolio.js" defer></script>';
         break;
     case "/blog":
     case "/blog/":

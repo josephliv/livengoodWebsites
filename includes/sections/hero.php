@@ -10,7 +10,7 @@
                     '; 
                     ?>
         </h1>
-        <h2 class="my-4 home-sub-title <?php 
+        <h2 class="home-sub-title <?php 
                 // This is the bring in the class if 404 is detected
                 if($sub_title == '404') 
                 {

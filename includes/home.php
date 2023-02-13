@@ -74,8 +74,8 @@
           Business Capital
         </h3>
         <div id="rt">
-          <p>Apply today to see if you qualify for funding.<br>
-            Instant approval & same day funding.</p>
+          <p>If the banks cannot help, we can!</p>
+          <p>Click the button below to learn more about it and the qualifications.</p>
           <div class="custom-btn">
             <a href="https://bit.ly/fast-business-capital" target="_blank" rel="nofollow noopener">Apply here</a>
           </div>
@@ -92,7 +92,7 @@
         <div id="rt">
           <p>If you have a restaurant, online ordering is a must, let us help.</p>
           <div class="custom-btn">
-            <a href="/food-ording-app" rel="nofollow noopener">More Info</a>
+            <a href="/food-ording-app">More Info</a>
           </div>
         </div>
       </div>

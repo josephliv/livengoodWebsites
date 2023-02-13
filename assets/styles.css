@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@600&family=Quicksand:wght@400;600;700&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Roboto:wght@400;700&display=swap');
+
 :root {
   /* color varables */
   --primary: rgb(5, 10, 34);
@@ -14,14 +16,14 @@
   --light-text-color: #dddeee;
 
   /* fonts */
-  --title-font: 'M PLUS 1 Code', sans-serif;
-  --text-font: 'Quicksand', sans-serif;
+  --title-font: 'Kalam', cursive;
+  --text-font: 'roboto', sans-serif;
   /* font sizes */
   /* --hero-title: clamp(2.8rem, 4cqw, 3rem); */
-  --hero-title: 3rem;
-  --title-size: 2rem;
-  --text-size: 1.6rem;
-  --nav-menu: 1.2rem;
+  --hero-title: 2.2rem;
+  --title-size: 1.8rem;
+  --text-size: 1.2rem;
+  --nav-menu: 1rem;
   /* for other styles */
   --radius: 10px / 50px;
   --shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.6);
@@ -67,7 +69,7 @@ details summary > * {
 
   /* Plus any other <details>/<summary> styles you want IE to ignore. */
 }
-
+h1 {letter-spacing: .5rem;}
 h2,
 h3,
 h4 {
@@ -133,13 +135,8 @@ section {
   border: 1px solid var(--accent);
   border-radius: var(--radius);
   padding: var(--block-padding);
-  display: flex;
-  flex-direction: column;
   transition: 300ms ease-in-out;
   background-color: var(--light-bg);
-  min-width: 15em; 
-  margin: auto;
-  flex-grow: 1;
 }
 
 .custom-section-item img {
@@ -160,10 +157,9 @@ section {
     max-width: 90em;
     margin: 5rem auto;
   } 
-.custom-section-item {
-  flex-basis: 30%;
-  text-align: center;
-}
+
+
+
 /* = Updated 11/1/22 = used in sections that have wider text with an image, on line 111 this turns to 100% for smaller screens */
   .custom-basis {
     flex-basis: 70%;
@@ -236,11 +232,12 @@ details[open] summary ~ * {
   display: grid;
   gap: 1rem;
   background-image: url('/assets/imgs/geometric-header.jpg');
-  background-attachment: fixed;
-  background-size: auto;
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-color: #999;
+  /* background-attachment: fixed; */
+  /* background-size: 100px; */
+  /* background-position: bottom center; */
+  /* background-repeat: no-repeat; */
+  /* background-color: rgb(120, 121, 128); */
+  background-color: rgba(79, 129, 204, 0.801);
   background-blend-mode: overlay;
 }
 /* top bar with contact info */
@@ -332,7 +329,6 @@ details[open] summary ~ * {
 }
 .active-nav {
   color: var(--accent) !important;
-  cursor: not-allowed;
 }
 .dropdown-content {
   position: relative;
@@ -413,7 +409,8 @@ details[open] summary ~ * {
     padding: 10px;
   }
   .header {
-  min-height: 30em;
+  /* min-height: 30em; */
+  grid-template-rows: 1fr 3fr 1fr;
 }
 
 
@@ -488,8 +485,7 @@ details[open] summary ~ * {
 ==================================== */
 .hero {
   background-color: #050a22d5;
-  background-blend-mode: normal;
-  padding: var(--block-padding);
+ padding: 20px 0;
 }
 /* for the first letters on the hero home page only */
 
@@ -516,12 +512,7 @@ details[open] summary ~ * {
 
 
 @media (min-width: 80em ) {
-.hero {
-  display: grid;
-  height: 100%;
-  place-items: center;
-  min-height: 130px;
-}
+
 
 .site-title h1 {
   
@@ -614,15 +605,15 @@ details[open] summary ~ * {
 
 
 /* ==========================================
-Food ordering image popup or modal styling 
+Food ordering image popup or modal styling and for portfolio page, using the same classes
 ======================================= */
-#myImg {
+.popup-img {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-#myImg:hover {opacity: 0.7;}
+.popup-img:hover {opacity: 0.7;}
 
 .modal {
   display: none; /* Hidden by default */
@@ -642,24 +633,31 @@ Food ordering image popup or modal styling
 .modal-content {
   margin: auto;
   display: block;
+  height: 100%;
   width: 90%;
-  /* max-width: 700px; */
+  display: grid;
+  place-items: start center;
 }
 
+
 /* Caption of Modal Image */
-#caption {
+.caption {
   margin: auto;
   display: block;
+  position: absolute;
+  z-index: 9;
+  margin-top: 50px;
+  background-color: rgba(58, 54, 54, 0.911);
   width: 80%;
   max-width: 700px;
   text-align: center;
-  color: #ccc;
+  color: var(--accent);
   padding: 10px 0;
-  height: 150px;
+  font-size: 2rem;
 }
 
 /* Add Animation */
-.modal-content, #caption {  
+.modal-content, .caption {  
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -713,16 +711,18 @@ Food ordering image popup or modal styling
 }
 
 /* ============= Updated 12/14/22 ====================== 
-| portfolio Slider |
+| portfolio page|
 ==================================== */
-.portfolio {
-  
-  background-color: var(--light-bg);
-
-  padding: var(--section-padding);
-  min-height: 60vh;
-  display: grid;
-  place-items: center;
+.portfolio article{
+  width:  20em ;
+  flex-grow: 1;
+  max-width: 50em;
+}
+.portfolio-mobile {
+  display: block;
+  background-color: var(--text-color);
+    color: var(--accent);
+    padding: var(--block-padding);
 }
 .carousel-caption {
   background-color: var(--primary-lite);
@@ -735,7 +735,11 @@ Food ordering image popup or modal styling
   text-transform: capitalize;
   font-family: var(--title-font);
 }
-
+@media (min-width: 70em) {
+  .portfolio-mobile { 
+    display: none;
+  }
+}
 
 /* ============== Updated 11/1/22 ===================== 
 | The testimonial area |
@@ -747,6 +751,7 @@ place-items: center;
  
 }
 @media (min-width: 600px) {
+  
   .testimonial-section {
     min-height: 600px;
     background-size: 100% 100%;
@@ -984,9 +989,7 @@ background-color: var(--primary);
 /* ================================= 
       | what to expect element |
 ====================================*/
-.expect-area h3 {
-  font-size: var(--hero-title);
-}
+
 .expect-area summary {
   /* The summary is the title used */
   color: #fff;
@@ -995,7 +998,6 @@ background-color: var(--primary);
   font-weight: 600;
   font-family: var(--title-font);
   padding: var(--block-padding);
-  cursor: help;
   border-bottom: 1px solid;
 }
 
@@ -1139,7 +1141,7 @@ footer {
  footer {
   background-size: auto;
   background-position: left;
-  background-color: var(--primary);
+  background-color: rgb(6, 47, 66);
   padding: var(--section-padding);
  }
  

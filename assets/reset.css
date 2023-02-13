@@ -50,7 +50,9 @@ picture,svg,video {
   max-width: 100%;
   display: block;
 }
-
+h1,h2,h3,h4 {
+  margin: 0;
+}
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {

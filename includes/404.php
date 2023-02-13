@@ -12,4 +12,11 @@
                 <a href="/chat-bot">Chat Bot</a>
         </div>
     </main>
+    <section class="bg">
+        <div class="narrow-section my-4">
+            <h3>Be Notified of upcoming changes.</h3>
+            <?php include 'includes/sections/form.php'; ?>
+        </div>
+        
+    </section>
 </section>

@@ -38,7 +38,7 @@
      </div>
      <div class="header-section">
          <div class="logo">
-             <a href="/"><img src="/assets/imgs/livengood-websites-logo.png" alt="Livengood Websites" />
+             <a href="/"><img src="/assets/imgs/livengood-websites.png" alt="Livengood Websites - Website Designs" />
              </a>
          </div>
 

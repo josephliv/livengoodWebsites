@@ -33,8 +33,8 @@ src="https://www.facebook.com/tr?id=1202599500679797&ev=PageView&noscript=1"
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="<?=$meta_description;?>" />
-    <meta property="og:url" content="https://joes.business/" />
-    <meta property="og:site_name" content="Joe's Digital Services in Mocksville NC" />
+    <meta property="og:url" content="https://livengoodwebsites.com/" />
+    <meta property="og:site_name" content="Web Design Services in Salisbury NC and surrounding areas." />
     <meta name="keywords" content="<?=$meta_keywords;?>" />
     <!-- bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -50,9 +50,10 @@ src="https://www.facebook.com/tr?id=1202599500679797&ev=PageView&noscript=1"
     <link rel="stylesheet" href="/assets/animations.css" />
 
     <link rel="shortcut icon" href="/assets/imgs/favicon.ico">
-    <script src="/assets/script.js" defer></script>
+    <?= $js_path; ?>
+   
     <title>
-        <?=$site_title?> | Joe's Digital Services
+        <?=$site_title;?> | Livengood Websites
     </title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9K3RMVMFJP"></script>
@@ -66,7 +67,8 @@ src="https://www.facebook.com/tr?id=1202599500679797&ev=PageView&noscript=1"
 
     gtag('config', 'G-9K3RMVMFJP');
     </script>
-
+    <!-- for the back to top button -->
+    <script src="assets/toTop.js" defer></script>
 </head>
 
 <body>
@@ -121,7 +123,7 @@ switch ($page) {
             break;
     case "/portfolio/":
     case "/portfolio":
-        include 'includes/portfolio.php';
+        include 'includes/sections/portfolio.php';
         break;
     case "/chat-bot":
     case "/chat-bot/":

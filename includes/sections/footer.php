@@ -1,7 +1,7 @@
 <footer>
     <div class="footer-inner">
         <div class="logo">
-            <a href="#"><img src="/assets/imgs/livengood-websites-logo.png" alt="Livengood Websites" />
+            <a href="/"><img src="/assets/imgs/livengood-websites.png" alt="Livengood Websites - website designer" />
             </a>
         </div>
         
