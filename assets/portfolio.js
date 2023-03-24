@@ -8,12 +8,10 @@ var cohenClose = document.getElementById("cohen-close");
  // Get the image and insert it inside the modal - use its "alt" text as a caption
  var cohenImg = document.getElementById("cohen-img");
  var cohenModalImg = document.getElementById("cohen-modal-img");
- var cohenCaptionText = document.getElementById("cohen-caption-text");
+ 
  
  cohenImg.onclick = function(){
    cohenModal.style.display = "block";
-   // modalImg.src = this.src;
-   cohenCaptionText.innerHTML = this.alt;
  }
  // When the user clicks on (x), close the modal
  cohenClose.onclick = function() { 
@@ -29,12 +27,11 @@ var dartModal = document.getElementById("dart-modal");
  // Get the image and insert it inside the modal - use its "alt" text as a caption
  var dartImg = document.getElementById("dart-img");
  var dartModalImg = document.getElementById("dart-modal-img");
- var dartCaptionText = document.getElementById("dart-caption-text");
+
  
  dartImg.onclick = function(){
  dartModal.style.display = "block";
  dartModalImg.src = this.src;
- dartCaptionText.innerHTML = this.alt;
  }
  
  
@@ -53,12 +50,11 @@ var despeModal = document.getElementById("despe-modal");
  // Get the image and insert it inside the modal - use its "alt" text as a caption
  var despeImg = document.getElementById("despe-img");
  var despeModalImg = document.getElementById("despe-modal-img");
- var despeCaptionText = document.getElementById("despe-caption-text");
+
  
  despeImg.onclick = function(){
  despeModal.style.display = "block";
  despeModalImg.src = this.src;
- despeCaptionText.innerHTML = this.alt;
  }
  // When the user clicks on (x), close the modal
  despeClose.onclick = function() { 
@@ -74,12 +70,10 @@ var alrModal = document.getElementById("alr-modal");
  // Get the image and insert it inside the modal - use its "alt" text as a caption
  var alrImg = document.getElementById("alr-img");
  var alrModalImg = document.getElementById("alr-modal-img");
- var alrCaptionText = document.getElementById("alr-caption-text");
  
  alrImg.onclick = function(){
  alrModal.style.display = "block";
  alrModalImg.src = this.src;
- alrCaptionText.innerHTML = this.alt;
  }
  // When the user clicks on (x), close the modal
  alrClose.onclick = function() { 
@@ -95,12 +89,10 @@ var pamModal = document.getElementById("pam-modal");
  // Get the image and insert it inside the modal - use its "alt" text as a caption
  var pamImg = document.getElementById("pam-img");
  var pamModalImg = document.getElementById("pam-modal-img");
- var pamCaptionText = document.getElementById("pam-caption-text");
  
  pamImg.onclick = function(){
  pamModal.style.display = "block";
  pamModalImg.src = this.src;
- pamCaptionText.innerHTML = this.alt;
  }
  // When the user clicks on (x), close the modal
  pamClose.onclick = function() { 
@@ -116,12 +108,10 @@ var pcpModal = document.getElementById("pcp-modal");
  // Get the image and insert it inside the modal - use its "alt" text as a caption
  var pcpImg = document.getElementById("pcp-img");
  var pcpModalImg = document.getElementById("pcp-modal-img");
- var pcpCaptionText = document.getElementById("pcp-caption-text");
  
  pcpImg.onclick = function(){
  pcpModal.style.display = "block";
  pcpModalImg.src = this.src;
- pcpCaptionText.innerHTML = this.alt;
  }
  // When the user clicks on (x), close the modal
  pcpClose.onclick = function() { 
@@ -137,14 +127,70 @@ var butlerModal = document.getElementById("butler-modal");
  // Get the image and insert it inside the modal - use its "alt" text as a caption
  var butlerImg = document.getElementById("butler-img");
  var butlerModalImg = document.getElementById("butler-modal-img");
- var butlerCaptionText = document.getElementById("butler-caption-text");
+ 
  
  butlerImg.onclick = function(){
  butlerModal.style.display = "block";
  butlerModalImg.src = this.src;
- butlerCaptionText.innerHTML = this.alt;
  }
  // When the user clicks on (x), close the modal
  butlerClose.onclick = function() { 
    butlerModal.style.display = "none";
+ }
+
+    /************************************ */
+//  mkdespe splash page
+//************************************ */
+var mksplashModal = document.getElementById("mksplash-modal");
+// Get the element that closes the modal
+ var mksplashClose = document.getElementById("mksplash-close");
+ // Get the image and insert it inside the modal - use its "alt" text as a caption
+ var mksplashImg = document.getElementById("mksplash-img");
+ var mksplashModalImg = document.getElementById("mksplash-modal-img");
+ 
+ mksplashImg.onclick = function(){
+ mksplashModal.style.display = "block";
+ mksplashModalImg.src = this.src;
+ }
+ // When the user clicks on (x), close the modal
+ mksplashClose.onclick = function() { 
+   mksplashModal.style.display = "none";
+ }
+    
+ //************************************ */
+//  coloradoeasementlawyer.com splash page
+//************************************ */
+var easementModal = document.getElementById("easement-modal");
+// Get the element that closes the modal
+ var easementClose = document.getElementById("easement-close");
+ // Get the image and insert it inside the modal - use its "alt" text as a caption
+ var easementImg = document.getElementById("easement-img");
+ var easementModalImg = document.getElementById("easement-modal-img");
+ 
+ easementImg.onclick = function(){
+ easementModal.style.display = "block";
+ easementModalImg.src = this.src;
+ }
+ // When the user clicks on (x), close the modal
+ easementClose.onclick = function() { 
+   easementModal.style.display = "none";
+ }
+
+ //************************************ */
+//  coloradoeasementlawyer.com splash page
+//************************************ */
+var jayceoModal = document.getElementById("jayceo-modal");
+// Get the element that closes the modal
+ var jayceoClose = document.getElementById("jayceo-close");
+ // Get the image and insert it inside the modal - use its "alt" text as a caption
+ var jayceoImg = document.getElementById("jayceo-img");
+ 
+ 
+ jayceoImg.onclick = function(){
+ jayceoModal.style.display = "block";
+ jayceoModalImg.src = this.src;
+ }
+ // When the user clicks on (x), close the modal
+ jayceoClose.onclick = function() { 
+  jayceoModal.style.display = "none";
  }

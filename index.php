@@ -74,6 +74,19 @@ switch ($page) {
         $main_title = "List Building & Lead Generation";
         $sub_title = "Get cheaper, better, and more leads within a few days.";
         break;
+        case "/web-design":
+        case "/web-design/":
+            $meta_keywords = "website design work, responsive websites, livengood website, website designs near me";
+            $main_title = "Elevate Your Online Presence with Livengood Websites";
+            $sub_title = "Get a website tailored to your business goals and optimize its performance.";
+        break;
+        case "/business-boosters":
+        case "/business-boosters/":
+            $meta_keywords = "business funding, business capital, payment processor, equipment financing";
+            $meta_description = "These are great business boosters to help you get or save money."; 
+            $main_title = "Unlock your Business Growth";
+            $sub_title = "Our innovative solutions that help your business succeed.";
+        break;
 // Blog post pages
     case "/tips-to-rank-on-google":
         $meta_keywords = "seo tips, strategies for google ranking, search engine opitimization";

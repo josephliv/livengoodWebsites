@@ -3,7 +3,7 @@
 
 :root {
   /* color varables */
-  --primary: rgb(5, 10, 34);
+  --primary: #050a22;
   --primary-lite: #050a22cc ;
   --secondary: #F1F1E6;
   --secondary-lt: #F1F1E6ee;
@@ -105,9 +105,7 @@ section {
 .primary {
   color: var(--primary);
 }
-.custom-section > img {
-  margin: 5px auto;
-}
+
 
   .custom-section {
     display: flex;
@@ -116,7 +114,15 @@ section {
     max-width: 1300px;
     margin: 0 auto;
     padding: var(--block-padding);
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .custom-section > img {
+  margin: 5px auto;
+  max-width: 400px;
+}
+  .custom-section div {
+    max-width: 800px;
   }
   .narrow-section {
     display: grid;
@@ -228,16 +234,14 @@ details[open] summary ~ * {
 /* ================================= 
 | Top header with logo and nav links |
 ==================================== */
+
 .header {
-  display: grid;
-  gap: 1rem;
-  background-image: url('/assets/imgs/geometric-header.jpg');
-  /* background-attachment: fixed; */
-  /* background-size: 100px; */
-  /* background-position: bottom center; */
-  /* background-repeat: no-repeat; */
-  /* background-color: rgb(120, 121, 128); */
-  background-color: rgba(79, 129, 204, 0.801);
+   display: grid;
+  gap: 1rem;  
+  background-image: url('/assets/imgs/livengood-websites-bg.jpg');
+  background-attachment: fixed;
+ background-size: cover;
+  background-color: rgb(221, 215, 215);
   background-blend-mode: overlay;
 }
 /* top bar with contact info */
@@ -290,7 +294,7 @@ details[open] summary ~ * {
   text-align: center;
 }
 .logo img {
-  max-width: 75%;
+  max-width: 300px;
   margin: 20px auto;
 }
 
@@ -409,8 +413,8 @@ details[open] summary ~ * {
     padding: 10px;
   }
   .header {
-  /* min-height: 30em; */
-  grid-template-rows: 1fr 3fr 1fr;
+  min-height: 30em; 
+  grid-template-rows: .5fr 3fr auto;
 }
 
 
@@ -435,7 +439,7 @@ details[open] summary ~ * {
     max-width: 1600px;
     margin: auto;
    display: grid;
-   grid-template-columns: 1fr 2fr;
+   grid-template-columns: 1fr 3fr;
    gap: 5%;
    align-items: center;
   }
@@ -540,62 +544,70 @@ details[open] summary ~ * {
   border-radius: 8px;
 }
 
-/* Home page that displays the services blocks */ 
-.services {
-  background-image: url('/assets/imgs/2560x1080.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
+/*  portfolio blocks */ 
+.portfolio {
+  background-image: url('/assets/imgs/geometric-header.jpg');
+  
   min-height: 60vh;
   display: grid;
   place-items: center;
 }
-.services h4 {
-  color: var(--accent);
+
+.portfolio h3 {
+  color: var(--primary);
+  font-size: 1.2rem;
 }
-.services-inner {
+.portfolio-inner,
+.blog-page-inner {
+  max-width: 90em;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
      gap: 1.5rem;
 }
 
-.service-item {
+.portfolio-item {
   padding: 5px;
   border-radius: var(--radius);
   border: 2px outset var(--accent);
-  box-shadow: var(--shadow);
   transition: 0.3s ease-in-out;
   background-color: #e7e0e0b4;
   /* resize: horizontal; */
   overflow: auto;
-  container-type: inline-size;
   min-width: 300px;
-  margin-inline: auto;
-  max-width: 800px; 
+  max-width: 600px;
   flex-grow: 1;
+  container-type: inline-size;
 }
-.service-item:hover {
-  box-shadow: none;
+.portfolio-item:hover {
+  box-shadow: var(--shadow);
   background-color: #e7e0e0ea;
 }
-.service-item img {
-  width: 80px;
+.portfolio-item img {
+  max-width: 280px;
+  height: auto;
   margin: 5px auto;
+  border-radius: var(--radius);
 }
 @container (inline-size > 400px) {
-  .service-item-inner {
+  .portfolio-item-inner {
     display: grid;
-    gap: .5rem;
+    gap: .8rem;
     grid-template-areas: 
     "h h h h"
+    "i i i rt"
     "i i i rt"
     ;
   }
   /* image */
-  .service-item #i {grid-area: i; align-self: center;}
+  .portfolio-item .i {grid-area: i; align-self: center;}
   /* header or title */
-  .service-item-inner #h {grid-area: h;} 
+  .portfolio-item-inner .h {
+    grid-area: h;
+    font-size: 1.5rem;
+  } 
   /* description and button */
-  .service-item-inner #rt {
+  .portfolio-item-inner .rt {
     grid-area: rt;
     border-left: 1px dotted var(--primary);
     padding: 5px;
@@ -640,22 +652,6 @@ Food ordering image popup or modal styling and for portfolio page, using the sam
 }
 
 
-/* Caption of Modal Image */
-.caption {
-  margin: auto;
-  display: block;
-  position: absolute;
-  z-index: 9;
-  margin-top: 50px;
-  background-color: rgba(58, 54, 54, 0.911);
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: var(--accent);
-  padding: 10px 0;
-  font-size: 2rem;
-}
-
 /* Add Animation */
 .modal-content, .caption {  
   -webkit-animation-name: zoom;
@@ -698,7 +694,15 @@ Food ordering image popup or modal styling and for portfolio page, using the sam
     width: 100%;
   }
 }
-
+/* business booster page, uses the same but a different background */
+.business-boosters {
+  
+  background-image: linear-gradient(to left top, #f1f1e6, #b8c3b7, #809791, #4e6c6f, #254250, #254250, #254250, #254250, #4e6c6f, #809791, #b8c3b7, #f1f1e6);
+  background-size: cover;
+  min-height: 80vh;
+  display: grid;
+  place-items: center;
+}
 
 /* ============= Updated 11/2/22 ==================== 
     | The about page top section with bg image |
@@ -710,20 +714,6 @@ Food ordering image popup or modal styling and for portfolio page, using the sam
   border-radius: 8px;
 }
 
-/* ============= Updated 12/14/22 ====================== 
-| portfolio page|
-==================================== */
-.portfolio article{
-  width:  20em ;
-  flex-grow: 1;
-  max-width: 50em;
-}
-.portfolio-mobile {
-  display: block;
-  background-color: var(--text-color);
-    color: var(--accent);
-    padding: var(--block-padding);
-}
 .carousel-caption {
   background-color: var(--primary-lite);
   border: 3px outset var(--accent);
@@ -735,11 +725,7 @@ Food ordering image popup or modal styling and for portfolio page, using the sam
   text-transform: capitalize;
   font-family: var(--title-font);
 }
-@media (min-width: 70em) {
-  .portfolio-mobile { 
-    display: none;
-  }
-}
+
 
 /* ============== Updated 11/1/22 ===================== 
 | The testimonial area |
@@ -1128,7 +1114,7 @@ footer {
 .footer-contact {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   margin: 20px auto;
 }

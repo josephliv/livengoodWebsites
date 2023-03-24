@@ -30,8 +30,8 @@ You can trust that <strong>Livengood Websites</strong> will do what you agreed t
             <details>
                 <summary title="click to show details">Website Maintenance</summary>
                 <p>
-                    <strong>Livengood Websites</strong> recognizes that every website require periodic updates and backups. Therefore
-                    <a href="">maintenance plans</a> are available.
+                    <strong>Livengood Websites</strong> recognizes that every website require periodic updates and backups. Read more about why
+                    <a href="/web-design">maintenance</a> for your website is important.
                 </p>
             </details>
             <details>

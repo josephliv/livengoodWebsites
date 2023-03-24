@@ -69,8 +69,7 @@
                 <p>Now you get to spend the same amount on ads… but you get 3-5x the return.</p>
                 <p>If that sounds good to you, go ahead schedule a call with me. You’ll need about 15 minutes to cover
                     the exact approach and describe what all is involved.</p>
-                <p>I can guarantee that you will see an increase in leads, or you don’t pay anything for the first
-                    month. Cool right?</p>
+              
                 <p>Fill out the form below, and I’ll be in touch.</p>
                 <p>I look forward to speaking with you and helping you get more leads!</p>
             </div>
