@@ -128,9 +128,9 @@ section {
     display: grid;
     min-height: 200px;
     place-items: center;
-    max-width: 1100px;
+    max-width: 900px;
     margin: auto;
-    text-align: center; 
+    text-align: justify;
   }
 
 .custom-basis {
@@ -558,7 +558,8 @@ details[open] summary ~ * {
   font-size: 1.2rem;
 }
 .portfolio-inner,
-.blog-page-inner {
+.blog-page-inner,
+.business-inner {
   max-width: 90em;
   display: flex;
   justify-content: center;
@@ -566,7 +567,8 @@ details[open] summary ~ * {
      gap: 1.5rem;
 }
 
-.portfolio-item {
+.portfolio-item,
+.service-item {
   padding: 5px;
   border-radius: var(--radius);
   border: 2px outset var(--accent);
@@ -579,18 +581,24 @@ details[open] summary ~ * {
   flex-grow: 1;
   container-type: inline-size;
 }
-.portfolio-item:hover {
-  box-shadow: var(--shadow);
-  background-color: #e7e0e0ea;
-}
-.portfolio-item img {
+
+.portfolio-item img,
+.service-item img {
   max-width: 280px;
   height: auto;
   margin: 5px auto;
   border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.portfolio-item:hover,
+.service-item:hover {
+  box-shadow: var(--shadow);
+  background-color: #e7e0e0ea;
 }
 @container (inline-size > 400px) {
-  .portfolio-item-inner {
+  .portfolio-item-inner,
+  .service-item-inner {
     display: grid;
     gap: .8rem;
     grid-template-areas: 
@@ -600,14 +608,17 @@ details[open] summary ~ * {
     ;
   }
   /* image */
-  .portfolio-item .i {grid-area: i; align-self: center;}
+  .portfolio-item .i,
+  .service-item .i {grid-area: i; align-self: center;}
   /* header or title */
-  .portfolio-item-inner .h {
+  .portfolio-item-inner .h,
+  .service-item .h {
     grid-area: h;
     font-size: 1.5rem;
   } 
   /* description and button */
-  .portfolio-item-inner .rt {
+  .portfolio-item-inner .rt,
+  .service-item .rt {
     grid-area: rt;
     border-left: 1px dotted var(--primary);
     padding: 5px;
@@ -617,15 +628,19 @@ details[open] summary ~ * {
 
 
 /* ==========================================
-Food ordering image popup or modal styling and for portfolio page, using the same classes
+Food ordering page
 ======================================= */
-.popup-img {
+.vid {
   border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
+  
+  border-radius: var(--radius)
 }
-
-.popup-img:hover {opacity: 0.7;}
+@media (min-width: 30em) {
+  .vid {
+    width: 500px;
+  height: 400px;
+  }
+}
 
 .modal {
   display: none; /* Hidden by default */
@@ -739,7 +754,7 @@ place-items: center;
 @media (min-width: 600px) {
   
   .testimonial-section {
-    min-height: 600px;
+    min-height: 25em;
     background-size: 100% 100%;
   }
 }

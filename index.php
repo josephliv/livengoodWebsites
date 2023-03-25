@@ -6,7 +6,6 @@ $sub_title = "";
 $externalLinks = 'target="_blank" rel="nofollow noopener"';
 $meta_description = "Web Design and other onine based work";
 $meta_keywords = "Joseph Livengood, Website design, Website development, website designer near Mocksville North Carolina";
-// to call the appropiate js files on pages
 $js_path = "";
 // For page rendering
 
@@ -37,7 +36,6 @@ switch ($page) {
         $sub_title = "The Complete online ordering solution";
         $site_title = "Food Ordering App | The Complete Online Ordering Solution";
         $meta_keywords = "best food delivery app, Order Taking App, Restaurant Online ordering app, increase restaurant sales, accept orders online";
-        $js_path = '<script src="/assets/food-app.js" defer></script>';
         break;
         // a page to display when they request services for restaurants. 
         case "/request-service":
@@ -58,7 +56,7 @@ switch ($page) {
         $site_title = "Portfolio";
         $meta_description = "Sites built and maintained by Livengood Websites";
         $meta_keywords = "Joseph's portfolio, previous work, website portfolio, reviews";
-        $js_path = '<script src="/assets/portfolio.js" defer></script>';
+        $js_path = 'src="/assets/portfolio.js"';
         break;
     case "/blog":
     case "/blog/":
@@ -84,7 +82,7 @@ switch ($page) {
         case "/business-boosters/":
             $meta_keywords = "business funding, business capital, payment processor, equipment financing";
             $meta_description = "These are great business boosters to help you get or save money."; 
-            $main_title = "Unlock your Business Growth";
+            $main_title = "Give your Business that boost it needs for Growth";
             $sub_title = "Our innovative solutions that help your business succeed.";
         break;
 // Blog post pages

@@ -1,5 +1,6 @@
 <section>
     <div class="narrow-section">
+        <div>
         <p>
             I wrote these mostly because I love helping people.
         </p>
@@ -23,6 +24,7 @@
             can watch
             instead of reading.
         </p>
+        </div>
     </div>
 </section>
 

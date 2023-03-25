@@ -5,7 +5,7 @@
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
 
-                <div class="carousel-item">
+                <div class="carousel-item active ">
                     <div class="single-item">
                         <div class="row">
                             <div class="col-md-5">
@@ -154,7 +154,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item active">
+                <div class="carousel-item">
                     <div class="single-item">
                         <div class="row">
                             <div class="col-md-5">

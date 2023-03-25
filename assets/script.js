@@ -1,7 +1,7 @@
 
 const mobileMenu = document.querySelector(".mobile-menu"); 
 const mainNav = document.querySelector(".main-nav"); 
-
+alert("im running here too");
 // This is to open the entire menu on mobile devices 
 const openMenu = () => {
   mainNav.classList.toggle('is-active');
@@ -42,17 +42,18 @@ mobileMenu.addEventListener('click', openMenu);
  // ====================================
 
  // Get the modal
-var modal = document.getElementById("myModal");
+var foodAppModal = document.getElementById("foodAppModal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
+var foodAppImg = document.getElementById("foodAppImg");
+var FoodAppmodalImg = document.getElementById("foodAppModalImg");
+var foodAppCaption = document.getElementById("foodAppCaption");
 
-img.onclick = function(){
-  modal.style.display = "block";
+ function foodAppPopUp(){
+  alert('it worked')
+  foodAppModal.style.display = "block";
   // modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
+  foodAppCaption.innerHTML = this.alt;
 }
 
 // Get the <span> element that closes the modal

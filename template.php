@@ -60,7 +60,6 @@
     <link rel="stylesheet" href="/assets/animations.css" />
 
     <link rel="shortcut icon" href="/assets/imgs/favicon.ico">
-    <?= $js_path; ?>
 
     <title>
         <?= $site_title; ?> | Livengood Websites
@@ -78,7 +77,7 @@
         gtag('config', 'G-9K3RMVMFJP');
     </script>
     <!-- for the back to top button -->
-    <script src="assets/toTop.js" defer></script>
+    <script src="/assets/toTop.js" defer></script>
 </head>
 
 <body>
@@ -133,7 +132,7 @@
             break;
         case "/portfolio/":
         case "/portfolio":
-            include 'includes/sections/portfolio.php';
+            include 'includes/portfolio.php';
             break;
         case "/chat-bot":
         case "/chat-bot/":
@@ -233,7 +232,10 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
+    <script <?= $js_path; ?>></script>
+    
     <div class="fb-customerchat" page_id="109015495412167" theme_color="#050a22" logged_in_greeting="Hi, Thanks for visiting us! How can we assist you today?" logged_out_greeting="Thanks for checking us out." greeting_dialog_display="show" greeting_dialog_delay="1" ref="campaign::undefined"> </div>
+    
 </body>
 
 </html>
