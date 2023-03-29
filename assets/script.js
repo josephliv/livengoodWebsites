@@ -1,7 +1,6 @@
 
 const mobileMenu = document.querySelector(".mobile-menu"); 
 const mainNav = document.querySelector(".main-nav"); 
-alert("im running here too");
 // This is to open the entire menu on mobile devices 
 const openMenu = () => {
   mainNav.classList.toggle('is-active');
@@ -9,6 +8,15 @@ const openMenu = () => {
 
 mobileMenu.addEventListener('click', openMenu);
 
+
+// Submenu items for mobile devices
+// grab the services element to be tapped on  or clicked 
+const servicesTab = document.getElementById("servicesDropdownDiv"); 
+// the div to display on click 
+const dropdownContent = document.querySelector(".dropdown-content"); 
+servicesTab.addEventListener('click', function() {
+  alert('it was clicked!')
+})
 
 
 // Back to the top button 

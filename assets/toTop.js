@@ -1,13 +1,3 @@
-const mobileMenu = document.querySelector(".mobile-menu"); 
-const mainNav = document.querySelector(".main-nav"); 
-
-// This is to open the entire menu on mobile devices 
-const openMenu = () => {
-  mainNav.classList.toggle('is-active');
-}
-
-mobileMenu.addEventListener('click', openMenu);
-
 
 
 // Back to the top button 

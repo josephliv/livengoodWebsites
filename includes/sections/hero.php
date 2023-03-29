@@ -1,6 +1,6 @@
 
 <div class="container" id="hero">
-    <div class="site-title">
+    <div class="site-title animated-title">
         <h1 class="<?php if($page != '/') echo 'main-page-title';?>">
             <?= $main_title; ?>
             <?php if ($page == "/" || $page == "/testimonials") 

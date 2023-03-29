@@ -40,6 +40,27 @@ var dartModal = document.getElementById("dart-modal");
    dartModal.style.display = "none";
  }
  
+ //************************************ */
+//  For Dart defense survey
+//************************************ */
+var dartSurveyModal = document.getElementById("dart-survey-modal");
+// Get the element that closes the modal
+ var dartSurveyClose = document.getElementById("dart-survey-close");
+// Get the image that will be clicked on
+ var dartSurveyImg = document.getElementById("dart-survey-img");
+ // Get the modal
+ var dartSurveyModal = document.getElementById("dart-survey-modal");
+
+ 
+ dartSurveyImg.onclick = function(){
+ dartSurveyModal.style.display = "block";
+ }
+ 
+ 
+ // When the user clicks on (x), close the modal
+ dartSurveyClose.onclick = function() { 
+   dartSurveyModal.style.display = "none";
+ }
 
 //************************************ */
 //  For despe consulting website 

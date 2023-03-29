@@ -1,4 +1,4 @@
-<section>
+<section class="page-404">
     <main class="error">
         <h3 class="primary text-center">
             Here's some links that do work.
@@ -9,14 +9,11 @@
                 <a href="/blog">Blog</a>
                 <a href="/portfolio">Portfolio</a>
                 <a href="/food-app">Food App</a>
+                <a href="/chat-bot">Web Design</a>
                 <a href="/chat-bot">Chat Bot</a>
+                <a href="/chat-bot">Business</a>
+                <a href="/chat-bot">Contact</a>
         </div>
     </main>
-    <section class="bg">
-        <div class="narrow-section my-4">
-            <h3>Be Notified of upcoming changes.</h3>
-            <?php include 'includes/sections/form.php'; ?>
-        </div>
-        
-    </section>
+  
 </section>

@@ -11,7 +11,7 @@ $js_path = "";
 
 switch ($page) {
     case "/":
-        $site_title = "Website Designer & Developer based in Mocksville and Salisbury NC";
+        $site_title = "Website Designer & Developer based in Mocksville North Carolina";
         $sub_title = "Mocksville and Salisbury Business enhancements all in one place.";
         $meta_keywords = "website designer near Mocksville, web designer salisbury nc, website developer near me, Salisbury North carolina website designer, SEO services in Mocksville";
         break;
@@ -27,6 +27,7 @@ switch ($page) {
         $site_title = "Meet Joseph Livengood";
         $main_title = "Meet Joseph Livengood";
         $sub_title = "Behind The Scenes And Beyond";
+        $meta_keywords = "Joseph Livengood, Joe Livengood, About Joseph Livengood, Who is Joseph Livengood, who is Joe Livengood, Joe Livengood reviews";
         break;
     case "/food-ording-app":
     case "/food-ording-app/":
@@ -55,7 +56,7 @@ switch ($page) {
         $sub_title = "Recent sites built that are currently being managed by Livengood Websites";
         $site_title = "Portfolio";
         $meta_description = "Sites built and maintained by Livengood Websites";
-        $meta_keywords = "Joseph's portfolio, previous work, website portfolio, reviews";
+        $meta_keywords = "Joseph's portfolio, Joseph's previous work, website portfolio, Joseph Livengood reviews";
         $js_path = 'src="/assets/portfolio.js"';
         break;
     case "/blog":
@@ -64,17 +65,17 @@ switch ($page) {
     case "/feed":  
         $site_title = "Blog";
         $main_title = "Blog Page";
-        $sub_title = "Find Interesting material here";
+        $sub_title = "Welcome to my Blog.";
         break;
     case "/chat-bot":
     case "/chat-bot/":
-        $meta_keywords = "list building, facebook messenger, SEO, Google Ads, leads, lead generation, auto messenger";
+        $meta_keywords = "list building, facebook messenger, Google Ads, leads, lead generation, auto messenger";
         $main_title = "List Building & Lead Generation";
         $sub_title = "Get cheaper, better, and more leads within a few days.";
         break;
         case "/web-design":
         case "/web-design/":
-            $meta_keywords = "website design work, responsive websites, livengood website, website designs near me";
+            $meta_keywords = "website design work, responsive websites, livengood websites, website designs near me, websites near Mocksville NC";
             $main_title = "Elevate Your Online Presence with Livengood Websites";
             $sub_title = "Get a website tailored to your business goals and optimize its performance.";
         break;
@@ -117,8 +118,6 @@ switch ($page) {
 // redirects to prevent 404 in Google console
 case "/testimonials":
 case "/testimonials/":
-case "/web-design/":
-case "/web-design";
     header("Location: /");
     exit();
     break;

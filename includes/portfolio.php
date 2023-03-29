@@ -71,6 +71,35 @@
       </div>
     </div>
 
+
+    <?php
+    // ***********************/
+    // Dart Defense survey
+    //************************* */
+    ?>
+
+    <div class="portfolio-item custom-section-item">
+      <div class="portfolio-item-inner">
+        <img id="dart-survey-img" class="popup-img i" src="assets/imgs/portfolio/dart-defense-survey.png" alt="https://dartdefense.org">
+        <h3 class="h">dart Defense Survey</h3>
+        <div class="rt">
+          <p>
+            Website built using 100% hand code using laravel a PHP framework.
+          </p>
+          <span><a href="https://survey.dartdefense.org" <?= $externalLinks ?>>
+              visit site
+            </a></span>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal for dart defense survey-->
+    <div id="dart-survey-modal" class="modal">
+      <span id="dart-survey-close" class="close">&times;</span>
+      <div class="modal-content">
+        <iframe style="width: 90%; margin: auto; height: 90%" src="https://survey.dartdefense.org" frameborder="0"></iframe>
+      </div>
+    </div>
+
     <?php
     // ***********************/
     //  despe Consulting website 

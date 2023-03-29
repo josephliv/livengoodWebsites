@@ -4,41 +4,18 @@ body {
     --header-item-load-time: 900ms;
 }
 
-
-
-
-@keyframes terms {
-    0% {
-        transform: translateY(-1000%); /* completely removes it from the screen */
-    }
-    
-    100% {
-        transform: translateY(0); /* returns back to where it's suppose to be */
-    }
-}
-
  /* ================================= 
         | Hero section |
 ====================================  */
-.site-title h1,
-.site-title h2 {
-    animation: title-load 1s ease-in  ;
+.animated-title
+{
+    animation: title-load 1.5s ease-in  ;
     animation-fill-mode: forwards;
     opacity: 0;
 }
 
-.carousel-caption {
-    animation: slide-title 1s ease-in;
-}
 
-@keyframes slide-title {
-    0% {
-        transform: translateY(100%);
-     }
-     100% {
-         transform: translateY(0);
-     }
-}
+
 
 @keyframes title-load {
     0% {
@@ -48,6 +25,6 @@ body {
     }
     100% {
         opacity: 1;
-        font-size: auto;
+        font-size: initial;
     }
 }
