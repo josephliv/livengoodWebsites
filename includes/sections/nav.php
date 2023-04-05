@@ -2,7 +2,11 @@
 
 <div class="header1">
   <input type="checkbox" id="menu-bar">
-  <label for="menu-bar">Menu</label>
+  <label for="menu-bar">
+    <div class="mobile-icon">
+    <img src="/assets/imgs/icons/png-files/menu.png" alt="menu">
+    </div>
+  </label>
   <nav class="main-nav2">
     <ul>
       <li>

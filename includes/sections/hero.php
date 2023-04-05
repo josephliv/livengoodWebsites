@@ -5,8 +5,10 @@
             <?= $main_title; ?>
             <?php if ($page == "/" || $page == "/testimonials") 
                     echo '<div class="main-title">
-                    <span class="title-first-letter">L</span>ivengood
-                    <span class="title-first-letter">W</span>ebsites
+                    <span class="title-first-letter">G</span>oing
+                    <span class="title-first-letter">B</span>eyond
+                    <span class="title-first-letter">Y</span>our
+                    <span class="title-first-letter">E</span>xpectations
                     '; 
                     ?>
         </h1>

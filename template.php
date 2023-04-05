@@ -196,7 +196,11 @@
             include 'includes/404.php';
     };
     ?>
-
+    <?php
+    if(!$page == 'request-services') {
+        include 'includes/sections/seo-offer.php'; 
+    }
+        ?>
 
     <!-- =================================
 | The Footer element  |
@@ -233,9 +237,9 @@
         }(document, 'script', 'facebook-jssdk'));
     </script> -->
     <script <?= $js_path; ?>></script>
-    
+
     <div class="fb-customerchat" page_id="109015495412167" theme_color="#050a22" logged_in_greeting="Hi, Thanks for visiting us! How can we assist you today?" logged_out_greeting="Thanks for checking us out." greeting_dialog_display="show" greeting_dialog_delay="1" ref="campaign::undefined"> </div>
-    
+
 </body>
 
 </html>

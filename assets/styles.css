@@ -4,26 +4,25 @@
 
 :root {
   /* color varables */
-  --primary: #06254d;
-  --primary-lite: #06254de0;
-  --secondary: #727687;
-  --secondary-lt: #727687b0;
-  --accent: #D5A418;
-  --light-bg: #EFFDED;
+  --primary: #042147;
+  --primary-lite: rgba(4, 33, 71, 0.9);
+  --secondary: #3C4D78;
+  --secondary-lt: #3C4D78b0;
+  --accent: #D4A418;
+  --light-bg: #E7EFFF;
 
   /* font colors */
-  --title-color: #31364e;
   --text-color: #1a1b1d;
   --light-text-color: #dddeee;
 
   /* fonts */
   --title-font: 'Gruppo', cursive;
-  --logo-font: 'Great Vibes', cursive;;
+  --logo-font: 'Great Vibes', cursive;
   --text-font: 'Poppins', sans-serif;
   --text-shadow: 0 0 5px var(--secondary);
   /* font sizes */
   /* --hero-title: clamp(2.8rem, 4cqw, 3rem); */
-  --hero-title: 3.5rem;
+  --hero-title: 3rem;
   --title-size: 2.5rem;
   --text-size: 1.2rem;
   --nav-menu: 1rem;
@@ -248,6 +247,7 @@ details[open] summary ~ * {
   background-size: cover;
   background-color: rgb(221, 215, 215);
   background-blend-mode: overlay;
+  min-height: 40em;
 }
 /* top bar with contact info */
 .top-bar {
@@ -291,31 +291,24 @@ details[open] summary ~ * {
 }
 
 .brand   {
-  /* max-width: 300px; */
-  margin: 20px auto;
   display: grid;
   align-items: center;
-  /* border-radius: var(--radius);
-  background-image: var(--gradient);
-  border: 3px outset var(--secondary);
-  box-shadow: var(--shadow); */
-
 }
-.brand a {
-  color: var(--primary);
-font-weight: 700;
-padding: 10px;
-  font-size: 2.8rem;
-  letter-spacing: .2em;
-  text-align: center;
-  font-family: var(--logo-font);
-  text-shadow: 3px 5px 10px #555;
+.brand img {
+  max-width: 320px;
+  margin: 20px auto;
 }
 
 /* to hide checkbox */
 .nav-toggle {
   display: none;
 }
+
+.mobile-icon img {
+  margin: 0 auto;
+  width: 40px;
+}
+
 .desktop-icon {
   display: none;
 }
@@ -370,6 +363,7 @@ padding: 10px;
   display: block;
   transition: 300ms ease-in-out;
   text-transform: uppercase;
+  margin: 2px;
 }
 
 .header1 .main-nav2 ul li a:hover {
@@ -404,8 +398,16 @@ padding: 10px;
 }
 .active-nav {
   background-color: var(--secondary);
+  border-radius: var(--radius);
 }
 @media (max-width: 40em) {
+  .active-nav {
+    border-radius: 0;
+  }
+  .menu-items-container {
+    max-width: 20em;
+    margin: 0 auto;
+  }
 .header1 {
   position: relative;
 }
@@ -419,7 +421,7 @@ padding: 10px;
 }
 .header1 .main-nav2 {
   position: absolute;
-  top: 35px;
+  top: 46px;
   left: 0;
   right: 0;
   background-color: var(--primary-lite);
@@ -429,6 +431,7 @@ padding: 10px;
 .header1 .main-nav2 ul li {
   width: 100%;
   text-align: center;
+  border-top: 1px dashed var(--accent);
 }
 .header1 .main-nav2 ul li ul {
   position: relative;
@@ -443,9 +446,8 @@ padding: 10px;
 }
 }
 @media (min-width: 900px) {
-  .logo img {
-    width: 30em;
-    margin: 4em auto;
+  .brand img {
+    margin: 2em auto;
   }
   .top-bar-inner {
     display: grid;
@@ -458,12 +460,11 @@ padding: 10px;
     padding: 10px;
   }
   .header {
-    min-height: 40em;
     grid-template-rows: 0.5fr 3fr auto;
   }
 
   .header-section {
-    max-width: 1600px;
+    max-width: 1400px;
     margin: auto;
     display: grid;
     /* grid-template-columns: 1fr 2.8fr; */
@@ -501,7 +502,7 @@ padding: 10px;
 }
 .site-title h1 {
   font-family: var(--title-font);
-  font-size: var(--title-size);
+  font-size: 1.8rem;
   color: var(--light-text-color);
 }
 
@@ -752,6 +753,9 @@ Food ordering page
   display: grid;
   place-items: center;
 }
+.single-item h4 {
+  font-size: 1.8rem;
+}
 @media (min-width: 600px) {
   .testimonial-section {
     min-height: 25em;
@@ -763,11 +767,17 @@ Food ordering page
   padding: 0 15px 50px;
   margin: 0 auto;
 }
+
 .single-item {
   background: #fff;
   color: #111;
   padding: 15px;
   margin: 50px 15px;
+}
+.carousel-item .content {
+  min-height: 400px;
+  display: grid;
+  place-items: center;
 }
 .profile {
   margin-bottom: 30px;
@@ -1087,6 +1097,8 @@ footer {
 .footer-inner h3 {
   color: var(--accent);
   text-align: center;
+  font-size: 2em;
+  margin-bottom: 10px;
 }
 
 .footer-inner a {
@@ -1114,7 +1126,10 @@ footer {
   gap: 2rem;
   font-size: 2rem;
 }
-
+.footer-inner .brand img {
+  margin: 20px auto;
+  max-width: 22em;
+}
   
 
 .footer-contact img {
@@ -1136,9 +1151,10 @@ footer {
   .footer-contact {display: grid; place-items: center;}
   .footer-inner {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: .5fr 1fr 1fr;
     align-items: center;
-
+    max-width: 90em;
+    margin: auto;
   }
   .footer-contact-inner {
     display: flex;
@@ -1151,8 +1167,12 @@ footer {
   .footer-social {
     padding: var(--block-padding);
   }
+  
   .footer-inner > img {
     margin: 0;
+  }
+  .footer-inner h3 {
+    font-size: 2rem;
   }
   .footer-nav nav {
     max-width: fit-content;

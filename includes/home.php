@@ -17,8 +17,14 @@
     </p>
   </div>
 </section>
+ <!-- =================================
+      | The testimonial area  |
+      ====================================  -->
+
+      <?php include 'includes/sections/testimonials.php'; ?>
 <!-- my photo and what to expect -->
-<section class="bg">
+
+<section>
   <div class="narrow-section">
     <h3>What you can expect working with Joe</h3>
     <hr>
@@ -29,16 +35,12 @@
           <a href="/meet-joe">Meet Joe</a>
         </div>
       </div>
+     
       <!-- What to expect area -->
       <?php include('./includes/sections/expect.php'); ?>
 
     </div>
   </div>
 </section>
-<!-- Services offered -->
 
-<!-- =================================
-      | The testimonial area  |
-      ====================================  -->
 
-<?php include 'includes/sections/testimonials.php'; ?>

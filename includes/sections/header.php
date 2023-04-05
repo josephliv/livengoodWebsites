@@ -34,12 +34,13 @@
  <div class="header-section">
      <div class="brand">
          <a href="/">
-            <span>Livengood Websites</span>
+            <img src="/assets/imgs/Livengood-p1.webp" alt="Livengood Websites">
          </a>
-         
      </div>
      <div class="menu-items-container">
         <!-- old nav menu -->
  <?php include "nav.php"; ?>
+ 
      </div>
+     
  </div>
