@@ -2,7 +2,7 @@
       | Top part with phone, email and social links |
           ====================================  -->
 
- <div class="top-bar">
+ <div class="top-bar bg-gradient">
      <div class="top-bar-inner">
 
          <div class="phone">
@@ -29,18 +29,28 @@
              </a>
 
          </div>
+         <div id="nav" class="menu-items-container ">
+             <?php include "nav.php"; ?>
+         </div>
      </div>
+
  </div>
  <div class="header-section">
      <div class="brand">
          <a href="/">
-            <img src="/assets/imgs/Livengood-p1.webp" alt="Livengood Websites">
+             <img src="/assets/imgs/Livengood-p1.webp" alt="Livengood Websites">
          </a>
      </div>
-     <div class="menu-items-container">
-        <!-- old nav menu -->
- <?php include "nav.php"; ?>
- 
+     <div class="">
+         <h1 class="my-3"><?= $header_text; ?></h1>
+         <div class="hero-buttons">
+                 <div class="btn btn-outline-dark">
+                     <script type="text/javascript" defer src="https://form.123formbuilder.com/embed/6306291.js?type=lightbox" data-role="form" data-default-width="750px" data-embed-type="lightbox-text-link" 
+                     data-embed-text-link="Get In Touch"></script>
+                 </div>
+             <div class="btn btn-outline-dark">
+                <a  href="<?php if($page != '/') echo 'https://livengoodwebsites.com'; ?>/#reviews">Reviews</a>
+             </div>
+         </div>
      </div>
-     
  </div>

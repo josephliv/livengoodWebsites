@@ -1,19 +1,10 @@
 <!-- free SEO evaluation -->
-<section class="bg">
+
         
-        <div class="container">
+
             <div class="custom-section">
-                <div>
-                    <h3>Maximize Your Online Presence with a Free Website Evaluation.</h3>
-                    <hr>
-                    <p>
-                        Our team will provide a comprehensive evaluation of your website's design, content, and technical aspects that affect your SEO performance.
-                    </p>
-                    <p>
-                        With our thorough analysis of your website's strengths and weaknesses, we'll identify the best optimization strategies for you at no cost.
-                    </p>
-                </div>
-                <div class="custom-section-item">
+                
+                <div class="custom-section-item shadow">
                     <?php
                     $ref = $_SERVER['HTTP_REFERER'];
                     $page_link = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
@@ -56,5 +47,4 @@
                     </form>
                 </div>
             </div>
-        </div>
-    </section>
+  

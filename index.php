@@ -2,6 +2,7 @@
 $page = $_SERVER['REQUEST_URI'];
 $site_title = "Joseph Livengood | Website Designs";
 $main_title = "";
+$header_text = "Everything You Need For A Successful Business.";
 $sub_title = "";
 $externalLinks = 'target="_blank" rel="nofollow noopener"';
 $meta_description = "Web Design and other onine based work";
@@ -13,7 +14,8 @@ switch ($page) {
     case "/":
         $site_title = "Website Designer & Developer based in Mocksville North Carolina";
         $sub_title = "Mocksville and Salisbury Business enhancements all in one place.";
-        $meta_keywords = "website designer near Mocksville, web designer salisbury nc, website developer near me, Salisbury North carolina website designer, SEO services in Mocksville";
+        $main_title = "Secure and Maintain Your Online Presence.";
+        $meta_keywords = "website designer near Mocksville, web designer salisbury nc, website developer near me, Salisbury North carolina website designer, SEO services in Mocksville, successful business, business enhancements";
         break;
     // Google was showing a 404 with this url, the testimonials are on the home page
     case "/testimonials":
@@ -26,6 +28,7 @@ switch ($page) {
     case "/about/":
         $site_title = "Meet Joseph Livengood";
         $main_title = "Meet Joseph Livengood";
+        $header_text = "Innovative website designer, with a passion for helping others succeed. ";
         $sub_title = "Behind The Scenes And Beyond";
         $meta_keywords = "Joseph Livengood, Joe Livengood, About Joseph Livengood, Who is Joseph Livengood, who is Joe Livengood, Joe Livengood reviews";
         break;
@@ -34,6 +37,7 @@ switch ($page) {
         case "/food-app": 
         case "/food-app/":
         $main_title = "Food Ordering App";
+        $header_text = "The New And Improved Order Taking App For 2023.";
         $sub_title = "The Complete online ordering solution";
         $site_title = "Food Ordering App | The Complete Online Ordering Solution";
         $meta_keywords = "best food delivery app, Order Taking App, Restaurant Online ordering app, increase restaurant sales, accept orders online";
@@ -64,6 +68,7 @@ switch ($page) {
     case "/feed/":  
     case "/feed":  
         $site_title = "Blog";
+        $header_text = "Useful information written by Joseph Livengood";
         $main_title = "Blog Page";
         $sub_title = "Welcome to my Blog.";
         break;

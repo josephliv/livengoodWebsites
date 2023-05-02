@@ -3,7 +3,7 @@
 
 <head>
     <meta name="facebook-domain-verification" content="ne1grlqalvy2ruujnxy18jr7zis2nu" />
-    <!-- Meta Pixel Code 
+    <!-- Meta Pixel Code -->
     <script>
         ! function(f, b, e, v, n, t, s) {
             if (f.fbq) return;
@@ -27,8 +27,8 @@
         fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1202599500679797&ev=PageView&noscript=1" /></noscript>
-     End Meta Pixel Code -->
-    <!-- Google tag (gtag.js) 
+     <!--End Meta Pixel Code -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4MSKEW1D4N"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -39,7 +39,7 @@
         gtag('js', new Date());
 
         gtag('config', 'G-4MSKEW1D4N');
-    </script>-->
+    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -140,7 +140,7 @@
             break;
         case "/web-design":
         case "/web-design/":
-            include 'includes/web-design.php';
+            include 'includes/home.php';
             break;
         case "/business-boosters":
         case "/business-boosters/":
@@ -196,11 +196,7 @@
             include 'includes/404.php';
     };
     ?>
-    <?php
-    if(!$page == 'request-services') {
-        include 'includes/sections/seo-offer.php'; 
-    }
-        ?>
+ 
 
     <!-- =================================
 | The Footer element  |
@@ -225,20 +221,24 @@
             });
         };
     </script>
-    <!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
-    <script>
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script> -->
+  
+    
     <script <?= $js_path; ?>></script>
 
-    <div class="fb-customerchat" page_id="109015495412167" theme_color="#050a22" logged_in_greeting="Hi, Thanks for visiting us! How can we assist you today?" logged_out_greeting="Thanks for checking us out." greeting_dialog_display="show" greeting_dialog_delay="1" ref="campaign::undefined"> </div>
+   <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/644a9b054247f20fefee22d7/1gv1mr3s8';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+    
 
 </body>
 

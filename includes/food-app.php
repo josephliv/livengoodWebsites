@@ -2,7 +2,7 @@
 <section class="bg">
   <div class="narrow-section">
     <h3>
-      The New and Improved Order Taking App for 2023.
+      Quick set up to get more orders than before.
     </h3>
     <hr>
     

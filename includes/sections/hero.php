@@ -2,15 +2,17 @@
 <div class="container" id="hero">
     <div class="site-title animated-title">
         <h1 class="<?php if($page != '/') echo 'main-page-title';?>">
-            <?= $main_title; ?>
-            <?php if ($page == "/" || $page == "/testimonials") 
+
+            <?php if ($page == "/" || $page == "/testimonials") {
                     echo '<div class="main-title">
                     <span class="title-first-letter">G</span>oing
                     <span class="title-first-letter">B</span>eyond
                     <span class="title-first-letter">Y</span>our
                     <span class="title-first-letter">E</span>xpectations
                     '; 
+            } else echo $main_title; 
                     ?>
+
         </h1>
         <h2 class="home-sub-title <?php 
                 // This is the bring in the class if 404 is detected

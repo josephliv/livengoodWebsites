@@ -26,9 +26,7 @@
         </a>
         <!-- Menu dropdown items -->
         <ul>
-          <li>
-            <a class="<?php if ($page == '/web-design' || $page == '/web-design/') echo 'active-nav'; ?>" href="/web-design">Website Design</a>
-          </li>
+          
           <li>
             <a class="<?php if ($page == '/chat-bot' || $page == '/chat-bot/') echo 'active-nav'; ?>" href="/chat-bot">Chat Bot</a>
           </li>

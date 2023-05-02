@@ -2,7 +2,7 @@
     <div class="narrow-section">
         <div>
             <p>
-                This page will take you through a brief history of how things started and a little about me.
+            My name is Joseph Livengood, and on this page will take you through a brief history of how things started and a little about me.
             </p>
 
             <p>
@@ -58,7 +58,7 @@
         </div>
 
         <div id="ml2">
-            <p> In around 1999 I had a huge interest
+            <p> Around 1999 I had a huge interest
                 in learning a foreign language. I worked at a factory at the time where I was exposed to the Spanish
                 language.
             </p>
@@ -108,5 +108,9 @@
             <img loading="lazy" src="/assets/imgs/joe-with-code.webp" alt="website development and designer">
         </div>
     </main>
-
+    <div class="narrow-section">
+        <p>
+        I enjoy connecting with people and I am open to interesting work offers from clients in North Carolina and nation-wide, so send me a quick email and we can take it from there.
+        </p>
+    </div>
 </section>

@@ -214,7 +214,7 @@
         <h3 class="h">Mary Despe Career Coach</h3>
         <div class="rt">
           <p>
-            Hand coded capture page with animated title.
+            Hand coded capture page to boost SEO and generate leads.
           </p>
           <div></div>
           <span><a href="https://mkdespe.com" <?= $externalLinks ?>>
