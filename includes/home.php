@@ -6,7 +6,7 @@
       
       <p>
       You are not limited to only website design here but also other services to enhance your current business such as
-       <a href="#seo">SEO</a> to make sure your site is listed on Google and other search Engines. We also offer <a href="/food-app">food ordering app</a> for restaurants, Facebook <a href="/chat-bot"> auto messenger</a> software to run with your current marketing, and we also offer other services to help give <a href="/business-boosters"> your business a boost</a> such as business capital.
+       <a href="#seo">SEO</a> to make sure your site is listed on Google and other search Engines. We also offer <a href="/food-app">food ordering app</a> for restaurants, Facebook <a href="/chat-bot"> auto messenger</a> software to run with your current marketing, and we also offer other business essentials to help give <a href="/business-boosters"> your business a boost</a> such as business capital, payment processing and more.
     </p>
     </div>
   </div>

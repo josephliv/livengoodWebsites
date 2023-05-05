@@ -1213,20 +1213,20 @@ footer {
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 120px;
-  right: 20px;
-  z-index: 99;
+  bottom: 20em;
+  right: 0px;
+  z-index: 9999;
   outline: none;
-  background-color: var(--light-bg);
-  padding: 4px;
-  border-radius: 50%;
+  background-color: var(--primary-lite);
+  padding: 10px 20px 10px 10px;
+  border-radius: 50% 0  0 50% ;
   border: 1px solid #fff;
   box-shadow: 2px 2px 5px #000;
 }
 #myBtn img {
-  width: 30px;
+  width: 40px;
 }
 
 #myBtn:hover {
-  background-color: var(--accent);
+  background-color: var(--primary);
 }

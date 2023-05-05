@@ -33,7 +33,7 @@
         <article class="post-card">
             <div class="post-card-inner">
                 <div id="h">
-                    <a href="/tips-to-rank-on-google/#hero">
+                    <a href="/tips-to-rank-on-google/">
                         <h4>3 tips to rank on google</h4>
                     </a>
                 </div>
@@ -43,7 +43,7 @@
                 <div id="rt">
                     <em class="blog-date">posted - 1/16/2023</em><br>
                     <div class="custom-btn">
-                        <a href="/tips-to-rank-on-google/#hero">read post</a>
+                        <a href="/tips-to-rank-on-google/">read post</a>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@
         <article class="post-card">
             <div class="post-card-inner">
                 <div id="h">
-                    <a href="/How-To-Install-WordPress-Plugins/#hero">
+                    <a href="/How-To-Install-WordPress-Plugins/">
                         <h4>How to install WordPress plugins on a local machine</h4>
                     </a>
                 </div>
@@ -61,7 +61,7 @@
                 <div id="rt">
                     <em class="blog-date">posted - 11/18/2022</em><br>
                     <div class="custom-btn">
-                        <a href="/How-To-Install-WordPress-Plugins/#hero">read post</a>
+                        <a href="/How-To-Install-WordPress-Plugins/">read post</a>
                     </div>
                 </div>
             </div>
@@ -70,7 +70,7 @@
         <article class="post-card">
             <div class="post-card-inner">
                 <div id="h">
-                    <a href="/How-To-Fix-Skype-White-Screen/#hero">
+                    <a href="/How-To-Fix-Skype-White-Screen/">
                         <h4>How To Fix Skype White Screen After New Sign In</h4>
                     </a>
                 </div>
@@ -79,7 +79,7 @@
                 <div id="rt">
                     <em class="blog-date">posted - 11/18/2022</em><br>
                     <div class="custom-btn">
-                        <a href="/How-To-Fix-Skype-White-Screen/#hero">read post</a>
+                        <a href="/How-To-Fix-Skype-White-Screen/">read post</a>
                     </div>
                 </div>
             </div>
@@ -88,7 +88,7 @@
         <article class="post-card">
             <div class="post-card-inner">
                 <div id="h">
-                    <a href="/How-To-Move-A-Wordpress-Site/#hero">
+                    <a href="/How-To-Move-A-Wordpress-Site/">
                         <h4>How To Move A Wordpress Site Without A Plugin</h4>
                     </a>
                 </div>
@@ -96,7 +96,7 @@
                 <div id="rt">
                     <em class="blog-date">posted - 11/18/2022</em><br>
                     <div class="custom-btn">
-                        <a href="/How-To-Move-A-Wordpress-Site/#hero">read post</a>
+                        <a href="/How-To-Move-A-Wordpress-Site/">read post</a>
                     </div>
                 </div>
             </div>
@@ -105,7 +105,7 @@
         <article class="post-card">
             <div class="post-card-inner">
                 <div id="h">
-                    <a href="/Importing-Contacts-from-gmail-to-Thunderbird/#hero">
+                    <a href="/Importing-Contacts-from-gmail-to-Thunderbird/">
                         <h4>Importing Contacts from gmail to Thunderbird </h4>
                     </a>
                 </div>
@@ -114,7 +114,7 @@
                 <div id="rt">
                     <em class="blog-date">posted - 11/18/2022</em><br>
                     <div class="custom-btn">
-                        <a href="/Importing-Contacts-from-gmail-to-Thunderbird/#hero">read post</a>
+                        <a href="/Importing-Contacts-from-gmail-to-Thunderbird/">read post</a>
                     </div>
                 </div>
             </div>

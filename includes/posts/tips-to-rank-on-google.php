@@ -8,6 +8,14 @@
             Even a lot of views to your page would boost it, but now in 2023, it's really not that easy. Here's what
             Google is looking for:
         </p>
+        <details class="mb-4">
+          <summary><div class="btn btn-primary">Click here to request a free SEO evaluation.</div></summary>
+         
+          <?php
+          include 'includes/sections/seo-offer.php';
+          ?>
+          
+        </details>
         </div>
         <div class="container">
         <article>
@@ -69,6 +77,8 @@
         </div>
     </article>
     <div class="container">
+        
+       
         <p>
             Thank you for reading this post, please see my other posts by going to the <a href="/blog">blog page</a>
             .
