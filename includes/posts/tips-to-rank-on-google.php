@@ -1,5 +1,5 @@
 <section>
-    <div class="container">
+    <div class="narrow-section">
         <p>
             Back in the 90s and even early 2000's all you needed to be on the front page of Google was just a lot of
             keywords and content.
@@ -8,21 +8,27 @@
             Even a lot of views to your page would boost it, but now in 2023, it's really not that easy. Here's what
             Google is looking for:
         </p>
-        <h3 style="text-align: left;">1. Engagement/interest</h3>
-        <div class="flex-area">
-            <img src="/assets/imgs/posts-imgs/interested.jpg" alt="interesting">
-            <div class="post-content">
-
-                <p> This is the most important of all the rest which is why I mentioned it first.
-                    Google now goes by how long a visitor stays on your website. This tells Google that they are
-                    interested in what you have. </p>
-            </div>
         </div>
-        <hr>
-        <h3 style="text-align: left;">2. Keywords</h3>
-        <div class="flex-area">
+        <div class="container">
+        <article>
+            <h3 style="text-align: left;">1. Engagement/interest</h3>
+            <div class="custom-section">
+                <img class="img-thumbnail" src="/assets/imgs/posts-imgs/interested.jpg" alt="interesting">
+                <div class="post-content">
 
-            <img src="assets/imgs/posts-imgs/seo-keywords.jpg" alt="seo keywords">
+                    <p> This is the most important of all the rest which is why I mentioned it first.
+                        Google now goes by how long a visitor stays on your website. This tells Google that they are
+                        interested in what you have. </p>
+                </div>
+            </div>
+    
+    </article>
+    <hr>
+    <article>
+        <h3 style="text-align: left;">2. Keywords</h3>
+        <div class="custom-section">
+
+            <img class="img-thumbnail" src="/assets/imgs/posts-imgs/seo-keywords.jpg" alt="seo keywords">
             <div class="post-content">
 
                 <p>
@@ -39,10 +45,12 @@
                 </p>
             </div>
         </div>
-        <hr>
+    </article>
+    <hr>
+    <article>
         <h3 style="text-align: left;">3. Naming Your Images</h3>
-        <div class="flex-area">
-            <img src="assets/imgs/posts-imgs/images.png" alt="Naming Images and Adding An Alt Tag">
+        <div class="custom-section">
+            <img class="img-thumbnail" src="/assets/imgs/posts-imgs/images.png" alt="Naming Images and Adding An Alt Tag">
             <div class="post-content">
                 <p>
                     This is very important if you want your images to show up. The thing is, the spiders (the software
@@ -53,15 +61,18 @@
                     So it's very important to both add alt images and to name the images correctly. The alt text is the
                     HTML
                     part, it looks like this<br><span class="code"><span>
-                            <</span>img src="path/image.jpg" <u><b>alt="Name of the image</b>"</u><span>></span></span>. If you do not know how to do this, you can hire an expert who can help.
+                            << /span>img src="path/image.jpg" <u><b>alt="Name of the image</b>"</u><span>></span>
+                        </span>. If you do not know how to do this, you can hire an expert who can help.
                 </p>
             </div>
         </div>
-    </div>
+        </div>
+    </article>
     <div class="container">
         <p>
             Thank you for reading this post, please see my other posts by going to the <a href="/blog">blog page</a>
             .
         </p>
     </div>
+</div>
 </section>

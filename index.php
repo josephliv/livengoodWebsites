@@ -93,8 +93,9 @@ switch ($page) {
         break;
 // Blog post pages
     case "/tips-to-rank-on-google":
+    case "/tips-to-rank-on-google/":
         $meta_keywords = "seo tips, strategies for google ranking, search engine opitimization";
-        $main_title = "3 things your site needs to rank on Google"; 
+        $header_text = "3 things your site needs to rank on Google"; 
         $sub_title = "If you want to rank on Google or other search engines, you need these.";
         break;
     case "/How-To-Install-WordPress-Plugins/":

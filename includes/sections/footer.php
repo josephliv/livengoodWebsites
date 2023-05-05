@@ -2,7 +2,7 @@
     <div class="footer-inner">
         <div class="brand">
             <a href="/">
-                <img src="assets/imgs/Livengood-p2.webp" alt="Livengood Websites">
+                <img src="/assets/imgs/Livengood-p2.webp" alt="Livengood Websites">
             </a>
         </div>
 
