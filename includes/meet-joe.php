@@ -17,10 +17,10 @@
     <main class="about-img body-grid">
 <!-- main section 1 -->
 
-    <h4 id="title1" >
+    <h3 id="title1" >
                 Former PC Repair Technician
                  <hr>
-            </h4>
+            </h3>
            
         <div id="ml1">
             <p>I started working on computers around 20 years ago, self-taught mostly until I went to college in
@@ -46,10 +46,10 @@
         </div>
  
 <!-- main section 2  -->
-<h4 id="title2" >
+<h3 id="title2" >
                 Bilingual In Spanish & English
                 <hr>
-            </h4>
+            </h3>
             
         <div id="ms2">
             
@@ -77,10 +77,10 @@
 
         </div>
 <!-- main section 3 -->
-<h4 id="title3" >
+<h3 id="title3" >
                 Web Development And Design
                 <hr>
-            </h4>
+            </h3>
             
         <div id="ml3">
             <p>The story behind this is sort of long so I’ll keep it as short as possible.

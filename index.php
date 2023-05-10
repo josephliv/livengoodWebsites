@@ -8,12 +8,29 @@ $externalLinks = 'target="_blank" rel="nofollow noopener"';
 $meta_description = "Web Design and other onine based work";
 $meta_keywords = "Joseph Livengood, Website design, Website development, website designer near Mocksville North Carolina";
 $js_path = "";
+$social_links = '
+<div class="social-links">
+<a href="https://www.facebook.com/joesdigitalservices">
+     <img class="icon" src="/assets/imgs/icons/png-files/facebook-filled.png" alt="Joseph Livengood on facebook">
+ </a>
+
+ <a href="https://www.linkedin.com/in/joseph-livengood-a403b7130/">
+     <img class="icon" src="/assets/imgs/icons/png-files/linkedin-original.png" alt="Joseph Livengood on LinkedIn">
+ </a>
+ <a href="https://www.youtube.com/channel/UCAgEWX1qEHetRThckh8GZGw">
+     <img class="icon" src="/assets/imgs/icons/png-files/youtube.png" alt="Joseph Livengood on Youtube">
+ </a>
+ <a href="https://twitter.com/creativejoe101">
+     <img class="icon" src="/assets/imgs/icons/png-files/twitter-filled.png" alt="Joseph Livengood on Twitter">
+ </a>
+</div>'; 
 // For page rendering
 
 switch ($page) {
     case "/":
         $site_title = "Website Designer & Developer based in Mocksville North Carolina";
-        $sub_title = "Mocksville and Salisbury Business enhancements all in one place.";
+        $header_text = "Your one-stop-shop for all your online business needs.";
+        $sub_title = "From website building to SEO strategies, you've come to the right place.";
         $main_title = "Secure and Maintain Your Online Presence.";
         $meta_keywords = "website designer near Mocksville, web designer salisbury nc, website developer near me, Salisbury North carolina website designer, SEO services in Mocksville, successful business, business enhancements";
         break;

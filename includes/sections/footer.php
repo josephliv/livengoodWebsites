@@ -24,20 +24,8 @@
 
         <div>
             <h3>Follow me on social media</h3>
-            <div class="social-links">
-
-                <a href="https://www.facebook.com/joesdigitalservices">
-                    <img class="icon" src="/assets/imgs/icons/png-files/facebook-filled.png" alt="Joseph Livengood on facebook">
-                </a>
-
-                <a href="https://www.linkedin.com/in/joseph-livengood-a403b7130/">
-                    <img class="icon" src="/assets/imgs/icons/png-files/linkedin.png" alt="Joseph Livengood on LinkedIn">
-                </a>
-                <a href="https://www.youtube.com/channel/UCAgEWX1qEHetRThckh8GZGw">
-                    <img class="icon" src="/assets/imgs/icons/png-files/youtube.png" alt="Joseph Livengood on Youtube">
-                </a>
-
-            </div>
+            <!-- Social Links -->
+         <?= $social_links; ?>
         </div>
     </div>
 </footer>

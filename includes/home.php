@@ -6,7 +6,7 @@
       
       <p>
       You are not limited to only website design here but also other services to enhance your current business such as
-       <a href="#seo">SEO</a> to make sure your site is listed on Google and other search Engines. We also offer <a href="/food-app">food ordering app</a> for restaurants, Facebook <a href="/chat-bot"> auto messenger</a> software to run with your current marketing, and we also offer other business essentials to help give <a href="/business-boosters"> your business a boost</a> such as business capital, payment processing and more.
+       <a href="#seo">SEO</a> to make sure your site is listed on Google and other search Engines. We also offer <a href="/food-app">food ordering app</a> for restaurants, and we also offer other business essentials to help give <a href="/business-boosters"> your business a boost</a> such as business capital, payment processing and more.
     </p>
     </div>
   </div>
@@ -16,8 +16,8 @@
   <div class="custom-section">
     <img class="img-thumbnail" src="/assets/imgs/website-platforms.jpg" alt="personlized web design">
     <div>
-      <h3>Personalized web design and maintenance.</h3>
-      <hr>
+      <h4>Personalized web design and maintenance.</h4>
+      
       <p>
       Our website design service provides sleek and modern designs that are optimized for both desktop and mobile devices.
       </p>
@@ -25,12 +25,16 @@
   </div>
 </section>
 <section>
-  <div class="narrow-section">
-<h4>Secure and Maintain Your Online Presence.</h4>
-      <p>
-      Keep your website secure and up-to-date with our reliable and affordable maintenance services.
-      </p>
-      <div class="expect-area">
+  <div class="custom-section">
+      <div class="">
+        <h4>Secure and Maintain Your Online Presence.</h4>
+      
+        <p>
+          Keep your website secure and up-to-date with our reliable and affordable maintenance services.
+        </p>
+      </div>
+ 
+  <div class="expect-area">
       <details>
         <summary title="click to show details">Stay protected.</summary>
         <div>
@@ -64,13 +68,13 @@
         </div>
       </details>
     </div>
-      </div>
-</section>
+  </div>
+  </section>
 <section class="bg" id="seo">
   <div class="custom-section" style="position: relative;">
     <div>
-      <h3>Targeted seo strategies.</h3>
-      <hr>
+      <h4>Targeted seo strategies.</h4>
+      
       <p>
         We use advanced optimization techniques to ensure your website ranks higher on search engines. Our SEO strategies drive organic traffic to your site, bringing in quality leads.
       </p>
@@ -92,8 +96,8 @@
   <div class="custom-section">
     <img class="img-thumbnail" src="/assets/imgs/meature-and-improve.jpeg" alt="Measure And Improve">
     <div>
-      <h3>Measure And Improve.</h3>
-      <hr>
+      <h4>Measure And Improve.</h4>
+      
       <p>
         We track and analyze how your website is performing, and suggest ways to improve its performance. You'll receive regular reports that cover everything from traffic analysis to conversion rates.
       </p>

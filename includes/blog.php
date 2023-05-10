@@ -36,6 +36,7 @@
                     <a href="/tips-to-rank-on-google/">
                         <h4>3 tips to rank on google</h4>
                     </a>
+                    <hr>
                 </div>
                 <p>In this quick article, I'll show you 3 main things that Google and other search engines look for.
                 </p>
@@ -54,6 +55,7 @@
                     <a href="/How-To-Install-WordPress-Plugins/">
                         <h4>How to install WordPress plugins on a local machine</h4>
                     </a>
+                    <hr>
                 </div>
                 <p>How to install and configure vsftpd on a local machine After installing apache server and setting it
                     all
@@ -73,6 +75,7 @@
                     <a href="/How-To-Fix-Skype-White-Screen/">
                         <h4>How To Fix Skype White Screen After New Sign In</h4>
                     </a>
+                    <hr>
                 </div>
                 <p>Ever started skype and no matter what you did, you still got that white screen? Here's the
                     solution... </p>
@@ -91,6 +94,7 @@
                     <a href="/How-To-Move-A-Wordpress-Site/">
                         <h4>How To Move A Wordpress Site Without A Plugin</h4>
                     </a>
+                    <hr>
                 </div>
                 <p>Tired of the limited mb that plugins give you to "migrate" your WP site? Here's a work around</p>
                 <div id="rt">
@@ -108,6 +112,7 @@
                     <a href="/Importing-Contacts-from-gmail-to-Thunderbird/">
                         <h4>Importing Contacts from gmail to Thunderbird </h4>
                     </a>
+                    <hr>
                 </div>
                 <p>In this article, I'll walk you through how to export your Google contacts and import them into
                     thunderbird.</p>

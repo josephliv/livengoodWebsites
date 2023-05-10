@@ -89,8 +89,7 @@ details summary > * {
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
   font-family: var(--title-font);
   font-size: var(--title-size);
   letter-spacing: 0.3rem;
@@ -139,6 +138,14 @@ section {
 }
 .custom-section div {
   max-width: 800px;
+}
+.custom-section h4 {
+  font-size: 1.8em;
+  text-transform: capitalize;
+  text-align: center;
+  border-bottom: 2px solid var(--secondary);
+  display: inline;
+  line-height: 3em;
 }
 .narrow-section {
   display: grid;
@@ -425,9 +432,9 @@ details[open] summary ~ * {
   .header1 .main-nav2 {
     position: absolute;
     background-color: var(--primary-lite);
-    top: 46px;
-    left: 0;
-    right: 0;
+    top: 48px;
+    width: 80vw;
+    right: 10px;
   }
 
   .header1 .main-nav2 ul li {
@@ -512,7 +519,12 @@ details[open] summary ~ * {
   color: var(--accent);
   font-size: 1.3em;
 }
-
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
 @media (min-width: 80em) {
   .site-title h1 {
     font-size: var(--hero-title);
@@ -520,12 +532,7 @@ details[open] summary ~ * {
     font-weight: 800;
     text-transform: capitalize;
   }
-  .hero-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: center;
-  }
+  
 }
 /*  =================================== 
     home page content styling
@@ -739,7 +746,10 @@ Food ordering page
 }
 .testimonial-inner-section .card {
   border-radius: 20px;
+  
 }
+
+
 
 
 
@@ -747,8 +757,9 @@ Food ordering page
   max-width: 1400px;
   margin: auto;
   display: grid;
-  gap: 1.5rem;
+  gap: 1rem;
   grid-template-areas:
+  "h"
   "a"
   "b"
   "c"
@@ -786,10 +797,15 @@ Food ordering page
 .testimonial-inner-section article:nth-child(7) {
   grid-area: g;
 }
+/* Paul Dusenbery */
+.testimonial-inner-section article:nth-child(8) {
+  grid-area: h;
+}
 @media (min-width: 50em) {
   .testimonial-inner-section {
     
     grid-template-areas:
+    "h h h h h h"
     "a a a a a a"
     "b b b e e e"
     "c c f f g g"
@@ -800,9 +816,10 @@ Food ordering page
   .testimonial-inner-section {
     
     grid-template-areas:
-    "a a a a b b"
-    "d d c c e e"
-    "d d f f g g"
+    "h h d d a a"
+    "b b d d a a"
+    "e e e e c c"
+    "f f f f g g"
     ;
   }
 }
@@ -831,6 +848,13 @@ Food ordering page
   min-height: 80vh;
   display: grid;
   place-items: center;
+}
+.blog-page-inner h4 {
+  text-align: center;
+  text-transform: capitalize;
+  font-family: var(--title-font);
+  font-weight: 700;
+  letter-spacing: 3px;
 }
 /* posts with images */
 .flex-area {
@@ -1021,8 +1045,6 @@ Food ordering page
 }
 
 .expect-area details p {
-  text-align: center;
-  /* box-shadow: inset 0 0 10px var(--accent); */
   padding: 10px;
   background-color: var(--light-bg);
 }
@@ -1032,13 +1054,18 @@ Food ordering page
 }
 .expect-area details {
   border: 1px solid var(--primary);
+  max-width: 324px;
 }
+
 @media screen and (max-width: 900px) {
   .expect-area {
     max-width: 90%;
     margin: auto;
   }
   .expect-area summary {
+    width: 100%;
+  }
+  .expect-area details {
     width: 100%;
   }
 }
@@ -1217,16 +1244,28 @@ footer {
   right: 0px;
   z-index: 9999;
   outline: none;
-  background-color: var(--primary-lite);
+  background-color: #042147c2;
   padding: 10px 20px 10px 10px;
   border-radius: 50% 0  0 50% ;
   border: 1px solid #fff;
   box-shadow: 2px 2px 5px #000;
+  animation: jump-down 2s ease-in-out;
 }
 #myBtn img {
   width: 40px;
+  
 }
 
 #myBtn:hover {
   background-color: var(--primary);
+}
+
+@keyframes jump-down {
+  0% {
+    transform: translateY(-100vh);
+  }
+  
+  100% {
+    transform: translateY(0);
+  }
 }

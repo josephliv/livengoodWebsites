@@ -2,7 +2,7 @@
 <div class="narrow-section bg my-4">
   <div>
     <p>
-      These are recent sites that I was given the honor to build for previous clients who I work with every month.
+      These are recent sites that I was given the honor to build for previous clients who I work with every month. The images below are from a screenshot and may be different from the website itself due to updates and changes as requested by the client.
     </p>
     <p>
     To view them, click the image and they will display in a pop-up to load the full site without having to leave this site. If you prefer to open it in a new tab, just click the "visit site" link under the description. 

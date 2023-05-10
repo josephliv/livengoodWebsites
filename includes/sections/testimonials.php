@@ -2,7 +2,6 @@
 
   <h3 style="text-shadow: var(--text-shadow); color: var(--primary);">What our clients had to say</h3>
   <main class="testimonial-inner-section">
-
     <article class="card shadow">
       <div class="card-header">
         <h4>
@@ -144,5 +143,25 @@
           </figcaption>
         </figure>
       </div>
+    </article>
+    <article class="card shadow">
+      <div class="card-header">
+        <h4>
+        Paul Dusenbery
+        </h4>
+      </div>
+      <figure class="card-body">
+        <blockquote class="blockquote ">
+          <p>
+          Joe Livengood designed DART's new and enhanced website. DART is a nonprofit organization devoted to violence prevention in workplaces and in relationships
+          </p>
+          <p>
+          His creativity and attention to detail were amazing. I worked closely with Joe throughout the process and rate his efforts as 5-stars.
+          </p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          <cite title="Source Title">https://dartdefense.org/</cite>
+        </figcaption>
+      </figure>
     </article>
   </main>
