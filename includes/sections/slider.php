@@ -36,7 +36,7 @@
             <div class="carousel-caption d-none d-md-block">
                 <h5>Career Coach based in Hawaii</h5>
                 <p>This is the person to go to when you need help in your career.</p>
-                <div class="custom-btn"><a target="_blank" rel="nofollow noopener" href="https://mkdespeconsulting.com/">visit</a></div>
+                <div class="custom-btn"><a target="_blank" rel="nofollow noopener" href="https://marydespe.com/">visit</a></div>
             </div>
         </div>
         <div class="carousel-item">

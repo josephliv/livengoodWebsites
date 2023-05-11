@@ -108,13 +108,13 @@
 
     <div class="portfolio-item custom-section-item">
       <div class="portfolio-item-inner">
-        <img id="despe-img" class="popup-img i" src="assets/imgs/portfolio/despeconsulting.png" alt="https://mkdespeconsulting.com" title="click to view full website in a popup">
+        <img id="despe-img" class="popup-img i" src="assets/imgs/portfolio/despeconsulting.png" alt="https://marydespe.com" title="click to view full website in a popup">
         <h3 class="h">MK Despe Consultant</h3>
         <div class="rt">
           <p>
             Website built on Wordpress. Career coach based in Hawaii.
           </p>
-          <span><a href="https://mkdespeconsulting.com" <?= $externalLinks ?>>
+          <span><a href="https://marydespe.com" <?= $externalLinks ?>>
               visit site
             </a></span>
         </div>
@@ -124,7 +124,7 @@
     <div id="despe-modal" class="modal">
       <span id="despe-close" class="close">&times;</span>
       <div class="modal-content">
-        <iframe id="despe-caption-text" style="width: 90%; margin: auto; height: 90%" src="https://mkdespeconsulting.com" frameborder="0"></iframe>
+        <iframe id="despe-caption-text" style="width: 90%; margin: auto; height: 90%" src="https://marydespe.com" frameborder="0"></iframe>
         
       </div>
     </div>
