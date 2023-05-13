@@ -174,6 +174,10 @@
         case "/Importing-Contacts-from-gmail-to-Thunderbird":
             include 'includes/posts/Importing-Contacts-from-gmail-to-Thunderbird.php';
             break;
+        case "/seo-strategies/":
+        case "/seo-strategies":
+            include 'includes/posts/seo-strategies.php';
+            break; 
             // pages to be redirected to avoid 404's from Google console
         case "/feed/":
         case "/comments/feed/":

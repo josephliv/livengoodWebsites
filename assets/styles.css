@@ -22,7 +22,7 @@
   /* --hero-title: clamp(2.8rem, 4cqw, 3rem); */
   --hero-title: 3rem;
   --title-size: 2.5rem;
-  --text-size: 1.2rem;
+  --text-size: 1.5rem;
   --nav-menu: 1rem;
   /* for other styles */
   --radius: 6px;
@@ -744,20 +744,12 @@ Food ordering page
 .testimonial-inner-section h3 {
   color: var(--accent);
 }
-.testimonial-inner-section .card {
-  border-radius: 20px;
-  
-}
-
-
-
-
 
 .testimonial-inner-section {
   max-width: 1400px;
   margin: auto;
   display: grid;
-  gap: 1rem;
+  gap: .5rem;
   grid-template-areas:
   "h"
   "a"

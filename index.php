@@ -138,6 +138,12 @@ switch ($page) {
         $meta_description = "In this article, I'll walk you through how to export your Google contacts and import them into thunderbird";
         $main_title = "Importing Contacts from gmail to Thunderbird";
         break;
+    case "/seo-strategies/":
+    case "/seo-strategies":
+        $meta_keywords = "Search Engine Optimization, SEO, digital marketing strategy, enhance your website, search engine result pages, SERPs";
+        $main_title = "SEO Secrets";
+        $sub_title = "What you need to know and why it's important for your business success";
+        break;
 // redirects to prevent 404 in Google console
 case "/testimonials":
 case "/testimonials/":

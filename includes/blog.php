@@ -30,6 +30,23 @@
 
 <section id="blog-posts" class="blog-page bg">
     <div class="blog-page-inner">
+    <article class="post-card">
+            <div class="post-card-inner">
+                <div id="h">
+                    <a href="/seo-strategies/">
+                        <h4>SEO strategies you should know about.</h4>
+                    </a>
+                    <hr>
+                </div>
+                <p>Search Engine Optimization (SEO) is one of the most imperative components of any digital marketing strategy, and with good reason. This article explains  </p>
+                <div id="rt">
+                    <em class="blog-date">posted - 5/13/2023</em><br>
+                    <div class="custom-btn">
+                        <a href="/seo-strategies/">read post</a>
+                    </div>
+                </div>
+            </div>
+        </article>
         <article class="post-card">
             <div class="post-card-inner">
                 <div id="h">

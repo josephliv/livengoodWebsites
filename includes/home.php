@@ -76,7 +76,7 @@
       <h4>Targeted seo strategies.</h4>
       
       <p>
-        We use advanced optimization techniques to ensure your website ranks higher on search engines. Our SEO strategies drive organic traffic to your site, bringing in quality leads.
+        We use advanced optimization techniques to ensure your website ranks higher on search engines. Our <a href="/seo-strategies/"> SEO strategies</a> drive organic traffic to your site, bringing in quality leads.
       </p>
       
         <details>
