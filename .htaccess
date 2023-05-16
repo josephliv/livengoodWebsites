@@ -12,3 +12,7 @@ RewriteCond %{THE_REQUEST} /([^.]+).php [NC]
 RewriteRule ^ /%1 [NC,L,R]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^.]+)$ $1.php [NC,L]
+
+RewriteCond %{HTTP_HOST} ^www.livengoodwebsites.com [NC]
+
+RewriteRule ^(.*)$ https://livengoodwebsites.com/$1 [L,R=301]

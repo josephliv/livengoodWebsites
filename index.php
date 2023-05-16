@@ -141,8 +141,8 @@ switch ($page) {
     case "/seo-strategies/":
     case "/seo-strategies":
         $meta_keywords = "Search Engine Optimization, SEO, digital marketing strategy, enhance your website, search engine result pages, SERPs";
-        $main_title = "SEO Secrets";
-        $sub_title = "What you need to know and why it's important for your business success";
+        $main_title = "SEO Strategies";
+        $sub_title = "What you need to know and why it's important for your business success.";
         break;
 // redirects to prevent 404 in Google console
 case "/testimonials":
