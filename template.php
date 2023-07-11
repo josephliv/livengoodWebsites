@@ -27,7 +27,7 @@
         fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1202599500679797&ev=PageView&noscript=1" /></noscript>
-     <!--End Meta Pixel Code -->
+    <!--End Meta Pixel Code -->
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4MSKEW1D4N"></script>
     <script>
@@ -154,6 +154,10 @@
             include 'includes/blog.php';
             break;
             // Blog post pages
+        case "/google-analytics":
+        case "/google-analytics/":
+            include 'includes/posts/Google-Analytics-4.php';
+            break;
         case "/tips-to-rank-on-google":
         case "/tips-to-rank-on-google/":
             include 'includes/posts/tips-to-rank-on-google.php';
@@ -177,7 +181,7 @@
         case "/seo-strategies/":
         case "/seo-strategies":
             include 'includes/posts/seo-strategies.php';
-            break; 
+            break;
             // pages to be redirected to avoid 404's from Google console
         case "/feed/":
         case "/comments/feed/":
@@ -200,7 +204,7 @@
             include 'includes/404.php';
     };
     ?>
- 
+
 
     <!-- =================================
 | The Footer element  |
@@ -225,24 +229,26 @@
             });
         };
     </script>
-  
-    
+
+
     <script <?= $js_path; ?>></script>
 
-   <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/644a9b054247f20fefee22d7/1gv1mr3s8';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-    
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/644a9b054247f20fefee22d7/1gv1mr3s8';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
 
 </body>
 

@@ -109,6 +109,14 @@ switch ($page) {
             $sub_title = "Our innovative solutions that help your business succeed.";
         break;
 // Blog post pages
+        case "/google-analytics":
+        case "/google-analytics/":
+            $meta_keywords = "How to migrate to google analytics 4, google analytics 4, website tracking, realtime tracking";
+            $header_text = "​How to Migrate to Google Analytics 4";
+            $sub_title = "Here's a step-by-step guide to help you.";
+            break;
+
+
     case "/tips-to-rank-on-google":
     case "/tips-to-rank-on-google/":
         $meta_keywords = "seo tips, strategies for google ranking, search engine opitimization";

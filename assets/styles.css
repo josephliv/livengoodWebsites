@@ -155,7 +155,14 @@ section {
   margin: auto;
   text-align: justify;
 }
-
+.narrow-section h3 {
+  margin: 15px auto;
+}
+.narrow-section h4 {
+  text-align: left;
+  font-family: var(--title-font);
+  font-size: var(--title-size);
+}
 .custom-basis {
   flex-basis: 100%;
 }

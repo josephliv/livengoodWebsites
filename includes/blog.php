@@ -33,6 +33,23 @@
     <article class="post-card">
             <div class="post-card-inner">
                 <div id="h">
+                    <a href="/google-analytics">
+                        <h4>​How to Migrate to Google Analytics 4</h4>
+                    </a>
+                    <hr>
+                </div>
+                <p>​If you're currently using Google Analytics and want to migrate to Google Analytics 4, here's a step-by-step guide to help you. </p>
+                <div id="rt">
+                    <em class="blog-date">posted - 6/19/2023</em><br>
+                    <div class="custom-btn">
+                        <a href="/google-analytics">read post</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    <article class="post-card">
+            <div class="post-card-inner">
+                <div id="h">
                     <a href="/seo-strategies/">
                         <h4>SEO strategies you should know about.</h4>
                     </a>
