@@ -33,6 +33,23 @@
     <article class="post-card">
             <div class="post-card-inner">
                 <div id="h">
+                    <a href="/website-maintenance">
+                        <h4>The Importance Of Website Maintenance</h4>
+                    </a>
+                    <hr>
+                </div>
+                <p>Find out why it's important to keep your website secure and up to date in this article and how you can apply it to your website.</p>
+                <div id="rt">
+                    <em class="blog-date">posted - 7/11/2023</em><br>
+                    <div class="custom-btn">
+                        <a href="/website-maintenance">read post</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    <article class="post-card">
+            <div class="post-card-inner">
+                <div id="h">
                     <a href="/google-analytics">
                         <h4>​How to Migrate to Google Analytics 4</h4>
                     </a>

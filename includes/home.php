@@ -11,7 +11,7 @@
   </div>
   </div>
 </section>
-<div class="promo">
+<!-- <div class="promo">
   <div class="promo-inner">
     <div class="close-promo" id="close-promo" onclick="closePromo()">×</div>
     <h3>Get a <strong>FREE</strong> Website analysis!</h3>
@@ -22,7 +22,7 @@
       
     </div>
   </div>
-</div>  
+</div>   -->
 
 <section class="bg">
   <div class="custom-section">

@@ -208,7 +208,71 @@ section {
 .flex-start {
   justify-content: flex-start !important;
 }
+/* promo box */
+@media (min-width: 60em) {
+  /* promotional May box to be fixed only on larger screens */
+.promo {
+  background-color: #d4d4d4cc;
+  box-shadow: var(--shadow);
+  border: 4px outset var(--accent);
+  padding: 24px;
+    max-width: 310px;
+    position: fixed;
+    border-radius: 20px;
+    padding: 18px ;
+    top: 30vh;
+    right: 10px;
+    animation: promo-ele 3.5s ease-in-out;
+}
+.promo-inner {
+  position: relative;
+  border: 1px dashed var(--secondary);
+  border-radius: 20px;
+  background-color: #ccc;
+  box-shadow: 0 0 5px #777;
+}
+.promo-inner p {
+  margin: 0 10px;
+  text-align: center;
+}
+.promo-inner h3 {
+  font-size: 1.5rem;
+  color: var(--light-text-color);
+  background-color: var(--secondary);
+  padding: 5px;
+  border-radius: 20px 20px 0 0;
+}
 
+.close-promo {
+  position: absolute;
+  left: -30px;
+  top: -30px;
+  cursor: pointer;
+  color: var(--accent);
+  text-shadow: var(--shadow);
+  background-color:#cccccccc;
+  border-radius: 50%;
+  padding: 0 10px;
+  border: 1px solid;
+  transition: .3s ease-in-out
+}
+.close-promo:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+@keyframes promo-ele {
+  0% {
+    transform: translateX(50vh);
+  }
+  
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+}
 /* = Updated 11/1/22 = This is for the summary and details tag used in the what to expect and team description */
 details[open] summary ~ * {
   animation: details-ele 0.5s ease-in-out;

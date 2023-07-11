@@ -23,24 +23,24 @@ $social_links = '
  <a href="https://twitter.com/creativejoe101">
      <img class="icon" src="/assets/imgs/icons/png-files/twitter-filled.png" alt="Joseph Livengood on Twitter">
  </a>
-</div>'; 
+</div>';
 // For page rendering
 
 switch ($page) {
     case "/":
         $site_title = "Website Designer & Developer based in Mocksville North Carolina";
-        $header_text = "Your one-stop-shop for all your online business needs.";
+        $header_text = "Welcome to Livengood Websites.";
         $sub_title = "From website building to SEO strategies, you've come to the right place.";
         $main_title = "Secure and Maintain Your Online Presence.";
         $meta_keywords = "website designer near Mocksville, web designer salisbury nc, website developer near me, Salisbury North carolina website designer, SEO services in Mocksville, successful business, business enhancements";
         break;
-    // Google was showing a 404 with this url, the testimonials are on the home page
+        // Google was showing a 404 with this url, the testimonials are on the home page
     case "/testimonials":
         $sub_title = "Customized website designs to meet your requirements within your budget.";
         break;
     case "/meet-joe":
     case "/meet-joe/":
-    // 404 detected from /about so let's add it here
+        // 404 detected from /about so let's add it here
     case "/about":
     case "/about/":
         $site_title = "Meet Joseph Livengood";
@@ -51,8 +51,8 @@ switch ($page) {
         break;
     case "/food-ording-app":
     case "/food-ording-app/":
-        case "/food-app": 
-        case "/food-app/":
+    case "/food-app":
+    case "/food-app/":
         $main_title = "Food Ordering App";
         $header_text = "The New And Improved Order Taking App For 2023.";
         $sub_title = "The Complete online ordering solution";
@@ -60,17 +60,17 @@ switch ($page) {
         $meta_keywords = "best food delivery app, Order Taking App, Restaurant Online ordering app, increase restaurant sales, accept orders online";
         break;
         // a page to display when they request services for restaurants. 
-        case "/request-service":
-        case "/request-service/":
+    case "/request-service":
+    case "/request-service/":
         $main_title = "Request Services & Quote";
         $sub_title = "Please fill out this quick form to better assist you";
         break;
         // a request received page 
-        case "/request-received":
-            case "/request-received/":
-            $main_title = "Your request has been received";
-            $sub_title = "If you are not redirected, please click the button below.";
-            break;
+    case "/request-received":
+    case "/request-received/":
+        $main_title = "Your request has been received";
+        $sub_title = "If you are not redirected, please click the button below.";
+        break;
     case "/portfolio/":
     case "/portfolio":
         $main_title = "Portfolio";
@@ -82,8 +82,8 @@ switch ($page) {
         break;
     case "/blog":
     case "/blog/":
-    case "/feed/":  
-    case "/feed":  
+    case "/feed/":
+    case "/feed":
         $site_title = "Blog";
         $header_text = "Useful information written by Joseph Livengood";
         $main_title = "Blog Page";
@@ -95,32 +95,36 @@ switch ($page) {
         $main_title = "List Building & Lead Generation";
         $sub_title = "Get cheaper, better, and more leads within a few days.";
         break;
-        case "/web-design":
-        case "/web-design/":
-            $meta_keywords = "website design work, responsive websites, livengood websites, website designs near me, websites near Mocksville NC";
-            $main_title = "Elevate Your Online Presence with Livengood Websites";
-            $sub_title = "Get a website tailored to your business goals and optimize its performance.";
+    case "/web-design":
+    case "/web-design/":
+        $meta_keywords = "website design work, responsive websites, livengood websites, website designs near me, websites near Mocksville NC";
+        $main_title = "Elevate Your Online Presence with Livengood Websites";
+        $sub_title = "Get a website tailored to your business goals and optimize its performance.";
         break;
-        case "/business-boosters":
-        case "/business-boosters/":
-            $meta_keywords = "business funding, business capital, payment processor, equipment financing";
-            $meta_description = "These are great business boosters to help you get or save money."; 
-            $main_title = "Give your Business that boost it needs for Growth";
-            $sub_title = "Our innovative solutions that help your business succeed.";
+    case "/business-boosters":
+    case "/business-boosters/":
+        $meta_keywords = "business funding, business capital, payment processor, equipment financing";
+        $meta_description = "These are great business boosters to help you get or save money.";
+        $main_title = "Give your Business that boost it needs for Growth";
+        $sub_title = "Our innovative solutions that help your business succeed.";
         break;
-// Blog post pages
-        case "/google-analytics":
-        case "/google-analytics/":
-            $meta_keywords = "How to migrate to google analytics 4, google analytics 4, website tracking, realtime tracking";
-            $header_text = "​How to Migrate to Google Analytics 4";
-            $sub_title = "Here's a step-by-step guide to help you.";
+        // Blog post pages
+        case "/website-maintenance":
+        case "/website-maintenance/": 
+          $meta_keywords = "website maintenance, the importantance of website maintenance, website security" ;
+          $header_text = "The Importance Of Website Maintenance";
+          $sub_title = "A Comprehensive Guide and Introduction";
             break;
-
-
+    case "/google-analytics":
+    case "/google-analytics/":
+        $meta_keywords = "How to migrate to google analytics 4, google analytics 4, website tracking, realtime tracking";
+        $header_text = "​How to Migrate to Google Analytics 4";
+        $sub_title = "Here's a step-by-step guide to help you.";
+        break;
     case "/tips-to-rank-on-google":
     case "/tips-to-rank-on-google/":
         $meta_keywords = "seo tips, strategies for google ranking, search engine opitimization";
-        $header_text = "3 things your site needs to rank on Google"; 
+        $header_text = "3 things your site needs to rank on Google";
         $sub_title = "If you want to rank on Google or other search engines, you need these.";
         break;
     case "/How-To-Install-WordPress-Plugins/":
@@ -152,12 +156,12 @@ switch ($page) {
         $main_title = "SEO Strategies";
         $sub_title = "What you need to know and why it's important for your business success.";
         break;
-// redirects to prevent 404 in Google console
-case "/testimonials":
-case "/testimonials/":
-    header("Location: /");
-    exit();
-    break;
+        // redirects to prevent 404 in Google console
+    case "/testimonials":
+    case "/testimonials/":
+        header("Location: /");
+        exit();
+        break;
 
 
     case "/feed/":
@@ -170,7 +174,7 @@ case "/testimonials/":
         $main_title = "Get in touch";
         break;
 
-    // Page not found
+        // Page not found
     default:
         $main_title = "404";
         $sub_title = "OOOps that page doesn't exist!";

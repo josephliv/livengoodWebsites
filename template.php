@@ -154,6 +154,10 @@
             include 'includes/blog.php';
             break;
             // Blog post pages
+        case "/website-maintenance":
+        case "/website-maintenance/":
+            include 'includes/posts/website-maintenance.php';
+            break;
         case "/google-analytics":
         case "/google-analytics/":
             include 'includes/posts/Google-Analytics-4.php';
