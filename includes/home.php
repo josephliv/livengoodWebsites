@@ -11,42 +11,43 @@
   </div>
   </div>
 </section>
-<!-- <div class="promo">
+<div class="promo">
   <div class="promo-inner">
-    <div class="close-promo" id="close-promo" onclick="closePromo()">×</div>
+    <div class="close-promo" id="close-promo" onclick="closePromo()">&#10006;</div>
     <h3>Get a <strong>FREE</strong> Website analysis!</h3>
     <p>SEO audit, test website speed and more. <span>100% free</span></p>
     <div class="custom-btn text-center mx-2">
      
-      <script type="text/javascript" defer src="https://form.123formbuilder.com/embed/6306291.js?type=lightbox" data-role="form" data-default-width="750px" data-embed-type="lightbox-text-link" data-embed-text-link="Contact Us For the Details"></script>
+      <!-- form.123formbuilder.com script begins here -->
+<script type="text/javascript" defer src="https://form.123formbuilder.com/embed/6481425.js?type=lightbox" data-role="form" data-default-width="650px" data-embed-type="lightbox-text-link" data-embed-text-link="Get an Analysis"></script>
+<!-- form.123formbuilder.com script ends here -->
       
     </div>
   </div>
-</div>   -->
-
-<section class="bg">
+</div> 
+<div class="page">
+<article class="bg">
   <div class="custom-section">
-    <img loading="lazy" class="img-thumbnail" src="/assets/imgs/website-platforms.jpg" alt="personlized web design">
-    <div>
-      <h4>Personalized web design and maintenance.</h4>
-
+    <img id="img" loading="lazy"  src="/assets/imgs/website-platforms.jpg" alt="personlized web design">
+    
+      <h4 id="title">Personalized web design and maintenance.</h4>
+<div id="disc">
       <p>
         Our website design service provides sleek and modern designs that are optimized for both desktop and mobile devices.
       </p>
     </div>
   </div>
-</section>
-<section>
-  <div class="custom-section">
-    <div class="">
-      <h4>Secure and Maintain Your Online Presence.</h4>
-
+</article>
+<article>
+  <div class="custom-section-reverse">
+    
+      <h4 id="title">Secure and Maintain Your Online Presence.</h4>
+<div id="disc">
       <p>
         Keep your website secure and up-to-date with our reliable and affordable maintenance services.
       </p>
-    </div>
-
-    <div class="expect-area">
+</div>
+    <div id="img" class="expect-area">
       <details>
         <summary title="click to show details">Stay protected.</summary>
         <div>
@@ -81,34 +82,38 @@
       </details>
     </div>
   </div>
-</section>
-<section class="bg" id="seo">
+</article>
+<article class="bg" id="seo">
   <div class="custom-section" style="position: relative;">
-    <div>
-      <h4>Targeted seo strategies.</h4>
-
+    
+      <h4 id="title">Targeted seo strategies.</h4>
+<div id="disc">
       <p>
         We use advanced optimization techniques to ensure your website ranks higher on search engines. Our <a href="/seo-strategies/"> SEO strategies</a> drive organic traffic to your site, bringing in quality leads.
       </p>
       <div class="custom-btn">
-      <script type="text/javascript" defer src="https://form.123formbuilder.com/embed/6306291.js?type=lightbox" data-role="form" data-default-width="750px" data-embed-type="lightbox-text-link" data-embed-text-link="Request A Free Website Analysis"></script>
+      <!-- form.123formbuilder.com script begins here -->
+<script type="text/javascript" defer src="https://form.123formbuilder.com/embed/6481425.js?type=lightbox" data-role="form" data-default-width="650px" data-embed-type="lightbox-text-link" data-embed-text-link="Get an Analysis"></script>
+<!-- form.123formbuilder.com script ends here -->
       </div>
     </div>
-    <img loading="lazy" class="img-thumbnail" src="/assets/imgs/targeted-seo-strategies.jpeg" alt="targeted seo strategies">
+    <img id="img" loading="lazy"  src="/assets/imgs/targeted-seo-strategies.jpeg" alt="targeted seo strategies">
   </div>
-</section>
-<section>
-  <div class="custom-section">
-    <img loading="lazy" class="img-thumbnail" src="/assets/imgs/meature-and-improve.jpeg" alt="Measure And Improve">
-    <div>
-      <h4>Measure And Improve.</h4>
+</article>
+<article>
+  <div class="custom-section-reverse">
+    <img id="img" loading="lazy" src="/assets/imgs/meature-and-improve.jpeg" alt="Measure And Improve">
+    
+      <h4 id="title">Measure And Improve.</h4>
+     <div id="disc"> 
       <p>
         We track and analyze how your website is performing, and suggest ways to improve its performance. You'll receive regular reports that cover everything from traffic analysis to conversion rates.
       </p>
     </div>
 
   </div>
-</section>
+</article>
+</div>
 <section class="gradient" id="reviews">
   <?php include 'includes/sections/testimonials.php'; ?>
 </section>
