@@ -1,7 +1,7 @@
 <section>
   <div class="narrow-section">
     <p>
-    We specialize in providing a range of services that can help streamline and grow your business, no matter what industry you're in. Our services cover all aspects of website design, <a href="/website-maintenance">maintenance</a> and <a href="#seo"> search engine optimization</a> (SEO) to ensure your online presence is top-notch.  </p>
+    We specialize in providing a range of services that can help streamline and grow your business, no matter what industry you're in. Our services cover all aspects of website design, <a href="/site-care">maintenance</a> and <a href="#seo"> search engine optimization</a> (SEO) to ensure your online presence is top-notch.  </p>
     <p>
     We also offer a cutting-edge <a href="/food-app">food ordering app</a> for seamless online ordering and delivery management for your restaurant.
     </p>

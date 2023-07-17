@@ -108,6 +108,11 @@ switch ($page) {
         $main_title = "Give your Business that boost it needs for Growth";
         $sub_title = "Our innovative solutions that help your business succeed.";
         break;
+    case "/site-care":
+    case "/site-care/":
+        $header_text= "Website Maintenance Services";
+        $sub_title = "Keep Your Website in Perfect Shape and Unleash it's true potential!";
+        break;
         // Blog post pages
         case "/website-maintenance":
         case "/website-maintenance/": 

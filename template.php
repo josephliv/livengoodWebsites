@@ -146,6 +146,10 @@
         case "/business-boosters/":
             include 'includes/business-boosters.php';
             break;
+        case "/site-care":
+        case "/site-care/":
+            include 'includes/site-care.php';
+            break;
             //blog page with posts
         case "/blog":
         case "/blog/":

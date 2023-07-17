@@ -13,6 +13,33 @@
 
 <section class="portfolio">
   <div class="portfolio-inner">
+  <?php
+    // ***********************/
+    //  Richard Stroud's website 
+    //************************* */
+    ?>
+
+    <div class="portfolio-item custom-section-item">
+      <div class="portfolio-item-inner">
+        <img id="stroud-img" class="popup-img i" src="assets/imgs/portfolio/stroud.png" alt="https://cohenslaw.com" title="click to view full website in a popup">
+        <h3 class="h">NTier Construction </h3>
+        <div class="rt">
+          <p>
+            Recent site completed using Wordpress and Elementor.
+          </p>
+          <span><a href="https://ntierconstruction.com/" <?= $externalLinks ?>>
+              visit site
+            </a></span>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal -->
+    <div id="stroud-modal" class="modal">
+      <span id="stroud-close" class="close">&times;</span>
+      <div class="modal-content">
+        <iframe style="width: 90%; margin: auto; height: 90%" src="https://ntierconstruction.com" frameborder="0"></iframe>
+      </div>
+    </div>
     <?php
     // ***********************/
     //  Mark Cohen's website 

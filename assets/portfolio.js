@@ -1,5 +1,23 @@
 
 //*********************** */
+// Richard Stroud website 
+//*********************** */
+var stroudModal = document.getElementById("stroud-modal");
+// Get the element that closes the modal
+var stroudClose = document.getElementById("stroud-close");
+ // Get the image and insert it inside the modal - use its "alt" text as a caption
+ var stroudImg = document.getElementById("stroud-img");
+ var stroudModalImg = document.getElementById("stroud-modal-img");
+ 
+ 
+ stroudImg.onclick = function(){
+   stroudModal.style.display = "block";
+ }
+ // When the user clicks on (x), close the modal
+ stroudClose.onclick = function() { 
+ stroudModal.style.display = "none";
+}
+//*********************** */
 // Cohen laws website 
 //*********************** */
  var cohenModal = document.getElementById("cohen-modal");

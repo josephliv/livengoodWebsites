@@ -29,7 +29,7 @@
   --shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.6);
 
   --block-padding: 5px 15px;
-  --section-padding: 1.5rem 20px;
+  --section-padding: 15dvh 20px;
   --gradient: linear-gradient(
     to right top,
     #042147,
@@ -122,31 +122,6 @@ section {
   color: var(--primary);
 }
 
-.custom-section {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: var(--block-padding);
-  justify-content: space-around;
-  align-items: center;
-}
-.custom-section > img {
-  margin: 5px auto;
-  max-width: 400px;
-}
-.custom-section div {
-  max-width: 800px;
-}
-.custom-section h4 {
-  font-size: 1.8em;
-  text-transform: capitalize;
-  text-align: center;
-  border-bottom: 2px solid var(--secondary);
-  display: inline;
-  line-height: 3em;
-}
 .narrow-section {
   display: grid;
   min-height: 200px;
@@ -163,51 +138,135 @@ section {
   font-family: var(--title-font);
   font-size: var(--title-size);
 }
-.custom-basis {
-  flex-basis: 100%;
+/* Grid template to be used for the pages that contain images */
+.page h3 {
+  font-size: 2.3em;
+  font-weight: 600;
 }
-
-.custom-section-item {
-  border: 1px solid var(--accent);
+.page img {
+  border: 5px outset var(--primary);
   border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.page h4 {
+  color: var(--primary);
+  font-size: 1.8em;
+  font-family: var(--title-font);
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.custom-section img,
+.custom-section-reverse img {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.custom-section, 
+.custom-section-reverse {
+      padding: var(--block-padding);
+      margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+    grid-template-areas:
+    "title "
+    "img "
+    "disc "
+      ;
+  }
+  #disc ul {
+      margin-left: 5dvw;
+    }
+  @media (min-width: 800px) {
+    
+    .page h4 {font-size: 2.8em;}
+    .custom-section {
+      align-items: center;
+      gap: 1.5rem;
+      grid-template-areas:
+      "title title title title"
+      "img img disc disc"
+      ;
+    }
+    
+    .custom-section-reverse {
+      display: grid; 
+      max-width: 1300px;
+      gap: 1rem; 
+      grid-template-areas: 
+       "title title title title "
+       "disc disc img img"
+      ;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    
+    .page h4 {text-align: left;}
+      .custom-section {
+        max-width: 1100px;
+        align-items: center;
+      }
+      .custom-section,
+    .custom-section-reverse {
+      padding: var(--section-padding);
+    }
+      .custom-section-reverse {
+        max-width: 1100px;
+        align-items: center;
+        gap: 1rem; 
+        grid-template-areas: 
+         "title  img"
+         "disc  img"
+        ;
+      }
+      .custom-section {
+        max-width: 1100px;
+        align-items: center;
+        gap: 1rem; 
+        grid-template-areas: 
+         "img title"
+         "img disc"
+        ;
+      }
+    }
+ 
+  /* grid parts for the pages that uses them as the main content*/
+  /* ms = main small and ml = main large   */
+ #title {
+  grid-area: title;
+  grid-row: span -1;
+}
+ #disc {grid-area: disc; margin: auto;}
+ #img {grid-area: img;}
+
+ /* site care page hero styling */
+ .site-care-hero {
+  background-image: url("/assets/imgs/site-care-bg.jpeg");
+  background-size: contain; 
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-color: #CDD1D2;
+ }
+ .site-care-hero-inner {
+  max-width: 1200px;
   padding: var(--block-padding);
-  transition: 300ms ease-in-out;
-  background-color: var(--light-bg);
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  height: fit-content;
-}
+  background-color: #CDD1D2cc;
+ }
+ .site-care-hero-inner ul {
+  list-style-type:circle;
+  margin-left: 5%;
+ }
+ @media (min-width: 60em) {
+  .site-care-hero-inner {
+  background-color: #CDD1D2cc;
+  padding: var(--section-padding);
+  background-color: none;
+ }
 
-.custom-section-item img {
-  max-width: 300px;
-  margin: 10px auto;
-}
-.custom-section-item:hover {
-  box-shadow: 0 0 20px #444;
-}
-
-.custom-section-item h3 {
-  margin-bottom: 0.8rem;
-  font-size: 2rem;
-}
-
-@media (min-width: 50em) {
-  .custom-section {
-    max-width: 90em;
-    margin: 5rem auto;
-  }
-
-  /* = Updated 11/1/22 = used in sections that have wider text with an image, on line 111 this turns to 100% for smaller screens */
-  .custom-basis {
-    flex-basis: 70%;
-    align-self: center;
-  }
-}
-/* used when I need for the items to all be at the top and not centered for the custom items */
-.flex-start {
-  justify-content: flex-start !important;
-}
+ }
 /* promo box */
 @media (min-width: 60em) {
   /* promotional May box to be fixed only on larger screens */

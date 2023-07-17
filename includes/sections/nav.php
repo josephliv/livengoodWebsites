@@ -36,6 +36,9 @@
           <li>
             <a class="<?php if ($page == '/business-boosters' || $page == '/business-boosters/') echo 'active-nav'; ?>" href="/business-boosters">Business Boosters</a>
           </li>
+          <li>
+            <a class="<?php if ($page == '/site-care' || $page == '/site-care/') echo 'active-nav'; ?>" href="/site-care">site care</a>
+          </li>
         </ul>
       </li>
       <li>
