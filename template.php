@@ -2,33 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta name="facebook-domain-verification" content="ne1grlqalvy2ruujnxy18jr7zis2nu" />
-    <!-- Meta Pixel Code -->
-    <script>
-        ! function(f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function() {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1202599500679797');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1202599500679797&ev=PageView&noscript=1" /></noscript>
-    <!--End Meta Pixel Code -->
-    <!-- Google tag (gtag.js) -->
+   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4MSKEW1D4N"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -227,17 +201,6 @@
     </a>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        window.fbAsyncInit = function() {
-            FB.init({
-                appId: '635994263246055',
-                autoLogAppEvents: true,
-                xfbml: true,
-                version: 'v9.0'
-            });
-        };
-    </script>
-
 
     <script <?= $js_path; ?>></script>
 <?php 
