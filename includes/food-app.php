@@ -16,7 +16,7 @@
 </section>
 <section class="bg">
   <div class="narrow-section">
-    <h4>If you need it quick, you can count of us.</h4>
+    <h4>If you need it quick, you can count on us.</h4>
     <hr>
     <p>Most online ordering websites and apps can take up to 3 months to complete! </p>
      <h4> We offer a ​quick turnaround. </h4>

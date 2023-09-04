@@ -15,6 +15,34 @@
   <div class="portfolio-inner">
   <?php
     // ***********************/
+    //  The church of the Livengood God's website 
+    //************************* */
+    ?>
+  <div class="portfolio-item custom-section-item">
+      <div class="portfolio-item-inner">
+        <img id="cotlg-img" class="popup-img i" src="assets/imgs/portfolio/cotlg.png" alt="https://cotlgstatesville.com/" title="click to view full website in a popup">
+
+        <h3 class="h">The Church Of The Living God</h3>
+        <div class="rt">
+          <p>
+            Built with live streaming capabilities and more.
+          </p>
+
+          <span><a href="https://cotlgstatesville.com/" <?= $externalLinks ?>>
+              visit site
+            </a></span>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal for  website-->
+    <div id="cotlg-modal" class="modal">
+      <span id="cotlg-close" class="close">&times;</span>
+      <div class="modal-content">
+        <iframe style="width: 90%; margin: auto; height: 90%" src="https://cotlgstatesville.com/" frameborder="0"></iframe>
+      </div>
+    </div>
+  <?php
+    // ***********************/
     //  Richard Stroud's website 
     //************************* */
     ?>
@@ -181,36 +209,6 @@
       <span id="alr-close" class="close">&times;</span>
       <div class="modal-content">
         <iframe style="width: 90%; margin: auto; height: 90%" src="https://liveyoungdierichapparel.store/" frameborder="0"></iframe>
-      </div>
-    </div>
-
-    <?php
-    // ***********************/
-    //  Pam's Grooming and boarding site
-    //************************* */
-    ?>
-
-    <div class="portfolio-item custom-section-item">
-      <div class="portfolio-item-inner">
-        <img id="pam-img" class="popup-img i" src="assets/imgs/portfolio/PamsGrooming.png" alt="https://pamsgrooming.com" title="click to view full website in a popup">
-
-        <h3 class="h">Pam's Grooming and Boarding</h3>
-        <div class="rt">
-          <p>
-            Built on wordpress, Grooming and boarding services.
-          </p>
-
-          <span><a href="https://pamsgrooming.com" <?= $externalLinks ?>>
-              visit site
-            </a></span>
-        </div>
-      </div>
-    </div>
-    <!-- The Modal for alr website-->
-    <div id="pam-modal" class="modal">
-      <span id="pam-close" class="close">&times;</span>
-      <div class="modal-content">
-        <iframe style="width: 90%; margin: auto; height: 90%" src="https://pamsgrooming.com" frameborder="0"></iframe>
       </div>
     </div>
 

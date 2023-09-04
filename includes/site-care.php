@@ -52,7 +52,6 @@
     <img id="img" loading="lazy" src="/assets/imgs/support.jpeg" alt="expert support">
   </div>
 </article>
-<section>
   <div class="narrow-section">
     <h3 class="lead">
       Sign up for worry-free website maintenance.
@@ -66,5 +65,4 @@
       <a <?= $externalLinks; ?> href="https://calendly.com/livengoodwebsites/30min">Schedule a meeting</a>
     </div>
   </div>
-</section>
 </div>

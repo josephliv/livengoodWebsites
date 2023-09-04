@@ -32,8 +32,7 @@
          <h1 class="my-3"><?= $header_text; ?></h1>
          <div class="hero-buttons">
                  <div class="btn btn-outline-dark">
-                     <script type="text/javascript" defer src="https://form.123formbuilder.com/embed/6306291.js?type=lightbox" data-role="form" data-default-width="750px" data-embed-type="lightbox-text-link" 
-                     data-embed-text-link="Get In Touch"></script>
+                     <a <?= $externalLinks; ?> href="https://calendly.com/livengoodwebsites/30min">Book a Call</a>
                  </div>
              <div class="btn btn-outline-dark">
                 <a  href="<?php if($page != '/') echo 'https://livengoodwebsites.com'; ?>/#reviews">Reviews</a>

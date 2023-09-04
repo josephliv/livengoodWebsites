@@ -176,6 +176,7 @@ switch ($page) {
         break;
     case "/contact/":
     case "/contact":
+        $header_text = "We would love to hear from you.";
         $main_title = "Get in touch";
         break;
 

@@ -1,3 +1,21 @@
+//*********************** */
+// The Church of the Living God site 
+//*********************** */
+var cotlgModal = document.getElementById("cotlg-modal");
+// Get the element that closes the modal
+var cotlgClose = document.getElementById("cotlg-close");
+ // Get the image and insert it inside the modal - use its "alt" text as a caption
+ var cotlgImg = document.getElementById("cotlg-img");
+ var cotlgModalImg = document.getElementById("cotlg-modal-img");
+ 
+ 
+ cotlgImg.onclick = function(){
+  cotlgModal.style.display = "block";
+ }
+ // When the user clicks on (x), close the modal
+ cotlgClose.onclick = function() { 
+  cotlgModal.style.display = "none";
+}
 
 //*********************** */
 // Richard Stroud website 
@@ -119,24 +137,7 @@ var alrModal = document.getElementById("alr-modal");
    alrModal.style.display = "none";
  }
 
- /************************************ */
-//  Pams Grooming and boarding website 
-//************************************ */
-var pamModal = document.getElementById("pam-modal");
-// Get the element that closes the modal
- var pamClose = document.getElementById("pam-close");
- // Get the image and insert it inside the modal - use its "alt" text as a caption
- var pamImg = document.getElementById("pam-img");
- var pamModalImg = document.getElementById("pam-modal-img");
- 
- pamImg.onclick = function(){
- pamModal.style.display = "block";
- pamModalImg.src = this.src;
- }
- // When the user clicks on (x), close the modal
- pamClose.onclick = function() { 
-   pamModal.style.display = "none";
- }
+
 
   /************************************ */
 //  the pcp usa website 
