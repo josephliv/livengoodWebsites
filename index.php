@@ -110,16 +110,16 @@ switch ($page) {
         break;
     case "/site-care":
     case "/site-care/":
-        $header_text= "Website Maintenance Services";
+        $header_text = "Website Maintenance Services";
         $sub_title = "Keep Your Website in Perfect Shape and Unleash it's true potential!";
         break;
         // Blog post pages
-        case "/website-maintenance":
-        case "/website-maintenance/": 
-          $meta_keywords = "website maintenance, the importantance of website maintenance, website security" ;
-          $header_text = "The Importance Of Website Maintenance";
-          $sub_title = "A Comprehensive Guide and Introduction";
-            break;
+    case "/website-maintenance":
+    case "/website-maintenance/":
+        $meta_keywords = "website maintenance, the importantance of website maintenance, website security";
+        $header_text = "The Importance Of Website Maintenance";
+        $sub_title = "A Comprehensive Guide and Introduction";
+        break;
     case "/google-analytics":
     case "/google-analytics/":
         $meta_keywords = "How to migrate to google analytics 4, google analytics 4, website tracking, realtime tracking";
@@ -179,7 +179,7 @@ switch ($page) {
         $header_text = "We would love to hear from you.";
         $main_title = "Get in touch";
         break;
-
+    
         // Page not found
     default:
         $main_title = "404";
@@ -187,6 +187,10 @@ switch ($page) {
 };
 if ($page === "/site-map.xml" || $page === "/sitemap_index.xml") {
     include 'site-map.xml';
+    return;
+}
+if ($page === "/login.php") {
+    include 'includes/login.php';
     return;
 }
 include "template.php";
