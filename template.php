@@ -62,7 +62,7 @@
 <?php include 'includes/sections/header.php';  ?>
    <!-- Display the dynamic title and sub title -->
         <div class="title-section">
-             <?php include 'includes/sections/hero.php'; ?>
+             <?php include 'includes/sections/title-section.php'; ?>
          </div>
     <!-- Main content -->
 
