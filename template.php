@@ -59,18 +59,11 @@
     <!-- =================================
       | Top header with logo and nav links and hero |
         ====================================  -->
-
-    <header id="header" class="header lazy" data-src="/assets/imgs/geometric-header.jpg">
-        <?php include 'includes/sections/header.php';  ?>
-
-
-        <!-- =================================
-        | Hero section |
-        ==================================== -->
-        <div id="hero" class="hero">
-            <?php include 'includes/sections/hero.php'; ?>
-        </div>
-    </header>
+<?php include 'includes/sections/header.php';  ?>
+   <!-- Display the dynamic title and sub title -->
+        <div class="title-section">
+             <?php include 'includes/sections/hero.php'; ?>
+         </div>
     <!-- Main content -->
 
     <?php

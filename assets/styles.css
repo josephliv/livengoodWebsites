@@ -399,14 +399,40 @@ details[open] summary ~ * {
 ==================================== */
 
 .header {
-  display: grid;
-  gap: 1rem;
-  background-image: url("/assets/imgs/livengood-websites-bg.jpg");
-  background-attachment: fixed;
+  height: 70vh;
+}
+/* for mobiles - no video */
+@media (max-width: 900px) {
+  .video-background-wrapper {
+     background-image: url('/assets/imgs/livengood-websites-bg.jpg'); 
+    background-size: cover; 
+  }
+}
+.video-background-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff5b;
+  background-blend-mode: difference;
+  border-top: 3px solid var(--primary);
+}
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  transform: translateX(-50%) translateY(-50%);
   background-size: cover;
-  background-color: rgb(221, 215, 215);
-  background-blend-mode: overlay;
-  min-height: 40em;
+  transition: 1s opacity;
+}
+.video-content {
+  position: relative;
+  z-index: 1;
 }
 /* top bar with contact info */
 .top-bar {
@@ -488,22 +514,22 @@ details[open] summary ~ * {
 |-------------Header area For larger screens----------| 
 =====================================*/
 
-.header1 {
+.nav-header {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.header1 .main-nav2 ul {
+.nav-header .main-nav2 ul {
   list-style: none;
 }
 
-.header1 .main-nav2 ul li {
+.nav-header .main-nav2 ul li {
   position: relative;
   float: left;
 }
 
-.header1 .main-nav2 ul li a {
+.nav-header .main-nav2 ul li a {
   font-size: var(--text-size);
   padding: 10px 15px;
   color: var(--light-text-color);
@@ -513,30 +539,30 @@ details[open] summary ~ * {
   margin: 2px;
 }
 
-.header1 .main-nav2 ul li a:hover {
+.nav-header .main-nav2 ul li a:hover {
   background-color: var(--secondary-lt);
 }
 
-.header1 .main-nav2 ul li ul {
+.nav-header .main-nav2 ul li ul {
   position: absolute;
   left: 0;
   width: 250px;
   background: var(--primary-lite);
   display: none;
 }
-.header1 .main-nav2 ul li ul li {
+.nav-header .main-nav2 ul li ul li {
   width: 100%;
   border-top: 1px solid var(--secondary);
 }
-.header1 .main-nav2 ul li:focus-within > ul,
-.header1 .main-nav2 ul li:hover > ul {
+.nav-header .main-nav2 ul li:focus-within > ul,
+.nav-header .main-nav2 ul li:hover > ul {
   display: initial;
   z-index: 999;
 }
 #menu-bar {
   display: none;
 }
-.header1 label {
+.nav-header label {
   font-size: var(--text-size);
   color: var(--primary);
   cursor: pointer;
@@ -559,18 +585,18 @@ details[open] summary ~ * {
     border-radius: 0;
   }
 
-  .header1 {
+  .nav-header {
     position: relative;
   }
   .main-nav2 {
     display: none;
     z-index: 9;
   }
-  .header1 label {
+  .nav-header label {
     display: initial;
     color: var(--secondary);
   }
-  .header1 .main-nav2 {
+  .nav-header .main-nav2 {
     position: absolute;
     background-color: var(--primary-lite);
     top: 48px;
@@ -578,16 +604,16 @@ details[open] summary ~ * {
     right: 10px;
   }
 
-  .header1 .main-nav2 ul li {
+  .nav-header .main-nav2 ul li {
     width: 100%;
     text-align: center;
     border-top: 1px dashed var(--accent);
   }
-  .header1 .main-nav2 ul li ul {
+  .nav-header .main-nav2 ul li ul {
     position: relative;
     width: 100%;
   }
-  .header1 .main-nav2 ul li ul {
+  .nav-header .main-nav2 ul li ul {
     background-color: var(--secondary);
     top: 0;
   }
@@ -613,25 +639,17 @@ details[open] summary ~ * {
       "phone email social"
       "nav nav nav";
   }
-
-  .header {
-    grid-template-rows: auto 3fr auto;
-  }
-
-  .header-section {
-    max-width: 1400px;
-    margin: auto;
-    display: grid;
-    /* grid-template-columns: 1fr 2.8fr; */
-    gap: 5%;
-    align-items: center;
-  }
 }
-
+/* section where the cto actions buttons are and logo */
+ .branding {
+  display: grid;
+  height: 100%;
+  place-items: center;
+ }
 /* =================================== 
-| Hero section |
+| place that holds the title |
 ==================================== */
-.hero {
+.title-section {
   background-color: var(--primary-lite);
   padding: 20px 0;
   min-height: 120px;

@@ -1,6 +1,6 @@
 
 
-<div class="header1">
+<div class="nav-header">
   <input type="checkbox" id="menu-bar">
   <label for="menu-bar">
     <div class="mobile-icon">

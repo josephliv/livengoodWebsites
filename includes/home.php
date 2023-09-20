@@ -11,20 +11,18 @@
   </div>
   </div>
 </section>
-<div class="promo">
+<!-- <div class="promo">
   <div class="promo-inner">
     <div class="close-promo" id="close-promo" onclick="closePromo()">&#10006;</div>
     <h3>Get a <strong>FREE</strong> Website analysis!</h3>
     <p>SEO audit, test website speed and more. <span>100% free</span></p>
     <div class="custom-btn text-center mx-2">
      
-      <!-- form.123formbuilder.com script begins here -->
 <script type="text/javascript" defer src="https://form.123formbuilder.com/embed/6481425.js?type=lightbox" data-role="form" data-default-width="650px" data-embed-type="lightbox-text-link" data-embed-text-link="Get an Analysis"></script>
-<!-- form.123formbuilder.com script ends here -->
-      
+
     </div>
   </div>
-</div> 
+</div>  -->
 <div class="page">
 <article class="bg">
   <div class="custom-section">
