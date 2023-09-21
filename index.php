@@ -1,13 +1,14 @@
 <?php
 $page = $_SERVER['REQUEST_URI'];
-$site_title = "Web Design & SEO Company in North Carolina | Online Food App Development";
+// For title tag <title>goes here</title>
+$title = "Web Design & SEO Company in North Carolina | Online Food App Development";
+// Shows in the hero as the main h1 title
 $main_title = "";
-$header_text = "Everything You Need For A Successful Business.";
-$sub_title = "";
+// displays under the hero/header section
+$intro = "";
 $externalLinks = 'target="_blank" rel="nofollow noopener"';
-$meta_description = "Specializing in web design, SEO, and online food app development, we're North Carolina's trusted digital agency. Turn your vision into reality with our tailored solutions.";
-$meta_keywords = "Joseph Livengood, Website design, Website development, website designer near Mocksville North Carolina";
-$js_path = "";
+$meta_description = "";
+$meta_keywords = "";
 $social_links = '
 <div class="social-links">
 <a href="https://www.facebook.com/joesdigitalservices">
@@ -28,7 +29,7 @@ $social_links = '
 
 switch ($page) {
     case "/":
-        $header_text = "Welcome to Livengood Websites.";
+        $main_title = "Welcome to Livengood Websites.";
         $meta_keywords = "north carolina website design,
         web design companies in north carolina,
         web design company north carolina,
@@ -39,6 +40,7 @@ switch ($page) {
         best search engine optimization company,
         online food ordering app development,
         food ordering app development company";
+        $intro = "North Carolina's Premier Web Design And Development Agency";
         break;
         // Google was showing a 404 with this url, the testimonials are on the home page
     case "/testimonials":
@@ -50,17 +52,26 @@ switch ($page) {
     case "/about":
     case "/about/":
         $site_title = "Meet Joseph Livengood";
-        $main_title = "Meet Joseph Livengood";
-        $header_text = "Innovative website designer, with a passion for helping others succeed. ";
-        $sub_title = "Behind The Scenes And Beyond";
-        $meta_keywords = "Joseph Livengood, Joe Livengood, About Joseph Livengood, Who is Joseph Livengood, who is Joe Livengood, Joe Livengood reviews";
+        $intro = "Meet Joseph Livengood";
+        $sub_title = "Web Design, SEO, and More: Meet Your Personal Developer in North Carolina.";
+        $meta_keywords = "
+        Joe - Web Developer in North Carolina,
+        Independent Web Designer - Joe's Story,
+        Joe's Journey: From Coding Novice to Expert Web Developer,
+        North Carolina's Trusted Web Designer: Get to Know Joe,
+        Meet Joe: Crafting Websites and Digital Solutions in North Carolina,
+        Behind the Code: Joe's Web Design Philosophy,
+        Personalized Web Development: Joe's Approach,
+        Joe: Merging Creativity and Code for Unique Web Solutions,
+        The Man Behind North Carolina's Best Websites,
+        Web Development with a Personal Touch: Dive into Joe's Portfolio";
         break;
     case "/food-ording-app":
     case "/food-ording-app/":
     case "/food-app":
     case "/food-app/":
         $main_title = "Food Ordering App";
-        $header_text = "The New And Improved Order Taking App For 2023.";
+        $intro = "The New And Improved Order Taking App For 2023.";
         $sub_title = "The Complete online ordering solution";
         $site_title = "Food Ordering App | The Complete Online Ordering Solution";
         $meta_keywords = "best food delivery app, Order Taking App, Restaurant Online ordering app, increase restaurant sales, accept orders online";
@@ -91,7 +102,7 @@ switch ($page) {
     case "/feed/":
     case "/feed":
         $site_title = "Blog";
-        $header_text = "Useful information written by Joseph Livengood";
+        $intro = "Useful information written by Joseph Livengood";
         $main_title = "Blog Page";
         $sub_title = "Welcome to my Blog.";
         break;
@@ -116,26 +127,26 @@ switch ($page) {
         break;
     case "/site-care":
     case "/site-care/":
-        $header_text = "Website Maintenance Services";
+        $intro = "Website Maintenance Services";
         $sub_title = "Keep Your Website in Perfect Shape and Unleash it's true potential!";
         break;
         // Blog post pages
     case "/website-maintenance":
     case "/website-maintenance/":
         $meta_keywords = "website maintenance, the importantance of website maintenance, website security";
-        $header_text = "The Importance Of Website Maintenance";
+        $intro = "The Importance Of Website Maintenance";
         $sub_title = "A Comprehensive Guide and Introduction";
         break;
     case "/google-analytics":
     case "/google-analytics/":
         $meta_keywords = "How to migrate to google analytics 4, google analytics 4, website tracking, realtime tracking";
-        $header_text = "​How to Migrate to Google Analytics 4";
+        $intro = "​How to Migrate to Google Analytics 4";
         $sub_title = "Here's a step-by-step guide to help you.";
         break;
     case "/tips-to-rank-on-google":
     case "/tips-to-rank-on-google/":
         $meta_keywords = "seo tips, strategies for google ranking, search engine opitimization";
-        $header_text = "3 things your site needs to rank on Google";
+        $intro = "3 things your site needs to rank on Google";
         $sub_title = "If you want to rank on Google or other search engines, you need these.";
         break;
     case "/How-To-Install-WordPress-Plugins/":
@@ -182,7 +193,7 @@ switch ($page) {
         break;
     case "/contact/":
     case "/contact":
-        $header_text = "We would love to hear from you.";
+        $intro = "We would love to hear from you.";
         $main_title = "Get in touch";
         break;
     

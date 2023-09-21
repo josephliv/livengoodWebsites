@@ -36,7 +36,7 @@
     <link rel="shortcut icon" href="/assets/imgs/favicon.ico">
 
     <title>
-        <?= $site_title; ?> | Livengood Websites
+        <?= $title; ?> | Livengood Websites
     </title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9K3RMVMFJP"></script>
@@ -51,7 +51,7 @@
         gtag('config', 'G-9K3RMVMFJP');
     </script>
     <!-- for the back to top button -->
-    <script src="/assets/toTop.js" defer></script>
+    <script src="/assets/script.js" defer></script>
 </head>
 
 <body>
@@ -62,7 +62,9 @@
 <?php include 'includes/sections/header.php';  ?>
    
     <!-- Main content -->
-
+    <div class="gradient introduction" id="top">
+    <h2><?= $intro; ?></h2>
+    </div>
     <?php
     // For page rendering
     switch ($page) {

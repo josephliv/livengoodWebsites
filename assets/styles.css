@@ -213,7 +213,7 @@ section {
       .custom-section,
       .custom-section-reverse {
         max-width: 1300px;
-        
+        align-items: center;
       }
      
       .custom-section-reverse { 
@@ -393,25 +393,7 @@ details[open] summary ~ * {
   text-decoration: none;
 }
 
-/* ================================= 
-| Top header with logo and nav links |
-==================================== */
-.header {
-  height: 100%;
-}
-@media (min-width: 700px) {
-  .header:with(video) {
-  height: 80vh;
-  position: relative;
-}
-}
 
-/* section where the cto actions buttons are and logo */
-.branding {
-  display: grid;
-  height: 50vh;
-  place-items: center;
- }
 /* =================================== 
 | place that holds the title |
 ==================================== */
@@ -425,20 +407,13 @@ details[open] summary ~ * {
   display: grid;
   place-items: center;
 }
-/* for the first letters on the hero home page only */
 
-.title-first-letter {
-  font-family: var(--title-font);
-  color: var(--accent);
-  font-size: 1.2em;
-  z-index: 0;
-}
 .site-title {
   text-align: center;
 }
 .site-title h1 {
   font-family: var(--title-font);
-  font-size: 2rem;
+  font-size: var(--hero-title);
   color: var(--light-text-color);
 }
 
@@ -470,13 +445,18 @@ details[open] summary ~ * {
   }
 }
 .video-background-wrapper {
+  height: 60vh;
+    overflow: hidden;
+    position: relative;
+}
+/* Styles for the background image on all other pages */
+.image-background-wrapper {
+  height: 400px;
+  background-image: url('/assets/imgs/livengood-websites-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff5b;
-  background-blend-mode: difference;
-  border-top: 3px solid var(--primary);
 }
 video {
   position: absolute;
@@ -490,216 +470,319 @@ video {
   transform: translateX(-50%) translateY(-50%);
   background-size: cover;
   transition: 1s opacity;
-}
+} 
 .video-content {
-  position: relative;
-  z-index: 1;
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
-/* top bar with contact info */
+@media (min-width: 768px ) {
+  .video-content {
+      top: 35px;  
+  }
+}
+
+/* Logo and Navbar styles */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  background-color: #ffffff80;
+  box-shadow: 0 0 15px var(--primary-lite);
+  border-radius: 0 0 18px  18px;
+  margin-bottom: 2%;
+}
+/* Style the title and sub title with cta button */
+.hero-content {
+  text-align: center;
+  margin: 6vw 0;
+  font-size: 0;
+  opacity: 0;
+  animation: fadeIn 0.7s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Start with 0 opacity */
+    /* transform: translateX(-100%); */
+  }
+  100% {
+    opacity: 1; /* End with 100% opacity */
+    /* transform: translateX(0); */
+  }
+}
+.page-bg {
+  background-image: url("/assets/imgs/livengood-websites-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: #25232348;
+  background-blend-mode: overlay;
+}
+.page-bg .hero-content {
+  margin: 80px 0;
+}
+.hero-content h1 {
+  font-size: var(--hero-title);
+  font-family: var(--title-font);
+  
+}
+.page-text-shadow {
+  text-shadow: 0 0 20px orangered;
+}
+.home-text-shadow {
+  text-shadow: 0 0 20px #e6dddd;
+}
+.hero-content h2 {
+  font-size: var(--title-size);
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-family: var(--text-font);
+  text-shadow: 0 0 25px #fff;
+}
+@media (min-width: 700px) {
+  .page-bg {
+    background-size: cover;
+    background-position: center;
+    height: 400px !important;
+  }
+ 
+
+  .page-bg .hero-content {
+    margin: 10px 0;
+    
+  }
+}
+
+.cta-button {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--text-color);
+  font-size: 24px;
+  border: 2px solid var(--text-color);
+  padding: 14px 70px;
+  border-radius: 50px;
+  margin: 20px auto;
+  text-align: center;
+  transition: 0.3s ease-in;
+  background-color: var(--accent);
+  box-shadow: inset 0 0 15px #000;
+}
+
+
+.cta-button:hover {
+  background-color: var(--mobile-bg-color);
+}
+
+/* logo and menu items */
+.logo-container img {
+  width: 200px;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-menu li {
+  margin: 0 20px;
+}
+
+.nav-menu a {
+  color: var(--primary);
+  text-decoration: none;
+  font-size: var(--nav-menu);
+  font-weight: bold;
+  transition: 0.5s ease-in-out;
+  text-transform: capitalize;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
+}
+
+.nav-menu a:hover {
+  border-color: var(--primary);
+}
+.nav-menu .active-nav {
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+/* Style the dropdown menu */
+.dropdown > .dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  transition: 200ms ease-in-out;
+  background-color: var(--primary-lite);
+  border: 0 3px 3px 3px;
+  border-style: outset;
+  border-color: var(--secondary);
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  animation: about-dropdown 600ms ease-out;
+  white-space: nowrap;
+}
+
+.dropdown-menu li {
+  padding: 5px 10px;
+}
+
+/* Background color for the dropdown menu on hover */
+.nav-menu li:hover .dropdown-menu {
+  display: block;
+  /* background-color: #fff;  */
+}
+
+.dropdown-menu a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  color: var(--accent);
+}
+@keyframes about-dropdown {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* top bar with phone, social and email */
+.top-bar > div {
+  min-width: 200px;
+}
 .top-bar {
   padding: var(--block-padding);
-  background-color: var(--primary-lite);
-  border-bottom: 1px dotted var(--accent);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .top-bar a {
   color: var(--light-text-color);
 }
-.top-bar a:hover {
-  color: var(--accent);
-}
-/* defining the parts in top bar */
-.phone {
-  grid-area: phone;
-}
-.email {
-  grid-area: email;
-}
-.social-links {
-  grid-area: social;
-}
-#nav {
-  grid-area: nav;
-}
-
-.top-bar-inner {
-  display: grid;
-  gap: 1rem;
-  align-items: center;
-  text-align: center;
-  color: var(--accent);
-  padding: 1.2em 5px;
-  grid-template-areas:
-    "phone phone phone"
-    "email email email"
-    "social social social"
-    "nav nav nav";
-}
 .social-links {
   display: flex;
   gap: 1rem;
-  justify-content: center;
 }
-.top-bar-inner img {
-  height: 20px;
-  display: inline-block;
+.social-links img, 
+.top-bar img {
+  display: inline;
+  width: 20px;
 }
-.social-links img {
-  padding: 5px;
-  height: 30px;
-  background-color: #ffffffab;
-  box-shadow: 5px 5px 5px rgb(100, 100, 100);
-  border-radius: 4px;
-  transition: 0.3s ease-in-out;
-}
-.social-links img:hover {
-  background-color: var(--accent);
-  box-shadow: 0 0 12px rgb(100, 100, 100);
-}
-
-.brand {
-  display: grid;
-  align-items: center;
-}
-.brand img {
-  max-width: 320px;
-  margin: 5px auto;
+/* Mobile menu button */
+.mobile-menu-button {
+  display: none;
+  background-color: var(--primary);
+  color: var(--light-text-color);
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
 }
 
-.mobile-icon img {
-  margin: 0 auto;
-  width: 40px;
-  height: 40px;
+/* Mobile menu sidebar */
+.mobile-menu-sidebar {
+  /* display: none; */
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  box-shadow: var(--shadow);
+  top: 0;
+  left: -260px;
+  overflow-x: hidden;
+  transition: left 0.3s;
+  background-color: #fff;
+  z-index: 99;
+  padding: var(--block-padding);
 }
-
-/* =======================================
-|-------------nav items----------| 
-=====================================*/
-
-.nav-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.nav-header .main-nav2 ul {
+.sidebar-menu li {
   list-style: none;
 }
-
-.nav-header .main-nav2 ul li {
-  position: relative;
-  float: left;
+/* Show the mobile menu button and sidebar on smaller screens */
+.mobile-menu-sidebar.is-active {
+  left: 0; /* Show the sidebar when active */
+  background-color: var(--primary-lite);
 }
 
-.nav-header .main-nav2 ul li a {
-  font-size: var(--text-size);
-  padding: 10px 15px;
-  color: var(--light-text-color);
-  display: block;
-  transition: 300ms ease-in-out;
-  text-transform: uppercase;
-  margin: 2px;
-}
 
-.nav-header .main-nav2 ul li a:hover {
-  background-color: var(--secondary-lt);
-}
-
-.nav-header .main-nav2 ul li ul {
-  position: absolute;
-  left: 0;
-  width: 250px;
-  background: var(--primary-lite);
-  display: none;
-}
-.nav-header .main-nav2 ul li ul li {
-  width: 100%;
-  border-top: 1px solid var(--secondary);
-}
-.nav-header .main-nav2 ul li:focus-within > ul,
-.nav-header .main-nav2 ul li:hover > ul {
-  display: initial;
-  z-index: 999;
-}
-#menu-bar {
-  display: none;
-}
-.nav-header label {
-  font-size: var(--text-size);
-  color: var(--primary);
-  cursor: pointer;
-  display: none;
-}
-.active-nav {
-  background-color: var(--secondary);
-  border-radius: var(--radius);
-}
-
-@media (max-width: 55em) {
-  .top-bar-inner {
-    display: grid;
-    grid-template-areas:
-      "phone phone social"
-      "email email nav";
+@media screen and (max-width: 780px) {
+  #video-background {
+    height: 60vh;
+    overflow: hidden;
+    object-fit: fill;
+    z-index: -1;
   }
-
-  .active-nav {
-    border-radius: 0;
+  .dark-bg {
+    background-color: #11111177;
+    z-index: -1;
   }
-
-  .nav-header {
-    position: relative;
-  }
-  .main-nav2 {
-    display: none;
-    z-index: 9;
-  }
-  .nav-header label {
-    display: initial;
-    color: var(--secondary);
-  }
-  .nav-header .main-nav2 {
-    position: absolute;
-    background-color: var(--primary-lite);
-    top: 48px;
-    width: 80vw;
-    right: 10px;
-  }
-
-  .nav-header .main-nav2 ul li {
-    width: 100%;
+  .logo-container {
     text-align: center;
-    border-top: 1px dashed var(--accent);
-  }
-  .nav-header .main-nav2 ul li ul {
-    position: relative;
     width: 100%;
   }
-  .nav-header .main-nav2 ul li ul {
-    background-color: var(--secondary);
-    top: 0;
-  }
-  #menu-bar:checked ~ .main-nav2 {
-    display: initial;
-  }
-}
-@media (min-width: 900px) {
-  .brand img {
+
+  .logo-container img {
+    width: 250px;
     margin: 0 auto;
   }
-  .top-bar-inner {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.3fr 1fr;
-    align-items: center;
-    min-height: 100%;
-    max-width: 1300px;
-    margin: auto;
-    text-align: center;
-    padding: 10px;
-    grid-template-areas:
-      "phone email social"
-      "nav nav nav";
+  .mobile-menu-button {
+    display: block;
   }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .mobile-menu-sidebar {
+    display: block; /* Show the mobile menu sidebar on small screens */
+    padding-top: 80px;
+  }
+
+  .mobile-menu-sidebar a {
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: #fff; /* Change to your desired text color */
+    display: block;
+    transition: background-color 0.3s;
+  }
+
+  .mobile-menu-sidebar a:hover {
+    background-color: var(--primary);
+    color: #fff; /* Change to hover text color */
+  }
+}
+
+.introduction {
+  min-height: 200px;
+  display: grid;
+  place-items: center;
+}
+.introduction h2 {
+  font-size: var(--hero-title);
+  color: var(--primary);
+  text-shadow: 2px 2px 15px #777;
+  display: inline-block;
+  opacity: 0;
+  animation: growAndAppear 1.5s forwards;
+animation-delay: 1s;
 }
 
 /*  =================================== 

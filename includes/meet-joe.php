@@ -1,16 +1,14 @@
-<section>
+<div class="bg">
     <div class="narrow-section">
         <div>
             <p>
-                My name is Joseph Livengood, and on this page will take you through a brief history of how things started and a little about me.
-            </p>
-
-            <p>
-                Feel free to ask me anything you would like to know more about. Thanks for reading and I hope you enjoy
-                it.
+            Hello, I'm Joe, a dedicated Web Developer right here in North Carolina. My journey began as a coding novice back in 2015 (more about that below), fueled by passion and curiosity. </p>
+            <p>Today, I stand proud as North Carolina's trusted web designer, known for merging creativity with code to deliver unique web solutions. My philosophy is simple: design with purpose, build with integrity. </p>
+             <p>   From the intricate details behind the code to the broader strokes of web design, my approach is always personalized. Dive into my <a href="/portfolio">portfolio</a>, and you'll see the essence of my work - web development with a personal touch. Welcome to my story, let's begin the journey.
             </p>
         </div>
     </div>
+   </div> 
 
     <!-- main section 1 -->
     <div class="page">
@@ -109,9 +107,11 @@
             <img id="img" loading="lazy" src="/assets/imgs/joe-with-code.webp" alt="website development and designer">     
             </div>
         </article>
+     </div>   
+     <div class="bg">
         <div class="narrow-section">
             <p>
                 I enjoy connecting with people and I am open to interesting work offers from clients in North Carolina and nation-wide, so send me a quick email and we can take it from there.
             </p>
         </div>
-    </div>
+        </div>
