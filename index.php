@@ -1,11 +1,11 @@
 <?php
 $page = $_SERVER['REQUEST_URI'];
-$site_title = "Joseph Livengood | Website Designs";
+$site_title = "Web Design & SEO Company in North Carolina | Online Food App Development";
 $main_title = "";
 $header_text = "Everything You Need For A Successful Business.";
 $sub_title = "";
 $externalLinks = 'target="_blank" rel="nofollow noopener"';
-$meta_description = "Web Design and other onine based work";
+$meta_description = "Specializing in web design, SEO, and online food app development, we're North Carolina's trusted digital agency. Turn your vision into reality with our tailored solutions.";
 $meta_keywords = "Joseph Livengood, Website design, Website development, website designer near Mocksville North Carolina";
 $js_path = "";
 $social_links = '
@@ -28,11 +28,17 @@ $social_links = '
 
 switch ($page) {
     case "/":
-        $site_title = "Website Designer & Developer based in Mocksville North Carolina";
         $header_text = "Welcome to Livengood Websites.";
-        $sub_title = "From website building to SEO strategies, you've come to the right place.";
-        $main_title = "Secure and Maintain Your Online Presence.";
-        $meta_keywords = "website designer near Mocksville, web designer salisbury nc, website developer near me, Salisbury North carolina website designer, SEO services in Mocksville, successful business, business enhancements";
+        $meta_keywords = "north carolina website design,
+        web design companies in north carolina,
+        web design company north carolina,
+        web development in north carolina,
+        website hosting and maintenance services,
+        seo company north carolina,
+        search optimisation agency,
+        best search engine optimization company,
+        online food ordering app development,
+        food ordering app development company";
         break;
         // Google was showing a 404 with this url, the testimonials are on the home page
     case "/testimonials":

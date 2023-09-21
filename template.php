@@ -60,10 +60,7 @@
       | Top header with logo and nav links and hero |
         ====================================  -->
 <?php include 'includes/sections/header.php';  ?>
-   <!-- Display the dynamic title and sub title -->
-        <div class="title-section">
-             <?php include 'includes/sections/title-section.php'; ?>
-         </div>
+   
     <!-- Main content -->
 
     <?php

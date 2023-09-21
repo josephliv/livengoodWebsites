@@ -5,10 +5,16 @@
 
             <?php if ($page == "/" || $page == "/testimonials") {
                     echo '<div class="main-title">
-                    <span class="title-first-letter">G</span>oing
-                    <span class="title-first-letter">B</span>eyond
-                    <span class="title-first-letter">Y</span>our
-                    <span class="title-first-letter">E</span>xpectations
+                    <span class="title-first-letter">N</span>orth 
+<span class="title-first-letter">C</span>arolina\'s 
+<span class="title-first-letter">P</span>remier 
+<span class="title-first-letter">W</span>eb 
+<span class="title-first-letter">D</span>esign 
+<span class="title-first-letter">a</span>nd 
+<span class="title-first-letter">D</span>evelopment 
+<span class="title-first-letter">A</span>gency
+
+                    
                     '; 
             } else echo $main_title; 
                     ?>

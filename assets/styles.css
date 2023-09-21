@@ -29,7 +29,7 @@
   --shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.6);
 
   --block-padding: 5px 15px;
-  --section-padding: 15dvh 20px;
+  --section-padding: 5dvh 20px;
   --gradient: linear-gradient(
     to right top,
     #042147,
@@ -129,6 +129,7 @@ section {
   max-width: 900px;
   margin: auto;
   text-align: justify;
+  padding: var(--section-padding);
 }
 .narrow-section h3 {
   margin: 15px auto;
@@ -184,7 +185,7 @@ section {
     .page h4 {font-size: 2.8em;}
     .custom-section,
     .custom-section-reverse {
-      padding: 2em 20px;
+      padding: var(--section-padding);
     }
     .custom-section {
       align-items: center;
@@ -209,15 +210,13 @@ section {
   @media (min-width: 1200px) {
     
     .page h4 {text-align: left;}
-      .custom-section {
-        max-width: 1100px;
-        align-items: center;
+      .custom-section,
+      .custom-section-reverse {
+        max-width: 1300px;
+        
       }
      
-      .custom-section-reverse {
-        max-width: 1100px;
-        align-items: center;
-        gap: 1rem; 
+      .custom-section-reverse { 
         grid-template-areas: 
          "title  img"
          "disc  img"
@@ -397,9 +396,71 @@ details[open] summary ~ * {
 /* ================================= 
 | Top header with logo and nav links |
 ==================================== */
-
 .header {
-  height: 70vh;
+  height: 100%;
+}
+@media (min-width: 700px) {
+  .header:with(video) {
+  height: 80vh;
+  position: relative;
+}
+}
+
+/* section where the cto actions buttons are and logo */
+.branding {
+  display: grid;
+  height: 50vh;
+  place-items: center;
+ }
+/* =================================== 
+| place that holds the title |
+==================================== */
+.title-section {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--primary-lite);
+  padding: 20px 0;
+  min-height: 120px;
+  display: grid;
+  place-items: center;
+}
+/* for the first letters on the hero home page only */
+
+.title-first-letter {
+  font-family: var(--title-font);
+  color: var(--accent);
+  font-size: 1.2em;
+  z-index: 0;
+}
+.site-title {
+  text-align: center;
+}
+.site-title h1 {
+  font-family: var(--title-font);
+  font-size: 2rem;
+  color: var(--light-text-color);
+}
+
+.home-sub-title {
+  font-family: var(--text-font);
+  color: var(--accent);
+  font-size: 1.3em;
+}
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+@media (min-width: 80em) {
+  .site-title h1 {
+    font-size: var(--hero-title);
+    text-align: center;
+    font-weight: 800;
+    text-transform: capitalize;
+  }
+  
 }
 /* for mobiles - no video */
 @media (max-width: 900px) {
@@ -511,7 +572,7 @@ video {
 }
 
 /* =======================================
-|-------------Header area For larger screens----------| 
+|-------------nav items----------| 
 =====================================*/
 
 .nav-header {
@@ -640,59 +701,7 @@ video {
       "nav nav nav";
   }
 }
-/* section where the cto actions buttons are and logo */
- .branding {
-  display: grid;
-  height: 100%;
-  place-items: center;
- }
-/* =================================== 
-| place that holds the title |
-==================================== */
-.title-section {
-  background-color: var(--primary-lite);
-  padding: 20px 0;
-  min-height: 120px;
-  display: grid;
-  place-items: center;
-}
-/* for the first letters on the hero home page only */
 
-.title-first-letter {
-  font-family: var(--title-font);
-  color: var(--accent);
-  font-size: 1.2em;
-  z-index: 0;
-}
-.site-title {
-  text-align: center;
-}
-.site-title h1 {
-  font-family: var(--title-font);
-  font-size: 2rem;
-  color: var(--light-text-color);
-}
-
-.home-sub-title {
-  font-family: var(--text-font);
-  color: var(--accent);
-  font-size: 1.3em;
-}
-.hero-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: center;
-  }
-@media (min-width: 80em) {
-  .site-title h1 {
-    font-size: var(--hero-title);
-    text-align: center;
-    font-weight: 800;
-    text-transform: capitalize;
-  }
-  
-}
 /*  =================================== 
     home page content styling
 =================================== */
@@ -903,7 +912,9 @@ Food ordering page
 .testimonial-inner-section h3 {
   color: var(--accent);
 }
-
+.testimonial-inner-section p {
+  font-size: .9rem;
+}
 .testimonial-inner-section {
   max-width: 1400px;
   margin: auto;
@@ -967,10 +978,10 @@ Food ordering page
   .testimonial-inner-section {
     
     grid-template-areas:
-    "h h d d a a"
-    "b b d d a a"
-    "e e e e c c"
-    "f f f f g g"
+    "h h d d d a"
+    "b b b e e a"
+    "f f g g c a"
+  
     ;
   }
 }
@@ -981,7 +992,7 @@ Food ordering page
 }
 .content p {
   text-align: justify;
-  font-size: 1rem;
+  font-size: .9rem;
   font-style: italic;
 }
 .content p img {
@@ -1442,7 +1453,7 @@ footer {
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 20em;
+  bottom: 10em;
   right: 0px;
   z-index: 9999;
   outline: none;
@@ -1451,7 +1462,8 @@ footer {
   border-radius: 50% 0  0 50% ;
   border: 1px solid #fff;
   box-shadow: 2px 2px 5px #000;
-  animation: jump-down 2s ease-in-out;
+  opacity: 0;
+  animation: appear-in 2s ease-in-out forwards;
 }
 #myBtn img {
   width: 30px;
@@ -1464,12 +1476,12 @@ footer {
 
 
 
-@keyframes jump-down {
+@keyframes appear-in {
   0% {
-    transform: translateY(-100vh);
+    opacity: 0;
   }
   
   100% {
-    transform: translateY(0);
+    opacity: 1;
   }
 }

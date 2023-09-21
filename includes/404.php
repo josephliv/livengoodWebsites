@@ -10,7 +10,7 @@
                 <a href="/portfolio">Portfolio</a>
                 <a href="/food-app">Food App</a>
                 <a href="/web-design">Web Design</a>
-                <a href="/chat-bot">Chat Bot</a>
+                <a href="/site-care">Site Care</a>
                 <a href="/business-boosters">Business</a>
                 <script type="text/javascript" defer src="https://form.123formbuilder.com/embed/6306291.js?type=lightbox" data-role="form" data-default-width="650px" data-embed-type="lightbox-text-link" data-embed-text-link="Contact us"></script>
         </div>

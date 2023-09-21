@@ -1,16 +1,12 @@
-<section>
+
   <div class="narrow-section">
     <p>
-    We specialize in providing a range of services that can help streamline and grow your business, no matter what industry you're in. Our services cover all aspects of website design, <a href="/site-care">maintenance</a> and <a href="#seo"> search engine optimization</a> (SEO) to ensure your online presence is top-notch.  </p>
-    <p>
-    We also offer a cutting-edge <a href="/food-app">food ordering app</a> for seamless online ordering and delivery management for your restaurant.
+    Welcome to North Carolina's one-stop solution for standout website design and development. Unlike typical web design companies in North Carolina, I offer a personal touch, ensuring every project aligns perfectly with your vision.
     </p>
     <p>
-    Plus, we can assist you with funding options to support your <a href="/business-boosters">business growth</a>. Contact us today to see how we can help take your business to the next level.
-    </p>
+    As an independent expert in web development in North Carolina, my services span from bespoke websites to specialized online <a href="/food-app">food ordering</a>  app development. My reputation is built on delivering quality, be it as a web design company in North Carolina and nation-wide or when providing top-tier website hosting and <a href="/site-care"> maintenance services.</a> </p>
+    
   </div>
-  </div>
-</section>
 <!-- <div class="promo">
   <div class="promo-inner">
     <div class="close-promo" id="close-promo" onclick="closePromo()">&#10006;</div>
@@ -87,13 +83,8 @@
       <h4 id="title">Targeted seo strategies.</h4>
 <div id="disc">
       <p>
-        We use advanced optimization techniques to ensure your website ranks higher on search engines. Our <a href="/seo-strategies/"> SEO strategies</a> drive organic traffic to your site, bringing in quality leads.
+      SEO is crucial in today's digital landscape, and as your dedicated SEO company in North Carolina, I'm committed to optimizing your online presence. My search optimization agency approach ensures you're not just another website online but a prominent player in search results. We will working together using the best <a href="/seo-strategies/"> SEO strategies</a> to drive organic traffic to your site, bringing in quality leads.
       </p>
-      <div class="custom-btn">
-      <!-- form.123formbuilder.com script begins here -->
-<script type="text/javascript" defer src="https://form.123formbuilder.com/embed/6481425.js?type=lightbox" data-role="form" data-default-width="650px" data-embed-type="lightbox-text-link" data-embed-text-link="Get an Analysis"></script>
-<!-- form.123formbuilder.com script ends here -->
-      </div>
     </div>
     <img id="img" loading="lazy"  src="/assets/imgs/targeted-seo-strategies.jpeg" alt="targeted seo strategies">
   </div>
