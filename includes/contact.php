@@ -13,7 +13,7 @@
 
     <div class="col-md-4 col-12">
 <p>Call me @ <a href="tel:17042759705"> 1 (704) 275-9705</a> or send an email to <a href="mailto:joe@joes.business"> joe@joes.business.</a></p>
-      <p>If you rather schedule an appointment, please <a href="/">click here</a></p>
+      <p>If you rather schedule an appointment, please <a <?= $externalLinks; ?> href="https://calendly.com/livengoodwebsites/30min">click here</a></p>
     
     </div>
   </div>

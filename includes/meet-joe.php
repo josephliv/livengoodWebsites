@@ -111,7 +111,7 @@
      <div class="bg">
         <div class="narrow-section">
             <p>
-                I enjoy connecting with people and I am open to interesting work offers from clients in North Carolina and nation-wide, so send me a quick email and we can take it from there.
+            I thrive on connecting with others and am eager to explore intriguing work opportunities from clients both in North Carolina and nationwide. Feel free to shoot me a <a href="/contact">quick message</a> anytime; I'm excited to get started on your project.
             </p>
         </div>
         </div>

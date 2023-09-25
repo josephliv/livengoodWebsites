@@ -12,17 +12,17 @@ $meta_keywords = "";
 $social_links = '
 <div class="social-links">
 <a href="https://www.facebook.com/joesdigitalservices">
-     <img class="icon" src="/assets/imgs/icons/png-files/facebook-filled.png" alt="Joseph Livengood on facebook">
+     <img class="icon" src="/assets/imgs/icons/png-files/facebook-filled.png" alt="Joseph Livengood on facebook" title="Facebook Page">
  </a>
 
  <a href="https://www.linkedin.com/in/joseph-livengood-a403b7130/">
-     <img class="icon" src="/assets/imgs/icons/png-files/linkedin-original.png" alt="Joseph Livengood on LinkedIn">
+     <img class="icon" src="/assets/imgs/icons/png-files/linkedin-original.png" alt="Joseph Livengood on LinkedIn" title="LinkedIn">
  </a>
  <a href="https://www.youtube.com/channel/UCAgEWX1qEHetRThckh8GZGw">
-     <img class="icon" src="/assets/imgs/icons/png-files/youtube.png" alt="Joseph Livengood on Youtube">
+     <img class="icon" src="/assets/imgs/icons/png-files/youtube.png" alt="Joseph Livengood on Youtube" title="Youtube">
  </a>
  <a href="https://twitter.com/creativejoe101">
-     <img class="icon" src="/assets/imgs/icons/png-files/twitter-filled.png" alt="Joseph Livengood on Twitter">
+     <img class="icon" src="/assets/imgs/icons/png-files/twitter-filled.png" alt="Joseph Livengood on Twitter" title="Twitter">
  </a>
 </div>';
 // For page rendering
@@ -30,8 +30,9 @@ $social_links = '
 switch ($page) {
     case "/":
     case "/index":
-        $site_title = "Web Design & SEO Company in North Carolina";      
+        $site_title = "Top website designs & SEO Company in North Carolina | Boost Your Rankings";      
         $main_title = "Welcome to Livengood Websites.";
+        $meta_description = "Boost your online presence with the leading SEO company in North Carolina. Our expert team delivers results-driven SEO services for businesses of all sizes.";
         $meta_keywords = "north carolina website design,
         web design companies in north carolina,
         web design company north carolina,

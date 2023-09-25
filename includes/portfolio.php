@@ -1,5 +1,5 @@
 <section class="bg">
-<div class="narrow-section bg my-4">
+<div class="narrow-section bg py-4">
   <div>
     <p>
       These are recent sites that I was given the honor to build for previous clients who I work with every month. The images below are from a screenshot and may be different from the website itself due to updates and changes as requested by the client.
@@ -18,6 +18,22 @@
     //  The church of the Livengood God's website 
     //************************* */
     ?>
+     <div class="portfolio-item custom-section-item">
+      <div class="portfolio-item-inner">
+        <img id="action-img" class="popup-img i" src="assets/imgs/portfolio/action-industrial.png" alt="https://actionindsupply.com/" title="click to view full website in a popup">
+
+        <h3 class="h">action industrial supply</h3>
+        <div class="rt">
+          <p>
+          Your Trusted Supply Partner
+          </p>
+
+          <span><a href="https://actionindsupply.com/" <?= $externalLinks ?>>
+              visit site
+            </a></span>
+        </div>
+      </div>
+    </div>
   <div class="portfolio-item custom-section-item">
       <div class="portfolio-item-inner">
         <img id="cotlg-img" class="popup-img i" src="assets/imgs/portfolio/cotlg.png" alt="https://cotlgstatesville.com/" title="click to view full website in a popup">
@@ -28,9 +44,9 @@
             Built with live streaming capabilities and more.
           </p>
 
-          <span><a href="https://cotlgstatesville.com/" <?= $externalLinks ?>>
+          <!-- <span><a href="https://cotlgstatesville.com/" <?= $externalLinks ?>>
               visit site
-            </a></span>
+            </a></span> -->
         </div>
       </div>
     </div>

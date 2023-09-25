@@ -91,7 +91,7 @@
   </div>
 </article>
 </div>
-<section class="testimonial-area gradient" id="reviews">
+<section class="testimonial-area bg p-4" id="reviews">
   <?php include 'includes/sections/testimonials.php'; ?>
 </section>
 <script>
