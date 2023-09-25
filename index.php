@@ -1,7 +1,7 @@
 <?php
 $page = $_SERVER['REQUEST_URI'];
 // For title tag <title>goes here</title>
-$title = "Web Design & SEO Company in North Carolina | Online Food App Development";
+$site_title = "Web Design & SEO Company in North Carolina";
 // Shows in the hero as the main h1 title
 $main_title = "";
 // displays under the hero/header section
@@ -29,6 +29,8 @@ $social_links = '
 
 switch ($page) {
     case "/":
+    case "/index":
+        $site_title = "Web Design & SEO Company in North Carolina";      
         $main_title = "Welcome to Livengood Websites.";
         $meta_keywords = "north carolina website design,
         web design companies in north carolina,
@@ -40,20 +42,18 @@ switch ($page) {
         best search engine optimization company,
         online food ordering app development,
         food ordering app development company";
-        $intro = "North Carolina's Premier Web Design And Development Agency";
+        $intro = "Your Trusted Web Development and Design Specialist in North Carolina";
         break;
         // Google was showing a 404 with this url, the testimonials are on the home page
-    case "/testimonials":
-        $sub_title = "Customized website designs to meet your requirements within your budget.";
-        break;
+
     case "/meet-joe":
     case "/meet-joe/":
         // 404 detected from /about so let's add it here
     case "/about":
     case "/about/":
         $site_title = "Meet Joseph Livengood";
-        $intro = "Meet Joseph Livengood";
-        $sub_title = "Web Design, SEO, and More: Meet Your Personal Developer in North Carolina.";
+        $main_title = "Meet Joseph Livengood";
+        $intro = "Independent Web Designer - Joe's Story";
         $meta_keywords = "
         Joe - Web Developer in North Carolina,
         Independent Web Designer - Joe's Story,
@@ -66,32 +66,32 @@ switch ($page) {
         The Man Behind North Carolina's Best Websites,
         Web Development with a Personal Touch: Dive into Joe's Portfolio";
         break;
-    case "/food-ording-app":
-    case "/food-ording-app/":
+    case "/online-food-ordering-app-development":
+    case "/online-food-ordering-app-development/":
     case "/food-app":
     case "/food-app/":
-        $main_title = "Food Ordering App";
-        $intro = "The New And Improved Order Taking App For 2023.";
-        $sub_title = "The Complete online ordering solution";
-        $site_title = "Food Ordering App | The Complete Online Ordering Solution";
-        $meta_keywords = "best food delivery app, Order Taking App, Restaurant Online ordering app, increase restaurant sales, accept orders online";
+        $main_title = "Expert Food Ordering website Development Company";
+        $intro = "Custom Online Food Ordering website Development Solutions";
+        $site_title = "Food Ordering website | The Complete Online Ordering Solution";
+        $meta_description = "As a leading food ordering website development company in North Carolina, Livengood Websites offers bespoke online food ordering website development services to cater to the needs of restaurants and food delivery startups.";
+        $meta_keywords = "best food delivery website, Order Taking website, Restaurant Online ordering website, increase restaurant sales, accept orders online";
         break;
         // a page to display when they request services for restaurants. 
     case "/request-service":
     case "/request-service/":
         $main_title = "Request Services & Quote";
-        $sub_title = "Please fill out this quick form to better assist you";
+        $intro = "Please fill out this quick form to better assist you";
         break;
         // a request received page 
     case "/request-received":
     case "/request-received/":
         $main_title = "Your request has been received";
-        $sub_title = "If you are not redirected, please click the button below.";
+        $intro = "If you are not redirected, please click the button below.";
         break;
     case "/portfolio/":
     case "/portfolio":
         $main_title = "Portfolio";
-        $sub_title = "Recent sites built that are currently being managed by Livengood Websites";
+        $intro = "Recent sites built that are currently being managed by Livengood Websites";
         $site_title = "Portfolio";
         $meta_description = "Sites built and maintained by Livengood Websites";
         $meta_keywords = "Joseph's portfolio, Joseph's previous work, website portfolio, Joseph Livengood reviews";
@@ -102,63 +102,84 @@ switch ($page) {
     case "/feed/":
     case "/feed":
         $site_title = "Blog";
-        $intro = "Useful information written by Joseph Livengood";
         $main_title = "Blog Page";
-        $sub_title = "Welcome to my Blog.";
+        $intro = "Welcome to my Blog.";
         break;
     case "/chat-bot":
     case "/chat-bot/":
         $meta_keywords = "list building, facebook messenger, Google Ads, leads, lead generation, auto messenger";
         $main_title = "List Building & Lead Generation";
-        $sub_title = "Get cheaper, better, and more leads within a few days.";
+        $intro = "Get cheaper, better, and more leads within a few days.";
         break;
     case "/web-design":
     case "/web-design/":
         $meta_keywords = "website design work, responsive websites, livengood websites, website designs near me, websites near Mocksville NC";
         $main_title = "Elevate Your Online Presence with Livengood Websites";
-        $sub_title = "Get a website tailored to your business goals and optimize its performance.";
+        $intro = "Get a website tailored to your business goals and optimize its performance.";
         break;
     case "/business-boosters":
     case "/business-boosters/":
         $meta_keywords = "business funding, business capital, payment processor, equipment financing";
         $meta_description = "These are great business boosters to help you get or save money.";
         $main_title = "Give your Business that boost it needs for Growth";
-        $sub_title = "Our innovative solutions that help your business succeed.";
+        $intro = "Our innovative solutions that help your business succeed.";
         break;
     case "/site-care":
     case "/site-care/":
-        $intro = "Website Maintenance Services";
-        $sub_title = "Keep Your Website in Perfect Shape and Unleash it's true potential!";
+        $main_title = "Our Website Maintenance Services";
+        $meta_keywords = "
+        Website maintenance,
+        Regular updates,
+        Site security,
+        Optimal performance,
+        Uptime monitoring,
+        Backup solutions,
+        Site longevity,
+        User experience,
+        Reliable website,
+        Downtime,
+        Vulnerabilities,
+        Website health,
+        CMS updates,
+        Plugin updates,
+        SEO rankings,
+        User trust,
+        Technical glitches,
+        Software compatibility,
+        Data breaches,
+        Maintenance plan
+        ";
+        $intro = "Keep Your Website in Perfect Shape and Unleash it's true potential!";
         break;
         // Blog post pages
     case "/website-maintenance":
     case "/website-maintenance/":
         $meta_keywords = "website maintenance, the importantance of website maintenance, website security";
-        $intro = "The Importance Of Website Maintenance";
-        $sub_title = "A Comprehensive Guide and Introduction";
+        $main_title = "Website Maintenance";
+        $intro =  "Why It's Crucial for Your Digital Success";
         break;
     case "/google-analytics":
     case "/google-analytics/":
         $meta_keywords = "How to migrate to google analytics 4, google analytics 4, website tracking, realtime tracking";
         $intro = "​How to Migrate to Google Analytics 4";
-        $sub_title = "Here's a step-by-step guide to help you.";
         break;
     case "/tips-to-rank-on-google":
     case "/tips-to-rank-on-google/":
         $meta_keywords = "seo tips, strategies for google ranking, search engine opitimization";
         $intro = "3 things your site needs to rank on Google";
-        $sub_title = "If you want to rank on Google or other search engines, you need these.";
         break;
     case "/How-To-Install-WordPress-Plugins/":
         $meta_keywords = "Wordpress plugins, vsftpd, FTP daemon, how to install plugin localhost, Linux OS, localhost";
         $meta_description = "Wordpress Plugins can be installed while running locally on a computer by enabling vsftpd, I explain step by step on how to do this";
         $main_title = "How To Install WordPress Plugins On A Local Machine";
+        $intro = "Use this with apache server";
         break;
     case "/How-To-Fix-Skype-White-Screen/":
     case "/How-To-Fix-Skype-White-Screen":
         $meta_keywords = "Skype white screen, Skype won't start, white screen with skype, skype only showing white screen";
         $meta_description = "Ever started skype and no matter what you did, you still got that white screen? Here's the solution...";
         $main_title = "How To Fix the white screen issue with Skype";
+        $intro = "For Linux users";
         break;
     case "/How-To-Move-A-Wordpress-Site/":
     case "/How-To-Move-A-Wordpress-Site":
@@ -171,12 +192,13 @@ switch ($page) {
         $meta_keywords = "gmail contacts, Thunderbird, How to import contacts to thunderbird, Gmail contacts to thunderbird, export contacts, inport contacts, gmail contacts, Google contacts, Thunderbird mail client";
         $meta_description = "In this article, I'll walk you through how to export your Google contacts and import them into thunderbird";
         $main_title = "Importing Contacts from gmail to Thunderbird";
+        $intro = "This also works with other mail clients such as Outlook.";
         break;
     case "/seo-strategies/":
     case "/seo-strategies":
         $meta_keywords = "Search Engine Optimization, SEO, digital marketing strategy, enhance your website, search engine result pages, SERPs";
         $main_title = "SEO Strategies";
-        $sub_title = "What you need to know and why it's important for your business success.";
+        $intro = "What you need to know and why it's important for your business success.";
         break;
         // redirects to prevent 404 in Google console
     case "/testimonials":
@@ -184,30 +206,25 @@ switch ($page) {
         header("Location: /");
         exit();
         break;
-
-
     case "/feed/":
     case "/comments/feed/":
         $main_title = "That page has been moved here to my blog page";
-        $sub_title = "Maybe you can find what you are looking for below";
+        $intro = "Maybe you can find what you are looking for below";
         break;
     case "/contact/":
     case "/contact":
         $intro = "We would love to hear from you.";
         $main_title = "Get in touch";
         break;
-    
+
         // Page not found
     default:
         $main_title = "404";
-        $sub_title = "OOOps that page doesn't exist!";
+        $intro = "OOOps that page doesn't exist!";
 };
 if ($page === "/site-map.xml" || $page === "/sitemap_index.xml") {
     include 'site-map.xml';
     return;
 }
-if ($page === "/login.php") {
-    include 'includes/login.php';
-    return;
-}
+
 include "template.php";

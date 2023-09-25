@@ -11,8 +11,8 @@
             <h3>Get in touch</h3>
             <div class="footer-contact-inner">
                 <div class="phone">
-                    <a href="tel:13369411203">
-                        <img src="/assets/imgs/icons/png-files/phone.png" alt="Phone: ">&nbsp; 1 (336) 941-1203</a>
+                    <a href="tel:17042759705">
+                        <img src="/assets/imgs/icons/png-files/phone.png" alt="Phone: ">&nbsp; 1 (704) 275-9705</a>
                 </div>
                 <div class="email">
                     <a href="mailto:joe@joes.business">

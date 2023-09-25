@@ -30,7 +30,7 @@
 
 <section id="blog-posts" class="blog-page bg">
     <div class="blog-page-inner">
-    <article class="post-card">
+    <div class="post-card">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/website-maintenance">
@@ -46,8 +46,8 @@
                     </div>
                 </div>
             </div>
-        </article>
-    <article class="post-card">
+        </div>
+    <div class="post-card">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/google-analytics">
@@ -63,8 +63,8 @@
                     </div>
                 </div>
             </div>
-        </article>
-    <article class="post-card">
+        </div>
+    <div class="post-card">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/seo-strategies/">
@@ -80,8 +80,8 @@
                     </div>
                 </div>
             </div>
-        </article>
-        <article class="post-card">
+        </div>
+        <div class="post-card">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/tips-to-rank-on-google/">
@@ -99,8 +99,8 @@
                     </div>
                 </div>
             </div>
-        </article>
-        <article class="post-card">
+        </div>
+        <div class="post-card">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/How-To-Install-WordPress-Plugins/">
@@ -118,9 +118,9 @@
                     </div>
                 </div>
             </div>
-        </article>
+        </div>
 
-        <article class="post-card">
+        <div class="post-card">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/How-To-Fix-Skype-White-Screen/">
@@ -137,9 +137,9 @@
                     </div>
                 </div>
             </div>
-        </article>
+        </div>
 
-        <article class="post-card">
+        <div class="post-card">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/How-To-Move-A-Wordpress-Site/">
@@ -155,9 +155,9 @@
                     </div>
                 </div>
             </div>
-        </article>
+        </div>
 
-        <article class="post-card">
+        <div class="post-card">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/Importing-Contacts-from-gmail-to-Thunderbird/">
@@ -174,6 +174,6 @@
                     </div>
                 </div>
             </div>
-        </article>
+        </div>
     </div>
 </section>

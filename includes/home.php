@@ -7,18 +7,6 @@
     As an independent expert in web development in North Carolina, my services span from bespoke websites to specialized online <a href="/food-app">food ordering</a>  app development. My reputation is built on delivering quality, be it as a web design company in North Carolina and nation-wide or when providing top-tier website hosting and <a href="/site-care"> maintenance services.</a> </p>
     
   </div>
-<!-- <div class="promo">
-  <div class="promo-inner">
-    <div class="close-promo" id="close-promo" onclick="closePromo()">&#10006;</div>
-    <h3>Get a <strong>FREE</strong> Website analysis!</h3>
-    <p>SEO audit, test website speed and more. <span>100% free</span></p>
-    <div class="custom-btn text-center mx-2">
-     
-<script type="text/javascript" defer src="https://form.123formbuilder.com/embed/6481425.js?type=lightbox" data-role="form" data-default-width="650px" data-embed-type="lightbox-text-link" data-embed-text-link="Get an Analysis"></script>
-
-    </div>
-  </div>
-</div>  -->
 <div class="page">
 <article class="bg">
   <div class="custom-section">
@@ -103,7 +91,7 @@
   </div>
 </article>
 </div>
-<section class="gradient" id="reviews">
+<section class="testimonial-area gradient" id="reviews">
   <?php include 'includes/sections/testimonials.php'; ?>
 </section>
 <script>

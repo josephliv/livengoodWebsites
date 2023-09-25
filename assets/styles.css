@@ -15,13 +15,11 @@
 
   /* fonts */
   --title-font: "Gruppo", cursive;
-  --logo-font: "Great Vibes", cursive;
   --text-font: "Poppins", sans-serif;
   --text-shadow: 0 0 5px var(--secondary);
   /* font sizes */
-  /* --hero-title: clamp(2.8rem, 4cqw, 3rem); */
-  --hero-title: 3rem;
-  --title-size: 2.5rem;
+  --hero-title: clamp(2.5rem, 4cqw, 4rem);
+  --title-size: clamp(1.8rem, 3cqw, 2.5rem);
   --text-size: 1.5rem;
   --nav-menu: 1rem;
   /* for other styles */
@@ -31,7 +29,15 @@
   --block-padding: 5px 15px;
   --section-padding: 5dvh 20px;
   --gradient: linear-gradient(
-    to right top,
+    to top,
+    #042147,
+    #134d65,
+    #4f797c,
+    #90a39a,
+    #cdcfca
+  );
+  --gradient-reverse: linear-gradient(
+    to bottom,
     #042147,
     #134d65,
     #4f797c,
@@ -41,6 +47,9 @@
 }
 .gradient {
   background-image: var(--gradient);
+}
+.gradient-reverse {
+  background-image: var(--gradient-reverse);
 }
 strong {
   font-weight: 700;
@@ -89,28 +98,22 @@ details summary > * {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: var(--title-font);
-  font-size: var(--title-size);
   letter-spacing: 0.3rem;
-  text-align: center;
   font-weight: 600;
   text-transform: capitalize;
-  color: var(--primary);
-  text-shadow: var(--text-shadow);
+  text-align: center;
 }
-h2 {
-  font-style: italic;
-}
+
 
 hr {
   max-width: 300px;
   margin: 1.5rem auto;
   border-bottom: 2px dotted var(--secondary);
 }
-section {
-  padding: var(--block-padding);
-}
+
 @media (min-width: 30em) {
   section {
     padding: var(--section-padding);
@@ -131,14 +134,8 @@ section {
   text-align: justify;
   padding: var(--section-padding);
 }
-.narrow-section h3 {
-  margin: 15px auto;
-}
-.narrow-section h4 {
-  text-align: left;
-  font-family: var(--title-font);
-  font-size: var(--title-size);
-}
+
+
 /* Grid template to be used for the pages that contain images */
 .page h3 {
   font-size: 2.3em;
@@ -410,6 +407,9 @@ details[open] summary ~ * {
 
 .site-title {
   text-align: center;
+  padding: var(--block-padding);
+  max-width: 1200px;
+  margin: auto;
 }
 .site-title h1 {
   font-family: var(--title-font);
@@ -440,23 +440,24 @@ details[open] summary ~ * {
 /* for mobiles - no video */
 @media (max-width: 900px) {
   .video-background-wrapper {
-     background-image: url('/assets/imgs/livengood-websites-bg.jpg'); 
+     background-image: url('/assets/imgs/monitor.webp'); 
     background-size: cover; 
   }
 }
 .video-background-wrapper {
-  height: 60vh;
+  height: 80vh;
     overflow: hidden;
     position: relative;
 }
 /* Styles for the background image on all other pages */
 .image-background-wrapper {
-  height: 400px;
-  background-image: url('/assets/imgs/livengood-websites-bg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  position: relative;
+  min-height: 70vh;
+    background-image: url(/assets/imgs/monitor.webp);
+    background-size: cover;
+    background-color: #00000080;
+    background-blend-mode: overlay;
+    background-position: center center;
+    position: relative;
 }
 video {
   position: absolute;
@@ -476,25 +477,22 @@ video {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-}
-@media (min-width: 768px ) {
-  .video-content {
-      top: 35px;  
-  }
 }
 
+
 /* Logo and Navbar styles */
-.hero {
+.logo-nav-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  position: relative;
-  background-color: #ffffff80;
-  box-shadow: 0 0 15px var(--primary-lite);
-  border-radius: 0 0 18px  18px;
-  margin-bottom: 2%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    background-color: #ffffffcc;
+    box-shadow: 0 0 15px var(--primary-lite);
+    border: 1px solid var(--primary);
+    border-radius: 0 0 18px 18px;
+    margin-bottom: 2%;
+    z-index: 99;
 }
 /* Style the title and sub title with cta button */
 .hero-content {
@@ -529,7 +527,6 @@ video {
 .hero-content h1 {
   font-size: var(--hero-title);
   font-family: var(--title-font);
-  
 }
 .page-text-shadow {
   text-shadow: 0 0 20px orangered;
@@ -537,13 +534,7 @@ video {
 .home-text-shadow {
   text-shadow: 0 0 20px #e6dddd;
 }
-.hero-content h2 {
-  font-size: var(--title-size);
-  margin-bottom: 30px;
-  font-weight: bold;
-  font-family: var(--text-font);
-  text-shadow: 0 0 25px #fff;
-}
+
 @media (min-width: 700px) {
   .page-bg {
     background-size: cover;
@@ -561,7 +552,7 @@ video {
 .cta-button {
   text-decoration: none;
   display: inline-block;
-  color: var(--text-color);
+  color: var(--primary);
   font-size: 24px;
   border: 2px solid var(--text-color);
   padding: 14px 70px;
@@ -569,13 +560,14 @@ video {
   margin: 20px auto;
   text-align: center;
   transition: 0.3s ease-in;
-  background-color: var(--accent);
+  background-color: var(--light-bg);
   box-shadow: inset 0 0 15px #000;
 }
 
 
 .cta-button:hover {
-  background-color: var(--mobile-bg-color);
+background-color: var(--accent);
+color: var(--text-color);
 }
 
 /* logo and menu items */
@@ -662,11 +654,11 @@ video {
   min-width: 200px;
 }
 .top-bar {
-  padding: var(--block-padding);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+  padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .top-bar a {
   color: var(--light-text-color);
@@ -772,19 +764,29 @@ video {
 
 .introduction {
   min-height: 200px;
+  
   display: grid;
   place-items: center;
 }
 .introduction h2 {
-  font-size: var(--hero-title);
-  color: var(--primary);
-  text-shadow: 2px 2px 15px #777;
-  display: inline-block;
+  font-size: var(--title-size);
+  max-width: 90%;
+  margin: auto;
+  color: var(--light-text-color);
+  text-shadow: 2px 2px 15px var(--primary);
+  font-style: italic;
+  max-width: 600px;
+  text-align: center;
   opacity: 0;
-  animation: growAndAppear 1.5s forwards;
+  animation: fadeIn 1.5s forwards;
 animation-delay: 1s;
 }
+@media (min-width: 600px) {
+  .introduction h2 {
+    max-width: 900px; 
 
+  }
+}
 /*  =================================== 
     home page content styling
 =================================== */
@@ -1324,47 +1326,10 @@ Contact form
   background-position: right center; 
   background-color: #f7f9fe62;
   background-blend-mode: overlay;
-  min-height: 40em; 
+  min-height: 90vh; 
   display: grid;
   place-items: center;
 }
-.contact-form {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  box-shadow: inset 0 0 15px #333;
-  border-radius: 8px;
-  background-color: #4f797ccc;
-}
-
-
-
-.contact-form label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-  width: 100%;
-  padding: 5px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-
-.contact-form input[type="submit"] {
-  background-color: var(--primary);
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-
-
 
 /* ================================= 
     | The 404 page  |

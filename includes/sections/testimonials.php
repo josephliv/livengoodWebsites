@@ -1,6 +1,6 @@
 
 
-  <h3 style="text-shadow: var(--text-shadow); color: var(--primary);">What our clients had to say</h3>
+  <h3>What our clients had to say</h3>
   <main class="testimonial-inner-section">
     <article class="card shadow">
       <div class="card-header">

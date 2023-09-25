@@ -62,14 +62,16 @@
 <?php include 'includes/sections/header.php';  ?>
    
     <!-- Main content -->
-    <div class="gradient introduction" id="top">
+    <div class="page-content">
+    <div class="gradient-reverse introduction" id="top">
     <h2><?= $intro; ?></h2>
     </div>
     <?php
     // For page rendering
     switch ($page) {
             // Home Page
-        case "/";
+        case "/":
+            case "/index":
             include 'includes/home.php';
             break;
             //Meet Joe page
@@ -80,8 +82,8 @@
         case "/about/":
             include 'includes/meet-joe.php';
             break;
-        case "/food-ording-app/":
-        case "/food-ording-app":
+        case "/online-food-ordering-app-development/":
+        case "/online-food-ordering-app-development":
         case "/food-app":
         case "/food-app/":
             include 'includes/food-app.php';
@@ -179,7 +181,7 @@
     };
     ?>
 
-
+</div>
     <!-- =================================
 | The Footer element  |
 ==================================== -->
