@@ -9,20 +9,22 @@ $intro = "";
 $externalLinks = 'target="_blank" rel="nofollow noopener"';
 $meta_description = "";
 $meta_keywords = "";
+// to pull in the background image for pages when needed.
+$hero_bg_class = "monitor-bg";
 $social_links = '
 <div class="social-links">
 <a href="https://www.facebook.com/joesdigitalservices">
-     <img class="icon" src="/assets/imgs/icons/png-files/facebook-filled.png" alt="Joseph Livengood on facebook" title="Facebook Page">
+     <img width="30" class="icon" src="/assets/imgs/icons/png-files/facebook-filled.png" alt="Joseph Livengood on facebook" title="Facebook Page">
  </a>
 
  <a href="https://www.linkedin.com/in/joseph-livengood-a403b7130/">
-     <img class="icon" src="/assets/imgs/icons/png-files/linkedin-original.png" alt="Joseph Livengood on LinkedIn" title="LinkedIn">
+     <img width="30" class="icon" src="/assets/imgs/icons/png-files/linkedin-original.png" alt="Joseph Livengood on LinkedIn" title="LinkedIn">
  </a>
  <a href="https://www.youtube.com/channel/UCAgEWX1qEHetRThckh8GZGw">
-     <img class="icon" src="/assets/imgs/icons/png-files/youtube.png" alt="Joseph Livengood on Youtube" title="Youtube">
+     <img width="30" class="icon" src="/assets/imgs/icons/png-files/youtube.png" alt="Joseph Livengood on Youtube" title="Youtube">
  </a>
  <a href="https://twitter.com/creativejoe101">
-     <img class="icon" src="/assets/imgs/icons/png-files/twitter-filled.png" alt="Joseph Livengood on Twitter" title="Twitter">
+     <img width="30" class="icon" src="/assets/imgs/icons/png-files/twitter-filled.png" alt="Joseph Livengood on Twitter" title="Twitter">
  </a>
 </div>';
 // For page rendering
@@ -66,6 +68,7 @@ switch ($page) {
         Joe: Merging Creativity and Code for Unique Web Solutions,
         The Man Behind North Carolina's Best Websites,
         Web Development with a Personal Touch: Dive into Joe's Portfolio";
+
         break;
     case "/online-food-ordering-app-development":
     case "/online-food-ordering-app-development/":
@@ -76,6 +79,7 @@ switch ($page) {
         $site_title = "Food Ordering website | The Complete Online Ordering Solution";
         $meta_description = "As a leading food ordering website development company in North Carolina, Livengood Websites offers bespoke online food ordering website development services to cater to the needs of restaurants and food delivery startups.";
         $meta_keywords = "best food delivery website, Order Taking website, Restaurant Online ordering website, increase restaurant sales, accept orders online";
+        $hero_bg_class = "food-bg";
         break;
         // a page to display when they request services for restaurants. 
     case "/request-service":
@@ -97,6 +101,7 @@ switch ($page) {
         $meta_description = "Sites built and maintained by Livengood Websites";
         $meta_keywords = "Joseph's portfolio, Joseph's previous work, website portfolio, Joseph Livengood reviews";
         $js_path = 'src="/assets/portfolio.js"';
+        $hero_bg_class = "portfolio-bg";
         break;
     case "/blog":
     case "/blog/":
@@ -105,6 +110,7 @@ switch ($page) {
         $site_title = "Blog";
         $main_title = "Blog Page";
         $intro = "Welcome to my Blog.";
+        $hero_bg_class = "blog-bg";
         break;
     case "/chat-bot":
     case "/chat-bot/":
@@ -114,9 +120,14 @@ switch ($page) {
         break;
     case "/web-design":
     case "/web-design/":
-        $meta_keywords = "website design work, responsive websites, livengood websites, website designs near me, websites near Mocksville NC";
-        $main_title = "Elevate Your Online Presence with Livengood Websites";
-        $intro = "Get a website tailored to your business goals and optimize its performance.";
+        $meta_keywords = "north carolina website design,
+        web design companies in north carolina,
+        web design company north carolina,
+        web development in north carolina,
+        website hosting and maintenance services";
+        $main_title = "North Carolina Website Design";
+        $intro = "Elevate Your Online Presence";
+        $hero_bg_class = "web-design";
         break;
     case "/business-boosters":
     case "/business-boosters/":
@@ -124,9 +135,10 @@ switch ($page) {
         $meta_description = "These are great business boosters to help you get or save money.";
         $main_title = "Give your Business that boost it needs for Growth";
         $intro = "Our innovative solutions that help your business succeed.";
+        $hero_bg_class = "business-bg";
         break;
-    case "/site-care":
-    case "/site-care/":
+    case "/website-maintenance-services":
+    case "/website-maintenance-services/":
         $main_title = "Our Website Maintenance Services";
         $meta_keywords = "
         Website maintenance,
@@ -151,6 +163,7 @@ switch ($page) {
         Maintenance plan
         ";
         $intro = "Keep Your Website in Perfect Shape and Unleash it's true potential!";
+        $hero_bg_class = "site-care-bg";
         break;
         // Blog post pages
     case "/website-maintenance":
@@ -216,12 +229,14 @@ switch ($page) {
     case "/contact":
         $intro = "We would love to hear from you.";
         $main_title = "Get in touch";
+        $hero_bg_class = "contact-bg";
         break;
 
         // Page not found
     default:
         $main_title = "404";
         $intro = "OOOps that page doesn't exist!";
+        $hero_bg_class = "pageError";
 };
 if ($page === "/site-map.xml" || $page === "/sitemap_index.xml") {
     include 'site-map.xml';

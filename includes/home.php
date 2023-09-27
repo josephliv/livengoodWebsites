@@ -4,7 +4,7 @@
     Welcome to North Carolina's one-stop solution for standout website design and development. Unlike typical web design companies in North Carolina, I offer a personal touch, ensuring every project aligns perfectly with your vision.
     </p>
     <p>
-    As an independent expert in web development in North Carolina, my services span from bespoke websites to specialized online <a href="/food-app">food ordering</a>  app development. My reputation is built on delivering quality, be it as a web design company in North Carolina and nation-wide or when providing top-tier website hosting and <a href="/site-care"> maintenance services.</a> </p>
+    As an independent expert in web development in North Carolina, my services span from bespoke websites to specialized online <a href="/food-app">food ordering</a>  app development. My reputation is built on delivering quality, be it as a web design company in North Carolina and nation-wide or when providing top-tier website hosting and <a href="/website-maintenance-services"> maintenance services.</a> </p>
     
   </div>
 <div class="page">

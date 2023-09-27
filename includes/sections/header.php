@@ -7,7 +7,7 @@
       </video>
     </div>
   <?php else : ?>
-    <div class="image-background-wrapper"></div>
+    <div class="img-background <?= $hero_bg_class; ?>"></div>
   <?php endif; ?>
 
   <div class="video-content">
@@ -16,11 +16,11 @@
     <div class="top-bar gradient d-none d-md-flex">
       <div class="phone">
         <a href="tel:17042759705">
-          <img src="/assets/imgs/icons/png-files/phone.png" alt="Phone: ">&nbsp; 1 (704) 275-9705</a>
+          <img width="30" src="/assets/imgs/icons/png-files/phone.png" alt="Phone: ">&nbsp; 1 (704) 275-9705</a>
       </div>
       <div class="email">
         <a href="mailto:joe@joes.business">
-          <img src="/assets/imgs/icons/png-files/envelope.png" alt="Email: ">&nbsp;
+          <img width="30" src="/assets/imgs/icons/png-files/envelope.png" alt="Email: ">&nbsp;
           joe@joes.business</a>
       </div>
       <!-- Social Links -->
@@ -46,7 +46,10 @@
                 <a class="<?php if ($page == '/business-boosters' || $page == '/business-boosters/') echo 'active-nav'; ?>" href="/business-boosters">Business Boosters</a>
               </li>
               <li>
-                <a class="<?php if ($page == '/site-care' || $page == '/site-care/') echo 'active-nav'; ?>" href="/site-care">site care</a>
+                <a class="<?php if ($page == '/website-maintenance-services' || $page == '/website-maintenance-services/') echo 'active-nav'; ?>" href="/website-maintenance-services">site care</a>
+              </li>
+              <li>
+                <a class="<?php if ($page == '/web-design' || $page == '/web-design/') echo 'active-nav'; ?>" href="/web-design">web design</a>
               </li>
             </ul>
           </li>
@@ -84,7 +87,7 @@
             <a class="<?php if ($page == '/business-boosters' || $page == '/business-boosters/') echo 'active-nav'; ?>" href="/business-boosters">Business Boosters</a>
           </li>
           <li>
-            <a class="<?php if ($page == '/site-care' || $page == '/site-care/') echo 'active-nav'; ?>" href="/site-care">site care</a>
+            <a class="<?php if ($page == '/website-maintenance-services' || $page == '/website-maintenance-services/') echo 'active-nav'; ?>" href="/website-maintenance-services">site care</a>
           </li>
           <li class="<?php if ($page == '/contact' || $page == '/contact/') echo 'active-nav'; ?>"> <a href="/contact">Contact</a></li>
         </ul>

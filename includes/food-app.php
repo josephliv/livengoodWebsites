@@ -1,11 +1,12 @@
+
 <section>
   <div class="narrow-section">
     <p>Welcome to Livengood Websites, your trusted <strong>food ordering app development company</strong> based in North Carolina. Our expert developers excel in providing <strong>online food ordering app development</strong> solutions tailored to your business needs. Whether you run a local restaurant or a food delivery startup, our customized app development services ensure a seamless food ordering experience for your customers.</p>
     <hr>
 
-    <img id="foodAppImg" src="/assets/imgs/New-on-OTA.png" alt="Online Food Ordering App Development Interface">
+    <img id="foodAppImg" class="foodAppImg" src="/assets/imgs/New-on-OTA.png" alt="online food ordering app development" title="view larger image">
     <!-- The Modal -->
-    <div id="foodAppModal" class="modal">
+    <div id="foodAppModal" class="food-modal">
       <span class="close">&times;</span>
       <img id="foodAppModalImg" width="90vw" height="100%" class="modal-content" src="/assets/imgs/New-on-OTA-full.png">
       <div id="foodAppCaption"></div>
@@ -150,3 +151,31 @@
   </div>
   </article>
 </section>
+<script>
+  var modal = document.getElementById('foodAppModal');
+  var img = document.getElementById('foodAppImg');
+  var modalImg = document.getElementById('foodAppModalImg');
+  var captionText = document.getElementById('foodAppCaption');
+  var span = document.getElementsByClassName('close')[0];
+
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+
+  span.onclick = function() { 
+    modal.style.display = "none";
+  }
+
+  modal.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+
+
+
+

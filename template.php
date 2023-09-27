@@ -108,15 +108,15 @@
             break;
         case "/web-design":
         case "/web-design/":
-            include 'includes/home.php';
+            include 'includes/web-design.php';
             break;
         case "/business-boosters":
         case "/business-boosters/":
             include 'includes/business-boosters.php';
             break;
-        case "/site-care":
-        case "/site-care/":
-            include 'includes/site-care.php';
+        case "/website-maintenance-services":
+        case "/website-maintenance-services/":
+            include 'includes/website-maintenance-services.php';
             break;
             //blog page with posts
         case "/blog":

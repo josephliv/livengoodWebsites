@@ -2,11 +2,11 @@
 
 :root {
   /* color varables */
-  --primary: #042147;
-  --primary-lite: #007E92;
---secondary: #00AD90;
-  --accent: #7FD77C;
-  --light-bg: #e7efff;
+  --primary: #007BFF;
+  --primary-lite: #008474;
+  --secondary: #28a745;
+  --accent: #fc7046;
+  --light-bg: #DFF8D5;
 
   /* font colors */
   --text-color: #1a1b1d;
@@ -28,6 +28,7 @@
 
   --block-padding: 5px 15px;
   --section-padding: 5dvh 20px;
+  --gradient-lite: linear-gradient(to right, #555555, #5e5c7c, #5d65a5, #4f6fd1, #007bff);
   --gradient: linear-gradient(
     to bottom,
     var(--primary),  
@@ -103,7 +104,7 @@ h4 {
 }
 
 hr {
-  max-width: 300px;
+  width: 300px;
   margin: 1.5rem auto;
   border-bottom: 2px dotted var(--secondary);
 }
@@ -142,11 +143,7 @@ hr {
   text-align: center;
 }
 
-.custom-section img,
-.custom-section-reverse img {
-  max-width: 400px;
-  margin: 0 auto;
-}
+
 
 .custom-section,
 .custom-section-reverse {
@@ -156,14 +153,14 @@ hr {
   justify-content: center;
   gap: 1rem;
   grid-template-areas:
-    "title "
-    "img "
-    "disc ";
+    "title"
+    "img"
+    "disc";
 }
 #disc ul {
   margin-left: 5dvw;
 }
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .custom-section,
   .custom-section-reverse {
     padding: var(--section-padding);
@@ -186,7 +183,7 @@ hr {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
   .page h4 {
     text-align: left;
   }
@@ -348,8 +345,8 @@ details[open] summary ~ * {
 }
 
 .custom-btn a {
-  border: 3px outset var(--primary);
-  color: var(--primary);
+  border: 3px outset var(--secondary);
+  color: var(--secondary);
   font-weight: 600;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -363,7 +360,7 @@ details[open] summary ~ * {
   box-shadow: none;
   background-color: var(--accent);
   background-blend-mode: luminosity;
-  color: var(--primary);
+  color: var(--light-text-color);
   border-style: inset;
   border-color: var(--primary);
 }
@@ -422,27 +419,57 @@ details[open] summary ~ * {
     text-transform: capitalize;
   }
 }
-/* for mobiles - no video */
-@media (max-width: 900px) {
-  .video-background-wrapper {
-    background-image: url("/assets/imgs/monitor.webp");
-    background-size: cover;
-  }
-}
+
 .video-background-wrapper {
-  height: 80vh;
+  height: 800px;
   overflow: hidden;
   position: relative;
 }
+/* for mobiles - no video */
+@media (max-width: 900px) {
+  .video-background-wrapper {
+    background-image: var(--gradient-lite);
+    height: 500px;
+  }
+}
 /* Styles for the background image on all other pages */
-.image-background-wrapper {
+.img-background {
   min-height: 70vh;
-  background-image: url(/assets/imgs/monitor.webp);
+  background-image: var(--gradient-lite);
   background-size: cover;
   background-color: #00000080;
   background-blend-mode: overlay;
   background-position: center center;
   position: relative;
+}
+/* dynamic hero background per page when needed */
+.web-design {
+  background-image: url(/assets/imgs/peace-of-mind.jpeg);
+}
+.portfolio-bg {
+  background-image: url(/assets/imgs/hero/workbench-g86b93d365_1280.webp);
+}
+.blog-bg {
+  background-image: url(/assets/imgs/hero/support.jpeg);
+}
+.contact-bg {
+  background-image: url(/assets/imgs/hero/contact-us.jpg);
+}
+.food-bg {
+  background-image: url(/assets/imgs/hero/kitchen.jpg);
+}
+.monitor-bg {
+  background-image: url(/assets/imgs/hero/monitor.webp);
+}
+.business-bg {
+  background-image: url(/assets/imgs/hero/business.jpg);
+}
+.site-care-bg {
+  background-image: url(/assets/imgs/hero/security.jpg);
+}
+.pageError {
+  background-image: url("/assets/imgs/hero/pageError.jpg");
+  background-position: top center;
 }
 video {
   position: absolute;
@@ -498,12 +525,7 @@ video {
   }
 }
 .page-bg {
-  background-image: url("/assets/imgs/livengood-websites-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-color: #25232348;
-  background-blend-mode: overlay;
+  background-image: var(--gradient);
 }
 .page-bg .hero-content {
   margin: 80px 0;
@@ -581,8 +603,8 @@ video {
   border-color: var(--primary);
 }
 .nav-menu .active-nav {
-  border-color: var(--primary-lite);
-  color: var(--primary-lite);
+  border-color: var(--accent);
+  color: var(--accent);
 }
 /* Style the dropdown menu */
 .dropdown > .dropdown-menu {
@@ -599,8 +621,11 @@ video {
   padding: 5px;
   animation: about-dropdown 600ms ease-out;
   white-space: nowrap;
+  text-align: center;
 }
-
+.dropdown-menu .active-nav {
+  border-color: transparent;
+}
 .dropdown-menu li {
   padding: 5px 10px;
 }
@@ -653,19 +678,18 @@ video {
 .social-links img,
 .top-bar img {
   display: inline;
-  width: 25px;
   
 }
 .social-links img {
-  background-color: var(--secondary);
+  border-radius: 4px;
   box-shadow: 0 0 10px #000;
   padding: 1px;
   transition: .3s ease-in-out;
   border: 1px solid var(--primary);
+  background-color: var(--accent);
 }
 .social-links img:hover {
  box-shadow: none;
-  width: 20px;
 }
 /* Mobile menu button */
 .mobile-menu-button {
@@ -898,7 +922,7 @@ Food ordering page
   }
 }
 
-.modal {
+.food-modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -911,7 +935,14 @@ Food ordering page
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
 }
-
+.foodAppImg {
+  transition: .3s ease;
+  border-radius: 8px;
+}
+.foodAppImg:hover {
+  cursor: pointer;
+  box-shadow: 0 0 15px #000;
+}
 /* Modal Content (image) */
 .modal-content {
   margin: auto;
@@ -1374,7 +1405,7 @@ Contact form
 ==================================== */
 
 footer {
-  background-color: var(--primary);
+  background-color: #2c2a2a;
   border-top: 4px solid var(--accent);
   background-blend-mode: overlay;
   padding: 0;
