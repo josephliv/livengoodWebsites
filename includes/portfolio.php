@@ -34,6 +34,13 @@
         </div>
       </div>
     </div>
+     <!-- The Modal for  website-->
+     <div class="modal">
+      <span class="close">&times;</span>
+      <div class="modal-content">
+        <iframe style="width: 90%; margin: auto; height: 90%" src="https://actionindsupply.com/" frameborder="0"></iframe>
+      </div>
+    </div>
   <div class="portfolio-item custom-section-item">
       <div class="portfolio-item-inner">
         <img id="cotlg-img" class="popup-img i" src="assets/imgs/portfolio/cotlg.png" alt="https://cotlgstatesville.com/" title="click to view full website in a popup">
@@ -44,9 +51,9 @@
             Built with live streaming capabilities and more.
           </p>
 
-          <!-- <span><a href="https://cotlgstatesville.com/" <?= $externalLinks ?>>
+          <span><a href="https://cotlgstatesville.com/" <?= $externalLinks ?>>
               visit site
-            </a></span> -->
+            </a></span> 
         </div>
       </div>
     </div>
@@ -370,3 +377,4 @@
     </div>
   </div>
 </section>
+<script src="assets/portfolio.js"></script>

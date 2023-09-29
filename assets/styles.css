@@ -447,7 +447,8 @@ details[open] summary ~ * {
   background-image: url(/assets/imgs/peace-of-mind.jpeg);
 }
 .portfolio-bg {
-  background-image: url(/assets/imgs/hero/workbench-g86b93d365_1280.webp);
+  background-image: url(/assets/imgs/hero/portfolio-bg.jpg);
+  background-position: top 60% center;
 }
 .blog-bg {
   background-image: url(/assets/imgs/hero/support.jpeg);
@@ -686,10 +687,10 @@ video {
   padding: 1px;
   transition: .3s ease-in-out;
   border: 1px solid var(--primary);
-  background-color: var(--accent);
+  background-color: var(--light-bg);
 }
 .social-links img:hover {
- box-shadow: none;
+  background-color: var(--accent);
 }
 /* Mobile menu button */
 .mobile-menu-button {
@@ -800,7 +801,7 @@ video {
 }
 @media (min-width: 600px) {
   .introduction h2 {
-    max-width: 900px;
+    max-width: 1100px;
   }
 }
 /*  =================================== 
@@ -985,7 +986,7 @@ Food ordering page
   position: absolute;
   top: 15px;
   right: 35px;
-  color: #f1f1f1;
+  color: var(--accent);
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
@@ -1006,8 +1007,7 @@ Food ordering page
 }
 /* business booster page, uses the same but a different background */
 .business-boosters {
-  background-image: var(--gradient);
-  background-size: cover;
+  background-color: #999;
   min-height: 60vh;
   display: grid;
   place-items: center;

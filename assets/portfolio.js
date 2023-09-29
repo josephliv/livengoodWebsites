@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function() {
   const images = document.querySelectorAll(".popup-img");
   const modals = document.querySelectorAll(".modal");
