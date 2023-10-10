@@ -88,7 +88,10 @@
         case "/food-app/":
             include 'includes/food-app.php';
             break;
-
+            // food app details page 
+        case "/food-app-details": 
+            include 'includes/food-app-details.php';
+            break;
         case "/request-service":
         case "/request-service/":
             include 'includes/request-services.php';

@@ -32,7 +32,7 @@ $social_links = '
 switch ($page) {
     case "/":
     case "/index":
-        $site_title = "Top website designs & SEO Company in North Carolina | Boost Your Rankings";      
+        $site_title = "Top website designs & SEO Company in North Carolina | Boost Your Rankings";
         $main_title = "Welcome to Livengood Websites.";
         $meta_description = "Boost your online presence with the leading SEO company in North Carolina. Our expert team delivers results-driven SEO services for businesses of all sizes.";
         $meta_keywords = "north carolina website design,
@@ -74,18 +74,31 @@ switch ($page) {
     case "/online-food-ordering-app-development/":
     case "/food-app":
     case "/food-app/":
-        $main_title = "Expert Food Ordering website Development Company";
-        $intro = "Custom Online Food Ordering website Development Solutions";
-        $site_title = "Food Ordering website | The Complete Online Ordering Solution";
+        $main_title = "North Carolina's Leading Restaurant Website Development";
+        $intro = "Crafting Impeccable Digital Menus & Seamless Online Ordering Systems";
+        $site_title = "The Complete Online Ordering Solution";
         $meta_description = "As a leading food ordering website development company in North Carolina, Livengood Websites offers bespoke online food ordering website development services to cater to the needs of restaurants and food delivery startups.";
-        $meta_keywords = "best food delivery website, Order Taking website, Restaurant Online ordering website, increase restaurant sales, accept orders online";
+        $meta_keywords = "North Carolina restaurant website development,
+        Food ordering website North Carolina,
+        Digital menu creation North Carolina,
+        Online ordering system North Carolina,
+        Restaurant online presence North Carolina,
+        NC restaurant digital solutions,
+        Seamless food ordering integration NC";
         $hero_bg_class = "food-bg";
+        break;
+        // Food app details
+    case "/food-app-details":
+        $hero_bg_class = "food-bg-post";
+        $main_title = "Showcasing Our Digital Dining Experience";
+        $intro = "A Glimpse into the Future of Online Ordering";
         break;
         // a page to display when they request services for restaurants. 
     case "/request-service":
     case "/request-service/":
         $main_title = "Request Services & Quote";
         $intro = "Please fill out this quick form to better assist you";
+        $hero_bg_class = "food-bg";
         break;
         // a request received page 
     case "/request-received":

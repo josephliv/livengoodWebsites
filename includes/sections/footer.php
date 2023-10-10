@@ -1,31 +1,24 @@
 <footer>
-    <div class="footer-inner">
-        <div class="brand">
-            <a href="/">
-                <img src="/assets/imgs/Livengood-p2.webp" alt="Livengood Websites">
-            </a>
+    
+    <div class="footer-sections">
+        <div class="footer-logo"><a href="/"><img src="/assets/imgs/logo-blue.webp" alt="Livengood websites | North carolina website designer"></a></div>
+        <div class="footer-section"> 
+            <div class="footer-title">Reach Out</div>
+            📞 1 (704) 275-9705<br>
+            📧 <a href="mailto:joe@joes.business">joe@joes.business</a>
         </div>
 
-
-        <div class="footer-contact">
-            <h3>Get in touch</h3>
-            <div class="footer-contact-inner">
-                <div class="phone">
-                    <a href="tel:17042759705">
-                        <img src="/assets/imgs/icons/png-files/phone.png" alt="Phone: ">&nbsp; 1 (704) 275-9705</a>
-                </div>
-                <div class="email">
-                    <a href="mailto:joe@joes.business">
-                        <img src="/assets/imgs/icons/png-files/envelope.png" alt="Email: ">&nbsp;
-                        joe@joes.business</a>
-                </div>
-            </div>
+        <div class="footer-section">
+            <div class="footer-title">Navigate</div>
+            <a href="/">Home</a><br>
+            <a href="/portfolio">Portfolio</a><br>
+            <a href="/contact">Contact</a>
         </div>
 
-        <div>
-            <h3>Follow me on social media</h3>
-            <!-- Social Links -->
-         <?= $social_links; ?>
+        <div class="footer-section">
+            <div class="footer-title">Connect with Us</div>
+            <?= $social_links; ?>
         </div>
     </div>
+    <div class="copy">© 2023 Livengood Websites. All Rights Reserved.</div>
 </footer>
