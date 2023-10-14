@@ -182,7 +182,7 @@ switch ($page) {
     case "/website-maintenance":
     case "/website-maintenance/":
         $meta_keywords = "website maintenance, the importantance of website maintenance, website security";
-        $main_title = "Website Maintenance";
+        $main_title = "website hosting and maintenance services";
         $intro =  "Why It's Crucial for Your Digital Success";
         break;
     case "/google-analytics":
@@ -223,8 +223,8 @@ switch ($page) {
         break;
     case "/seo-strategies/":
     case "/seo-strategies":
-        $meta_keywords = "Search Engine Optimization, SEO, digital marketing strategy, enhance your website, search engine result pages, SERPs";
-        $main_title = "SEO Strategies";
+        $meta_keywords = "Search Engine Optimization, SEO, digital marketing strategy, enhance your website, search engine result pages, search optimisation agency, best search engine optimization company";
+        $main_title = "SEO Company in North Carolina";
         $intro = "What you need to know and why it's important for your business success.";
         break;
         // redirects to prevent 404 in Google console

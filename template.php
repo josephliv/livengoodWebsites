@@ -36,7 +36,7 @@
     <link rel="shortcut icon" href="/assets/imgs/favicon.ico">
 
     <title>
-        <?= $title; ?> | Livengood Websites
+        <?= $site_title; ?> | Livengood Websites
     </title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9K3RMVMFJP"></script>

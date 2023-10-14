@@ -1,12 +1,12 @@
 <section>
   <div class="narrow-section">
 
-    <h2>Introduction:</h2>
+    <h3 class="my-2">Introduction:</h3>
     <p>
         In today's digital era, having a well-maintained website is crucial for any business or organization. A website serves as a virtual storefront, representing your brand and providing a platform for online interactions with customers. However, many website owners underestimate the significance of regular maintenance, resulting in poor performance, security vulnerabilities, and a negative user experience. In this article, we will delve into the importance of website maintenance and outline the key tasks involved on a monthly basis.
     </p>
 
-    <h2>Why is Website Maintenance Essential?</h2>
+    <h3 class="my-2">Why is Website Maintenance Essential?</h3>
     <ol>
         <li>
             <strong>Security:</strong> With cyber threats becoming more sophisticated, maintaining the security of your website is paramount. Regular updates and security patches help protect your website from potential vulnerabilities, ensuring the safety of sensitive user data and preventing hacking attempts.
@@ -22,7 +22,7 @@
         </li>
     </ol>
 
-    <h2>Monthly Website Maintenance Tasks:</h2>
+    <h3 class="my-2">Monthly Website Maintenance Tasks:</h3>
     <ol>
         <li>
             <strong>Software Updates:</strong> Ensure your website's content management system (CMS), plugins, themes, and other software components are up to date. Regular updates often include bug fixes, security patches, and feature enhancements.
@@ -47,7 +47,7 @@
         </li>
     </ol>
 
-    <h2>Conclusion:</h2>
+    <h3 class="my-2">Conclusion:</h3>
     <p>
         Investing in monthly website maintenance starting at only $175 per month is a cost-effective way to ensure your website remains secure, performs optimally, and delivers an outstanding user experience. By implementing regular updates, backups, security measures, and performance optimizations, you can enhance your website's visibility, attract more visitors, and drive business growth. Remember, website maintenance is an ongoing process, and partnering with professional web maintenance services can provide you with the expertise and support necessary to keep your website in top shape.
     </p>

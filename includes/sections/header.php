@@ -109,7 +109,7 @@
     <!-- Hero Content -->
     <div class="hero-content">
       <div class="site-title pt-4">
-        <h1 class="<?php if ($page == '/') echo 'text-light'; ?>">
+        <h1 class="text-light">
           <?= $main_title; ?>
         </h1>
         <a class="cta-button" <?= $externalLinks; ?> href="https://calendly.com/livengoodwebsites/30min">Book a Call</a>
