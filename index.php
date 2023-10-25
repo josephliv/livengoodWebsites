@@ -1,5 +1,6 @@
 <?php
 $page = $_SERVER['REQUEST_URI'];
+$canonical = "";
 // For title tag <title>goes here</title>
 $site_title = "Web Design & SEO Company in North Carolina";
 // Shows in the hero as the main h1 title
@@ -41,6 +42,7 @@ switch ($page) {
         web development in north carolina,
         website hosting and maintenance services,
         seo company north carolina,
+        seo davie county,
         search optimisation agency,
         best search engine optimization company,
         online food ordering app development,
@@ -74,6 +76,7 @@ switch ($page) {
     case "/online-food-ordering-app-development/":
     case "/food-app":
     case "/food-app/":
+        $canonical = "/online-food-ordering-app-development/";
         $main_title = "North Carolina's Leading Restaurant Website Development";
         $intro = "Crafting Impeccable Digital Menus & Seamless Online Ordering Systems";
         $site_title = "The Complete Online Ordering Solution";
@@ -120,6 +123,7 @@ switch ($page) {
     case "/blog/":
     case "/feed/":
     case "/feed":
+        $canonical = "/blog";
         $site_title = "Blog";
         $main_title = "Blog Page";
         $intro = "Welcome to my Blog.";

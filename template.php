@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="/assets/animations.css" />
 
     <link rel="shortcut icon" href="/assets/imgs/favicon.ico">
+    <link rel="canonical" href="https://livengoodwebsites.com<?= $canonical; ?>" />
 
     <title>
         <?= $site_title; ?> | Livengood Websites
