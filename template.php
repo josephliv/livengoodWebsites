@@ -129,6 +129,10 @@
             include 'includes/blog.php';
             break;
             // Blog post pages
+        case "/menu-development":
+        case "/menu-development/":
+            include 'includes/posts/menu-development.php';
+            break;
         case "/website-maintenance":
         case "/website-maintenance/":
             include 'includes/posts/website-maintenance.php';

@@ -1,16 +1,22 @@
 
-    <main class="error">
-        <h3 class="primary text-center">
-            No worries, these may help:
-        </h3>
-        <div class="site-map-404">         
-                <a href="/">Home Page</a>
-                <a href="/meet-joe">Meet Joe</a>
-                <a href="/blog">Blog</a>
-                <a href="/portfolio">Portfolio</a>
-               
-                <a href="/website-maintenance-services">Site Care</a>
-                <a href="/business-boosters">Business</a>
-                <script type="text/javascript" defer src="https://form.123formbuilder.com/embed/6306291.js?type=lightbox" data-role="form" data-default-width="650px" data-embed-type="lightbox-text-link" data-embed-text-link="Contact us"></script>
+<div class="error">
+    
+        <img class="d-none d-md-block" src="/assets/imgs/hero/pageError.jpg" alt="404 Image Description">
+        
+
+        <div class="site-map-404">
+           <h3>Links that do work:</h3> 
+            <ul>
+                <li><a href="/">Home Page</a></li>
+                <li><a href="/meet-joe">Meet Joe</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/website-maintenance-services">Site Care</a></li>
+                <li><a href="/business-boosters">Business</a></li>
+                <li id="contact-link">
+    <script type="text/javascript" defer src="https://form.123formbuilder.com/embed/6306291.js?type=lightbox" data-role="form" data-default-width="650px" data-embed-type="lightbox-text-link" data-embed-text-link="Contact us"></script>
+</li>
+            </ul>
         </div>
-    </main>
+    </div>
+    

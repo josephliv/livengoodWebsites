@@ -2,27 +2,14 @@
     <div class="narrow-section">
         <div>
         <p>
-            I wrote these mostly because I love helping people.
+        Navigating through technical challenges, I've consistently found that I'm not the only one seeking solutions. This realization inspired me to curate these articles, each detailing the solutions that have been instrumental in my professional journey.
         </p>
         <p>
-            I’ve always thought that if I don’t know how to do it, I’m probably not the only one.
+        If you've come across alternate or more efficient solutions, I'm always open to learning. Sharing insights propels us forward.
         </p>
         <p>
-            So I decided to write these quick little articles with solutions that I found that helped me alone my
-            journey.
-        </p>
-        <p>
-            If you know of a much better solution, by all means, please share!
-        </p>
-        <p>
-            I will have more soon, so make sure to subscribe so you can be notified when I upload new articles.
-        </p>
-        <p>
-            Also be sure to subscribe to my <a href="https://www.youtube.com/channel/UCAgEWX1qEHetRThckh8GZGw"
-                target="_blank" rel="nofollow noopener noreferral"> YouTube channel</a> where I share these tips via
-            video so you
-            can watch
-            instead of reading.
+        Should you wish to discuss these topics further or require specific services, please don't hesitate to reach out. And for those with a penchant for visual learning, I also delve into these subjects on our <a href="https://www.youtube.com/channel/UCAgEWX1qEHetRThckh8GZGw"
+                target="_blank" rel="nofollow noopener noreferral"> YouTube channel</a>, offering a more interactive way to grasp the concepts.
         </p>
         </div>
     </div>
@@ -30,6 +17,23 @@
 
 <section id="blog-posts" class="blog-page bg">
     <div class="blog-page-inner">
+    <div class="post-card">
+            <div class="post-card-inner">
+                <div id="h">
+                    <a href="/menu-development">
+                        <h4>Menu Mastery: Boost Your Restaurant's Success</h4>
+                    </a>
+                    <hr>
+                </div>
+                <p>Your restaurant's menu isn't just a list of dishes; it's the key to profitability and guest satisfaction. Discover menu magic with our essential strategies!</p>
+                <div id="rt">
+                    <em class="blog-date">posted - 10/25/2023</em><br>
+                    <div class="custom-btn">
+                        <a href="/menu-development">read post</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     <div class="post-card">
             <div class="post-card-inner">
                 <div id="h">

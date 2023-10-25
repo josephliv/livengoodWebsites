@@ -175,20 +175,38 @@ switch ($page) {
         Data breaches,
         Maintenance plan
         ";
+        $meta_description = "comprehensive website maintenance services designed to keep your online presence running smoothly.";
         $intro = "Keep Your Website in Perfect Shape and Unleash it's true potential!";
         $hero_bg_class = "site-care-bg";
         break;
         // Blog post pages
+    case "/menu-development":
+    case "/menu-development/":
+        $meta_keywords = "North Carolina restaurant website development,
+        Food ordering website North Carolina,
+        Digital menu creation North Carolina,
+        Online ordering system North Carolina,
+        Restaurant online presence North Carolina,
+        NC restaurant digital solutions,
+        Seamless food ordering integration NC";
+        $site_title = "Menu Development and Optimization - A Comprehensive Guide ";
+        $main_title = "Boosting your restaurant's success";
+        $meta_description = "Transform your restaurant's menu into a powerhouse for success. Discover essential strategies for menu mastery, pricing, and more. Elevate your dining experience today!"; 
+        $intro = "Essential Strategies for Restaurant Owners";
+        $hero_bg_class = "food-bg";
+        break;
     case "/website-maintenance":
     case "/website-maintenance/":
         $meta_keywords = "website maintenance, the importantance of website maintenance, website security";
         $main_title = "website hosting and maintenance services";
+        $meta_description = "comprehensive website maintenance services designed to keep your online presence running smoothly.";
         $intro =  "Why It's Crucial for Your Digital Success";
         break;
     case "/google-analytics":
     case "/google-analytics/":
         $meta_keywords = "How to migrate to google analytics 4, google analytics 4, website tracking, realtime tracking";
-        $intro = "​How to Migrate to Google Analytics 4";
+        $main_title = "How to Migrate to Google Analytics 4";
+        $intro = "With only 5 simple steps";
         break;
     case "/tips-to-rank-on-google":
     case "/tips-to-rank-on-google/":

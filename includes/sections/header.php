@@ -1,9 +1,9 @@
 <!-- Conditional for homepage background video -->
 <div class="header-bg">
-  <?php if ($page == "/") : ?>
-    <div class="video-background-wrapper">
-      <video playsinline="playsinline" muted="muted" loop="loop" autoplay id="backgroundVideo">
-        <source src="/assets/video/pexels-tea-oebel.mp4" type="video/mp4">
+  <?php if ($page == "/" || $page == "/index") : ?>
+    <div class="video-background-wrapper" style="background-color: #11111177;">
+      <video preload="auto" playsinline="playsinline" muted="muted" loop="loop" autoplay id="backgroundVideo">
+        <source src="/assets/video/home-hero.mp4" type="video/mp4">
       </video>
     </div>
   <?php else : ?>
@@ -112,7 +112,9 @@
         <h1 class="text-light">
           <?= $main_title; ?>
         </h1>
-        <a class="cta-button" <?= $externalLinks; ?> href="https://calendly.com/livengoodwebsites/30min">Book a Call</a>
+        <div class="cta-button">
+        <script type="text/javascript" defer src="https://form.123formbuilder.com/embed/6306291.js?type=lightbox" data-role="form" data-default-width="650px" data-embed-type="lightbox-text-link" data-embed-text-link="Contact us"></script>
+        </div>
       </div>
     </div>
   </div>

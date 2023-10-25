@@ -1,86 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
    <url>
-
       <loc>https://livengoodwebsites.com/</loc>
-
-      <lastmod>2023-04-30</lastmod>
-
+      <lastmod>2023-10-25</lastmod>
       <changefreq>monthly</changefreq>
-
       <priority>0.8</priority>
-
    </url>
-
    <url>
-
       <loc>https://livengoodwebsites.com/meet-joe</loc>
-
       <lastmod>2023-04-30</lastmod>
-
    </url>
-
    <url>
-
       <loc>https://livengoodwebsites.com/blog</loc>
-
-     <lastmod>2022-11-15</lastmod>
-
-
+      <lastmod>2022-11-15</lastmod>
    </url>
-<url>
-
+   <url>
       <loc>https://livengoodwebsites.com/portfolio</loc>
-
-     <lastmod>2022-12-14</lastmod>
-
-
+      <lastmod>2022-12-14</lastmod>
    </url>
    <url>
-
       <loc>https://livengoodwebsites.com/online-food-ordering-app-development</loc>
-
       <lastmod>2023-9-23</lastmod>
-
-
    </url>
-
    <url>
-
       <loc>https://livengoodwebsites.com/How-To-Install-WordPress-Plugins</loc>
-
-     <lastmod>2022-11-15</lastmod>
-
+      <lastmod>2022-11-15</lastmod>
    </url>
-    <url>
-
+   <url>
       <loc>https://livengoodwebsites.com/How-To-Fix-Skype-White-Screen</loc>
-
       <lastmod>2022-11-15</lastmod>
-
    </url>
-    <url>
-
+   <url>
       <loc>https://livengoodwebsites.com/How-To-Move-A-Wordpress-Site</loc>
-
       <lastmod>2022-11-15</lastmod>
-
    </url>
    <url>
-
       <loc>https://livengoodwebsites.com/Importing-Contacts-from-gmail-to-Thunderbird</loc>
-
       <lastmod>2022-11-15</lastmod>
-
    </url>
    <url>
-
       <loc>https://livengoodwebsites.com/chat-bot</loc>
-
       <lastmod>2022-11-15</lastmod>
-
+   </url>
+   <url>
+      <loc>https://livengoodwebsites.com/menu-development</loc>
+      <lastmod>2023-10-25</lastmod>
+   </url>
+   <url>
+      <loc>https://livengoodwebsites.com/business-boosters</loc>
+   </url>
+   <url>
+      <loc>https://livengoodwebsites.com/website-maintenance-services</loc>
+   </url>
+   <url>
+      <loc>https://livengoodwebsites.com/web-design</loc>
+   </url>
+   <url>
+      <loc>https://livengoodwebsites.com/contact</loc>
+   </url>
+   <url>
+      <loc>https://livengoodwebsites.com/website-maintenance</loc>
+   </url>
+   <url>
+      <loc>https://livengoodwebsites.com/google-analytics</loc>
+   </url>
+   <url>
+      <loc>https://livengoodwebsites.com/seo-strategies</loc>
+   </url>
+   <url>
+      <loc>https://livengoodwebsites.com/tips-to-rank-on-google</loc>
    </url>
 
 </urlset>

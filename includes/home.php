@@ -20,52 +20,38 @@
     </div>
   </div>
 </article>
-<article>
-  <div class="custom-section-reverse">
-    
-      <h4 id="title">Secure and Maintain Your Online Presence.</h4>
-<div id="disc">
-      <p>
-        Keep your website secure and up-to-date with our reliable and affordable maintenance services.
-      </p>
-</div>
-    <div id="img" class="expect-area">
-      <details>
-        <summary title="click to show details">Stay protected.</summary>
-        <div>
-          <p>
-            Our maintenance services ensure that your website is secure, protected from hacks and malware attacks, and regularly updated with security patches when needed.
-          </p>
-        </div>
-      </details>
-      <details>
-        <summary>Save time and effort.</summary>
-        <div>
-          <p>
-            We take care of all the technical details, so you don't have to worry about them. You can focus on your business while we maintain your online presence.
-          </p>
-        </div>
-      </details>
-      <details>
-        <summary>Increase website performance.</summary>
-        <div>
-          <p>
-            Our monthly maintenance and updates ensure that your website is optimized for speed, responsive design, and functionality.
-          </p>
-        </div>
-      </details>
-      <details>
-        <summary>VPS hosting</summary>
-        <div>
-          <p>
-            Your website will be placed on a high-performing VPS hosting which is far more secure than the normal shared hosting.
-          </p>
-        </div>
-      </details>
+<div class="container py-5">
+    <div class="expect-area">
+        <details>
+            <summary title="click to show details">Fortify Your Online Presence.</summary>
+            <div>
+                <p>In the modern digital landscape, a resilient and updated website is essential. With our premium maintenance services, ensure your site's optimal performance and security. Dive into the specifics on our <a href="/website-maintenance-services">maintenance services</a> page.</p>
+            </div>
+        </details>
+        <details>
+            <summary>Save Time and Focus on Your Business.</summary>
+            <div>
+                <p>Leave the technicalities to us. While we manage your site's intricacies, you can concentrate on your core business operations.</p>
+            </div>
+        </details>
+        <details>
+            <summary>Boost Your Website's Performance.</summary>
+            <div>
+                <p>Benefit from our routine updates that optimize speed, responsiveness, and overall functionality.</p>
+            </div>
+        </details>
+        <details>
+            <summary>Superior VPS Hosting.</summary>
+            <div>
+                <p>Experience the advantages of high-performance VPS hosting, a robust alternative to standard shared hosting.</p>
+            </div>
+        </details>
     </div>
-  </div>
-</article>
-<article class="bg" id="seo">
+</div>
+
+
+
+  <article class="bg" id="seo">
   <div class="custom-section" style="position: relative;">
     
       <h4 id="title">Targeted seo strategies.</h4>
