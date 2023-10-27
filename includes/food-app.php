@@ -15,7 +15,7 @@
     <article>
       <div class="custom-section">
         <!-- Block 2: The Service Breakdown -->
-        <h2 id="title">Why North Carolina Restaurants Should Choose Livengood Websites</h2>
+        <h3 id="title">Why North Carolina Restaurants Should Choose Livengood Websites</h3>
         <div id="disc">
           <p>When North Carolina restaurants are venturing into the digital space or seeking to amplify their existing online presence, it's crucial to have a partner well-versed in both the local food business and the digital landscape. Here's why Livengood Websites stands out as the preferred choice for restaurant website development in North Carolina:</p>
         </div>
@@ -93,7 +93,7 @@
 <!-- Block 3: Conclusion and Call to Action -->
 <div class="restaurant-post p-3">
   <div class="restaurant-post-inner">
-    <h2>Are You a North Carolina Restaurant Ready for a Digital Revolution?</h2>
+    <h4>Are You a North Carolina Restaurant Ready for a Digital Revolution?</h4>
     <hr>
     <p><a href="/request-service">Join forces with Livengood Websites</a>. Dive into the next era of online dining and offer your North Carolina diners an unmatched digital experience.</p>
   </div>

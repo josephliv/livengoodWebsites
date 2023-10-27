@@ -49,7 +49,7 @@
         Our team of experts is available to provide support and assistance whenever you need it. Whether you have a question or need help with a technical issue, we're here for you.
       </p>
     </div>
-    <img id="img" loading="lazy" src="/assets/imgs/support.jpeg" alt="expert support">
+    <img id="img" loading="lazy" src="/assets/imgs/hosting-maintenance.jpg" alt="expert support">
   </div>
 </article>
   <div class="narrow-section">

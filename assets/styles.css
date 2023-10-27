@@ -18,8 +18,9 @@
   --text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
   2px 2px 0 #000, 2px 2px 60px var(--light-text-color);
   /* font sizes */
-  --hero-title: clamp(2.5rem, 4cqw, 3.5rem);
-  --title-size: clamp(1.6rem, 3cqw, 2.3rem);
+  --hero-title: clamp(1.8rem, 3.5cqw, 2.5rem);
+  --title-size: clamp(1.4rem, 2.5cqw, 1.2em);
+  --page-title-size: clamp(1.3rem, 2cqw, .8em);
   --text-size: 1.2rem;
   --nav-menu: 1rem;
   /* for other styles */
@@ -102,16 +103,17 @@ details summary:hover {
 }
 
 h1,
-h2,
-h3,
-h4 {
+h2 {
   font-family: var(--title-font);
   letter-spacing: 0.3rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: capitalize;
-  text-align: center;
 }
-
+h3, h4 {
+  font-size: var(--page-title-size);
+  font-weight: 700;
+  text-transform: capitalize;
+}
 hr {
   width: 300px;
   margin: 1.5rem auto;
@@ -350,7 +352,7 @@ details[open] summary ~ * {
 .home-sub-title {
   font-family: var(--text-font);
   color: var(--accent);
-  font-size: 1.3em;
+  font-size: var(--title-size);
 }
 .hero-buttons {
   display: flex;
@@ -740,7 +742,7 @@ video {
   place-items: center;
 }
 .introduction h2 {
-  font-size: var(--title-size);
+  font-size: var(--);
   max-width: 90%;
   margin: auto;
   color: var(--light-text-color);

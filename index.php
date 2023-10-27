@@ -1,6 +1,6 @@
 <?php
 $page = $_SERVER['REQUEST_URI'];
-$canonical = "";
+$canonical = "$page";
 // For title tag <title>goes here</title>
 $site_title = "Web Design & SEO Company in North Carolina";
 // Shows in the hero as the main h1 title
@@ -70,13 +70,13 @@ switch ($page) {
         Joe: Merging Creativity and Code for Unique Web Solutions,
         The Man Behind North Carolina's Best Websites,
         Web Development with a Personal Touch: Dive into Joe's Portfolio";
-
+        $canonical = "/about";
         break;
     case "/online-food-ordering-app-development":
     case "/online-food-ordering-app-development/":
     case "/food-app":
     case "/food-app/":
-        $canonical = "/online-food-ordering-app-development/";
+        $canonical = "/online-food-ordering-app-development";
         $main_title = "North Carolina's Leading Restaurant Website Development";
         $intro = "Crafting Impeccable Digital Menus & Seamless Online Ordering Systems";
         $site_title = "The Complete Online Ordering Solution";
@@ -123,11 +123,11 @@ switch ($page) {
     case "/blog/":
     case "/feed/":
     case "/feed":
-        $canonical = "/blog";
         $site_title = "Blog";
         $main_title = "Blog Page";
         $intro = "Welcome to my Blog.";
         $hero_bg_class = "blog-bg";
+        $canonical = "/blog";
         break;
     case "/chat-bot":
     case "/chat-bot/":
@@ -218,6 +218,7 @@ switch ($page) {
         $intro = "3 things your site needs to rank on Google";
         break;
     case "/How-To-Install-WordPress-Plugins/":
+    case "/How-To-Install-WordPress-Plugins":   
         $meta_keywords = "Wordpress plugins, vsftpd, FTP daemon, how to install plugin localhost, Linux OS, localhost";
         $meta_description = "Wordpress Plugins can be installed while running locally on a computer by enabling vsftpd, I explain step by step on how to do this";
         $main_title = "How To Install WordPress Plugins On A Local Machine";
