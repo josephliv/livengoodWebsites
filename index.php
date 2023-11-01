@@ -74,20 +74,24 @@ switch ($page) {
         break;
     case "/online-food-ordering-app-development":
     case "/online-food-ordering-app-development/":
+    case "/restaurant-online-ordering-solution/":
+    case "/restaurant-online-ordering-solution":
     case "/food-app":
     case "/food-app/":
-        $canonical = "/online-food-ordering-app-development";
+        $canonical = "/food-app";
         $main_title = "North Carolina's Leading Restaurant Website Development";
         $intro = "Crafting Impeccable Digital Menus & Seamless Online Ordering Systems";
-        $site_title = "The Complete Online Ordering Solution";
-        $meta_description = "As a leading food ordering website development company in North Carolina, Livengood Websites offers bespoke online food ordering website development services to cater to the needs of restaurants and food delivery startups.";
-        $meta_keywords = "North Carolina restaurant website development,
-        Food ordering website North Carolina,
-        Digital menu creation North Carolina,
-        Online ordering system North Carolina,
-        Restaurant online presence North Carolina,
-        NC restaurant digital solutions,
-        Seamless food ordering integration NC";
+        $site_title = "Comprehensive Restaurant Online Ordering Solution";
+        $meta_description = "Offering a complete online ordering solution tailored for restaurants. From digital menus to integrated payments, elevate your restaurant's online presence with Livengood Websites.";
+        $meta_keywords = "Restaurant ordering system,
+        Online menu setup for restaurants,
+        Custom restaurant ordering software,
+        Restaurant delivery system,
+        Dine-in online reservations,
+        Digital menu solutions,
+        Integrated payment solutions for restaurants,
+        Mobile ordering for restaurants,
+        Online food ordering platform";
         $hero_bg_class = "food-bg";
         break;
         // Food app details
@@ -137,6 +141,7 @@ switch ($page) {
         break;
     case "/web-design":
     case "/web-design/":
+    case "/index.php/web-design":
         $meta_keywords = "north carolina website design,
         web design companies in north carolina,
         web design company north carolina,
@@ -246,7 +251,7 @@ switch ($page) {
         break;
     case "/seo-strategies/":
     case "/seo-strategies":
-        $meta_keywords = "Search Engine Optimization, SEO, digital marketing strategy, enhance your website, search engine result pages, search optimisation agency, best search engine optimization company";
+        $meta_keywords = "Search Engine Optimization, seo davie county, digital marketing strategy, enhance your website, search engine result pages, search optimisation agency, best search engine optimization company";
         $main_title = "SEO Company in North Carolina";
         $intro = "What you need to know and why it's important for your business success.";
         break;
@@ -274,9 +279,12 @@ switch ($page) {
         $intro = "OOOps that page doesn't exist!";
         $hero_bg_class = "pageError";
 };
-if ($page === "/site-map.xml" || $page === "/sitemap_index.xml") {
-    include 'site-map.xml';
+if ($page === "/site-map.xml" || $page === "/sitemap.xml") {
+    include 'sitemap.xml';
     return;
 }
-
+if ($page === "/robots.txt") {
+    include 'robots.txt';
+    return;
+}
 include "template.php";

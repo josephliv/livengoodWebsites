@@ -15,6 +15,7 @@
         gtag('config', 'G-4MSKEW1D4N');
     </script>
     <meta charset="UTF-8" />
+    <meta name="google-site-verification" content="GKX9_rUdeEZ6cCwMf0ZuuXqEiMv6DjjdIgmvbQibgVs" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="<?= $meta_description; ?>" />
@@ -87,6 +88,8 @@
         case "/online-food-ordering-app-development":
         case "/food-app":
         case "/food-app/":
+        case "/restaurant-online-ordering-solution/":
+        case "/restaurant-online-ordering-solution":
             include 'includes/food-app.php';
             break;
             // food app details page 
@@ -112,6 +115,7 @@
             break;
         case "/web-design":
         case "/web-design/":
+        case "/index.php/web-design":
             include 'includes/web-design.php';
             break;
         case "/business-boosters":
