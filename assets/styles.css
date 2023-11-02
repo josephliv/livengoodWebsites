@@ -53,6 +53,10 @@ body {
 .gradient-reverse {
   background-image: var(--gradient-reverse);
 }
+.gradient-lite {
+  background: linear-gradient(15deg, #808080, #ffffff);
+}
+
 strong {
   font-weight: 700;
 }
@@ -86,9 +90,17 @@ details summary:hover {
 .bg {
   background-color: #e6e6e6;
 }
-/* details summary > * {
-  display: inline;
-} */
+details p {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease; 
+}
+
+details[open] p {
+  max-height: 500px; 
+}
+
+
 /* For edge and other browsers that do not support summary and details tags */
 @supports not (-ms-ime-align: auto) {
   details summary {
@@ -339,6 +351,10 @@ details[open] summary ~ * {
   max-width: 1200px;
   margin: auto;
 }
+.site-title hr {
+  border-color: #fff;
+  border-style: ridge;
+}
 .site-title h1 {
   font-family: var(--title-font);
   font-size: var(--hero-title);
@@ -370,17 +386,17 @@ details[open] summary ~ * {
 }
 
 .video-background-wrapper {
-  height: 800px;
+  height: 600px;
   overflow: hidden;
   position: relative;
-}
+} 
+
 /* for mobiles - no video */
 @media (max-width: 1200px) {
   .video-background-wrapper {
     background-image: url('/assets/imgs/peace-of-mind.jpeg');
     background-color: #000000cc;
     background-blend-mode: overlay;
-    height: 500px;
   }
 }
 /* Styles for the background image on all other pages */
@@ -395,32 +411,32 @@ details[open] summary ~ * {
 }
 /* dynamic hero background per page when needed */
 .web-design {
-  background-image: url(/assets/imgs/peace-of-mind.jpeg);
+  background-image: url('/assets/imgs/peace-of-mind.jpeg');
 }
 .portfolio-bg {
-  background-image: url(/assets/imgs/hero/portfolio-bg.jpg);
-  background-position: top 60% center;
+  background-image: url('/assets/imgs/hero/portfolio-bg.webp');
+  background-position: top 50% center;
 }
 .blog-bg {
-  background-image: url(/assets/imgs/hero/support.jpeg);
+  background-image: url('/assets/imgs/hero/support.jpeg');
 }
 .contact-bg {
-  background-image: url(/assets/imgs/hero/contact-us.jpg);
+  background-image: url('/assets/imgs/hero/contact-us.jpg');
 }
 .food-bg {
-  background-image: url(/assets/imgs/hero/kitchen.jpg);
+  background-image: url('/assets/imgs/hero/kitchen.jpg');
 }
 .food-bg-post {
-  background-image: url(/assets/imgs/food-app.webp);
+  background-image: url('/assets/imgs/food-app.webp');
 }
 .monitor-bg {
-  background-image: url(/assets/imgs/hero/monitor.webp);
+  background-image: url('/assets/imgs/hero/monitor.webp');
 }
 .business-bg {
-  background-image: url(/assets/imgs/hero/business.jpg);
+  background-image: url('/assets/imgs/hero/business.jpg');
 }
 .site-care-bg {
-  background-image: url(/assets/imgs/hero/security.jpg);
+  background-image: url('/assets/imgs/hero/security.webp');
 }
 .pageError {
   background-image: url("/assets/imgs/hero/pageError.jpg");
@@ -463,11 +479,14 @@ video {
 /* Style the title and sub title with cta button */
 .hero-content {
   text-align: center;
-  margin: 6vw 0;
+  margin-top: 5vw;
   font-size: 0;
   opacity: 0;
   animation: fadeIn 0.7s ease-in-out forwards;
   animation-delay: 0.3s;
+}
+.hero-content hr {
+  border-style: ridge;
 }
 @keyframes fadeIn {
   0% {
@@ -762,25 +781,109 @@ video {
 /*  =================================== 
     home page content styling
 =================================== */
-.home-section {
-  min-height: 200px;
+.home-section-maintenance {
+  background-image: url('/assets/imgs/hosting-maintenance.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #1f1c1ccc;
+  background-blend-mode: overlay;
+  min-height: 500px;
   display: grid;
   place-items: center;
+  justify-content: center;
+  color: var(--light-text-color);
 }
-.home-img img {
-  height: 350px;
-  width: auto;
-  margin: 5px auto;
-  border: 3px outset var(--accent);
-  border-radius: 8px;
+.home-section-maintenance-inner {
+  max-width: 100%;
+  text-align: center;
+}
+@media (min-width: 900px) {
+  .home-section-maintenance {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-color: #cdd1d2f3;
+    background-blend-mode: overlay;
+    min-height: 500px;
+    display: grid;
+    place-items: center;
+    justify-content: end;
+  }
+  .home-section-maintenance-inner {
+    max-width: 900px;
+    padding-left: 5em;
+    text-align: left;
+    color: var(--text-color);
+  }
+}
+@media (min-width: 1400px) {
+.home-section-maintenance {
+  background-color: #cdd1d2cc;
+  background-blend-mode: normal;
+}
+.home-section-maintenance-inner {
+  max-width: 900px;
+  padding-left: 5em;
+  text-align: left;
+  color: var(--text-color);
+}
+}
+
+.home-section-seo {
+  background-image: url('/assets/imgs/seo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #000000cc;
+  background-blend-mode: overlay;
+  min-height: 500px;
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  color: var(--light-text-color);
+}
+.home-section-seo-inner {
+  max-width: 100%;
+  text-align: center;
+  padding-left: 0;
+}
+@media (min-width: 900px) {
+  .home-section-seo {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-color: #cdd1d2f3;
+    background-blend-mode: overlay;
+    min-height: 500px;
+    display: grid;
+    place-items: center;
+    justify-content: start;
+  }
+  .home-section-seo-inner {
+    max-width: 900px;
+    padding-left: 5em;
+    text-align: left;
+    color: var(--text-color);
+  }
+}
+@media (min-width: 1400px) {
+.home-section-seo {
+  background-color: #cdd1d2cc;
+  background-blend-mode: normal;
+}
+.home-section-seo-inner {
+  max-width: 900px;
+  padding-left: 5em;
+  text-align: left;
+  color: var(--text-color);
+}
 }
 
 /*  portfolio blocks */
 .portfolio {
   background-image: var(--gradient);
   min-height: 60vh;
-  display: grid;
-  justify-content: center;
   padding: var(--section-padding);
 }
 
@@ -797,6 +900,7 @@ video {
   flex-wrap: wrap;
   gap: 1.5rem;
   padding: var(--section-padding);
+  margin: auto;
 }
 
 .portfolio-item,
@@ -940,12 +1044,13 @@ Food ordering page
 /* The Close Button */
 .close {
   position: absolute;
-  top: 15px;
-  right: 35px;
-  color: var(--accent);
+  top: 5px;
+  right: 15px;
+  color: var(--secondary);
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
+  z-index: 9999;
 }
 
 .close:hover,
@@ -994,7 +1099,7 @@ Food ordering page
     "e"
     "f"
     "g";
-  padding: 3em 0;
+  padding: 3em 5px;
 }
 /* mark */
 .testimonial-inner-section article:nth-child(1) {
@@ -1028,11 +1133,11 @@ Food ordering page
 .testimonial-inner-section article:nth-child(8) {
   grid-area: h;
 }
-@media (min-width: 50em) {
+@media (min-width: 40em) {
   .testimonial-inner-section {
     grid-template-areas:
-      "h h h h h h"
-      "a a a a a a"
+      
+      "h h a a a a"
       "b b b e e e"
       "c c f f g g"
       "d d d d d d";
