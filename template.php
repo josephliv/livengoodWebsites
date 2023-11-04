@@ -126,6 +126,10 @@
         case "/website-maintenance-services/":
             include 'includes/website-maintenance-services.php';
             break;
+        case "/promo":
+        case "/promo/":
+            include 'includes/promo.php';
+            break;
             //blog page with posts
         case "/blog":
         case "/blog/":

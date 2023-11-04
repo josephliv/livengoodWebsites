@@ -18,8 +18,8 @@
   --text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
   2px 2px 0 #000, 2px 2px 60px var(--light-text-color);
   /* font sizes */
-  --hero-title: clamp(1.8rem, 3.5cqw, 2.5rem);
-  --title-size: clamp(1.4rem, 2.5cqw, 1.2em);
+  --hero-title: clamp(1.4rem, 3.5cqw, 2.5rem);
+  --title-size: clamp(1.1em, 2.5cqw, 1.3em);
   --page-title-size: clamp(1.3rem, 2cqw, .8em);
   --text-size: 1.2rem;
   --nav-menu: 1rem;
@@ -438,9 +438,11 @@ details[open] summary ~ * {
 .site-care-bg {
   background-image: url('/assets/imgs/hero/security.webp');
 }
+
+
 .pageError {
   background-image: url("/assets/imgs/hero/pageError.jpg");
-  background-position: top center;
+  background-position: top  center 50%;
 }
 video {
   position: absolute;
@@ -879,7 +881,60 @@ video {
   color: var(--text-color);
 }
 }
+/* promo page styles */
+.promo-page {
+  background-image: url('/assets/imgs/hero/november-promo.webp');
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 2em;
+}
+.promo-heading {
+  background-color: rgba(245, 245, 220, 0.884);
+  text-align: center;
+  padding: 1.2em;
+  border-bottom: 5px ridge var(--accent);
+  box-shadow: 0 0 15px #000 ;
+}
+.promo-heading h1 {
+  font-size: var(--hero-title);
+  color: var(--accent);
+}
+.promo-page h4 {
+  color: var(--accent); 
+  font-size: var(--title-size); 
+  font-family: var(--title-font)
+}
+.promo-page ul li strong {
+  color: var(--accent);
+}
 
+  .promo-list {
+    max-width: 900px;
+    background-color: rgba(25,25,25, 0.8); 
+    box-shadow: var(--shadow);
+    margin: 20px auto;
+    color: var(--light-text-color);
+    padding: 10px;
+    border: 1px ridge var(--light-text-color);
+    border-radius: var(--radius);
+   
+  }
+ 
+  .promo-list ul li {
+    list-style: none;
+    margin-bottom: 1em; 
+    border-bottom: 1px ridge;
+    font-family: "Helvetica";
+    letter-spacing: 2px;
+  }
+ @media(max-width: 600px) {
+    .promo-list {
+      margin: 15px;
+    }
+    .promo-heading {
+      padding: 5px;
+    }
+  }
 /*  portfolio blocks */
 .portfolio {
   background-image: var(--gradient);

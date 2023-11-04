@@ -123,6 +123,7 @@ switch ($page) {
         $js_path = 'src="/assets/portfolio.js"';
         $hero_bg_class = "portfolio-bg";
         break;
+    
     case "/blog":
     case "/blog/":
     case "/feed/":
@@ -287,4 +288,11 @@ if ($page === "/robots.txt") {
     include 'robots.txt';
     return;
 }
+if ($page === "/promo" || $page === "/promo/") {
+    include 'includes/promo.php';
+    $site_title = "November Exclusive Offer";
+    $meta_keywords = "web development, website maintenance, professional website design, SEO services, responsive web design, website optimization, website backups, website security, web design promotion, monthly maintenance, small business website, custom web design, web hosting, website speed optimization, mobile-friendly website, user-friendly design, web development offer, website promotion, affordable web design";
+    $meta_description = "Unlock exclusive benefits this November at Livengood Websites. Sign up for stress-free monthly maintenance at just $175/mo and receive a professionally designed, high-quality website for your business, valued at over $500, absolutely free. Elevate your online presence with our optimized, mobile-responsive designs and 24/7 support. Act now and transform your digital footprint!";
+        return;
+    }
 include "template.php";
