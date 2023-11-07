@@ -1,5 +1,5 @@
 <?php
-$page = $_SERVER['REQUEST_URI'];
+$page = explode('?', $_SERVER['REQUEST_URI'], 2)[0];
 $canonical = "$page";
 // For title tag <title>goes here</title>
 $site_title = "Web Design & SEO Company in North Carolina";
@@ -162,6 +162,8 @@ switch ($page) {
         break;
     case "/website-maintenance-services":
     case "/website-maintenance-services/":
+    case "/site-care":
+    case "/site-care/":
         $main_title = "Our Website Maintenance Services";
         $meta_keywords = "
         Website maintenance,

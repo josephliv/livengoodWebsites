@@ -124,6 +124,8 @@
             break;
         case "/website-maintenance-services":
         case "/website-maintenance-services/":
+        case "/site-care":
+        case "/site-care/":
             include 'includes/website-maintenance-services.php';
             break;
         case "/promo":
