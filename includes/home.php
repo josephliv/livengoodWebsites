@@ -1,10 +1,11 @@
+
 <div class="narrow-section">
   <p>
     Welcome to North Carolina's one-stop solution for standout website design and development. Unlike typical web design companies in North Carolina, I offer a personal touch, ensuring every project aligns perfectly with your vision.
   </p>
   <p>
     As an independent expert in web development in North Carolina, my services span from bespoke websites to specialized online <a href="/food-app">food ordering</a> app development. My reputation is built on delivering quality, be it as a web design company in North Carolina and nation-wide or when providing top-tier website hosting and <a href="/website-maintenance-services"> maintenance services.</a> </p>
-
+    <p class="promo-txt">Sign up and get a FREE website, this month only! <a href="/promo">Click here</a></p>
 </div>
 <section class="home-section-maintenance">
   <div class="home-section-maintenance-inner">
@@ -23,6 +24,7 @@
       <summary title="click to show details">Fortify Your Online Presence.</summary>
       <div>
         <p>In the modern digital landscape, a resilient and updated website is essential. With our premium maintenance services, ensure your site's optimal performance and security. Dive into the specifics on our <a href="/website-maintenance-services">maintenance services</a> page.</p>
+        
       </div>
     </details>
     <details>
@@ -46,8 +48,6 @@
   </div>
 </div>
 
-
-
 <section class="home-section-seo" id="seo">
   <div class="home-section-seo-inner">
     <div class="container">
@@ -65,36 +65,27 @@
 <section class="testimonial-area gradient-lite pt-5" id="reviews">
   <?php include 'includes/sections/testimonials.php'; ?>
 </section>
+<div class="promo-div">
+  <div class="promo-div-inner text-center">
+    <div class="close-promo" id="close-promo">×</div>
+    <h3>November Promo! </h3>
+    <p> Get a <strong>FREE</strong> website with our maintenance plan!</p>
+    <div class="custom-btn">
+      <a href="/promo">Learn More</a>
+    </div>
+  </div>
+</div>
+<button class="toggle-promo" id="toggleButton">November Promo</button>
+
 <script>
-  // defined the promo div element
-  const promo = document.querySelector('.promo');
-  // function to run on page load to show the promo after 2.5 seconds and put it into a varable to target upon close
-  let showit = setInterval(function() {
-    promo.style.display = "block";
-  }, 3500);
+  const promo = document.querySelector('.promo-div');
+  const closePromox = document.getElementById('close-promo');
+  const toggleButton = document.getElementById('toggleButton');
 
-  document.addEventListener('DOMContentLoaded', showit);
-
-  // to close the promo box and clear the interval or it keeps opening back up. 
-  function closePromo() {
-    promo.style.display = 'none';
-    clearInterval(showit);
+  function togglePromo() {
+    promo.classList.toggle('closed');
   }
-</script>
-<script>
-  const detailsElements = document.getElementsByTagName('details');
 
-  for (let element of detailsElements) {
-    element.addEventListener('toggle', function() {
-      if (this.open) {
-        // Close other open details elements
-        for (let otherElement of detailsElements) {
-          if (otherElement !== this && otherElement.open) {
-            otherElement.open = false;
-          }
-        }
-      
-      }
-    });
-  }
+  toggleButton.addEventListener('click', togglePromo);
+  closePromox.addEventListener('click', togglePromo); 
 </script>

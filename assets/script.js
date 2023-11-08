@@ -41,30 +41,19 @@ mobileMenuButton.addEventListener('click', openMenu);
    document.documentElement.scrollTop = 0;
  }
 
- // ======================================
- // image popup script for restaurant page
- // ====================================
+//  For details tab to close when another one is opened (home page for now)
+const detailsElements = document.getElementsByTagName('details');
 
- // Get the modal
-var foodAppModal = document.getElementById("foodAppModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var foodAppImg = document.getElementById("foodAppImg");
-var FoodAppmodalImg = document.getElementById("foodAppModalImg");
-var foodAppCaption = document.getElementById("foodAppCaption");
-
- function foodAppPopUp(){
-  alert('it worked')
-  foodAppModal.style.display = "block";
-  // modalImg.src = this.src;
-  foodAppCaption.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-
+  for (let element of detailsElements) {
+    element.addEventListener('toggle', function() {
+      if (this.open) {
+        // Close other open details elements
+        for (let otherElement of detailsElements) {
+          if (otherElement !== this && otherElement.open) {
+            otherElement.open = false;
+          }
+        }
+      
+      }
+    });
+  }

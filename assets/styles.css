@@ -476,7 +476,7 @@ video {
   border: 1px solid var(--primary);
   border-radius: 0 0 18px 18px;
   margin-bottom: 2%;
-  z-index: 99;
+  
 }
 /* Style the title and sub title with cta button */
 .hero-content {
@@ -881,6 +881,115 @@ video {
   color: var(--text-color);
 }
 }
+/* promo div */ 
+.promo-div, 
+.toggle-promo {
+  display: none;
+}
+.promo-txt {display: block;}
+  /* promotional May box to be fixed only on larger screens */
+  @media(min-width: 600px) {
+    .promo-txt {display: none;}
+.promo-div {
+  display: block;
+  background-color: #d4d4d4cc;
+  box-shadow: var(--shadow);
+  border: 4px outset var(--accent);
+  padding: 24px;
+    max-width: 310px;
+    position: fixed;
+    border-radius: 20px;
+    padding: 18px ;
+    top: 30vh;
+    right: 10px;
+    animation: promo-ele 3.5s ease-in-out;
+    max-height: 400px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+.promo-div-inner {
+  position: relative;
+  border: 1px dashed var(--secondary);
+  border-radius: 20px;
+  background-color: #ccc;
+  box-shadow: 0 0 5px #777;
+}
+.promo-div-inner p {
+  margin: 0 10px;
+  text-align: center;
+}
+.promo-div-inner h3 {
+  font-size: 1.5rem;
+  color: var(--light-text-color);
+  background-color: var(--accent);
+  padding: 5px;
+  border-radius: 20px 20px 0 0;
+}
+
+.close-promo {
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  cursor: pointer;
+  color: var(--primary);
+  text-shadow: var(--shadow);
+  padding: 0 10px;
+  border: 1px solid;
+  transition: .3s ease-in-out
+}
+.close-promo:hover {
+  background-color: var(--primary);
+  color: white;
+}
+.promo-div.closed {
+  opacity: 0; 
+}
+
+
+.toggle-promo {
+  position: fixed;
+  display: block;
+  top: 20px;
+  right: 0px;
+  z-index: 9999;
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius:  20px 0 0 20px ;
+  cursor: pointer;
+  z-index: 2;
+  transition: background-color 0.3s ease-in-out;
+  font-size: 18px;
+  box-shadow: var(--shadow);
+}
+
+.toggle-promo:hover {
+  background-color: var(--accent);
+}
+@media(max-width: 768px) {
+  .toggle-promo {
+    bottom: 0;
+    top: initial;
+    left: 20px;
+    right: initial;
+    border-radius: 20px  20px 0 0;
+  }
+}
+
+}
+
+@keyframes promo-ele {
+  0% {
+    transform: translateX(50vh);
+  }
+  
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
 /* promo page styles */
 .promo-page {
   background-image: url('/assets/imgs/hero/november-promo.webp');
@@ -1528,7 +1637,11 @@ footer {
   text-align: center;
   font-family: Arial, sans-serif;
 }
-
+@media (max-width: 764px) {
+  footer {
+    padding-bottom: 60px;
+  }
+}
 footer a {
   color: var(--light-text-color);
   text-decoration: none;

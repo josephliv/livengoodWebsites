@@ -29,6 +29,9 @@
         <h4>
         Your Benefits with Our November Promotion:
       </h4>
+      <p>
+      We care about your budget and can provide you with alternatives. Our goal is always have the opportunity to serve you, and the opportunity to demonstrate our warmth and services.
+      </p>
       <hr>
         <ul>
           <li>
