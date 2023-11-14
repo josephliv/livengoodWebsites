@@ -805,12 +805,13 @@ video {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center left;
-    background-color: #cdd1d2f3;
-    background-blend-mode: overlay;
     min-height: 500px;
     display: grid;
     place-items: center;
     justify-content: end;
+  }
+  .maintenance-content {
+    background-color: #D7DADBe2;
   }
   .home-section-maintenance-inner {
     max-width: 900px;
@@ -819,9 +820,9 @@ video {
     color: var(--text-color);
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1420px) {
 .home-section-maintenance {
-  background-color: #cdd1d2cc;
+  background-color: #cdd1d2e3;
   background-blend-mode: normal;
 }
 .home-section-maintenance-inner {
@@ -855,16 +856,17 @@ video {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center right;
-    background-color: #cdd1d2f3;
-    background-blend-mode: overlay;
     min-height: 500px;
     display: grid;
     place-items: center;
     justify-content: start;
   }
+  .seo-content {
+    background-color: #D7DADBcc;
+    padding: var(--block-padding);
+  }
   .home-section-seo-inner {
     max-width: 900px;
-    padding-left: 5em;
     text-align: left;
     color: var(--text-color);
   }

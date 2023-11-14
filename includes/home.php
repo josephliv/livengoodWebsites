@@ -9,7 +9,7 @@
 </div>
 <section class="home-section-maintenance">
   <div class="home-section-maintenance-inner">
-    <div class="container">
+    <div class="container maintenance-content">
       <h4>Personalized web design and maintenance.</h4>
       <hr>
       <p>
@@ -50,7 +50,7 @@
 
 <section class="home-section-seo" id="seo">
   <div class="home-section-seo-inner">
-    <div class="container">
+    <div class="container seo-content">
       <h4>Targeted seo strategies.</h4>
       <hr>
       <div>
