@@ -69,9 +69,9 @@
   <div class="promo-div-inner text-center">
     <div class="close-promo" id="close-promo">×</div>
     <h3>November Promo! </h3>
-    <p> Get a <strong>FREE</strong> website with our maintenance plan!</p>
+    <p> Special Deals, This month only!</p>
     <div class="custom-btn">
-      <a href="/promo">Learn More</a>
+      <a href="/promo">Check Them Out</a>
     </div>
   </div>
 </div>

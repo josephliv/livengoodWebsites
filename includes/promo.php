@@ -25,41 +25,64 @@
   <h1>Livengood Website Exclusive November Promo!</h1>
   <h2>Unleash Your Business Potential!</h2>
   </div>
-      <div class="promo-list">
-        <h4>
-        Your Benefits with Our November Promotion:
-      </h4>
+      <div class="promo-intro">
+        <div>
+        <h3>
+        Experience the Difference:
+      </h3>
       <p>
-      We care about your budget and can provide you with alternatives. Our goal is always have the opportunity to serve you, and the opportunity to demonstrate our warmth and services.
+      We are passionate about web design and strive to create websites that not only look great but also function effectively. Let us showcase our expertise and help you achieve your online goals.
       </p>
-      <hr>
+      </div>
+      </div>
+      <div class="promo-container">
+<div class="package">
+  <div class="package-header">
+        <h4>Basic Website</h4> <p> <s>$550</s> now only <span> $350!</span></p>
+        </div>
         <ul>
-          <li>
-            <strong>💻 Complimentary Professional Website:</strong> Sign up for our monthly maintenance at $175/mo and get a tailor-made, high-quality website for FREE, usually valued at $500+.
-          </li>
-          <li><strong>🌐 VPS Hosting:</strong>Experience lightning-fast and reliable Virtual Private Server hosting.</li>
-          <li>
-            <strong>🔧 Stress-Free Maintenance:</strong> Enjoy regular updates, timely fixes, and optimal security ensuring your website runs seamlessly.
-          </li>
-          <li>
-            <strong>🚀 Optimized Performance:</strong> Benefit from fast load times, responsive design, and user-friendly navigation that keeps visitors engaged.
-          </li>
-          
-          <li>
-            <strong>🔍 SEO Boost:</strong> Enhance your website's visibility and organic reach with our SEO-friendly practices.
-          </li>
-          <li>
-            <strong>💾 Regular Backups:</strong> Never worry about data loss with our routine backups.
-          </li>
-          <li>
-            <strong>📱 Mobile Responsiveness:</strong> Ensure your website looks flawless on devices of all sizes.
-          </li>
-          <li>
-            <strong>📈 Conversion Focus:</strong> Strategic design elements aimed at boosting user engagement and conversions.
-          </li>
+            <li>Custom-built website</li>
+            <li>Up to 5 pages</li>
+            <li>Domain name (if needed)</li>
+            <li>Business email address</li>
+            <li>Year of hosting</li>
         </ul>
+    </div>
+
+    <div class="package">
+    <div class="package-header">
+        <h4>Full WordPress Website</h4> <p> <s>$750</s> now only <span> $550!</span></p>
+    </div>
+
+        <ul>
+            <li>WordPress website with premium theme and template</li>
+            <li>Up to 10 pages</li>
+            <li>Domain name (if needed)</li>
+            <li>Business email address</li>
+            <li>Year of hosting</li>
+            <li>Full access to edit and manage website</li>
+        </ul>
+    </div>
+
+    <div class="package">
+    <div class="package-header">
+        <h4>Full WordPress E-commerce Website</h4> <p> <s>$950</s> now only <span> $750!</span></p>
+    </div>
+        <ul>
+            <li>E-commerce website with premium theme and template</li>
+            <li>Up to 10 pages</li>
+            <li>Domain name (if needed)</li>
+            <li>Business email address</li>
+            <li>Year of hosting</li>
+            <li>Full access to edit and manage website</li>
+            <li>Ability to list and sell up to 20 products or services</li>
+        </ul>
+    </div>
+</div>
+<div class="promo-cta">
+  <h5>Let's Build Your Website</h5>
         <div class="custom-btn">
-<script type="text/javascript" defer src="https://form.123formbuilder.com/embed/6549798.js?type=lightbox" data-role="form" data-default-width="650px" data-embed-type="lightbox-text-link" data-embed-text-link="Sign Up Today"></script>
+<script type="text/javascript" defer src="https://form.123formbuilder.com/embed/6549798.js?type=lightbox" data-role="form" data-default-width="650px" data-embed-type="lightbox-text-link" data-embed-text-link="Get Started"></script>
         </div>
       </div>
 </section>

@@ -1,11 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Ubuntu:wght@400;700&display=swap");
-
+/* @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Ubuntu:wght@400;700&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Barlow:wght@400;600&display=swap');
 :root {
   /* color varables */
   --primary: #007BFF;
   --primary-lite: #008474;
   --secondary: #28a745;
   --accent: #fc7046;
+  --accent-lite:#fc704680 ;
   --light-bg: #DFF8D5;
 
   /* font colors */
@@ -13,13 +14,15 @@
   --light-text-color: #E6F4F1;
 
   /* fonts */
-  --title-font: "Quicksand", sans-serif;
-  --text-font: "ubuntu", sans-serif;
+  /* --title-font: "Quicksand", sans-serif; */
+  --title-font: 'Acme', sans-serif;;
+  /* --text-font: "ubuntu", sans-serif; */
+  --text-font: 'Barlow', sans-serif;
   --text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
   2px 2px 0 #000, 2px 2px 60px var(--light-text-color);
   /* font sizes */
-  --hero-title: clamp(1.4rem, 3.5cqw, 2.5rem);
-  --title-size: clamp(1.1em, 2.5cqw, 1.3em);
+  --hero-title: clamp(1.3rem, 3.3cqw, 2.4rem);
+  --title-size: clamp(1em, 2.3cqw, 1.2em);
   --page-title-size: clamp(1.3rem, 2cqw, .8em);
   --text-size: 1.2rem;
   --nav-menu: 1rem;
@@ -1006,46 +1009,84 @@ video {
   border-bottom: 5px ridge var(--accent);
   box-shadow: 0 0 15px #000 ;
 }
+.promo-intro {
+  background-color: #000000cc;
+  padding: 5px;
+}
+.promo-intro div {
+  max-width: 1200px;
+  margin: auto;
+  color: var(--light-text-color);
+}
 .promo-heading h1 {
   font-size: var(--hero-title);
   color: var(--accent);
 }
-.promo-page h4 {
-  color: var(--accent); 
-  font-size: var(--title-size); 
-  font-family: var(--title-font)
-}
-.promo-page ul li strong {
-  color: var(--accent);
-}
 
-  .promo-list {
-    max-width: 900px;
-    background-color: rgba(25,25,25, 0.8); 
-    box-shadow: var(--shadow);
-    margin: 20px auto;
-    color: var(--light-text-color);
-    padding: 10px;
-    border: 1px ridge var(--light-text-color);
-    border-radius: var(--radius);
-   
+.promo-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-evenly;
+  padding: 50px;
   }
- 
-  .promo-list ul li {
-    list-style: none;
-    margin-bottom: 1em; 
-    border-bottom: 1px ridge;
-    font-family: "Helvetica";
-    letter-spacing: 2px;
-  }
- @media(max-width: 600px) {
-    .promo-list {
-      margin: 15px;
-    }
-    .promo-heading {
-      padding: 5px;
-    }
-  }
+  
+      .package {
+          width: 350px;
+          min-height: 350px;
+          padding: 20px;
+          border-radius: 10px;
+          background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+          transition: transform 0.2s ease-in-out;
+      }
+      .package-header {
+        background-color: var(--accent);
+        border-radius: 10px 10px 0  0 ;
+        text-align: center;
+      }
+      .package p {
+        background-color: var(--primary-lite);
+        color: var(--light-text-color);
+        text-align: center;
+      }
+      .package span {
+        font-weight: 900;
+      }
+  
+      .package h2 {
+          text-align: center;
+          margin-bottom: 20px;
+      }
+  
+      .package ul {
+          list-style: none;
+          padding: 5px;
+          margin: 0;
+          border: 1px solid #989898;
+          background-color: #ffffff5f;
+          border-radius: 0  0  10px 10px ;
+      }
+  
+      .package li:not(:last-child) {
+          margin-bottom: 10px;
+          border-bottom: 1px solid #989898;
+      }
+  
+      .package:hover {
+        transform: scale(1.1);
+        box-shadow: 15px 15px 40px rgba(0, 0, 0, .8);
+      }
+      .promo-cta {
+        text-align: center;
+        background-color: #000000cc;
+        padding: 3vw 0;
+      }
+      .promo-cta h5 {
+        color: var(--light-text-color);
+        font-family: var(--title-font);
+        font-size: var(--hero-title);
+      }
 /*  portfolio blocks */
 .portfolio {
   background-image: var(--gradient);
