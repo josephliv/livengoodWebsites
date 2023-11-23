@@ -20,7 +20,7 @@
     ?>
      <div class="portfolio-item custom-section-item">
       <div class="portfolio-item-inner">
-        <img id="action-img" class="popup-img i" src="assets/imgs/portfolio/action-industrial.png" alt="https://actionindsupply.com/" title="click to view full website in a popup">
+        <img id="action-img" class="popup-img i" src="assets/imgs/portfolio/action-industrial.webp" alt="https://actionindsupply.com/" title="click to view full website in a popup">
 
         <h3 class="h">action industrial supply</h3>
         <div class="rt">

@@ -21,7 +21,7 @@
   --text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
   2px 2px 0 #000, 2px 2px 60px var(--light-text-color);
   /* font sizes */
-  --hero-title: clamp(1.3rem, 3.3cqw, 2.4rem);
+  --hero-title: clamp(1.5rem, 3.5cqw, 2.6rem);
   --title-size: clamp(1em, 2.3cqw, 1.2em);
   --page-title-size: clamp(1.3rem, 2cqw, .8em);
   --text-size: 1.2rem;
@@ -343,7 +343,7 @@ details[open] summary ~ * {
   width: 100%;
   background-color: var(--primary-lite);
   padding: 20px 0;
-  min-height: 120px;
+  /* min-height: 120px; */
   display: grid;
   place-items: center;
 }
@@ -401,16 +401,19 @@ details[open] summary ~ * {
     background-color: #000000cc;
     background-blend-mode: overlay;
   }
+
 }
 /* Styles for the background image on all other pages */
 .img-background {
-  min-height: 70vh;
+  min-height: 600px;
   background-image: var(--gradient-lite);
   background-size: cover;
   background-color: #00000080;
   background-blend-mode: overlay;
   background-position: bottom 50% center;
   position: relative;
+  display: grid;
+  place-items: center;
 }
 /* dynamic hero background per page when needed */
 .web-design {
@@ -441,7 +444,9 @@ details[open] summary ~ * {
 .site-care-bg {
   background-image: url('/assets/imgs/hero/security.webp');
 }
-
+.promo-bg {
+  background-image: url("/assets/imgs/hero/november-promo.webp");
+}
 
 .pageError {
   background-image: url("/assets/imgs/hero/pageError.jpg");
@@ -713,7 +718,7 @@ video {
 
 @media screen and (max-width: 780px) {
   #video-background {
-    height: 60vh;
+    /* height: 60vh; */
     overflow: hidden;
     object-fit: fill;
     z-index: -1;
@@ -1012,6 +1017,11 @@ video {
 .promo-intro {
   background-color: #000000cc;
   padding: 5px;
+  min-height: 250px;
+  display: grid;
+  place-content: center;
+  border-bottom: 1px solid #fff;
+  box-shadow: 0 0 15px #000 ;
 }
 .promo-intro div {
   max-width: 1200px;
@@ -1049,6 +1059,7 @@ video {
         background-color: var(--primary-lite);
         color: var(--light-text-color);
         text-align: center;
+        margin: 0;
       }
       .package span {
         font-weight: 900;
@@ -1062,7 +1073,7 @@ video {
       .package ul {
           list-style: none;
           padding: 5px;
-          margin: 0;
+         
           border: 1px solid #989898;
           background-color: #ffffff5f;
           border-radius: 0  0  10px 10px ;
@@ -1735,7 +1746,7 @@ footer a:hover {
   position: fixed;
   bottom: 30px;
   width: fit-content;
-  right: 0;
+  left: 0;
   font-size: .5em;
   z-index: 9999;
   outline: none;
@@ -1743,7 +1754,7 @@ footer a:hover {
   background-color: var(--light-bg);
   padding: 5px 5px 5px 10px;
   
-  border-radius: 50% 0 0 50%;
+  border-radius: 0 50% 50% 0;
   border: 1px solid var(--accent);
   border-bottom: none;
   box-shadow: 2px 2px 5px #000;

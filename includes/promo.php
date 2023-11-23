@@ -1,52 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="/assets/imgs/favicon.ico">
-  <meta name="google-site-verification" content="GKX9_rUdeEZ6cCwMf0ZuuXqEiMv6DjjdIgmvbQibgVs" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="<?= $meta_description; ?>" />
-    <meta property="og:url" content="https://livengoodwebsites.com/" />
-    <meta property="og:site_name" content="Web Design Services in Salisbury NC and surrounding areas." />
-    <meta name="keywords" content="<?= $meta_keywords; ?>">
 
-  <link rel="stylesheet" href="/assets/reset.css">
-  <link rel="stylesheet" href="/assets/styles.css">
-  <title><?= $site_title; ?></title>
-</head>
-<body>
 
 
 <section class="promo-page">
-  
-  <div class="promo-heading">
-  <h1>Livengood Website Exclusive November Promo!</h1>
-  <h2>Unleash Your Business Potential!</h2>
-  </div>
       <div class="promo-intro">
         <div>
         <h3>
-        Experience the Difference:
+        Experience the Difference with Our Discounted Website Packages
       </h3>
-      <p>
-      We are passionate about web design and strive to create websites that not only look great but also function effectively. Let us showcase our expertise and help you achieve your online goals.
-      </p>
+      
+      <p>Elevate your online presence with our expertly crafted websites, now at unbeatable prices. Our discounted packages offer a seamless blend of stunning design, exceptional functionality, and rapid deployment, ensuring your website is up and running in no time.</p>
       </div>
       </div>
       <div class="promo-container">
 <div class="package">
   <div class="package-header">
-        <h4>Basic Website</h4> <p> <s>$550</s> now only <span> $350!</span></p>
+        <h4>Startup Website</h4> <p> <s>$550</s> now only <span> $350 flat-fee!</span></p>
         </div>
         <ul>
+          <li>Professional Website Design</li>
             <li>Custom-built website</li>
             <li>Up to 5 pages</li>
-            <li>Domain name (if needed)</li>
+            <li>Domain name or use your own</li>
             <li>Business email address</li>
-            <li>Year of hosting</li>
         </ul>
+        <p>Alternative: $100 per month for maintenance and only $200 down today!</p>
     </div>
 
     <div class="package">
@@ -59,9 +36,9 @@
             <li>Up to 10 pages</li>
             <li>Domain name (if needed)</li>
             <li>Business email address</li>
-            <li>Year of hosting</li>
             <li>Full access to edit and manage website</li>
         </ul>
+        <p>Alternative: $150 per month for maintenance and only $300 down today!</p>
     </div>
 
     <div class="package">
@@ -73,14 +50,14 @@
             <li>Up to 10 pages</li>
             <li>Domain name (if needed)</li>
             <li>Business email address</li>
-            <li>Year of hosting</li>
             <li>Full access to edit and manage website</li>
             <li>Ability to list and sell up to 20 products or services</li>
         </ul>
+        <p>Alternative: $175 per month for maintenance and only $400 down today!</p>
     </div>
 </div>
 <div class="promo-cta">
-  <h5>Let's Build Your Website</h5>
+  <p class="lead text-light" style="font-size: 1.5em;">Contact us today to unleash the power of a compelling online presence.</p>
         <div class="custom-btn">
 <script type="text/javascript" defer src="https://form.123formbuilder.com/embed/6549798.js?type=lightbox" data-role="form" data-default-width="650px" data-embed-type="lightbox-text-link" data-embed-text-link="Get Started"></script>
         </div>
