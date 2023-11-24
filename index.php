@@ -123,7 +123,7 @@ switch ($page) {
         $js_path = 'src="/assets/portfolio.js"';
         $hero_bg_class = "portfolio-bg";
         break;
-    
+
     case "/blog":
     case "/blog/":
     case "/feed/":
@@ -192,6 +192,25 @@ switch ($page) {
         $hero_bg_class = "site-care-bg";
         break;
         // Blog post pages
+    case "/Building-the-Digital-Landscape":
+    case "/Building-the-Digital-Landscape/":
+        $meta_keywords = "
+        Web development,
+        North Carolina,
+        Tech ecosystem,
+        Digital excellence,
+        Web design,
+        Innovation,
+        SEO optimization,
+        User experience,
+        Community engagement,
+        Data security";
+        $meta_description = "Discover the tech-forward landscape of web development in North Carolina. Explore innovation, excellence, and SEO optimization as we delve into the state's vibrant tech ecosystem, user-centric design, and commitment to data security. Join us in unlocking digital excellence in the Tar Heel State.";
+        $site_title = "Web Development Insights in North Carolina";
+        $main_title = "Building the Digital Landscape";
+        $intro = "Web Development Insights in North Carolina";
+        $hero_bg_class = "digital-bg";
+        break;
     case "/menu-development":
     case "/menu-development/":
         $meta_keywords = "North Carolina restaurant website development,
@@ -203,7 +222,7 @@ switch ($page) {
         Seamless food ordering integration NC";
         $site_title = "Menu Development and Optimization - A Comprehensive Guide ";
         $main_title = "Boosting your restaurant's success";
-        $meta_description = "Transform your restaurant's menu into a powerhouse for success. Discover essential strategies for menu mastery, pricing, and more. Elevate your dining experience today!"; 
+        $meta_description = "Transform your restaurant's menu into a powerhouse for success. Discover essential strategies for menu mastery, pricing, and more. Elevate your dining experience today!";
         $intro = "Essential Strategies for Restaurant Owners";
         $hero_bg_class = "food-bg";
         break;
@@ -226,7 +245,7 @@ switch ($page) {
         $intro = "3 things your site needs to rank on Google";
         break;
     case "/How-To-Install-WordPress-Plugins/":
-    case "/How-To-Install-WordPress-Plugins":   
+    case "/How-To-Install-WordPress-Plugins":
         $meta_keywords = "Wordpress plugins, vsftpd, FTP daemon, how to install plugin localhost, Linux OS, localhost";
         $meta_description = "Wordpress Plugins can be installed while running locally on a computer by enabling vsftpd, I explain step by step on how to do this";
         $main_title = "How To Install WordPress Plugins On A Local Machine";
@@ -276,15 +295,15 @@ switch ($page) {
         $hero_bg_class = "contact-bg";
         break;
         // promo offer
-        case "/promo" :
-        case "/promo/":
-            $site_title = "Black Friday Exclusive Offer";
-            $meta_keywords = "web development, website maintenance, professional website design, SEO services, responsive web design, website optimization, website backups, website security, web design promotion, monthly maintenance, small business website, custom web design, web hosting, website speed optimization, mobile-friendly website, user-friendly design, web development offer, website promotion, affordable web design";
-            $meta_description = "We are passionate about web design and strive to create websites that not only look great but also function effectively. Let us showcase our expertise and help you achieve your online goals.";
-            $main_title = "Livengood Website Exclusive Black Friday Promo!";
-            $intro = "Unleash Your Business Potential!";
-            $hero_bg_class = "promo-bg";
-            break;
+    case "/promo":
+    case "/promo/":
+        $site_title = "Black Friday Exclusive Offer";
+        $meta_keywords = "web development, website maintenance, professional website design, SEO services, responsive web design, website optimization, website backups, website security, web design promotion, monthly maintenance, small business website, custom web design, web hosting, website speed optimization, mobile-friendly website, user-friendly design, web development offer, website promotion, affordable web design";
+        $meta_description = "We are passionate about web design and strive to create websites that not only look great but also function effectively. Let us showcase our expertise and help you achieve your online goals.";
+        $main_title = "Livengood Website Exclusive Black Friday Promo!";
+        $intro = "Unleash Your Business Potential!";
+        $hero_bg_class = "promo-bg";
+        break;
         // Page not found
     default:
         $main_title = "404";

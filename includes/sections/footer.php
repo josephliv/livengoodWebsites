@@ -1,8 +1,8 @@
 <footer>
-    
+
     <div class="footer-sections">
         <div class="footer-logo"><a href="/"><img src="/assets/imgs/logo-blue.webp" alt="Livengood websites | North carolina website designer"></a></div>
-        <div class="footer-section"> 
+        <div class="footer-section">
             <div class="footer-title">Reach Out</div>
             📞 1 (704) 275-9705<br>
             📧 <a href="mailto:joe@joes.business">joe@joes.business</a>
@@ -22,3 +22,18 @@
     </div>
     <div class="copy">© 2023 Livengood Websites. All Rights Reserved.</div>
 </footer>
+<!--Start of Tawk.to Script -->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+    (function() {
+        var s1 = document.createElement("script"),
+            s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/644a9b054247f20fefee22d7/1gv1mr3s8';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->

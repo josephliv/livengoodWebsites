@@ -140,6 +140,10 @@
             include 'includes/blog.php';
             break;
             // Blog post pages
+        case "/Building-the-Digital-Landscape":
+        case "/Building-the-Digital-Landscape/":
+            include "includes/posts/Building-the-Digital-Landscape.php";
+            break;
         case "/menu-development":
         case "/menu-development/":
             include 'includes/posts/menu-development.php';
@@ -211,19 +215,7 @@
     <a href="#" onclick="topFunction()" id="myBtn" title="Go to top">
         To Top
     </a>
-<!--Start of Tawk.to Script
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/644a9b054247f20fefee22d7/1gv1mr3s8';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>-->
-<!--End of Tawk.to Script-->
+
 </body>
 
 </html>

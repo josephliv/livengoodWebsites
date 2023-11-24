@@ -1,15 +1,12 @@
-
-
 <div class="narrow-section">
-  <span style="font-family: var(--title-font); font-size: 2em; color: var(--accent); text-shadow: var(--text-shadow); letter-spacing: 5px;">Happy Thanksgiving!</span> <strong>We read in 1 Thessalonians 5:18 - "In every thing give thanks: for this is the will of God in Christ Jesus concerning you."</strong>
-  <hr>
+  
   <p>
     Thank you for visiting our website! We want to welcome you to North Carolina's one-stop solution for your website design and development. Unlike typical web design companies in North Carolina, I offer a personal touch, ensuring every project aligns perfectly with your vision and I work as unto the Lord.
   </p>
   <p>
     As an independent expert in web development in North Carolina, my services span from custom websites to specialized online <a href="/food-app">food ordering</a> app development for restaurants. My reputation is built on delivering quality, be it as a web design company in North Carolina and nation-wide or when providing top-tier website hosting and <a href="/website-maintenance-services"> maintenance services.</a> </p>
-    <strong>I am also highy recommended on <a <?= $externalLinks; ?> href="https://www.alignable.com/mocksville-nc/livengood-websites-2"> Alignable!</a></strong>
-    <p class="promo-txt">Unwrap Special Deals – This Month Only! 🎁 <a href="/promo">Click here</a></p>
+  <strong>I am also highy recommended on <a <?= $externalLinks; ?> href="https://www.alignable.com/mocksville-nc/livengood-websites-2"> Alignable!</a></strong>
+  <p class="promo-txt">Unwrap Special Deals – This Month Only! 🎁 <a href="/promo">Click here</a></p>
 </div>
 <section class="home-section-maintenance">
   <div class="home-section-maintenance-inner">
@@ -28,7 +25,7 @@
       <summary title="click to show details">Fortify Your Online Presence.</summary>
       <div>
         <p>In the modern digital landscape, a resilient and updated website is essential. With our premium maintenance services, ensure your site's optimal performance and security. Dive into the specifics on our <a href="/website-maintenance-services">maintenance services</a> page.</p>
-        
+
       </div>
     </details>
     <details>
@@ -72,12 +69,14 @@
 <div class="promo-div">
   <div class="promo-div-inner text-center">
     <div class="close-promo" id="close-promo">×</div>
-    <h3>Black Friday Extravaganza!</h3>
-    <p> Unwrap Special Deals – This Month Only! 🎁</p>
+    <h3>Black Friday Sale!</h3>
+    <p>Hurry, this exclusive Black Friday offer ends tomorrow! Don't miss out on these awesome offers</p>
+    <p style="font-size: .9rem;"><em>"A generous person will prosper; whoever refreshes others will be refreshed." - Proverbs 11:25 (NKJV)</em></p>
     <div class="custom-btn">
-      <a href="/promo">Check Them Out</a>
+      <a href="/promo">Explore Deals</a>
     </div>
   </div>
+</div>
 </div>
 <button class="toggle-promo" id="toggleButton">Black Friday Promo</button>
 
@@ -91,5 +90,5 @@
   }
 
   toggleButton.addEventListener('click', togglePromo);
-  closePromox.addEventListener('click', togglePromo); 
+  closePromox.addEventListener('click', togglePromo);
 </script>

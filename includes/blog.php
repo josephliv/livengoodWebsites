@@ -20,6 +20,23 @@
     <div class="post-card">
             <div class="post-card-inner">
                 <div id="h">
+                    <a href="/Building-the-Digital-Landscape">
+                        <h4>Unveiling North Carolina's Digital Renaissance</h4>
+                    </a>
+                    <hr>
+                </div>
+                <p>Explore the dynamic world of web development in the Tar Heel State. North Carolina's innovation hub is reshaping the digital landscape. Join us on this journey where tech prowess and creativity converge to redefine online experiences.</p>
+                <div id="rt">
+                    <em class="blog-date">posted - 11/24/2023</em><br>
+                    <div class="custom-btn">
+                        <a href="/Building-the-Digital-Landscape">read post</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="post-card">
+            <div class="post-card-inner">
+                <div id="h">
                     <a href="/menu-development">
                         <h4>Menu Mastery: Boost Your Restaurant's Success</h4>
                     </a>
