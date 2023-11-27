@@ -142,24 +142,19 @@
             // Blog post pages
         case "/Building-the-Digital-Landscape":
         case "/Building-the-Digital-Landscape/":
-            include "includes/posts/Building-the-Digital-Landscape.php";
-            break;
         case "/menu-development":
         case "/menu-development/":
-            include 'includes/posts/menu-development.php';
-            break;
         case "/website-maintenance":
         case "/website-maintenance/":
-            include 'includes/posts/website-maintenance.php';
-            break;
         case "/google-analytics":
         case "/google-analytics/":
-            include 'includes/posts/Google-Analytics-4.php';
-            break;
         case "/tips-to-rank-on-google":
         case "/tips-to-rank-on-google/":
-            include 'includes/posts/tips-to-rank-on-google.php';
+
+
+            include "includes/sections/post-page.php";
             break;
+
         case "/How-To-Install-WordPress-Plugins/":
         case "/How-To-Install-WordPress-Plugins":
             include 'includes/posts/How-To-Install-WordPress-Plugins.php';

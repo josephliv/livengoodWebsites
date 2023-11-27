@@ -13,16 +13,16 @@
   <li>Find the "Measurement ID" located in the "Property" column of your newly created web or app property</li>
   <li>Add the following tracking code to your website or app:</li>
  </ol>
- <pre>
-  <code>&lt;script async src="https://www.googletagmanager.com/gtag/js?id=MEASUREMENT_ID">&lt;/script&gt; 
+ <div class="code">
+  <p>&lt;script async src="https://www.googletagmanager.com/gtag/js?id=MEASUREMENT_ID">&lt;/script&gt; 
   &lt;script&gt; 
     window.dataLayer = window.dataLayer || []; 
     function gtag(){dataLayer.push(arguments);} 
     gtag('js', new Date()); 
     gtag('config', 'MEASUREMENT_ID'); 
   &lt;/script&gt; 
-  </code>
- </pre>
+  </p>
+ </div>
  <p>Replace "MEASUREMENT_ID" with your unique measurement ID.</p>
  <h3>Step 3: Set up Event Tracking</h3>
  <ol>

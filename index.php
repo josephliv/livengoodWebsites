@@ -242,6 +242,7 @@ switch ($page) {
     case "/tips-to-rank-on-google":
     case "/tips-to-rank-on-google/":
         $meta_keywords = "seo tips, strategies for google ranking, search engine opitimization";
+        $main_title = "Tips to Rank on Google and other search engines";
         $intro = "3 things your site needs to rank on Google";
         break;
     case "/How-To-Install-WordPress-Plugins/":
@@ -297,10 +298,10 @@ switch ($page) {
         // promo offer
     case "/promo":
     case "/promo/":
-        $site_title = "Black Friday Exclusive Offer";
+        $site_title = "November Exclusive Offer";
         $meta_keywords = "web development, website maintenance, professional website design, SEO services, responsive web design, website optimization, website backups, website security, web design promotion, monthly maintenance, small business website, custom web design, web hosting, website speed optimization, mobile-friendly website, user-friendly design, web development offer, website promotion, affordable web design";
         $meta_description = "We are passionate about web design and strive to create websites that not only look great but also function effectively. Let us showcase our expertise and help you achieve your online goals.";
-        $main_title = "Livengood Website Exclusive Black Friday Promo!";
+        $main_title = "Livengood Website Exclusive November Promo!";
         $intro = "Unleash Your Business Potential!";
         $hero_bg_class = "promo-bg";
         break;

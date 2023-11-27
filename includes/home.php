@@ -1,12 +1,19 @@
 <div class="narrow-section">
-  
+  <h4>Thank you for visiting our website!</h4>
+  <hr>
   <p>
-    Thank you for visiting our website! We want to welcome you to North Carolina's one-stop solution for your website design and development. Unlike typical web design companies in North Carolina, I offer a personal touch, ensuring every project aligns perfectly with your vision and I work as unto the Lord.
+    We want to welcome you to North Carolina's one-stop solution for your website design and development. Unlike typical web design companies in North Carolina, I offer a personal touch, ensuring every project aligns perfectly with your vision and I work as unto the Lord.
   </p>
+  <p class="verse">"Whatever you do, work heartily, as for the Lord and not for men." - Colossians 3:23 (NKJV)</p>
+
+
   <p>
-    As an independent expert in web development in North Carolina, my services span from custom websites to specialized online <a href="/food-app">food ordering</a> app development for restaurants. My reputation is built on delivering quality, be it as a web design company in North Carolina and nation-wide or when providing top-tier website hosting and <a href="/website-maintenance-services"> maintenance services.</a> </p>
+    As an independent expert in web development in North Carolina, my services span from custom websites to specialized online <a href="/food-app">food ordering</a> app development for restaurants. My reputation is built on delivering quality, be it as a web design company in North Carolina and nation-wide or when providing top-tier website hosting and <a href="/website-maintenance-services"> maintenance services.</a>.
+
+  <p class="verse">"Commit your work to the Lord, and your plans will be established." - Proverbs 16:3 (NKJV)</p>
+
   <strong>I am also highy recommended on <a <?= $externalLinks; ?> href="https://www.alignable.com/mocksville-nc/livengood-websites-2"> Alignable!</a></strong>
-  <p class="promo-txt">Unwrap Special Deals – This Month Only! 🎁 <a href="/promo">Click here</a></p>
+  <p class="promo-txt">Unwrap Special Deals – Today Only! 🎁 <a href="/promo">Click here</a></p>
 </div>
 <section class="home-section-maintenance">
   <div class="home-section-maintenance-inner">
@@ -16,6 +23,8 @@
       <p>
         At Livengood Websites, we specialize in crafting personalized websites tailored exclusively for you. Our sleek and mobile-friendly designs ensure your digital presence shines on all devices. With a focus on modern aesthetics, user-centricity, and seamless maintenance, we're committed to elevating your brand online. Contact us today to bring your unique web vision to life.
       </p>
+      <p class="verse">
+        "Whether therefore ye eat, or drink, or whatsoever ye do, do all to the glory of God." - 1 Corinthians 10:31 (KJV)</p>
     </div>
   </div>
 </section>
@@ -58,6 +67,7 @@
         <p>
           SEO is crucial in today's digital landscape, and as your dedicated SEO company in North Carolina, I'm committed to optimizing your online presence. My search optimization agency approach ensures you're not just another website online but a prominent player in search results. We will working together using the best <a href="/seo-strategies/"> SEO strategies</a> to drive organic traffic to your site, bringing in quality leads.
         </p>
+        <p class="verse">"Commit to the Lord whatever you do, and he will establish your plans." - Proverbs 16:3 (NKJV)</p>
       </div>
     </div>
   </div>
@@ -66,19 +76,19 @@
 <section class="testimonial-area gradient-lite pt-5" id="reviews">
   <?php include 'includes/sections/testimonials.php'; ?>
 </section>
+
 <div class="promo-div">
   <div class="promo-div-inner text-center">
     <div class="close-promo" id="close-promo">×</div>
-    <h3>Black Friday Sale!</h3>
-    <p>Hurry, this exclusive Black Friday offer ends tomorrow! Don't miss out on these awesome offers</p>
-    <p style="font-size: .9rem;"><em>"A generous person will prosper; whoever refreshes others will be refreshed." - Proverbs 11:25 (NKJV)</em></p>
+    <h3>Extended Black Friday Sale!</h3>
+    <p>Due to popular demand, we've extended our exclusive Black Friday offer until the end of this month. Don't miss out on these amazing prices!</p>
     <div class="custom-btn">
-      <a href="/promo">Explore Deals</a>
+      <a href="https://livengoodwebsites.com/promo">Explore Deals</a>
     </div>
   </div>
 </div>
 </div>
-<button class="toggle-promo" id="toggleButton">Black Friday Promo</button>
+<button class="toggle-promo" id="toggleButton">Black Friday Promo</button> -->
 
 <script>
   const promo = document.querySelector('.promo-div');
