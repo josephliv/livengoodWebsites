@@ -80,15 +80,15 @@
 <div class="promo-div">
   <div class="promo-div-inner text-center">
     <div class="close-promo" id="close-promo">×</div>
-    <h3>Extended Black Friday Sale!</h3>
-    <p>Due to popular demand, we've extended our exclusive Black Friday offer until the end of this month. Don't miss out on these amazing prices!</p>
+    <h3>Limited Time Offer!</h3>
+    <p>Due to popular demand, we've extended our exclusive offer until the end of this month. Don't miss out!</p>
     <div class="custom-btn">
       <a href="https://livengoodwebsites.com/promo">Explore Deals</a>
     </div>
   </div>
 </div>
 </div>
-<button class="toggle-promo" id="toggleButton">Black Friday Promo</button> -->
+<button class="toggle-promo" id="toggleButton">Exclusive offers!</button>
 
 <script>
   const promo = document.querySelector('.promo-div');

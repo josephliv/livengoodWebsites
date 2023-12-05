@@ -298,10 +298,10 @@ switch ($page) {
         // promo offer
     case "/promo":
     case "/promo/":
-        $site_title = "November Exclusive Offer";
+        $site_title = "Exclusive Offers";
         $meta_keywords = "web development, website maintenance, professional website design, SEO services, responsive web design, website optimization, website backups, website security, web design promotion, monthly maintenance, small business website, custom web design, web hosting, website speed optimization, mobile-friendly website, user-friendly design, web development offer, website promotion, affordable web design";
         $meta_description = "We are passionate about web design and strive to create websites that not only look great but also function effectively. Let us showcase our expertise and help you achieve your online goals.";
-        $main_title = "Livengood Website Exclusive November Promo!";
+        $main_title = "Livengood Website Exclusive Deals!";
         $intro = "Unleash Your Business Potential!";
         $hero_bg_class = "promo-bg";
         break;
