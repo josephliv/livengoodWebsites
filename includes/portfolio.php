@@ -13,11 +13,29 @@
 
 <section class="portfolio">
   <div class="portfolio-inner">
-  <?php
-    // ***********************/
-    //  The church of the Livengood God's website 
-    //************************* */
-    ?>
+  <div class="portfolio-item custom-section-item">
+      <div class="portfolio-item-inner">
+        <img id="action-img" class="popup-img i" src="assets/imgs/portfolio/patentXL.webp" alt="https://patentxl.com/" title="click to view full website in a popup">
+
+        <h3 class="h">Patent XL Law Firm</h3>
+        <div class="rt">
+          <p>
+          Your Trusted Patent Lawyer
+          </p>
+
+          <span><a href="https://patentxl.com/" <?= $externalLinks ?>>
+              visit site
+            </a></span>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal for  website-->
+    <div class="modal">
+      <span class="close">&times;</span>
+      <div class="modal-content">
+        <iframe style="width: 90%; margin: auto; height: 90%" src="https://patentxl.com/" frameborder="0"></iframe>
+      </div>
+    </div>
      <div class="portfolio-item custom-section-item">
       <div class="portfolio-item-inner">
         <img id="action-img" class="popup-img i" src="assets/imgs/portfolio/action-industrial.webp" alt="https://actionindsupply.com/" title="click to view full website in a popup">
@@ -64,11 +82,7 @@
         <iframe style="width: 90%; margin: auto; height: 90%" src="https://cotlgstatesville.com/" frameborder="0"></iframe>
       </div>
     </div>
-  <?php
-    // ***********************/
-    //  Richard Stroud's website 
-    //************************* */
-    ?>
+ 
 
     <div class="portfolio-item custom-section-item">
       <div class="portfolio-item-inner">
@@ -121,12 +135,6 @@
     </div>
 
 
-    <?php
-    // ***********************/
-    // Dart Defense website 
-    //************************* */
-    ?>
-
     <div class="portfolio-item custom-section-item">
       <div class="portfolio-item-inner">
         <img id="dart-img" class="popup-img i" src="assets/imgs/portfolio/dartDefense.png" alt="https://dartdefense.org">
@@ -178,41 +186,6 @@
       </div>
     </div>
 
-    <?php
-    // ***********************/
-    //  despe Consulting website 
-    //************************* */
-    ?>
-
-    <div class="portfolio-item custom-section-item">
-      <div class="portfolio-item-inner">
-        <img id="despe-img" class="popup-img i" src="assets/imgs/portfolio/despeconsulting.png" alt="https://marydespe.com" title="click to view full website in a popup">
-        <h3 class="h">MK Despe Consultant</h3>
-        <div class="rt">
-          <p>
-            Website built on Wordpress. Career coach based in Hawaii.
-          </p>
-          <span><a href="https://marydespe.com" <?= $externalLinks ?>>
-              visit site
-            </a></span>
-        </div>
-      </div>
-    </div>
-    <!-- The Modal for despe defense -->
-    <div id="despe-modal" class="modal">
-      <span id="despe-close" class="close">&times;</span>
-      <div class="modal-content">
-        <iframe id="despe-caption-text" style="width: 90%; margin: auto; height: 90%" src="https://marydespe.com" frameborder="0"></iframe>
-        
-      </div>
-    </div>
-
-    <?php
-    // ***********************/
-    //  live young die rich ALR brand 
-    //************************* */
-    ?>
-
     <div class="portfolio-item custom-section-item">
       <div class="portfolio-item-inner">
         <img id="alr-img" class="popup-img i" src="assets/imgs/portfolio/liveYoungDieRich.png" alt="https://liveyoungdierichapparel.store/" title="click to view full website in a popup">
@@ -243,14 +216,14 @@
 
     <div class="portfolio-item custom-section-item">
       <div class="portfolio-item-inner">
-        <img id="pcp-img" class="popup-img i" src="assets/imgs/portfolio/pcp-usa.png" alt="https://thepcpusa.com" title="click to view full website in a popup">
-        <h3 class="h">The PCP USA</h3>
+        <img id="pcp-img" class="popup-img i" src="/assets/imgs/portfolio/realestatemediators.webp" alt="https://coloradorealestatemediators.com/" title="click to view full website in a popup">
+        <h3 class="h">Mediation And Arbitration Services</h3>
         <div class="rt">
           <p>
-            Built on wordpress, a political website.
+            Built 100% from scratch.
           </p>
           <div></div>
-          <span><a href="https://thepcpusa.com" <?= $externalLinks ?>>
+          <span><a href="https://coloradorealestatemediators.com/" <?= $externalLinks ?>>
               visit site
             </a></span>
         </div>
@@ -260,66 +233,12 @@
     <div id="pcp-modal" class="modal">
       <span id="pcp-close" class="close">&times;</span>
       <div class="modal-content">
-        <iframe style="width: 90%; margin: auto; height: 90%" src="https://thepcpusa.com" frameborder="0"></iframe>
+        <iframe style="width: 90%; margin: auto; height: 90%" src="https://coloradorealestatemediators.com/" frameborder="0"></iframe>
       </div>
     </div>
 
-    <?php
-    // ***********************/
-    //  butler pcp-usa site
-    //************************* */
-    ?>
-
-    <div class="portfolio-item custom-section-item">
-      <div class="portfolio-item-inner">
-        <img id="butler-img" class="popup-img i" src="assets/imgs/portfolio/butler-pcp-usa.png" alt="https://butler.thepcpusa.com" title="click to view full website in a popup">
-        <h3 class="h">The PCP - Butler County</h3>
-        <div class="rt">
-          <p>
-            Built on wordpress, political website based in Butler county, PA.
-          </p>
-
-          <span><a href="https://butler.thepcpusa.com" <?= $externalLinks ?>>
-              visit site
-            </a></span>
-        </div>
-      </div>
-    </div>
-    <!-- The Modal-->
-    <div id="butler-modal" class="modal">
-      <span id="butler-close" class="close">&times;</span>
-      <div class="modal-content">
-        <iframe style="width: 90%; margin: auto; height: 90%" src="https://butler.thepcpusa.com" frameborder="0"></iframe>
-      </div>
-    </div>
-    <?php
-    // ***********************/
-    //  mk despe splash page
-    //************************* */
-    ?>
-
-    <div class="portfolio-item custom-section-item">
-      <div class="portfolio-item-inner">
-        <img id="mksplash-img" class="popup-img i" src="assets/imgs/portfolio/mkdespe-squeezepage.png" alt="https://mkdespe.com" title="click to view full website in a popup">
-        <h3 class="h">Mary Despe Career Coach</h3>
-        <div class="rt">
-          <p>
-            Hand coded capture page with animated title.
-          </p>
-          <div></div>
-          <span><a href="https://mkdespe.com" <?= $externalLinks ?>>
-              visit site
-            </a></span>
-        </div>
-      </div>
-    </div>
-    <!-- The Modal-->
-    <div id="mksplash-modal" class="modal">
-      <span id="mksplash-close" class="close">&times;</span>
-      <div class="modal-content">
-        <iframe style="width: 90%; margin: auto; height: 90%" src="https://mkdespe.com" frameborder="0"></iframe>
-      </div>
-    </div>
+    
+    
     <?php
     // ***********************/
     //  coloradoeasementlawyer.com splash page
