@@ -20,6 +20,23 @@
     <div class="post-card">
             <div class="post-card-inner">
                 <div id="h">
+                    <a href="/effective-website-maintenance">
+                        <h4>10 Essential tips to help you maintain a website that shines</h4>
+                    </a>
+                    <hr>
+                </div>
+                <p>Just like any valuable asset, a website requires consistent care and attention to remain effective in serving its purpose.</p>
+                <div id="rt">
+                    <em class="blog-date">posted - 01/02/2024</em><br>
+                    <div class="custom-btn">
+                        <a href="/effective-website-maintenance">read post</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="post-card">
+            <div class="post-card-inner">
+                <div id="h">
                     <a href="/Building-the-Digital-Landscape">
                         <h4>Unveiling North Carolina's Digital Renaissance</h4>
                     </a>

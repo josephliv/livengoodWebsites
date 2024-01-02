@@ -9,7 +9,7 @@
       </h3>
       
       <p>Elevate your online presence with our expertly crafted websites, now at unbeatable prices. Our discounted packages offer a seamless blend of stunning design, exceptional functionality, and rapid deployment, ensuring your website is up and running in no time.</p>
-      <p>If you prefer to go by the month, check out the alternate plans below and be sure to inform yourself of our <a href="/website-maintenance-services">Maintenance</a> program.</p>
+      <p>If you prefer to NOT go by the month, check out the alternate plans below and be sure to inform yourself of our highly-recommended <a href="/website-maintenance-services">Maintenance</a> program.</p>
       </div>
       </div>
       <div class="promo-container">

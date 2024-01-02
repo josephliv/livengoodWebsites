@@ -13,7 +13,7 @@
   <p class="verse">"Commit your work to the Lord, and your plans will be established." - Proverbs 16:3 (NKJV)</p>
 
   <strong>I am also highy recommended on <a <?= $externalLinks; ?> href="https://www.alignable.com/mocksville-nc/livengood-websites-2"> Alignable!</a></strong>
-  <p class="promo-txt">Unwrap Special Deals – Today Only! 🎁 <a href="/promo">Click here</a></p>
+  <!-- <p class="promo-txt">Check out our Holiday Specials!  <a href="/promo">Click Cere</a></p> -->
 </div>
 <section class="home-section-maintenance">
   <div class="home-section-maintenance-inner">
@@ -77,20 +77,20 @@
   <?php include 'includes/sections/testimonials.php'; ?>
 </section>
 
-<div class="promo-div">
+<!-- <div class="promo-div">
   <div class="promo-div-inner text-center">
     <div class="close-promo" id="close-promo">×</div>
-    <h3>Limited Time Offer!</h3>
-    <p>Due to popular demand, we've extended our exclusive offer until the end of this month. Don't miss out!</p>
+    <h3>Check out our pricing!</h3>
+    <p>We provide value and honesty in all we do!</p>
     <div class="custom-btn">
-      <a href="https://livengoodwebsites.com/promo">Explore Deals</a>
+      <a href="https://livengoodwebsites.com/promo">Packages</a>
     </div>
   </div>
+</div> -->
 </div>
-</div>
-<button class="toggle-promo" id="toggleButton">Exclusive offers!</button>
+<!-- <button class="toggle-promo" id="toggleButton">Holiday Specials!</button> -->
 
-<script>
+<!-- <script>
   const promo = document.querySelector('.promo-div');
   const closePromox = document.getElementById('close-promo');
   const toggleButton = document.getElementById('toggleButton');
@@ -101,4 +101,4 @@
 
   toggleButton.addEventListener('click', togglePromo);
   closePromox.addEventListener('click', togglePromo);
-</script>
+</script> -->

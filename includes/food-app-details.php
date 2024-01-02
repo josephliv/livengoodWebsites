@@ -4,7 +4,7 @@
     <p>Dive into a comprehensive visualization of our digital dining experience. This schematic provides a detailed overview, from order placements using various platforms to the intricate back-end processes that ensure seamless order processing and delivery. Each component of our system, from mobile and desktop widgets to our dynamic core logic, works in harmony to deliver an unparalleled experience for both restaurant owners and diners. To get a closer look and explore each element in detail, click the image below to view a larger image.</p>
     <hr>
 
-    <img id="foodAppImg" class="food-app-img" src="/assets/imgs/food-app-details.jpeg" alt="online food ordering app development" title="view larger image">
+    <img width="500" id="foodAppImg" class="food-app-img" src="/assets/imgs/food-app-details.jpeg" alt="online food ordering app development" title="view larger image">
     <!-- The Modal -->
     <div id="foodAppModal" class="food-modal">
       <span class="close">&times;</span>
@@ -12,7 +12,7 @@
       <div id="foodAppCaption"></div>
     </div>
 </section>
-<section class="bg py-4">
+<section class="bg">
   <div class="narrow-section">
 
     <div class="custom-btn">
@@ -84,7 +84,7 @@
       </div>
       <div id="img">
         <img width="300" class="img-thumbnail my-4" loading="lazy" src="/assets/imgs/optimized-restaurant-website.png" alt="Online restaurant website template">
-        <p class="my-4">Want a sneak peek? <a target="_blank" rel="nofollow noreferral" href="https://www.pronto-ny.com/">Check out our demo site here</a>.</p>
+        <p class="my-4">Want a sneak peek? <a target="_blank" rel="nofollow noreferral" href="https://www.pronto-ny.com/">Check out a demo site here</a>.</p>
         <div class="custom-btn">
           <a href="/request-service">Request a quote</a>
         </div>

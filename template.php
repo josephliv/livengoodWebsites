@@ -27,9 +27,9 @@
     <!-- my own styling -->
     <link rel="stylesheet" href="/assets/reset.css" />
     <link rel="stylesheet" href="/assets/styles.css?l=<?= time(); ?>" />
-    <?php if ($page != "/") {
+    <?php if ($page == "/partner" || $page == "/partner/") {
         // Include layout.css on all pages except home
-        echo '<link rel="stylesheet" href="/assets/layout.css" />';
+        echo '<link rel="stylesheet" href="includes/partner/main.css" />';
     } ?>
     <!-- my own Animations-->
     <link rel="stylesheet" href="/assets/animations.css" />
@@ -75,6 +75,10 @@
         case "/":
             case "/index":
             include 'includes/home.php';
+            break;
+        case "/partner":
+        case "/partner": 
+            include 'includes/partner/partner.php';
             break;
             //Meet Joe page
         case "/meet-joe":
@@ -140,6 +144,8 @@
             include 'includes/blog.php';
             break;
             // Blog post pages
+        case "/effective-website-maintenance":
+        case "/effective-website-maintenance/":
         case "/Building-the-Digital-Landscape":
         case "/Building-the-Digital-Landscape/":
         case "/menu-development":

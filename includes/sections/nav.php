@@ -46,6 +46,9 @@
               <a class="<?php if ($page == '/blog' || $page == '/blog/') echo 'active-nav'; ?>" href="/blog">blog</a>
             </li>
             <li>
+            <a class="<?php if ($page == '/partner' || $page == '/partner/') echo 'active-nav'; ?>" href="/partner">partner with us</a>
+            </li>
+            <li>
               <a class="<?php if ($page == '/contact' || $page == '/contact/') echo 'active-nav'; ?>" href="/contact">Contact</a>
             </li>
           </ul>
@@ -81,9 +84,13 @@
           <li>
             <a class="<?php if ($page == '/portfolio' || $page == '/portfolio/') echo 'active-nav'; ?>" href="/portfolio">portfolio</a>
           </li>
+
           <li>
             <a class="<?php if ($page == '/blog' || $page == '/blog/') echo 'active-nav'; ?>" href="/blog">blog</a>
           </li>
+          <li>
+            <a class="<?php if ($page == '/partner' || $page == '/partner/') echo 'active-nav'; ?>" href="/partner">partner with us</a>
+            </li>
           <li>
             <a class="<?php if ($page == '/contact' || $page == '/contact/') echo 'active-nav'; ?>" href="/contact">Contact</a>
           </li>

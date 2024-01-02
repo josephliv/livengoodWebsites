@@ -1,5 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Ubuntu:wght@400;700&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Barlow:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Slab:wght@700&display=swap');
 :root {
   /* color varables */
   --primary: #007BFF;
@@ -14,10 +13,9 @@
   --light-text-color: #E6F4F1;
 
   /* fonts */
-  /* --title-font: "Quicksand", sans-serif; */
-  --title-font: 'Acme', sans-serif;;
-  /* --text-font: "ubuntu", sans-serif; */
-  --text-font: 'Barlow', sans-serif;
+  /* fonts */
+  --title-font: 'Roboto Slab', serif;
+  --text-font: 'Lato', sans-serif;
   --text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
   2px 2px 0 #000, 2px 2px 60px var(--light-text-color);
   /* font sizes */
@@ -423,6 +421,9 @@ details[open] summary ~ * {
 /* dynamic hero background per page when needed */
 .web-design {
   background-image: url('/assets/imgs/peace-of-mind.jpeg');
+}
+.partner {
+  background-image: url('/assets/imgs/hero/partner.webp');
 }
 .portfolio-bg {
   background-image: url('/assets/imgs/hero/portfolio-bg.webp');
@@ -1658,7 +1659,7 @@ Contact form
 
 footer {
   border-top: 3px solid var(--primary);
-  background: linear-gradient(to top, #28a745, #ccc);
+  background: linear-gradient(to top, var(--primary), #ccc);
   color: var(--light-text-color);
   padding: 20px;
   text-align: center;

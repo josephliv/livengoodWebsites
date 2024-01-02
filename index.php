@@ -50,7 +50,13 @@ switch ($page) {
         $intro = "Your Trusted Web Development and Design Specialist in North Carolina";
         break;
         // Google was showing a 404 with this url, the testimonials are on the home page
-
+    case "/partner":
+    case "/partner": 
+        $site_title = "Partner with Livengood Websites";
+        $main_title = "Get Online With Confidence"; 
+        $intro = "Partner With Livengood Websites"; 
+        $hero_bg_class = "partner";   
+        break;
     case "/meet-joe":
     case "/meet-joe/":
         // 404 detected from /about so let's add it here
@@ -192,6 +198,16 @@ switch ($page) {
         $hero_bg_class = "site-care-bg";
         break;
         // Blog post pages
+        case "/effective-website-maintenance":
+        case "/effective-website-maintenance/":
+           $main_title = "10 Essential tips to help you maintain a website that shines";
+           $intro = "Tips for Effective Website Maintenance";
+           $hero_bg_class = "site-care-bg"; 
+           $meta_keywords = "website maintenance, web development, SEO, user experience, security, responsive design";
+           $meta_description = "Learn 10 essential tips for maintaining your website effectively, whether you use custom HTML and CSS, Elementor Pro for WordPress, or any other platform.";
+           $canonical = "https://livengoodwebsites.com/effective-website-maintenance";
+           $site_title = "10 Essential Tips for Effective Website Maintenance";
+        break;
     case "/Building-the-Digital-Landscape":
     case "/Building-the-Digital-Landscape/":
         $meta_keywords = "
@@ -319,5 +335,6 @@ if ($page === "/robots.txt") {
     include 'robots.txt';
     return;
 }
+
 
 include "template.php";
