@@ -53,8 +53,8 @@ switch ($page) {
     case "/partner":
     case "/partner": 
         $site_title = "Partner with Livengood Websites";
-        $main_title = "Get Online With Confidence"; 
-        $intro = "Partner With Livengood Websites"; 
+        $main_title = "Become Our Partner"; 
+        $intro = "Join Us in Building Success Together"; 
         $hero_bg_class = "partner";   
         break;
     case "/meet-joe":

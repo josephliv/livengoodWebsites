@@ -77,20 +77,18 @@
   <?php include 'includes/sections/testimonials.php'; ?>
 </section>
 
-<!-- <div class="promo-div">
+<div class="promo-div">
   <div class="promo-div-inner text-center">
     <div class="close-promo" id="close-promo">×</div>
-    <h3>Check out our pricing!</h3>
-    <p>We provide value and honesty in all we do!</p>
-    <div class="custom-btn">
-      <a href="https://livengoodwebsites.com/promo">Packages</a>
-    </div>
+    <h3>Stay Ahead:</h3>
+    <p>Subscribe for Exclusive Insights!</p>
+    <?php include 'includes/opt-in-form.php'; ?>
   </div>
-</div> -->
 </div>
-<!-- <button class="toggle-promo" id="toggleButton">Holiday Specials!</button> -->
+</div>
+<button class="toggle-promo" id="toggleButton">Stay Ahead!</button>
 
-<!-- <script>
+<script>
   const promo = document.querySelector('.promo-div');
   const closePromox = document.getElementById('close-promo');
   const toggleButton = document.getElementById('toggleButton');
@@ -101,4 +99,4 @@
 
   toggleButton.addEventListener('click', togglePromo);
   closePromox.addEventListener('click', togglePromo);
-</script> -->
+</script>

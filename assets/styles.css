@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Slab:wght@700&display=swap');
 :root {
   /* color varables */
-  --primary: #007BFF;
-  --primary-lite: #008474;
+  --primary: #002f60;
+  --primary-lite: #425C93;
   --secondary: #28a745;
-  --accent: #fc7046;
+  --accent: #B78A00;
   --accent-lite:#fc704680 ;
   --light-bg: #DFF8D5;
 
@@ -915,14 +915,14 @@ video {
   box-shadow: var(--shadow);
   border: 4px outset var(--accent);
   padding: 24px;
-    max-width: 350px;
+    max-width: 380px;
     position: fixed;
     border-radius: 20px;
     padding: 18px ;
-    top: 30vh;
+    top: 20vh;
     right: 10px;
     animation: promo-ele 3.5s ease-in-out;
-    max-height: 400px;
+    /* max-height: 440px; */
   overflow: hidden;
   transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
@@ -940,7 +940,7 @@ video {
 .promo-div-inner h3 {
   font-size: 1.5rem;
   color: var(--light-text-color);
-  background-color: var(--accent);
+  background-color: var(--primary);
   padding: 5px;
   border-radius: 20px 20px 0 0;
 }
