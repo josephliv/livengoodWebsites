@@ -64,10 +64,10 @@
 <?php include 'includes/sections/header.php';  ?>
    
     <!-- Main content -->
-    <div class="page-content">
     <div class="gradient-reverse introduction" id="top">
     <h2><?= $intro; ?></h2>
     </div>
+    <div class="page-content">
     <?php
     // For page rendering
     switch ($page) {

@@ -59,9 +59,7 @@
 </div>
 <div class="promo-cta">
   <p class="lead text-light" style="font-size: 1.5em;">Contact us today to unleash the power of a compelling online presence.</p>
-        <div class="custom-btn">
-<script type="text/javascript" defer src="https://form.123formbuilder.com/embed/6549798.js?type=lightbox" data-role="form" data-default-width="650px" data-embed-type="lightbox-text-link" data-embed-text-link="Get Started"></script>
-        </div>
+  <script type="text/javascript" defer src="https://form.123formbuilder.com/embed/6549798.js?type=lightbox" data-role="form" data-default-width="650px" data-embed-type="lightbox-text-link" data-embed-text-link="Contact Us"></script>
       </div>
 </section>
 </body>

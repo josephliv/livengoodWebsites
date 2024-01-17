@@ -57,3 +57,7 @@ const detailsElements = document.getElementsByTagName('details');
       }
     });
   }
+
+
+
+  

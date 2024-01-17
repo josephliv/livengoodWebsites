@@ -153,6 +153,7 @@ hr {
   padding: var(--section-padding);
 }
 
+
 /* Grid template to be used for the pages that contain images */
 .page h3 {
   font-weight: 600;
@@ -1304,21 +1305,78 @@ Food ordering page
 
 /* testimonial area update 4/23/23 */
 .testimonial-inner-section h4 {
-  font-size: .7em;
+  font-size: var(--title-size);
   color: var(--primary);
 }
 .testimonial-inner-section h3 {
   color: var(--accent);
 }
 .testimonial-inner-section p {
-  font-size: 0.7em;
+  font-size: 0.9em;
+}
+.custom-card {
+  background-color: beige;
+  border: 1px groove #000;
+  border-radius: 0.25rem;
+    padding: 15px;
+}
+
+/* mark */
+.testimonial-inner-section div.custom-card:nth-child(1) {
+  grid-area: a;
+}
+/*  Dart */
+.testimonial-inner-section div.custom-card:nth-child(2) {
+  grid-area: b;
+}
+/* Pat */
+.testimonial-inner-section div.custom-card:nth-child(3) {
+  grid-area: c;
+}
+/* Amy */
+.testimonial-inner-section div.custom-card:nth-child(4) {
+  grid-area: d;
+}
+/* Mary */
+.testimonial-inner-section div.custom-card:nth-child(5) {
+  grid-area: e;
+}
+/* Tom T. */
+.testimonial-inner-section div.custom-card:nth-child(6) {
+  grid-area: f;
+}
+/* Anthony */
+.testimonial-inner-section div.custom-card:nth-child(7) {
+  grid-area: g;
+}
+/* Paul Dusenbery */
+.testimonial-inner-section div.custom-card:nth-child(8) {
+  grid-area: h;
+}
+/* Ramon Urteaga */
+.testimonial-inner-section div.custom-card:nth-child(9) {
+  grid-area: i;
+}
+/* Eugene Clapp */
+.testimonial-inner-section div.custom-card:nth-child(10) {
+  grid-area: j;
+}
+/* Donna Plunkett */
+.testimonial-inner-section div.custom-card:nth-child(11) {
+  grid-area: k;
+}
+/* Dyego Sousa */
+.testimonial-inner-section div.custom-card:nth-child(12) {
+  grid-area: l;
 }
 .testimonial-inner-section {
-  max-width: 1400px;
+  max-width: 90%;
   margin: auto;
   display: grid;
   gap: 0.5rem;
   grid-template-areas:
+    "i"
+    "j"
     "h"
     "a"
     "b"
@@ -1326,57 +1384,39 @@ Food ordering page
     "d"
     "e"
     "f"
-    "g";
+    "g"
+    "k"
+    "l";
   padding: 3em 5px;
-}
-/* mark */
-.testimonial-inner-section article:nth-child(1) {
-  grid-area: a;
-}
-/*  Dart */
-.testimonial-inner-section article:nth-child(2) {
-  grid-area: b;
-}
-/* Pat */
-.testimonial-inner-section article:nth-child(3) {
-  grid-area: c;
-}
-/* Amy */
-.testimonial-inner-section article:nth-child(4) {
-  grid-area: d;
-}
-/* Mary */
-.testimonial-inner-section article:nth-child(5) {
-  grid-area: e;
-}
-/* Tom T. */
-.testimonial-inner-section article:nth-child(6) {
-  grid-area: f;
-}
-/* Anthony */
-.testimonial-inner-section article:nth-child(7) {
-  grid-area: g;
-}
-/* Paul Dusenbery */
-.testimonial-inner-section article:nth-child(8) {
-  grid-area: h;
 }
 @media (min-width: 40em) {
   .testimonial-inner-section {
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
+      "a a b b"
+      "a a c c"
+      "g d d d"
+      "f f f h"
+      "j k k h"
+      "i i i i"
+	  "e e e l"
       
-      "h h a a a a"
-      "b b b e e e"
-      "c c f f g g"
-      "d d d d d d";
+      
+      ;
   }
 }
 @media (min-width: 70em) {
   .testimonial-inner-section {
     grid-template-areas:
-      "h h d d d a"
-      "b b b e e a"
-      "f f g g c a";
+      "a a a b c c"
+      "a a a b d d"
+      "g f i b d d"
+      "l f i h h h"
+      "j j k k e e"
+       ;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto; /* Set a fixed height for each row */
+    grid-gap: 10px; 
   }
 }
 

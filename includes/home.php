@@ -2,29 +2,47 @@
   <h4>Thank you for visiting our website!</h4>
   <hr>
   <p>
-    We want to welcome you to North Carolina's one-stop solution for your website design and development. Unlike typical web design companies in North Carolina, I offer a personal touch, ensuring every project aligns perfectly with your vision and I work as unto the Lord.
-  </p>
-  <p class="verse">"Whatever you do, work heartily, as for the Lord and not for men." - Colossians 3:23 (NKJV)</p>
+  At Livengood Websites, we're not just another web development company in North Carolina. Here, it's more than just business; it's about a passion for creating something meaningful and lasting. Inspired by the principle of working "as unto the Lord" (Colossians 3:23), each project is handled with care, dedication, and a commitment to excellence.</p>
 
 
   <p>
-    As an independent expert in web development in North Carolina, my services span from custom websites to specialized online <a href="/food-app">food ordering</a> app development for restaurants. My reputation is built on delivering quality, be it as a web design company in North Carolina and nation-wide or when providing top-tier website hosting and <a href="/website-maintenance-services"> maintenance services.</a>.
-
-  <p class="verse">"Commit your work to the Lord, and your plans will be established." - Proverbs 16:3 (NKJV)</p>
-
-  <strong>I am also highy recommended on <a <?= $externalLinks; ?> href="https://www.alignable.com/mocksville-nc/livengood-websites-2"> Alignable!</a></strong>
-  <!-- <p class="promo-txt">Check out our Holiday Specials!  <a href="/promo">Click Cere</a></p> -->
+  As an independent specialist in web development, I understand the importance of a personal touch. Whether it's crafting a custom website or developing a specialized online <a href="/food-app">food ordering</a> app for a restaurant, I approach each project with the aim of perfectly aligning with your vision.
+  </p>
 </div>
+<section>
+<div style="width: 100%; border-bottom: 1px groove #ccc;"></div>
+<div class="page">
+    <article>
+      <div class="custom-section-reverse">
+        <h4 id="title">Highly Recommended on Alignable</h4>
+        <div id="disc">
+    <p>
+  Being recommended on Alignable is a testament to the trust and satisfaction of those I've had the pleasure of working with. I invite you to join this journey, where your website isn't just built, but is crafted with intention, skill, and a spirit of service.
+  </p>
+        </div>
+  <div id="img">
+    
+  <a <?= $externalLinks; ?> href="https://www.alignable.com/mocksville-nc/livengood-websites-2"><img alt="Highly Recommended by Locals On Alignable" width="280px" title="Highly Recommended by Locals On Alignable" src="https://www.alignable.com/assets/badge/highly-recommended.png" /></a>
+
+  </div>
+  
+  </div>
+    </article>
+</div>
+</section>
+
+
 <section class="home-section-maintenance">
   <div class="home-section-maintenance-inner">
     <div class="container maintenance-content">
       <h4>Personalized web design and maintenance.</h4>
       <hr>
+      <p>My services extend beyond just design and development. I offer comprehensive website hosting and
+      <a href="/website-maintenance-services"> maintenance services</a>, ensuring your digital presence is reliable and impactful. </p>
       <p>
-        At Livengood Websites, we specialize in crafting personalized websites tailored exclusively for you. Our sleek and mobile-friendly designs ensure your digital presence shines on all devices. With a focus on modern aesthetics, user-centricity, and seamless maintenance, we're committed to elevating your brand online. Contact us today to bring your unique web vision to life.
+      
+      Importantly, my maintenance services are available even for websites that were not originally built by me. Clients can engage my expertise for their existing websites, with no need for a rebuild or a binding long-term contract. I provide this service for a straightforward monthly flat fee, making it an accessible and hassle-free solution for maintaining your site's performance, content updates and security.
       </p>
-      <p class="verse">
-        "Whether therefore ye eat, or drink, or whatsoever ye do, do all to the glory of God." - 1 Corinthians 10:31 (KJV)</p>
     </div>
   </div>
 </section>
