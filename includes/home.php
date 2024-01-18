@@ -34,16 +34,17 @@
 
 <section class="home-section-maintenance">
   <div class="home-section-maintenance-inner">
-    <div class="container maintenance-content">
-      <h4>Personalized web design and maintenance.</h4>
-      <hr>
-      <p>My services extend beyond just design and development. I offer comprehensive website hosting and
-      <a href="/website-maintenance-services"> maintenance services</a>, ensuring your digital presence is reliable and impactful. </p>
-      <p>
-      
-      Importantly, my maintenance services are available even for websites that were not originally built by me. Clients can engage my expertise for their existing websites, with no need for a rebuild or a binding long-term contract. I provide this service for a straightforward monthly flat fee, making it an accessible and hassle-free solution for maintaining your site's performance, content updates and security.
-      </p>
-    </div>
+  <div class="container maintenance-content py-3">
+    <h4>Personalized Web Design and Comprehensive Maintenance</h4>
+    <hr>
+    <p>At Livengood Websites, we extend our expertise beyond just design and development. Explore our 
+       <a href="/website-maintenance-services">website maintenance packages</a>, meticulously tailored to ensure your digital presence is not only reliable but also consistently excelling. Discover our all-encompassing solutions today!</p>
+
+    <p>
+        What's more, our maintenance services are readily available for websites not originally crafted by us. Whether it's enhancing existing websites or providing regular upkeep, we do it all without requiring a rebuild or a binding long-term contract. Benefit from our straightforward monthly flat fee approach, making web maintenance accessible, simple, and hassle-free. Ensure your site’s peak performance, timely content updates, and robust security with Livengood Websites.
+    </p>
+</div>
+
   </div>
 </section>
 <div class="container py-5">
@@ -98,13 +99,13 @@
 <div class="promo-div">
   <div class="promo-div-inner text-center">
     <div class="close-promo" id="close-promo">×</div>
-    <h3>Stay Ahead:</h3>
-    <p>Subscribe for Exclusive Insights!</p>
+    <h3>Stay informed:</h3>
+    <p>Subscribe for new posts!</p>
     <?php include 'includes/opt-in-form.php'; ?>
   </div>
 </div>
 </div>
-<button class="toggle-promo" id="toggleButton">Stay Ahead!</button>
+<button class="toggle-promo" id="toggleButton">Stay Informed</button>
 
 <script>
   const promo = document.querySelector('.promo-div');

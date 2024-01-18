@@ -132,6 +132,7 @@ h3, h4 {
   font-weight: 700;
   text-transform: capitalize;
 }
+h5 {font-weight: bold; font-family: var(--title-font)}
 hr {
   width: 300px;
   margin: 1.5rem auto;
@@ -163,6 +164,16 @@ hr {
   border: 5px outset var(--accent);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+}
+.page .custom-btn img {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  display: inline; margin-right: 10px;
+  width: 60px;
+}
+.page .custom-btn {
+  padding: none;
 }
 .page h4 {
   color: var(--primary);
@@ -235,6 +246,32 @@ hr {
       "img title"
       "img disc";
   }
+  /* buy now buttons */
+  
+  .buy-now-box {
+    display: flex;
+    justify-content: space-around;
+  }
+  .buy-now-box div {
+    max-width: 400px; 
+    text-align: center;
+    border: 1px groove var(--secondary);
+    box-shadow: var(--shadow);
+    padding-bottom: 10px;
+    background: linear-gradient(to bottom, #0f2027, #fff);
+    border-radius: var(--radius);
+    color: var(--light-text-color);
+    min-height: 300px;
+    display: grid;
+    place-items: center
+  }
+  .buy-now-box div img {
+    border: none;
+    width: 60px;
+    display: inline;
+    margin-right: 10px;
+    box-shadow: none;
+  }
 }
 
 /* grid parts for the pages that uses them as the main content*/
@@ -274,6 +311,7 @@ hr {
     padding: var(--section-padding);
     background-color: none;
   }
+ 
 }
 /* food post styling */
 .restaurant-post {

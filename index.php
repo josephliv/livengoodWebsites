@@ -170,31 +170,12 @@ switch ($page) {
     case "/website-maintenance-services/":
     case "/site-care":
     case "/site-care/":
-        $main_title = "Our Website Maintenance Services";
+        $main_title = "All-inclusive Website Maintenance Packages";
         $meta_keywords = "
-        Website maintenance,
-        Regular updates,
-        Site security,
-        Optimal performance,
-        Uptime monitoring,
-        Backup solutions,
-        Site longevity,
-        User experience,
-        Reliable website,
-        Downtime,
-        Vulnerabilities,
-        Website health,
-        CMS updates,
-        Plugin updates,
-        SEO rankings,
-        User trust,
-        Technical glitches,
-        Software compatibility,
-        Data breaches,
-        Maintenance plan
+        website maintenance, web care packages, all-inclusive web services, affordable website support, Livengood Websites, comprehensive website care, website security, performance optimization, SEO monitoring, content updates, emergency web support, professional web maintenance
         ";
-        $meta_description = "comprehensive website maintenance services designed to keep your online presence running smoothly.";
-        $intro = "Keep Your Website in Perfect Shape and Unleash it's true potential!";
+        $meta_description = "Explore Livengood Websites' All-inclusive Website Maintenance Packages. Offering seamless, comprehensive, and affordable care for your online presence. Get top-notch website security, performance optimization, SEO, content updates, and emergency support. Perfect for businesses seeking reliable web maintenance.";
+        $intro = "Seamless, Comprehensive, and Affordable Care for Your Online Presence";
         $hero_bg_class = "site-care-bg";
         break;
         // Blog post pages
