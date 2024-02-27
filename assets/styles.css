@@ -161,9 +161,9 @@ hr {
   color: var(--primary);
 }
 .page img {
-  border: 5px outset var(--accent);
+  border: 2px groove var(--accent);
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  box-shadow: 2px 2px 15px #222;
 }
 .page .custom-btn img {
   border: none;
@@ -385,7 +385,6 @@ details[open] summary ~ * {
   width: 100%;
   background-color: var(--primary-lite);
   padding: 20px 0;
-  /* min-height: 120px; */
   display: grid;
   place-items: center;
 }
@@ -403,11 +402,12 @@ details[open] summary ~ * {
 .site-title h1 {
   font-family: var(--title-font);
   font-size: var(--hero-title);
-  color: var(--light-text-color);
-  font-family: var(--title-font);
-  color: var(--light-text-color);
-  text-shadow: var(--text-shadow) ;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
+}
+.hero-content h2 {
+  max-width: 80%; 
+  margin: auto;
+  font-size: calc(2rem * 0.5);
 }
 
 .home-sub-title {
@@ -421,33 +421,9 @@ details[open] summary ~ * {
   gap: 1.5rem;
   justify-content: center;
 }
-@media (min-width: 80em) {
-  .site-title h1 {
-    font-size: var(--hero-title);
-    text-align: center;
-    font-weight: 800;
-    text-transform: capitalize;
-  }
-}
-
-.video-background-wrapper {
-  height: 600px;
-  overflow: hidden;
-  position: relative;
-} 
-
-/* for mobiles - no video */
-@media (max-width: 1200px) {
-  .video-background-wrapper {
-    background-image: url('/assets/imgs/peace-of-mind.jpeg');
-    background-color: #000000cc;
-    background-blend-mode: overlay;
-  }
-
-}
 /* Styles for the background image on all other pages */
 .img-background {
-  min-height: 600px;
+  min-height: 70vh;
   background-image: var(--gradient-lite);
   background-size: cover;
   background-color: #00000080;
@@ -457,6 +433,38 @@ details[open] summary ~ * {
   display: grid;
   place-items: center;
 }
+@media (min-width: 80em) {
+  .site-title h1 {
+    font-size: var(--hero-title);
+    text-align: center;
+    font-weight: 800;
+    text-transform: capitalize;
+  }
+  /* Styles for the background image on all other pages */
+.img-background {
+  min-height: 700px;
+}
+}
+
+.video-background-wrapper {
+  min-height: 80vh;
+  overflow: hidden;
+  position: relative;
+  
+} 
+
+/* for mobiles - no video */
+@media (max-width: 1000px) {
+
+  .video-background-wrapper {
+    background-image: url('/assets/imgs/peace-of-mind.jpeg');
+    background-color: #000000cc;
+    background-blend-mode: overlay;
+    min-height: 60vh;
+  }
+
+}
+
 /* dynamic hero background per page when needed */
 .web-design {
   background-image: url('/assets/imgs/peace-of-mind.jpeg');
@@ -499,6 +507,12 @@ details[open] summary ~ * {
 }
 .digital-bg {
   background-image: url("/assets/imgs/hero/digital-landscape.webp");
+}
+.garden-bg {
+  background-image: url("/assets/imgs/hero/website-maintenance-and-gardeningbg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 video {
   position: absolute;
@@ -577,12 +591,8 @@ video {
   .page-bg {
     background-size: cover;
     background-position: center;
-    height: 400px !important;
   }
 
-  .page-bg .hero-content {
-    margin: 10px 0;
-  }
 }
 .cta-button a.lightbox-text-link {
   text-decoration: none;
@@ -764,7 +774,7 @@ video {
   background-color: var(--primary-lite);
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 880px) {
   #video-background {
     /* height: 60vh; */
     overflow: hidden;
@@ -814,28 +824,16 @@ video {
 }
 
 .introduction {
-  min-height: 200px;
+  min-height: 150px;
   display: grid;
   place-items: center;
 }
-.introduction h2 {
-  font-size: var(--);
-  max-width: 90%;
-  margin: auto;
-  color: var(--light-text-color);
-  text-shadow: 2px 2px 15px #000;
-  font-style: italic;
-  max-width: 600px;
-  text-align: center;
-  opacity: 0;
-  animation: fadeIn 1.5s forwards;
-  animation-delay: 1s;
+.introduction h3 {
+  font-family: var(--title-font);
+  margin-bottom: 10px;
 }
-@media (min-width: 600px) {
-  .introduction h2 {
-    max-width: 1100px;
-  }
-}
+
+
 /*  =================================== 
     home page content styling
 =================================== */

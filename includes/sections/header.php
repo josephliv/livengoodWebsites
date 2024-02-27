@@ -20,15 +20,10 @@
         <h1 class="text-light">
           <?= $main_title; ?>
         </h1>
-        <hr>
-        <div class="cta-button">
-        <script type="text/javascript" defer 
-        src="<?php if($page === "/promo" || $page === "/promo/") {
-          echo "https://form.123formbuilder.com/embed/6549798.js?type=lightbox";
-        } else echo "https://form.123formbuilder.com/embed/6306291.js?type=lightbox"; ?>" 
-        data-role="form" data-default-width="650px" data-embed-type="lightbox-text-link" data-embed-text-link="Contact us"></script>
-        </div>
       </div>
+        <hr>
+        <h2 class="text-light"><?= $intro; ?></h2>
+      
     </div>
   </div>
 </div>

@@ -1,0 +1,66 @@
+[25-Dec-2023 14:41:18 UTC] PHP Warning:  Undefined array key "k" in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code on line 11
+[25-Dec-2023 14:41:18 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "upload" in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code:11
+Stack trace:
+#0 /home/livengood/public_html/assets/imgs/hero/index.php(3): eval()
+#1 {main}
+  thrown in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code on line 11
+[04-Jan-2024 07:27:17 UTC] PHP Warning:  Undefined array key "k" in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code on line 11
+[04-Jan-2024 07:27:17 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "upload" in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code:11
+Stack trace:
+#0 /home/livengood/public_html/assets/imgs/hero/index.php(3): eval()
+#1 {main}
+  thrown in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code on line 11
+[04-Jan-2024 07:27:28 UTC] PHP Warning:  Undefined array key "k" in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code on line 11
+[04-Jan-2024 07:27:28 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "upload" in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code:11
+Stack trace:
+#0 /home/livengood/public_html/assets/imgs/hero/index.php(3): eval()
+#1 {main}
+  thrown in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code on line 11
+[07-Jan-2024 08:17:56 UTC] PHP Warning:  Undefined array key "k" in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code on line 11
+[07-Jan-2024 08:17:56 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "upload" in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code:11
+Stack trace:
+#0 /home/livengood/public_html/assets/imgs/hero/index.php(3): eval()
+#1 {main}
+  thrown in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code on line 11
+[24-Jan-2024 06:30:23 UTC] PHP Warning:  Undefined array key "k" in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code on line 11
+[24-Jan-2024 06:30:23 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "upload" in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code:11
+Stack trace:
+#0 /home/livengood/public_html/assets/imgs/hero/index.php(3): eval()
+#1 {main}
+  thrown in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code on line 11
+[24-Jan-2024 06:30:24 UTC] PHP Warning:  Undefined array key "k" in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code on line 11
+[24-Jan-2024 06:30:24 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "upload" in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code:11
+Stack trace:
+#0 /home/livengood/public_html/assets/imgs/hero/index.php(3): eval()
+#1 {main}
+  thrown in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code on line 11
+[27-Jan-2024 08:09:05 UTC] PHP Warning:  Undefined array key "k" in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code on line 11
+[27-Jan-2024 08:09:05 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "upload" in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code:11
+Stack trace:
+#0 /home/livengood/public_html/assets/imgs/hero/index.php(3): eval()
+#1 {main}
+  thrown in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code on line 11
+[28-Jan-2024 07:51:52 UTC] PHP Warning:  Undefined array key "k" in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code on line 11
+[28-Jan-2024 07:51:52 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "upload" in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code:11
+Stack trace:
+#0 /home/livengood/public_html/assets/imgs/hero/index.php(3): eval()
+#1 {main}
+  thrown in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code on line 11
+[29-Jan-2024 15:38:42 UTC] PHP Warning:  Undefined array key "k" in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code on line 11
+[29-Jan-2024 15:38:42 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "upload" in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code:11
+Stack trace:
+#0 /home/livengood/public_html/assets/imgs/hero/index.php(3): eval()
+#1 {main}
+  thrown in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code on line 11
+[30-Jan-2024 09:26:10 UTC] PHP Warning:  Undefined array key "k" in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code on line 11
+[30-Jan-2024 09:26:10 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "upload" in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code:11
+Stack trace:
+#0 /home/livengood/public_html/assets/imgs/hero/index.php(3): eval()
+#1 {main}
+  thrown in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code on line 11
+[04-Feb-2024 08:10:00 UTC] PHP Warning:  Undefined array key "k" in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code on line 11
+[04-Feb-2024 08:10:00 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "upload" in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code:11
+Stack trace:
+#0 /home/livengood/public_html/assets/imgs/hero/index.php(3): eval()
+#1 {main}
+  thrown in /home/livengood/public_html/assets/imgs/hero/index.php(3) : eval()'d code on line 11

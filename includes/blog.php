@@ -20,6 +20,23 @@
     <div class="post-card">
             <div class="post-card-inner">
                 <div id="h">
+                    <a href="/garden-vs-website">
+                        <h4>Website maintenance is like Caring for your garden</h4>
+                    </a>
+                    <hr>
+                </div>
+                <p>Comparing website maintenance to tending a garden offers a vivid and relatable analogy that highlights the ongoing nature of both activities and their importance for healthy growth and vitality.</p>
+                <div id="rt">
+                    <em class="blog-date">posted - 02/21/2024</em><br>
+                    <div class="custom-btn">
+                        <a href="/garden-vs-website">read post</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="post-card">
+            <div class="post-card-inner">
+                <div id="h">
                     <a href="/effective-website-maintenance">
                         <h4>10 Essential tips to help you maintain a website that shines</h4>
                     </a>

@@ -1,5 +1,5 @@
 <div class="narrow-section">
-  <h4>Thank you for visiting our website!</h4>
+  <h4>Unlock Your Website's Potential Today!</h4>
   <hr>
   <p>
   At Livengood Websites, we're not just another web development company in North Carolina. Here, it's more than just business; it's about a passion for creating something meaningful and lasting. Inspired by the principle of working "as unto the Lord" (Colossians 3:23), each project is handled with care, dedication, and a commitment to excellence.</p>
@@ -9,28 +9,6 @@
   As an independent specialist in web development, I understand the importance of a personal touch. Whether it's crafting a custom website or developing a specialized online <a href="/food-app">food ordering</a> app for a restaurant, I approach each project with the aim of perfectly aligning with your vision.
   </p>
 </div>
-<section>
-<div style="width: 100%; border-bottom: 1px groove #ccc;"></div>
-<div class="page">
-    <article>
-      <div class="custom-section-reverse">
-        <h4 id="title">Highly Recommended on Alignable</h4>
-        <div id="disc">
-    <p>
-  Being recommended on Alignable is a testament to the trust and satisfaction of those I've had the pleasure of working with. I invite you to join this journey, where your website isn't just built, but is crafted with intention, skill, and a spirit of service.
-  </p>
-        </div>
-  <div id="img">
-    
-  <a <?= $externalLinks; ?> href="https://www.alignable.com/mocksville-nc/livengood-websites-2"><img alt="Highly Recommended by Locals On Alignable" width="280px" title="Highly Recommended by Locals On Alignable" src="https://www.alignable.com/assets/badge/highly-recommended.png" /></a>
-
-  </div>
-  
-  </div>
-    </article>
-</div>
-</section>
-
 
 <section class="home-section-maintenance">
   <div class="home-section-maintenance-inner">
@@ -95,27 +73,24 @@
 <section class="testimonial-area gradient-lite pt-5" id="reviews">
   <?php include 'includes/sections/testimonials.php'; ?>
 </section>
+<div class="page">
+    <article>
+      <div class="custom-section-reverse">
+        <h4 id="title">Highly Recommended on Alignable</h4>
+        <div id="disc">
+    <p>
+  Being recommended on Alignable is a testament to the trust and satisfaction of those I've had the pleasure of working with. I invite you to join this journey, where your website isn't just built, but is crafted with intention, skill, and a spirit of service.
+  </p>
+        </div>
+  <div id="img">
+    
+  <a <?= $externalLinks; ?> href="https://www.alignable.com/mocksville-nc/livengood-websites-2"><img alt="Highly Recommended by Locals On Alignable" width="280px" title="Highly Recommended by Locals On Alignable" src="https://www.alignable.com/assets/badge/highly-recommended.png" /></a>
 
-<div class="promo-div">
-  <div class="promo-div-inner text-center">
-    <div class="close-promo" id="close-promo">×</div>
-    <h3>Stay informed:</h3>
-    <p>Subscribe for new posts!</p>
-    <?php include 'includes/opt-in-form.php'; ?>
   </div>
+  
+  </div>
+    </article>
 </div>
-</div>
-<button class="toggle-promo" id="toggleButton">Stay Informed</button>
 
-<script>
-  const promo = document.querySelector('.promo-div');
-  const closePromox = document.getElementById('close-promo');
-  const toggleButton = document.getElementById('toggleButton');
 
-  function togglePromo() {
-    promo.classList.toggle('closed');
-  }
 
-  toggleButton.addEventListener('click', togglePromo);
-  closePromox.addEventListener('click', togglePromo);
-</script>

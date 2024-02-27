@@ -2,7 +2,7 @@
 $page = explode('?', $_SERVER['REQUEST_URI'], 2)[0];
 $canonical = "$page";
 // For title tag <title>goes here</title>
-$site_title = "Web Design & SEO Company in North Carolina";
+$site_title = $page;
 // Shows in the hero as the main h1 title
 $main_title = "";
 // displays under the hero/header section
@@ -33,8 +33,8 @@ $social_links = '
 switch ($page) {
     case "/":
     case "/index":
-        $site_title = "Top website designs & SEO Company in North Carolina | Boost Your Rankings";
-        $main_title = "Welcome to Livengood Websites.";
+        $site_title = "Elevating Your Online Presence";
+        $main_title = "Ready to Elevate Your Online Presence?";
         $meta_description = "Boost your online presence with the leading SEO company in North Carolina. Our expert team delivers results-driven SEO services for businesses of all sizes.";
         $meta_keywords = "north carolina website design,
         web design companies in north carolina,
@@ -87,7 +87,7 @@ switch ($page) {
         $canonical = "/food-app";
         $main_title = "North Carolina's Leading Restaurant Website Development";
         $intro = "Crafting Impeccable Digital Menus & Seamless Online Ordering Systems";
-        $site_title = "Comprehensive Restaurant Online Ordering Solution";
+        $site_title = "Restaurant Online Ordering Solution";
         $meta_description = "Offering a complete online ordering solution tailored for restaurants. From digital menus to integrated payments, elevate your restaurant's online presence with Livengood Websites.";
         $meta_keywords = "Restaurant ordering system,
         Online menu setup for restaurants,
@@ -103,6 +103,7 @@ switch ($page) {
         // Food app details
     case "/food-app-details":
         $hero_bg_class = "food-bg-post";
+        $site_title = "Food app details";
         $main_title = "Showcasing Our Digital Dining Experience";
         $intro = "A Glimpse into the Future of Online Ordering";
         break;
@@ -110,6 +111,7 @@ switch ($page) {
     case "/request-service":
     case "/request-service/":
         $main_title = "Request Services & Quote";
+        $site_title = "Request Services";
         $intro = "Please fill out this quick form to better assist you";
         $hero_bg_class = "food-bg";
         break;
@@ -155,6 +157,7 @@ switch ($page) {
         web development in north carolina,
         website hosting and maintenance services";
         $main_title = "North Carolina Website Design";
+        $site_title = "Web Design Services";
         $intro = "Elevate Your Online Presence";
         $hero_bg_class = "web-design";
         break;
@@ -171,6 +174,7 @@ switch ($page) {
     case "/site-care":
     case "/site-care/":
         $main_title = "All-inclusive Website Maintenance Packages";
+        $site_title = "Website Maintenance Services";
         $meta_keywords = "
         website maintenance, web care packages, all-inclusive web services, affordable website support, Livengood Websites, comprehensive website care, website security, performance optimization, SEO monitoring, content updates, emergency web support, professional web maintenance
         ";
@@ -179,6 +183,27 @@ switch ($page) {
         $hero_bg_class = "site-care-bg";
         break;
         // Blog post pages
+        case "/garden-vs-website":
+        case "/garden-vs-website/": 
+                $main_title = "Digital Gardening: Cultivating Growth and Vitality in Website Maintenance";
+                $intro = "Harmonizing Nature and Technology for Online Success";
+                $meta_keywords = "Digital Gardening
+                ,Website Maintenance
+                ,Online Growth
+                ,Website Vitality
+                ,Technology and Nature
+                ,Website Health
+                ,User Experience Enhancement
+                ,Security Measures
+                ,Content Updates
+                ,SEO Optimization
+                ,Digital Cultivation
+                ,Web Development Strategies
+                ,User Engagement
+                ,Site Performance"; 
+                $meta_description = "Explore the art of 'Digital Gardening' and unlock the secrets to a thriving online presence.";
+                $hero_bg_class = "garden-bg"; 
+                break;
         case "/effective-website-maintenance":
         case "/effective-website-maintenance/":
            $main_title = "10 Essential tips to help you maintain a website that shines";

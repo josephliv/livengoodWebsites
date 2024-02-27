@@ -3,10 +3,14 @@
     <div class="col-12 col-md-8 col-lg-8">
       <?php
       switch ($page) {
+        case "/garden-vs-website":
+        case "/garden-vs-website/":
+          include 'includes/posts/garden-vs-website.php';
+          break;
         case "/effective-website-maintenance":
-        case "/effective-website-maintenance/": 
-        include 'includes/posts/Effective-Website-Maintenance.php';
-        break;
+        case "/effective-website-maintenance/":
+          include 'includes/posts/Effective-Website-Maintenance.php';
+          break;
         case "/Building-the-Digital-Landscape":
         case "/Building-the-Digital-Landscape/":
           include "includes/posts/Building-the-Digital-Landscape.php";
@@ -20,12 +24,12 @@
           break;
         case "/tips-to-rank-on-google":
         case "/tips-to-rank-on-google/":
-            include 'includes/posts/tips-to-rank-on-google.php';
-            break;
+          include 'includes/posts/tips-to-rank-on-google.php';
+          break;
         case "/google-analytics":
         case "/google-analytics/":
           include 'includes/posts/Google-Analytics-4.php';
-          break; 
+          break;
         default:
           echo '<div style="min-height: 90vh; display: grid; place-items: center"><p>This blog is missing, <a href="/blog">Return to the blog page</a></p></div>';
       }
