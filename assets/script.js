@@ -57,3 +57,17 @@ const detailsElements = document.getElementsByTagName('details');
       }
     });
   }
+
+  function confirmAndRedirect(event) {
+    event.preventDefault();
+    let userResponse = confirm("Thanks for reaching out! Quick check: You're not here to sell us top Google rankings or secret marketing strategies, right? We're on a quest for genuine connections, not SEO magic potions. Click 'OK' if you're here for the real deal!");
+    if (userResponse) {
+      // User clicked "OK"
+      window.location.href = "https://calendly.com/livengoodwebsites"; // Replace this with your actual Calendly link
+    } else {
+      // User clicked "Cancel", 
+      alert("We get it, no hard feelings! If you ever change your mind and need our expertise, you know where to find us. Take care!");
+      //window.location.href = "/contact";
+    }
+  }
+  

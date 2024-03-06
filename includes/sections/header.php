@@ -18,12 +18,16 @@
     <div class="hero-content">
       <div class="site-title pt-4">
         <h1 class="text-light">
-          <?= $main_title; ?>
+          <?php if($page == "/pay") {
+            include ('includes/sections/pay.php');
+          } else {
+            echo $main_title;
+          }
+           ?>
         </h1>
       </div>
         <hr>
         <h2 class="text-light"><?= $intro; ?></h2>
-      
     </div>
   </div>
 </div>

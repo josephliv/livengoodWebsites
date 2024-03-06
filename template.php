@@ -65,12 +65,16 @@
     <?php include 'includes/sections/header.php';  ?>
 
     <!-- Main content -->
-    <div class="gradient-reverse introduction" id="top">
+
+    <div class="gradient-reverse introduction py-md-2 py-0 <?php echo ($page == '/pay') ? 'd-none' : ''; ?>" id="top">
         <div>
             <h3 class="text-center text-light">Schedule Your Free 30-Minute Consultation Now!</h3>
             <div class="custom-btn">
-                <a href="https://calendly.com/livengoodwebsites">Book Now</a>
+                <a href="javascript:void(0);" onclick="confirmAndRedirect(event)">Book Now</a>
             </div>
+            <p class="text-center text-light m-0">
+                <small>For Serious Inquiries Only.</small>
+            </p>
         </div>
     </div>
     <div class="page-content">
@@ -205,6 +209,9 @@
             case "/contact/":
             case "/contact":
                 include 'includes/contact.php';
+                break;
+            case "/pay":
+                
                 break;
                 // When a page doesn't exist - 404 not found page
             default:

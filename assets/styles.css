@@ -123,7 +123,6 @@ details[open] p {
 h1,
 h2 {
   font-family: var(--title-font);
-  letter-spacing: 0.3rem;
   font-weight: 700;
   text-transform: capitalize;
 }
@@ -402,10 +401,9 @@ details[open] summary ~ * {
 .site-title h1 {
   font-family: var(--title-font);
   font-size: var(--hero-title);
-  letter-spacing: 2px;
 }
 .hero-content h2 {
-  max-width: 80%; 
+  max-width: 60%; 
   margin: auto;
   font-size: calc(2rem * 0.5);
 }
@@ -433,7 +431,7 @@ details[open] summary ~ * {
   display: grid;
   place-items: center;
 }
-@media (min-width: 80em) {
+@media (min-width: 60em) {
   .site-title h1 {
     font-size: var(--hero-title);
     text-align: center;
@@ -447,7 +445,7 @@ details[open] summary ~ * {
 }
 
 .video-background-wrapper {
-  min-height: 80vh;
+  min-height: 700px;
   overflow: hidden;
   position: relative;
   
@@ -513,6 +511,9 @@ details[open] summary ~ * {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+.pay {
+  background-image: url('/assets/imgs/hero/pay.webp');
 }
 video {
   position: absolute;
@@ -1673,15 +1674,7 @@ Food ordering page
 Contact form 
 ==================================== */
 .contact-page {
-  background-image: url("/assets/imgs/workbench-g86b93d365_1280.webp");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-color: #f7f9fe62;
-  background-blend-mode: overlay;
-  min-height: 90vh;
-  display: grid;
-  place-items: center;
+  background-color: #ffffff62;
 }
 
 /* ================================= 

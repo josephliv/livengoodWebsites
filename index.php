@@ -34,7 +34,7 @@ switch ($page) {
     case "/":
     case "/index":
         $site_title = "Elevating Your Online Presence";
-        $main_title = "Ready to Elevate Your Online Presence?";
+        $main_title = "Are you a business owner looking to Elevate Your Online Presence?";
         $meta_description = "Boost your online presence with the leading SEO company in North Carolina. Our expert team delivers results-driven SEO services for businesses of all sizes.";
         $meta_keywords = "north carolina website design,
         web design companies in north carolina,
@@ -47,7 +47,7 @@ switch ($page) {
         best search engine optimization company,
         online food ordering app development,
         food ordering app development company";
-        $intro = "Your Trusted Web Development and Design Specialist in North Carolina";
+        $intro = "Unlock 5 to 15 New Appointments Weekly with a Website That Works Harder for Your Business";
         break;
         // Google was showing a 404 with this url, the testimonials are on the home page
     case "/partner":
@@ -327,6 +327,9 @@ switch ($page) {
         $intro = "Unleash Your Business Potential!";
         $hero_bg_class = "promo-bg";
         break;
+        case "/pay":
+            $hero_bg_class = "pay";
+            break;
         // Page not found
     default:
         $main_title = "404";
