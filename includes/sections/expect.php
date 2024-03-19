@@ -42,3 +42,32 @@ You can trust that <strong>Livengood Websites</strong> will do what you agreed t
             </details>
         </div>
 </section>
+<div class="container py-5">
+  <div class="expect-area">
+    <details>
+      <summary title="click to show details">Fortify Your Online Presence.</summary>
+      <div>
+        <p>In the modern digital landscape, a resilient and updated website is essential. With our premium maintenance services, ensure your site's optimal performance and security. Dive into the specifics on our <a href="/website-maintenance-services">maintenance services</a> page.</p>
+
+      </div>
+    </details>
+    <details>
+      <summary>Save Time and Focus on Your Business.</summary>
+      <div>
+        <p>Leave the technicalities to us. While we manage your site's intricacies, you can concentrate on your core business operations.</p>
+      </div>
+    </details>
+    <details>
+      <summary>Boost Your Website's Performance.</summary>
+      <div>
+        <p>Benefit from our routine updates that optimize speed, responsiveness, and overall functionality.</p>
+      </div>
+    </details>
+    <details>
+      <summary>Superior VPS Hosting.</summary>
+      <div>
+        <p>Experience the advantages of high-performance VPS hosting, a robust alternative to standard shared hosting.</p>
+      </div>
+    </details>
+  </div>
+</div>

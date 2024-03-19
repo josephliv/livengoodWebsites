@@ -17,8 +17,9 @@
     <!-- Hero Content -->
     <div class="hero-content">
       <div class="site-title pt-4">
-        <h1 class="text-light">
+        <h1 class="text-light" data-aos="fade-in" data-aos-duration="3000">
           <?php if($page == "/pay") {
+            echo $site_title;
             include ('includes/sections/pay.php');
           } else {
             echo $main_title;
@@ -27,7 +28,7 @@
         </h1>
       </div>
         <hr>
-        <h2 class="text-light"><?= $intro; ?></h2>
+        <h2 class="text-light" data-aos="fade-up" data-aos-duration="2000"><?= $intro; ?></h2>
     </div>
   </div>
 </div>

@@ -1,70 +1,38 @@
-<div class="narrow-section">
-  <h4>Unlock Your Website's Potential Today!</h4>
+<div class="narrow-section" data-aos="slide-up" data-aos-duration="2000">
+  <h4>Empowering Small Businesses with Custom Web Design</h4>
   <hr>
   <p>
-  At Livengood Websites, we're not just another web development company in North Carolina. Here, it's more than just business; it's about a passion for creating something meaningful and lasting. Inspired by the principle of working "as unto the Lord" (Colossians 3:23), each project is handled with care, dedication, and a commitment to excellence.</p>
-
+    At Livengood Websites, we specialize in creating personalized web designs and <a href="/website-maintenance-services">maintenance packages</a> tailored for small businesses. Our approach ensures your website is not just a digital space but a cornerstone of your business's online success. By focusing on robust, reliable, and continuously evolving digital solutions, your online presence will continue to thrive.
+  </p>
 
   <p>
-  As an independent specialist in web development, I understand the importance of a personal touch. Whether it's crafting a custom website or developing a specialized online <a href="/food-app">food ordering</a> app for a restaurant, I approach each project with the aim of perfectly aligning with your vision.
+    Recognizing the unique needs of small businesses, we provide bespoke web development services, from custom website creation to specialized solutions like online <a href="/food-app">food ordering</a> sites for restaurants. Each project is an opportunity to align with your vision, ensuring a personal touch that sets your business apart in the digital landscape.
   </p>
 </div>
 
-<section class="home-section-maintenance">
+<section class="home-section-maintenance" data-aos="fade-right">
   <div class="home-section-maintenance-inner">
-  <div class="container maintenance-content py-3">
-    <h4>Personalized Web Design and Comprehensive Maintenance</h4>
-    <hr>
-    <p>At Livengood Websites, we extend our expertise beyond just design and development. Explore our 
-       <a href="/website-maintenance-services">website maintenance packages</a>, meticulously tailored to ensure your digital presence is not only reliable but also consistently excelling. Discover our all-encompassing solutions today!</p>
-
-    <p>
-        What's more, our maintenance services are readily available for websites not originally crafted by us. Whether it's enhancing existing websites or providing regular upkeep, we do it all without requiring a rebuild or a binding long-term contract. Benefit from our straightforward monthly flat fee approach, making web maintenance accessible, simple, and hassle-free. Ensure your site’s peak performance, timely content updates, and robust security with Livengood Websites.
-    </p>
-</div>
+    <div class="container maintenance-content py-3" data-aos="zoom-in">
+      <h4>Personalized Web Design and Comprehensive Maintenance</h4>
+      <hr>
+      <p>
+        At Livengood Websites, we elevate small businesses in the digital age with custom web design that transforms your online presence into the heartbeat of your business, creating lasting impressions and fostering customer connections. Beyond design, our comprehensive <a href="/website-maintenance-services">website maintenance</a> services cater to all websites, offering enhancements, regular updates, and robust security without the need for rebuilds or long-term contracts. Experience simplicity and effectiveness with our straightforward monthly flat fee approach, ensuring your website's peak performance and seamless operation.
+      </p>
+    </div>
 
   </div>
 </section>
-<div class="container py-5">
-  <div class="expect-area">
-    <details>
-      <summary title="click to show details">Fortify Your Online Presence.</summary>
-      <div>
-        <p>In the modern digital landscape, a resilient and updated website is essential. With our premium maintenance services, ensure your site's optimal performance and security. Dive into the specifics on our <a href="/website-maintenance-services">maintenance services</a> page.</p>
+<?php //include('includes/sections/expect.php'); 
+?>
 
-      </div>
-    </details>
-    <details>
-      <summary>Save Time and Focus on Your Business.</summary>
-      <div>
-        <p>Leave the technicalities to us. While we manage your site's intricacies, you can concentrate on your core business operations.</p>
-      </div>
-    </details>
-    <details>
-      <summary>Boost Your Website's Performance.</summary>
-      <div>
-        <p>Benefit from our routine updates that optimize speed, responsiveness, and overall functionality.</p>
-      </div>
-    </details>
-    <details>
-      <summary>Superior VPS Hosting.</summary>
-      <div>
-        <p>Experience the advantages of high-performance VPS hosting, a robust alternative to standard shared hosting.</p>
-      </div>
-    </details>
-  </div>
-</div>
-
-<section class="home-section-seo" id="seo">
+<section class="home-section-seo" id="seo" data-aos="fade-left">
   <div class="home-section-seo-inner">
     <div class="container seo-content">
-      <h4>Targeted seo strategies.</h4>
+      <h4>Your Story, Digitally Crafted</h4>
       <hr>
-      <div>
+      <div data-aos="zoom-in">
         <p>
-          SEO is crucial in today's digital landscape, and as your dedicated SEO company in North Carolina, I'm committed to optimizing your online presence. My search optimization agency approach ensures you're not just another website online but a prominent player in search results. We will working together using the best <a href="/seo-strategies/"> SEO strategies</a> to drive organic traffic to your site, bringing in quality leads.
-        </p>
-        <p class="verse">"Commit to the Lord whatever you do, and he will establish your plans." - Proverbs 16:3 (NKJV)</p>
+          Every small business has a story, a vision, and a dream. My mission is to bring that narrative to life with a website that's as unique as your business. By blending aesthetics with functionality, I create digital experiences that engage your audience, reflect your brand's personality, and drive growth. From responsive design that looks great on any device to SEO-friendly structures that help you rank higher on search engines, I ensure your website is built not just to exist, but to work for you to grow your business.</p>
       </div>
     </div>
   </div>
@@ -74,23 +42,20 @@
   <?php include 'includes/sections/testimonials.php'; ?>
 </section>
 <div class="page">
-    <article>
-      <div class="custom-section-reverse">
-        <h4 id="title">Highly Recommended on Alignable</h4>
-        <div id="disc">
-    <p>
-  Being recommended on Alignable is a testament to the trust and satisfaction of those I've had the pleasure of working with. I invite you to join this journey, where your website isn't just built, but is crafted with intention, skill, and a spirit of service.
-  </p>
-        </div>
-  <div id="img">
-    
-  <a <?= $externalLinks; ?> href="https://www.alignable.com/mocksville-nc/livengood-websites-2"><img alt="Highly Recommended by Locals On Alignable" width="280px" title="Highly Recommended by Locals On Alignable" src="https://www.alignable.com/assets/badge/highly-recommended.png" /></a>
+  <article data-aos="fade-in">
+    <div class="custom-section-reverse">
+      <h4 id="title">Highly Recommended on Alignable</h4>
+      <div id="disc">
+        <p>
+          Being recommended on Alignable is a testament to the trust and satisfaction of those I've had the pleasure of working with. I invite you to join this journey, where your website isn't just built, but is crafted with intention, skill, and a spirit of service.
+        </p>
+      </div>
+      <div id="img">
 
-  </div>
-  
-  </div>
-    </article>
+        <a <?= $externalLinks; ?> href="https://www.alignable.com/mocksville-nc/livengood-websites-2"><img alt="Highly Recommended by Locals On Alignable" width="280px" title="Highly Recommended by Locals On Alignable" src="https://www.alignable.com/assets/badge/highly-recommended.png" /></a>
+
+      </div>
+
+    </div>
+  </article>
 </div>
-
-
-

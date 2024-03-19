@@ -47,6 +47,7 @@
 body {
   font-family: var(--text-font);
   font-size: var(--text-size);
+  overflow-x: hidden;
 }
 .gradient {
   background-image: var(--gradient);
@@ -398,14 +399,15 @@ details[open] summary ~ * {
   border-color: #fff;
   border-style: ridge;
 }
-.site-title h1 {
+.hero-content h1 {
   font-family: var(--title-font);
   font-size: var(--hero-title);
 }
 .hero-content h2 {
-  max-width: 60%; 
+  max-width: 80vw; 
   margin: auto;
-  font-size: calc(2rem * 0.5);
+  font-size: 24px;
+  /* font-size: calc(2rem * .8); */
 }
 
 .home-sub-title {
@@ -421,7 +423,7 @@ details[open] summary ~ * {
 }
 /* Styles for the background image on all other pages */
 .img-background {
-  min-height: 70vh;
+  min-height: 600px;
   background-image: var(--gradient-lite);
   background-size: cover;
   background-color: #00000080;
@@ -455,10 +457,11 @@ details[open] summary ~ * {
 @media (max-width: 1000px) {
 
   .video-background-wrapper {
-    background-image: url('/assets/imgs/peace-of-mind.jpeg');
-    background-color: #000000cc;
+    background-image: url('/assets/imgs/website-platforms.jpg');
+    background-color: #000000c8 !important;
     background-blend-mode: overlay;
-    min-height: 60vh;
+    background-size: cover;
+    min-height: 500px;
   }
 
 }
@@ -713,6 +716,11 @@ video {
 }
 .top-bar a {
   color: var(--light-text-color);
+  font-size: 14px;
+  transition: .3s ease-in-out;
+}
+.top-bar a:hover {
+  color: var(--accent);
 }
 .social-links {
   display: flex;
@@ -722,9 +730,10 @@ video {
 .social-links img,
 .top-bar img {
   display: inline;
-  
+  width: 25px;
 }
 .social-links img {
+  
   border-radius: 4px;
   box-shadow: 0 0 10px #000;
   padding: 1px;
@@ -740,10 +749,10 @@ video {
   display: none;
   background-color: var(--primary);
   color: var(--light-text-color);
-  border: 1px solid white;
-  border-radius: 8px;
-  padding: 10px 20px;
-  font-size: 1.25rem;
+  border: 1px groove white;
+  border-radius: 4px;
+  padding: 5px 10px;
+  /* font-size: 1.25rem; */
   cursor: pointer;
   position: fixed;
   top: 20px;
@@ -797,6 +806,7 @@ video {
   }
   .mobile-menu-button {
     display: block;
+    margin-left: 2%;
   }
 
   .nav-menu {
@@ -805,14 +815,14 @@ video {
 
   .mobile-menu-sidebar {
     display: block; /* Show the mobile menu sidebar on small screens */
-    padding-top: 80px;
+    padding: 80px 10px 5px 20px;
+    width: fit-content;
   }
 
-  .mobile-menu-sidebar a {
+  .sidebar-menu a {
     padding: 15px;
-    text-align: center;
     text-decoration: none;
-    font-size: 1.25rem;
+    font-size: 16px;
     color: #fff; /* Change to your desired text color */
     display: block;
     transition: background-color 0.3s;
@@ -822,22 +832,23 @@ video {
     background-color: var(--primary);
     color: #fff; /* Change to hover text color */
   }
+  .sidebar-header img {
+    /* logo */
+    max-width: 250px; 
+    margin: auto;
+  }
 }
 
-.introduction {
-  min-height: 150px;
-  display: grid;
-  place-items: center;
-}
-.introduction h3 {
-  font-family: var(--title-font);
-  margin-bottom: 10px;
-}
+
 
 
 /*  =================================== 
     home page content styling
 =================================== */
+.home-section-maintenance,
+.home-section-seo {
+  padding: var(--section-padding);
+}
 .home-section-maintenance {
   background-image: url('/assets/imgs/hosting-maintenance.webp');
   background-size: cover;
@@ -860,7 +871,7 @@ video {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center left;
-    min-height: 500px;
+    min-height: 550px;
     display: grid;
     place-items: center;
     justify-content: end;
@@ -881,7 +892,7 @@ video {
   background-blend-mode: normal;
 }
 .home-section-maintenance-inner {
-  max-width: 900px;
+  max-width: 1000px;
   padding-left: 5em;
   text-align: left;
   color: var(--text-color);
@@ -909,6 +920,7 @@ video {
 @media (min-width: 900px) {
   .home-section-seo {
     background-size: contain;
+    background-color: #ffffff5f;
     background-repeat: no-repeat;
     background-position: center right;
     min-height: 500px;
@@ -917,8 +929,8 @@ video {
     justify-content: start;
   }
   .seo-content {
-    background-color: #D7DADBcc;
     padding: var(--block-padding);
+    background-color: #D7DADBe2;
   }
   .home-section-seo-inner {
     max-width: 900px;
@@ -928,11 +940,15 @@ video {
 }
 @media (min-width: 1400px) {
 .home-section-seo {
-  background-color: #cdd1d2cc;
+
   background-blend-mode: normal;
 }
+.seo-content {
+  padding: var(--block-padding);
+  background-color: transparent;
+}
 .home-section-seo-inner {
-  max-width: 900px;
+  max-width: 1000px;
   padding-left: 5em;
   text-align: left;
   color: var(--text-color);
@@ -1049,7 +1065,7 @@ video {
 
 /* promo page styles */
 .promo-page {
-  background-image: url('/assets/imgs/hero/promo-bg.webp');
+  background-image: url('/assets/imgs/hero/pay.webp');
   background-size: cover;
   background-attachment: fixed;
   padding-bottom: 2em;
@@ -1083,8 +1099,8 @@ video {
 .promo-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
-  justify-content: space-evenly;
+  gap: 2.4rem;
+  justify-content: center;
   padding: 50px;
   }
   
@@ -1133,18 +1149,24 @@ video {
       }
   
       .package:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
         box-shadow: 15px 15px 40px rgba(0, 0, 0, .8);
+        background-color: #fff;
       }
-      .promo-cta {
+      .pricing-terms {
         text-align: center;
         background-color: #000000cc;
         padding: 3vw 0;
       }
-      .promo-cta h5 {
+      .pricing-terms h5 {
         color: var(--light-text-color);
         font-family: var(--title-font);
         font-size: var(--hero-title);
+      } 
+      .pricing-terms p {
+        color: var(--light-text-color);
+        max-width: 900px;
+        margin: auto;
       }
 /*  portfolio blocks */
 .portfolio {
@@ -1196,6 +1218,12 @@ video {
 .portfolio-item a,
 .service-item a {
   color: var(--primary);
+}
+.portfolio-item strong {
+  font-family: var(--title-font);
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-size: 16px;
 }
 .portfolio-item:hover,
 .service-item:hover {
@@ -1496,7 +1524,7 @@ Food ordering page
   text-align: center;
   padding: var(--block-padding);
 }
-.side-bar
+
 /* posts with images */
 .flex-area {
   display: flex;
@@ -1720,6 +1748,39 @@ Contact form
 .site-map-404 li a:hover {
   color: var(--accent);
   text-decoration: underline;
+}
+/* ================================= 
+| Exit Pop element  |
+==================================== */
+.exitPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background: #ffffff; 
+  color: var(--text-color);
+  border: 2px groove #ccc;
+  padding: 20px;
+  z-index: 9999;
+  max-width: 400px; 
+  box-shadow: var(--shadow); 
+  border-radius: 8px;
+  transform: translate(-50%, -50%); 
+}
+.overlay, .exitPopup {
+  opacity: 0;
+  transition: opacity 0.5s ease; /* Smooth transition for the opacity */
+}
+.overlay {
+  display: none; /* Hidden by default */
+  position: fixed; /* Sit on top of the page content */
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 800; /* Ensure it's below the pop-up but above other content */
 }
 
 /* ================================= 

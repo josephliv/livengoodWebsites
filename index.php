@@ -33,7 +33,7 @@ $social_links = '
 switch ($page) {
     case "/":
     case "/index":
-        $site_title = "Elevating Your Online Presence";
+        $site_title = "Custom Web Design Services in North Carolina";
         $main_title = "Are you a business owner looking to Elevate Your Online Presence?";
         $meta_description = "Boost your online presence with the leading SEO company in North Carolina. Our expert team delivers results-driven SEO services for businesses of all sizes.";
         $meta_keywords = "north carolina website design,
@@ -47,7 +47,7 @@ switch ($page) {
         best search engine optimization company,
         online food ordering app development,
         food ordering app development company";
-        $intro = "Unlock 5 to 15 New Appointments Weekly with a Website That Works Harder for Your Business";
+        $intro = "Your Website should work Harder for Your Business.";
         break;
         // Google was showing a 404 with this url, the testimonials are on the home page
     case "/partner":
@@ -318,16 +318,18 @@ switch ($page) {
         $hero_bg_class = "contact-bg";
         break;
         // promo offer
-    case "/promo":
-    case "/promo/":
-        $site_title = "Exclusive Offers";
-        $meta_keywords = "web development, website maintenance, professional website design, SEO services, responsive web design, website optimization, website backups, website security, web design promotion, monthly maintenance, small business website, custom web design, web hosting, website speed optimization, mobile-friendly website, user-friendly design, web development offer, website promotion, affordable web design";
-        $meta_description = "We are passionate about web design and strive to create websites that not only look great but also function effectively. Let us showcase our expertise and help you achieve your online goals.";
-        $main_title = "Livengood Website Exclusive Deals!";
-        $intro = "Unleash Your Business Potential!";
-        $hero_bg_class = "promo-bg";
+    case "/pricing":
+    case "/pricing/":
+        $main_title = "Kick start your online success";
+        $meta_keywords = "web development pricing, professional website design for start up business, small business website, mobile-friendly website, user-friendly design, web development offer, affordable web design, website pricing, web designer near Statesville, NC";
+        $meta_description = "Get pricing for your website and we will work within your budget. Get online fast within the next week for under $500!";
+        $site_title = "Exclusive Deals!";
+        $intro = "Kick start your online success!";
+        $hero_bg_class = "pay";
         break;
         case "/pay":
+            $site_title = "Make a payment"; 
+            $main_title = "Make a payment";
             $hero_bg_class = "pay";
             break;
         // Page not found

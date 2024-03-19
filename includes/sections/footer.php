@@ -4,26 +4,26 @@
         <div class="footer-logo"><a href="/"><img src="/assets/imgs/logo-blue.webp" alt="Livengood websites | North carolina website designer"></a></div>
         <div class="footer-section">
             <div class="footer-title">Reach Out</div>
-            📞 1 (704) 275-9705<br>
-            📧 <a href="mailto:joe@joes.business">joe@joes.business</a>
+            <!-- 📞 1 (704) 275-9705<br> -->
+            📧 <a href="mailto:info@joes.business">info@joes.business</a>
         </div>
 
-        <div class="footer-section">
+        <!-- <div class="footer-section">
             <div class="footer-title">Navigate</div>
             <a href="/">Home</a><br>
             <a href="/portfolio">Portfolio</a><br>
             <a href="/contact">Contact</a>
-        </div>
+        </div> -->
 
         <div class="footer-section">
             <div class="footer-title">Connect with Us</div>
             <?= $social_links; ?>
         </div>
     </div>
-    <div class="copy">© 2023 Livengood Websites. All Rights Reserved.</div>
+    <div class="copy">© <?= date('Y'); ?> Livengood Websites. All Rights Reserved.</div>
 </footer>
-<!--Start of Tawk.to Script 
-<script type="text/javascript">
+<!-- Start of Tawk.to Script -->
+<!-- <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -33,5 +33,5 @@ s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
-</script>
+</script> -->
 <!--End of Tawk.to Script-->

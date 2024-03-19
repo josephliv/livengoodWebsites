@@ -1,26 +1,82 @@
 <section class="bg">
-<div class="narrow-section bg py-4">
-  <div>
-    <p>
-      These are recent sites that I was given the honor to build for previous clients who I work with every month. The images below are from a screenshot and may be different from the website itself due to updates and changes as requested by the client.
-    </p>
-    <p>
-    To view them, click the image and they will display in a pop-up to load the full site without having to leave this site. If you prefer to open it in a new tab, just click the "visit site" link under the description. 
-    </p>
+  <div class="narrow-section bg py-4">
+    <div>
+      <p>
+        These are recent sites that I was given the honor to build for previous clients who I work with every month. The images below are from a screenshot and may be different from the website itself due to updates and changes as requested by the client.
+      </p>
+      <p>
+        To view them, click the image and they will display in a pop-up to load the full site without having to leave this site. If you prefer to open it in a new tab, just click the "visit site" link under the description.
+      </p>
     </div>
   </div>
 </section>
 
 <section class="portfolio">
   <div class="portfolio-inner">
-  <div class="portfolio-item custom-section-item">
+    <div class="portfolio-item custom-section-item">
+      <div class="portfolio-item-inner">
+        <div>
+      <strong>Custom coded</strong>
+        <img id="action-img" class="popup-img i" src="assets/imgs/portfolio/website-analysis.webp" alt="https://patentxl.com/" title="click to view full website in a popup">
+        </div>
+        <h3 class="h">Free website anaylsis splash page</h3>
+        <div class="rt">
+          <div>
+          <p>
+          Book a 30-minute consultation for a website inspection.
+          </p>
+          
+          </div>
+          <span><a href="https://websitemaintenance.online/" <?= $externalLinks ?>>
+              visit site
+            </a></span>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal for  website-->
+    <div class="modal">
+      <span class="close">&times;</span>
+      <div class="modal-content">
+        <iframe style="width: 90%; margin: auto; height: 90%" src="https://websitemaintenance.online/" frameborder="0"></iframe>
+      </div>
+    </div>
+
+    <!-- sand hills karate club -->
+    <div class="portfolio-item custom-section-item">
+      <div class="portfolio-item-inner">
+        <div>
+      <strong>Custom coded</strong>
+        <img id="action-img" class="popup-img i" src="assets/imgs/portfolio/sandhillsKarateClub.webp" alt="https://patentxl.com/" title="click to view full website in a popup">
+        </div>
+        <h3 class="h">The Sand Hills Karate Club</h3>
+        <div class="rt">
+          <p>
+            SKC is a nonprofit organization.<br> Custom coded.
+          </p>
+
+          <span><a href="https://sandhillskarateclub.com/" <?= $externalLinks ?>>
+              visit site
+            </a></span>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal for  website-->
+    <div class="modal">
+      <span class="close">&times;</span>
+      <div class="modal-content">
+        <iframe style="width: 90%; margin: auto; height: 90%" src="https://sandhillskarateclub.com/" frameborder="0"></iframe>
+      </div>
+    </div>
+
+    <!-- patent law site -->
+    <div class="portfolio-item custom-section-item">
       <div class="portfolio-item-inner">
         <img id="action-img" class="popup-img i" src="assets/imgs/portfolio/patentXL.webp" alt="https://patentxl.com/" title="click to view full website in a popup">
 
         <h3 class="h">Patent XL Law Firm</h3>
         <div class="rt">
           <p>
-          Your Trusted Patent Lawyer
+            Your Trusted Patent Lawyer
           </p>
 
           <span><a href="https://patentxl.com/" <?= $externalLinks ?>>
@@ -36,30 +92,9 @@
         <iframe style="width: 90%; margin: auto; height: 90%" src="https://patentxl.com/" frameborder="0"></iframe>
       </div>
     </div>
-     <div class="portfolio-item custom-section-item">
-      <div class="portfolio-item-inner">
-        <img id="action-img" class="popup-img i" src="assets/imgs/portfolio/action-industrial.webp" alt="https://actionindsupply.com/" title="click to view full website in a popup">
 
-        <h3 class="h">action industrial supply</h3>
-        <div class="rt">
-          <p>
-          Your Trusted Supply Partner
-          </p>
-
-          <span><a href="https://actionindsupply.com/" <?= $externalLinks ?>>
-              visit site
-            </a></span>
-        </div>
-      </div>
-    </div>
-     <!-- The Modal for  website-->
-     <div class="modal">
-      <span class="close">&times;</span>
-      <div class="modal-content">
-        <iframe style="width: 90%; margin: auto; height: 90%" src="https://actionindsupply.com/" frameborder="0"></iframe>
-      </div>
-    </div>
-  <div class="portfolio-item custom-section-item">
+<!-- The church of the living God -->
+    <div class="portfolio-item custom-section-item">
       <div class="portfolio-item-inner">
         <img id="cotlg-img" class="popup-img i" src="assets/imgs/portfolio/cotlg.png" alt="https://cotlgstatesville.com/" title="click to view full website in a popup">
 
@@ -71,7 +106,7 @@
 
           <span><a href="https://cotlgstatesville.com/" <?= $externalLinks ?>>
               visit site
-            </a></span> 
+            </a></span>
         </div>
       </div>
     </div>
@@ -82,7 +117,28 @@
         <iframe style="width: 90%; margin: auto; height: 90%" src="https://cotlgstatesville.com/" frameborder="0"></iframe>
       </div>
     </div>
- 
+<!-- Ambition life royalty -->
+<div class="portfolio-item custom-section-item">
+      <div class="portfolio-item-inner">
+        <img id="alr-img" class="popup-img i" src="assets/imgs/portfolio/liveYoungDieRich.webp" alt="https://liveyoungdierichapparel.store/" title="click to view full website in a popup">
+        <h3 class="h">Ambition Life Royalty (ALR)</h3>
+        <div class="rt">
+          <p>
+            Built on wordpress, eCommerce clothing store. Recently redone!
+          </p>
+          <span><a href="https://liveyoungdierichapparel.store/" <?= $externalLinks ?>>
+              visit site
+            </a></span>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal for alr website-->
+    <div id="alr-modal" class="modal">
+      <span id="alr-close" class="close">&times;</span>
+      <div class="modal-content">
+        <iframe style="width: 90%; margin: auto; height: 90%" src="https://liveyoungdierichapparel.store/" frameborder="0"></iframe>
+      </div>
+    </div>
 
     <div class="portfolio-item custom-section-item">
       <div class="portfolio-item-inner">
@@ -90,7 +146,7 @@
         <h3 class="h">NTier Construction </h3>
         <div class="rt">
           <p>
-            Recent site completed using Wordpress and Elementor.
+            Site completed using Wordpress and Elementor.
           </p>
           <span><a href="https://ntierconstruction.com/" <?= $externalLinks ?>>
               visit site
@@ -117,8 +173,7 @@
         <h3 class="h">Mark Cohen </h3>
         <div class="rt">
           <p>
-            Website built using wordpress with alot of custom functionalities for blog articles. He has over 130 posts in
-            several categories.
+            Website built using wordpress with alot of custom functionalities for blog articles. 
           </p>
           <span><a href="https://cohenslaw.com" <?= $externalLinks ?>>
               visit site
@@ -137,7 +192,10 @@
 
     <div class="portfolio-item custom-section-item">
       <div class="portfolio-item-inner">
+        <div>
+      <strong>Custom coded</strong>
         <img id="dart-img" class="popup-img i" src="assets/imgs/portfolio/dartDefense.png" alt="https://dartdefense.org">
+        </div>
         <h3 class="h">DART Defense</h3>
         <div class="rt">
           <p>
@@ -166,7 +224,10 @@
 
     <div class="portfolio-item custom-section-item">
       <div class="portfolio-item-inner">
+        <div>
+      <strong>Custom coded</strong>
         <img id="dart-survey-img" class="popup-img i" src="assets/imgs/portfolio/dart-defense-survey.png" alt="https://dartdefense.org">
+        </div>
         <h3 class="h">dart Defense Survey</h3>
         <div class="rt">
           <p>
@@ -185,38 +246,17 @@
         <iframe style="width: 90%; margin: auto; height: 90%" src="https://survey.dartdefense.org" frameborder="0"></iframe>
       </div>
     </div>
-
-    <div class="portfolio-item custom-section-item">
-      <div class="portfolio-item-inner">
-        <img id="alr-img" class="popup-img i" src="assets/imgs/portfolio/liveYoungDieRich.png" alt="https://liveyoungdierichapparel.store/" title="click to view full website in a popup">
-        <h3 class="h">Ambition Life Royalty (ALR)</h3>
-        <div class="rt">
-          <p>
-            Built on wordpress, eCommerce clothing store. Constantly adding more.
-          </p>
-          <span><a href="https://liveyoungdierichapparel.store/" <?= $externalLinks ?>>
-              visit site
-            </a></span>
-        </div>
-      </div>
-    </div>
-    <!-- The Modal for alr website-->
-    <div id="alr-modal" class="modal">
-      <span id="alr-close" class="close">&times;</span>
-      <div class="modal-content">
-        <iframe style="width: 90%; margin: auto; height: 90%" src="https://liveyoungdierichapparel.store/" frameborder="0"></iframe>
-      </div>
-    </div>
-
     <?php
     // ***********************/
     //  pcp-usa.png site
     //************************* */
     ?>
-
     <div class="portfolio-item custom-section-item">
       <div class="portfolio-item-inner">
+        <div>
+      <strong>Custom coded</strong>
         <img id="pcp-img" class="popup-img i" src="/assets/imgs/portfolio/realestatemediators.webp" alt="https://coloradorealestatemediators.com/" title="click to view full website in a popup">
+        </div>
         <h3 class="h">Mediation And Arbitration Services</h3>
         <div class="rt">
           <p>
@@ -236,9 +276,6 @@
         <iframe style="width: 90%; margin: auto; height: 90%" src="https://coloradorealestatemediators.com/" frameborder="0"></iframe>
       </div>
     </div>
-
-    
-    
     <?php
     // ***********************/
     //  coloradoeasementlawyer.com splash page
@@ -247,13 +284,15 @@
 
     <div class="portfolio-item custom-section-item">
       <div class="portfolio-item-inner">
+        <div>
+      <strong>Custom coded</strong>
         <img id="easement-img" class="popup-img i" src="assets/imgs/portfolio/colorado-easement-splashpage.png" alt="https://coloradoeasementlawyer.com/" title="click to view full website in a popup">
+        </div>
         <h3 class="h">Mark Cohen - Colorado Easement Lawyer</h3>
         <div class="rt">
           <p>
             hand coded splash page mostly for SEO and testing.
           </p>
-          <div></div>
           <span><a href="https://coloradoeasementlawyer.com/" <?= $externalLinks ?>>
               visit site
             </a></span>
@@ -267,33 +306,7 @@
         <iframe style="width: 90%; margin: auto; height: 90%" src="https://coloradoeasementlawyer.com/" frameborder="0"></iframe>
       </div>
     </div>
-    <?php
-    // ***********************/
-    //  jayceo.ca splash page
-    //************************* */
-    ?>
 
-    <div class="portfolio-item custom-section-item">
-      <div class="portfolio-item-inner">
-        <img id="jayceo-img" class="popup-img i" src="assets/imgs/portfolio/jayceo-splashpage.png" alt="https://jayceo.ca" title="click to view full website in a popup">
-        <h3 class="h">Jay-Ann - Health Enthusiast</h3>
-        <div class="rt">
-          <p>
-            hand coded splash page mostly for marketing purposes.
-          </p>
-          <span><a href="https://jayceo.ca" <?= $externalLinks ?>>
-              visit site
-            </a></span>
-        </div>
-      </div>
-    </div>
-    <!-- The Modal-->
-    <div id="jayceo-modal" class="modal">
-      <span id="jayceo-close" class="close">&times;</span>
-      <div class="modal-content">
-        <iframe style="width: 90%; margin: auto; height: 90%" src="https://jayceo.ca" frameborder="0"></iframe>
-      </div>
-    </div>
   </div>
 </section>
 <script src="assets/portfolio.js"></script>

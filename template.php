@@ -20,7 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="<?= $meta_description; ?>" />
     <meta property="og:url" content="https://livengoodwebsites.com/" />
-    <meta property="og:site_name" content="Web Design Services in Salisbury NC and surrounding areas." />
+    <meta property="og:site_name" content="Custom Web Design & SEO Services in Salisbury NC and surrounding areas." />
     <meta name="keywords" content="<?= $meta_keywords; ?>" />
     <!-- bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -32,14 +32,13 @@
         // Include layout.css on all pages except home
         echo '<link rel="stylesheet" href="includes/partner/main.css" />';
     } ?>
-    <!-- my own Animations-->
-    <link rel="stylesheet" href="/assets/animations.css" />
+
 
     <link rel="shortcut icon" href="/assets/imgs/favicon.ico">
     <link rel="canonical" href="https://livengoodwebsites.com<?= $canonical; ?>" />
 
     <title>
-        <?= $site_title; ?> | Livengood Websites
+        <?= $site_title; ?> | Livengood Websites, North Carolina
     </title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9K3RMVMFJP"></script>
@@ -58,6 +57,16 @@
 </head>
 
 <body>
+    <div class="overlay"></div>
+    <div class="exitPopup">
+        <h4 class="text-center">Wait a Second!</h4>
+        <p>Looks like you're heading out. Before you go, we'd love to offer you a <strong>FREE website analysis</strong>. Who knows, you might discover some valuable insights to improve your site!</p>
+        <div class="text-center">
+            <button class="btn btn-outline-success m-2" onclick="bookFreeAnalysis()">Book Now</button>
+            <button class="btn btn-outline-danger m-2"  onclick="closePopup()">No Thanks</button>
+            </div>
+
+    </div>
 
     <!-- =================================
       | Top header with logo and nav links and hero |
@@ -68,9 +77,9 @@
 
     <div class="gradient-reverse introduction py-md-2 py-0 <?php echo ($page == '/pay') ? 'd-none' : ''; ?>" id="top">
         <div>
-            <h3 class="text-center text-light">Schedule Your Free 30-Minute Consultation Now!</h3>
+            <h3 class="text-center text-light">Schedule Your Free 30-Minute website analysis Now!</h3>
             <div class="custom-btn">
-                <a href="javascript:void(0);" onclick="confirmAndRedirect(event)">Book Now</a>
+                <a href="https://calendly.com/livengoodwebsites" <?= $externalLinks; ?> >Book Now</a>
             </div>
             <p class="text-center text-light m-0">
                 <small>For Serious Inquiries Only.</small>
@@ -142,9 +151,9 @@
             case "/site-care/":
                 include 'includes/website-maintenance-services.php';
                 break;
-            case "/promo":
-            case "/promo/":
-                include 'includes/promo.php';
+            case "/pricing":
+            case "/pricing/":
+                include 'includes/pricing.php';
                 break;
                 //blog page with posts
             case "/blog":
@@ -211,7 +220,7 @@
                 include 'includes/contact.php';
                 break;
             case "/pay":
-                
+
                 break;
                 // When a page doesn't exist - 404 not found page
             default:
@@ -224,6 +233,7 @@
 | The Footer element  |
 ==================================== -->
     <?php include 'includes/sections/footer.php'; ?>
+    
 
     <!-- =================================
             | The back to top button  |
@@ -231,6 +241,31 @@
     <a href="#" onclick="topFunction()" id="myBtn" title="Go to top">
         To Top
     </a>
+  <script>
+      function loadAOS() {
+        if(window.innerWidth > 768) {
+          var aosCSS = document.createElement('link');
+          aosCSS.href = 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css';
+          aosCSS.rel = 'stylesheet';
+          document.head.appendChild(aosCSS);
+
+          var aosJS = document.createElement('script');
+          aosJS.src = 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js';
+          document.head.appendChild(aosJS);
+
+          aosJS.onload = function() {
+            AOS.init({
+          offset: 200, // Change offset to trigger animations sooner or later (pixels)
+          duration: 600, // Duration of animation (milliseconds)
+          easing: 'ease-in-out', // Animation easing function
+          //once: false, // Whether animation should happen only once or every time you scroll up and down
+          // More options...
+        });
+          };
+        }
+      }
+      window.onload = loadAOS;
+    </script>
 
 </body>
 
