@@ -1,7 +1,6 @@
 
 <div class="testimonial-container">
     <!-- a -->
-    sec
     <div class="testimonial">
         <p class="testimonial-text">"Joseph is passionate about what he offers! He freely gives an hour of his time to chat about what ways you can convert traffic by making changes to your existing website. He believes in who he works with. Excited to get started and see positive change in my business. "</p>
         <p class="testimonial-author">- April Bielefeldt
