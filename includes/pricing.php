@@ -63,8 +63,8 @@
     </div>
     <div class="pricing-terms">
         <h5>Not sure where to start?</h5>
-        <p> I can give you a free 30 minute strategy session where I can give you some very specific tips on how you can grow your business to generate more sales. Are you open to that? </p>
-        <div class="custom-btn"><a <?= $externalLinks; ?> href="https://calendly.com/livengoodwebsites">Let's talk</a></div>
+        <p> I can give you a free 1 hour strategy session where I can give you some very specific tips on how you can grow your business to generate more sales. Are you open to that? </p>
+        <div class="custom-btn"><a <?= $externalLinks; ?> href="https://calendly.com/livengoodwebsites">Schedule Now</a></div>
     </div>
 </section>
 </body>

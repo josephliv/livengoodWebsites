@@ -34,20 +34,17 @@ switch ($page) {
     case "/":
     case "/index":
         $site_title = "Custom Web Design Services in North Carolina";
-        $main_title = "Are you a business owner looking to Elevate Your Online Presence?";
+        $main_title = "Are you Struggling to convert visitors into customers?";
         $meta_description = "Boost your online presence with the leading SEO company in North Carolina. Our expert team delivers results-driven SEO services for businesses of all sizes.";
-        $meta_keywords = "north carolina website design,
+        $meta_keywords = "north carolina website design, cheap website company,
         web design companies in north carolina,
         web design company north carolina,
         web development in north carolina,
         website hosting and maintenance services,
         seo company north carolina,
-        seo davie county,
-        search optimisation agency,
-        best search engine optimization company,
-        online food ordering app development,
-        food ordering app development company";
-        $intro = "Your Website should work Harder for Your Business.";
+        seo davie county
+        ";
+        $intro = "Discover how a strategically designed website can turn your traffic into revenue.";
         break;
         // Google was showing a 404 with this url, the testimonials are on the home page
     case "/partner":
@@ -346,6 +343,9 @@ if ($page === "/robots.txt") {
     include 'robots.txt';
     return;
 }
-
+if ($page === "/files") {
+    include 'files.html';
+    return;
+}
 
 include "template.php";

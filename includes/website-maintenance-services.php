@@ -1,39 +1,37 @@
 <div class="site-care-hero">
   <div class="site-care-hero-inner container">
-    <p>In the digital world, a well-maintained website is key to success. At Livengood Websites, we offer comprehensive maintenance packages designed to keep your site secure, fast, and up-to-date. Choose from our range of affordable, fixed-price packages and let us handle the technicalities while you focus on growing your business.</p>
-
+    <p>In the digital world, the impact of a well-maintained website on business success cannot be overstated. At Livengood Websites, we're committed to ensuring your online presence is not just functional but also thriving.</p>
+<p>We understand that each business has unique needs, and navigating website maintenance or deciding on a new website can be challenging. That’s why we’re offering a free 1-hour strategy session. During this session, we'll explore your current website's performance and discuss whether our maintenance packages or a new site creation could better serve your needs.</p>
     <p>Not sure what maintenance is? Feel free to read more about website maintenance and its benefits <a href="/website-maintenance">here</a>.</p>
   </div>
 </div>
-<div class="narrow-section">
-  <h3 style="font-size: 2.3rem; font-family: var(--hero-font); text-shadow:  2px 2px 5px #555; color: var(--primary-lite); ">
-    Maintenance Packages:
-  </h3>
-</div>
+
 <div class="page">
-  <article class="bg">
+  <article>
     <div class="custom-section">
-      <h4 id="title">Start Up Kit (basic Maintenance)</h4>
+      <h4 id="title">What to Expect in Your Strategy Session:</h4>
       <div id="disc">
         <h5></h5>
         <ul>
-          <li>Monthly updates to keep your site running smoothly.</li>
-          <li>Monthly backups to safeguard your data.</li>
-          <li>Basic security checks to protect against threats.</li>
+          <li><strong>Assessment:</strong> A review of your current website and its functionality.</li>
+          <li><strong>Recommendations:</strong> Tailored advice on enhancements or a new site build.</li>
+          <li><strong>Planning:</strong> Outline of potential steps and strategies to take your website to the next level.</li>
+          <li><strong>Packages Overview:</strong> Information on our maintenance packages that keep your site secure, fast, and up-to-date.</li>
         </ul>
         <div class="custom-btn">
-          <a href="https://calendly.com/livengoodwebsites">Book Now</a>
+          <a target="_blank" href="https://calendly.com/livengoodwebsites/1-hour">Schedule Now</a>
         </div>
       </div>
       <img id="img" loading="lazy" src="/assets/imgs/peace-of-mind.jpeg" alt="peace of mind">
     </div>
   </article>
-  <article>
+ 
+  <article class="bg">
     <div class="custom-section-reverse">
-      <h4 id="title">Performance Optimization Package</h4>
+      <h4 id="title">Assistance with Performance Optimization</h4>
       <div id="disc">
+        <h5>We can assist you with:</h5>
         <ul>
-          <li>Everything in the Basic plus</li>
           <li>Monthly performance assessments for peak efficiency.</li>
           <li>Website speed optimization for faster load times.</li>
           <li>Database tuning for enhanced performance.</li>
@@ -41,36 +39,36 @@
           <li>Weekly backups to safeguard your data.</li>
         </ul>
         <div class="custom-btn">
-          <a href="https://calendly.com/livengoodwebsites">Book Now</a>
+          <a href="https://calendly.com/livengoodwebsites/1-hour">Schedule Now</a>
         </div>
       </div>
       <img id="img" loading="lazy" src="/assets/imgs/regular-updates.jpeg" alt="regular updates">
     </div>
   </article>
-  <article class="bg">
+  <article>
     <div class="custom-section">
-      <h4 id="title">SEO Monitoring Package</h4>
+      <h4 id="title">SEO Monitoring</h4>
       <div id="disc">
         <ul>
-          <li>Everything in the performance optimization package plus</li>
           <li>Regular SEO analysis for improved search visibility.</li>
           <li>Keyword monitoring and updates.</li>
           <li>Monthly performance reports to track progress.</li>
         </ul>
         <div class="custom-btn">
-          <a href="https://calendly.com/livengoodwebsites">Book Now</a>
+        <a href="https://calendly.com/livengoodwebsites/1-hour">Schedule Now</a>
         </div>
       </div>
       <img id="img" loading="lazy" src="/assets/imgs/seo.jpg" alt="expert support">
     </div>
   </article>
 </div>
-<div class="page">
-  <article class="custom-section-reverse">
-    <h3 id="title">
-      All the packages above also include the following:
-    </h3>
-    <div id="disc">
+<div class="bg">
+<div class="narrow-section">
+  <article>
+    <h5 class="text-primary">
+      That's not all that we offer, we also include the following:
+    </h5>
+    <div >
       <h5>Security Checks</h5>
       <ul>
         <li>Frequent security scans and vulnerability assessments.</li>
@@ -83,14 +81,11 @@
         <li>Quick response and resolution for downtime or bugs.</li>
         <li>Direct and prompt communication for immediate assistance.</li>
       </ul>
-      <h5>Why Choose Livengood Websites?</h5>
-      <ul>
-        <li>Comprehensive care with every package.</li>
-        <li>Transparent, all-inclusive pricing with no hidden fees.</li>
-        <li>Commitment to keeping your website safe, efficient, and always online.</li>
-      </ul>
+      <h3>Book your free strategy session and let's get your business on the path of success together!</h3>
+      <div class="custom-btn">
+        <a href="https://calendly.com/livengoodwebsites/1-hour">Schedule Now</a>
+        </div>
     </div>
-    <img src="/assets/imgs/bg-maintenance.png" alt="security maintenance plans" id="img">
   </article>
 </div>
 </div>

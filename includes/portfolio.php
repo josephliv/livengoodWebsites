@@ -246,11 +246,7 @@
         <iframe style="width: 90%; margin: auto; height: 90%" src="https://survey.dartdefense.org" frameborder="0"></iframe>
       </div>
     </div>
-    <?php
-    // ***********************/
-    //  pcp-usa.png site
-    //************************* */
-    ?>
+   <!-- mediation splash page -->
     <div class="portfolio-item custom-section-item">
       <div class="portfolio-item-inner">
         <div>
@@ -306,7 +302,55 @@
         <iframe style="width: 90%; margin: auto; height: 90%" src="https://coloradoeasementlawyer.com/" frameborder="0"></iframe>
       </div>
     </div>
+          <!-- the pcp usa -->
+          <div class="portfolio-item custom-section-item">
+      <div class="portfolio-item-inner">
+        <div>
+        <img id="easement-img" class="popup-img i" src="assets/imgs/portfolio/pcp-usa.png" alt="https://thepcpusa.com" title="click to view full website in a popup">
+        </div>
+        <h3 class="h">The PCP USA</h3>
+        <div class="rt">
+          <p>
+            Political site.
+          </p>
+          <span><a href="https://thepcpusa.com" <?= $externalLinks ?>>
+              visit site
+            </a></span>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal-->
+    <div id="easement-modal" class="modal">
+      <span id="easement-close" class="close">&times;</span>
+      <div class="modal-content">
+        <iframe style="width: 90%; margin: auto; height: 90%" src="https://thepcpusa.com/" frameborder="0"></iframe>
+      </div>
+    </div>
 
+    <!-- Butler county pcp usa  -->
+    <div class="portfolio-item custom-section-item">
+      <div class="portfolio-item-inner">
+        <div>
+        <img id="easement-img" class="popup-img i" src="assets/imgs/portfolio/butler-pcp-usa.png" alt="https://butler.thepcpusa.com" title="click to view full website in a popup">
+        </div>
+        <h3 class="h">The PCP USA in Butler county</h3>
+        <div class="rt">
+          <p>
+            Political site for butler county PA.
+          </p>
+          <span><a href="https://butler.thepcpusa.com" <?= $externalLinks ?>>
+              visit site
+            </a></span>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal-->
+    <div id="easement-modal" class="modal">
+      <span id="easement-close" class="close">&times;</span>
+      <div class="modal-content">
+        <iframe style="width: 90%; margin: auto; height: 90%" src="https://butler.thepcpusa.com/" frameborder="0"></iframe>
+      </div>
+    </div>
   </div>
 </section>
 <script src="assets/portfolio.js"></script>

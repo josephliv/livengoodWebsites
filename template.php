@@ -57,16 +57,7 @@
 </head>
 
 <body>
-    <div class="overlay"></div>
-    <div class="exitPopup">
-        <h4 class="text-center">Wait a Second!</h4>
-        <p>Looks like you're heading out. Before you go, we'd love to offer you a <strong>FREE website analysis</strong>. Who knows, you might discover some valuable insights to improve your site!</p>
-        <div class="text-center">
-            <button class="btn btn-outline-success m-2" onclick="bookFreeAnalysis()">Book Now</button>
-            <button class="btn btn-outline-danger m-2"  onclick="closePopup()">No Thanks</button>
-            </div>
-
-    </div>
+   
 
     <!-- =================================
       | Top header with logo and nav links and hero |
@@ -77,7 +68,7 @@
 
     <div class="gradient-reverse introduction py-md-2 py-0 <?php echo ($page == '/pay') ? 'd-none' : ''; ?>" id="top">
         <div>
-            <h3 class="text-center text-light">Schedule Your Free 30-Minute website analysis Now!</h3>
+            <h3 class="text-center text-light">Schedule Your Free 1-hour strategy session today.</h3>
             <div class="custom-btn">
                 <a href="https://calendly.com/livengoodwebsites" <?= $externalLinks; ?> >Book Now</a>
             </div>
@@ -241,7 +232,7 @@
     <a href="#" onclick="topFunction()" id="myBtn" title="Go to top">
         To Top
     </a>
-  <script>
+  <!--script>
       function loadAOS() {
         if(window.innerWidth > 768) {
           var aosCSS = document.createElement('link');
@@ -258,14 +249,14 @@
           offset: 200, // Change offset to trigger animations sooner or later (pixels)
           duration: 600, // Duration of animation (milliseconds)
           easing: 'ease-in-out', // Animation easing function
-          //once: false, // Whether animation should happen only once or every time you scroll up and down
+          once: true, // Whether animation should happen only once or every time you scroll up and down
           // More options...
         });
           };
         }
       }
       window.onload = loadAOS;
-    </script>
+    </script>-->
 
 </body>
 

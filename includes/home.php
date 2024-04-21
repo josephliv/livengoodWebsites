@@ -22,8 +22,7 @@
 
   </div>
 </section>
-<?php //include('includes/sections/expect.php'); 
-?>
+
 
 <section class="home-section-seo" id="seo" data-aos="fade-left">
   <div class="home-section-seo-inner">
@@ -38,8 +37,8 @@
   </div>
 </section>
 
-<section class="testimonial-area gradient-lite pt-5" id="reviews">
-  <?php include 'includes/sections/testimonials.php'; ?>
+<section class="testimonial-area gradient-lite" id="reviews">
+  <?php include 'includes/sections/testimonialstest.php'; ?>
 </section>
 <div class="page">
   <article data-aos="fade-in">

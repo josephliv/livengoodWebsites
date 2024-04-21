@@ -48,48 +48,4 @@ for (let element of detailsElements) {
   });
 }
 
-// exit popup 
 
-const exitPopup = document.querySelector(".exitPopup");
-const overlay = document.querySelector(".overlay");
-exitPopup.style.display = "none";
-
-// Add a flag to track if the popup has been shown
-let isPopupShown = false;
-
-// document.addEventListener("mouseleave", function (event) {
-//   // Check if the popup has not been shown and the mouse is leaving the window boundaries
-//   if (!isPopupShown && (event.clientY <= 0 || event.clientX <= 0 || event.clientX >= window.innerWidth || event.clientY >= window.innerHeight)) {
-//     if (window.getComputedStyle(exitPopup).display === "none") {
-//       exitPopup.style.display = "block";
-//       overlay.style.display = "block";
-//       setTimeout(() => {
-//         exitPopup.style.opacity = "1";
-//         overlay.style.opacity = "1";
-//       }, 10); // Use setTimeout to allow display change to apply first
-
-//       // Set the flag to true to prevent the popup from showing again
-//       isPopupShown = true;
-//     }
-//   }
-// });
-
-
-function closePopup() {
-  exitPopup.style.opacity = "0";
-  overlay.style.opacity = "0";
-  setTimeout(() => {
-    exitPopup.style.display = "none";
-    overlay.style.display = "none";
-  }, 500); // Match the duration of the transition
-}
-
-function closePopup() {
-  exitPopup.style.display = "none";
-  overlay.style.display = "none";
-}
-
-function bookFreeAnalysis() {
-  // Redirect to booking page or handle the booking logic
-  window.location.href = "https://calendly.com/livengoodwebsites"; // Example path to booking page
-}
