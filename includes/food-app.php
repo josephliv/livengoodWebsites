@@ -47,16 +47,9 @@
           <p>Excellence and affordability can coexist. We provide competitively priced services, ensuring value without compromising on quality.</p>
         </div>
         <div id="img">
-          <img id="foodAppImg" class="food-app-img" src="/assets/imgs/New-on-OTA.png" alt="online food ordering app development" title="view larger image">
-          <p></p>
-          <small>Click image for a larger view</small>
+          <img id="foodAppImg" class="food-app-img mb-4" src="/assets/imgs/New-on-OTA.png" alt="online food ordering app development" >
           <p>For an in-depth exploration and details, <a href="/food-app-details">click here</a></p>
-          <!-- The Modal -->
-          <div id="foodAppModal" class="food-modal">
-            <span class="close">&times;</span>
-            <img id="foodAppModalImg" width="90vw" height="100%" class="modal-content" src="/assets/imgs/New-on-OTA-full.png">
-            <div id="foodAppCaption"></div>
-          </div>
+          
         </div>
       </div>
     </article>

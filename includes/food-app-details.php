@@ -5,12 +5,7 @@
     <hr>
 
     <img width="500" id="foodAppImg" class="food-app-img" src="/assets/imgs/food-app-details.jpeg" alt="online food ordering app development" title="view larger image">
-    <!-- The Modal -->
-    <div id="foodAppModal" class="food-modal">
-      <span class="close">&times;</span>
-      <img id="foodAppModalImg" width="90vw" height="100%" class="modal-content" src="/assets/imgs/food-app-details.jpeg">
-      <div id="foodAppCaption"></div>
-    </div>
+    
 </section>
 <section class="bg">
   <div class="narrow-section">

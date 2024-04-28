@@ -66,7 +66,7 @@
 
     <!-- Main content -->
 
-    <div class="gradient-reverse introduction py-md-2 py-0 <?php echo ($page == '/pay') ? 'd-none' : ''; ?>" id="top">
+    <div class="gradient-reverse introduction py-md-4 py-2 <?php echo ($page == '/pay') ? 'd-none' : ''; ?>" id="top">
         <div>
             <h3 class="text-center text-light">Schedule Your Free 1-hour strategy session today.</h3>
             <div class="custom-btn">
@@ -232,7 +232,7 @@
     <a href="#" onclick="topFunction()" id="myBtn" title="Go to top">
         To Top
     </a>
-  <!--script>
+  <script>
       function loadAOS() {
         if(window.innerWidth > 768) {
           var aosCSS = document.createElement('link');
@@ -256,7 +256,7 @@
         }
       }
       window.onload = loadAOS;
-    </script>-->
+    </script>
 
 </body>
 

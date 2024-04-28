@@ -13,6 +13,33 @@
 
 <section class="portfolio">
   <div class="portfolio-inner">
+  <!-- <div class="portfolio-item custom-section-item">
+      <div class="portfolio-item-inner">
+        <div>
+      <strong>Custom coded</strong>
+        <img id="action-img" class="popup-img i" src="assets/imgs/portfolio/website-analysis.webp" alt="https://patentxl.com/" title="click to view full website in a popup">
+        </div>
+        <h3 class="h"></h3>
+        <div class="rt">
+          <div>
+          <p>
+          Book a 30-minute consultation for a website inspection.
+          </p>
+          
+          </div>
+          <span><a href="https://websitemaintenance.online/" <?= $externalLinks ?>>
+              visit site
+            </a></span>
+        </div>
+      </div>
+    </div> -->
+    <!-- The Modal for  website-->
+    <!-- <div class="modal">
+      <span class="close">&times;</span>
+      <div class="modal-content">
+        <iframe style="width: 90%; margin: auto; height: 90%" src="https://websitemaintenance.online/" frameborder="0"></iframe>
+      </div>
+    </div> -->
     <div class="portfolio-item custom-section-item">
       <div class="portfolio-item-inner">
         <div>
@@ -35,8 +62,9 @@
     </div>
     <!-- The Modal for  website-->
     <div class="modal">
-      <span class="close">&times;</span>
+      
       <div class="modal-content">
+        <span class="close">&times;</span>
         <iframe style="width: 90%; margin: auto; height: 90%" src="https://websitemaintenance.online/" frameborder="0"></iframe>
       </div>
     </div>
@@ -62,8 +90,8 @@
     </div>
     <!-- The Modal for  website-->
     <div class="modal">
-      <span class="close">&times;</span>
       <div class="modal-content">
+        <span class="close">&times;</span>
         <iframe style="width: 90%; margin: auto; height: 90%" src="https://sandhillskarateclub.com/" frameborder="0"></iframe>
       </div>
     </div>
@@ -87,8 +115,8 @@
     </div>
     <!-- The Modal for  website-->
     <div class="modal">
-      <span class="close">&times;</span>
       <div class="modal-content">
+        <span class="close">&times;</span>
         <iframe style="width: 90%; margin: auto; height: 90%" src="https://patentxl.com/" frameborder="0"></iframe>
       </div>
     </div>
@@ -111,9 +139,9 @@
       </div>
     </div>
     <!-- The Modal for  website-->
-    <div id="cotlg-modal" class="modal">
-      <span id="cotlg-close" class="close">&times;</span>
+    <div class="modal">
       <div class="modal-content">
+        <span class="close">&times;</span>
         <iframe style="width: 90%; margin: auto; height: 90%" src="https://cotlgstatesville.com/" frameborder="0"></iframe>
       </div>
     </div>
@@ -133,9 +161,9 @@
       </div>
     </div>
     <!-- The Modal for alr website-->
-    <div id="alr-modal" class="modal">
-      <span id="alr-close" class="close">&times;</span>
+    <div class="modal">
       <div class="modal-content">
+        <span class="close">&times;</span>
         <iframe style="width: 90%; margin: auto; height: 90%" src="https://liveyoungdierichapparel.store/" frameborder="0"></iframe>
       </div>
     </div>
@@ -155,9 +183,9 @@
       </div>
     </div>
     <!-- The Modal -->
-    <div id="stroud-modal" class="modal">
-      <span id="stroud-close" class="close">&times;</span>
+    <div class="modal">
       <div class="modal-content">
+        <span class="close">&times;</span>
         <iframe style="width: 90%; margin: auto; height: 90%" src="https://ntierconstruction.com" frameborder="0"></iframe>
       </div>
     </div>
@@ -182,9 +210,9 @@
       </div>
     </div>
     <!-- The Modal for cohenslaw-->
-    <div id="cohen-modal" class="modal">
-      <span id="cohen-close" class="close">&times;</span>
+    <div class="modal">
       <div class="modal-content">
+        <span class="close">&times;</span>
         <iframe style="width: 90%; margin: auto; height: 90%" src="https://cohenslaw.com" frameborder="0"></iframe>
       </div>
     </div>
@@ -208,9 +236,9 @@
       </div>
     </div>
     <!-- The Modal for dart defense -->
-    <div id="dart-modal" class="modal">
-      <span id="dart-close" class="close">&times;</span>
+    <div class="modal">
       <div class="modal-content">
+        <span class="close">&times;</span>
         <iframe style="width: 90%; margin: auto; height: 90%" src="https://dartdefense.org" frameborder="0"></iframe>
       </div>
     </div>
@@ -240,9 +268,9 @@
       </div>
     </div>
     <!-- The Modal for dart defense survey-->
-    <div id="dart-survey-modal" class="modal">
-      <span id="dart-survey-close" class="close">&times;</span>
+    <div class="modal">
       <div class="modal-content">
+        <span class="close">&times;</span>
         <iframe style="width: 90%; margin: auto; height: 90%" src="https://survey.dartdefense.org" frameborder="0"></iframe>
       </div>
     </div>
@@ -266,9 +294,9 @@
       </div>
     </div>
     <!-- The Modal-->
-    <div id="pcp-modal" class="modal">
-      <span id="pcp-close" class="close">&times;</span>
+    <div class="modal">
       <div class="modal-content">
+        <span class="close">&times;</span>
         <iframe style="width: 90%; margin: auto; height: 90%" src="https://coloradorealestatemediators.com/" frameborder="0"></iframe>
       </div>
     </div>
@@ -296,9 +324,9 @@
       </div>
     </div>
     <!-- The Modal-->
-    <div id="easement-modal" class="modal">
-      <span id="easement-close" class="close">&times;</span>
+    <div class="modal">
       <div class="modal-content">
+        <span class="close">&times;</span>
         <iframe style="width: 90%; margin: auto; height: 90%" src="https://coloradoeasementlawyer.com/" frameborder="0"></iframe>
       </div>
     </div>
@@ -320,9 +348,9 @@
       </div>
     </div>
     <!-- The Modal-->
-    <div id="easement-modal" class="modal">
-      <span id="easement-close" class="close">&times;</span>
+    <div class="modal">
       <div class="modal-content">
+        <span class="close">&times;</span>
         <iframe style="width: 90%; margin: auto; height: 90%" src="https://thepcpusa.com/" frameborder="0"></iframe>
       </div>
     </div>
@@ -345,9 +373,9 @@
       </div>
     </div>
     <!-- The Modal-->
-    <div id="easement-modal" class="modal">
-      <span id="easement-close" class="close">&times;</span>
+    <div class="modal">
       <div class="modal-content">
+        <span class="close">&times;</span>
         <iframe style="width: 90%; margin: auto; height: 90%" src="https://butler.thepcpusa.com/" frameborder="0"></iframe>
       </div>
     </div>

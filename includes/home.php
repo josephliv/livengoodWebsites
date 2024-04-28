@@ -38,7 +38,8 @@
 </section>
 
 <section class="testimonial-area gradient-lite" id="reviews">
-  <?php include 'includes/sections/testimonialstest.php'; ?>
+  <h3 class="p-4">What others had to say</h3>
+  <?php include 'includes/sections/testimonials.php'; ?>
 </section>
 <div class="page">
   <article data-aos="fade-in">

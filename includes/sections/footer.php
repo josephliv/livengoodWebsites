@@ -4,7 +4,7 @@
         <div class="footer-logo"><a href="/"><img src="/assets/imgs/logo-blue.webp" alt="Livengood websites | North carolina website designer"></a></div>
         <div class="footer-section">
             <div class="footer-title">Reach Out</div>
-            <!-- 📞 1 (704) 275-9705<br> -->
+            📞 <a href="tel:17049979007">1 (704) 997-9007</a><br>
             📧 <a href="mailto:info@joes.business">info@joes.business</a>
         </div>
 

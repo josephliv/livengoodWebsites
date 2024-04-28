@@ -1,235 +1,115 @@
-<h3 class="text-center">What our clients had to say</h3>
-<main class="testimonial-inner-section">
-  <!-- Mark Cohen -->
-  <div class="custom-card shadow" data-aos="fade-right">
-    <div class="custom-card-header">
-      <h4>
-        Mark Cohen - <small>Real Estate lawyer</small>
-      </h4>
-    </div>
-    <figure class="custom-card-body">
-      <blockquote class="blockquote ">
-        <p>I hired Joe to re-do my law firm's website. I loved my old website, but after nearly twenty years with the company that had designed and built it for me, I had grown unhappy with the deterioration in the level of service I was receiving from that company and my site was losing visibility.
-        </p>
-        <p>
-          A good friend referred me to Joe. The old site was not built on a well-known platform, but Joe was able to copy all of the content from my own site -- most of which I had written myself -- and use it in the new site. Joe was a pleasure to work with. He was prompt, knowledgeable, he kept me informed, he listened to me, and his fees were reasonable. I highly recommend him.
 
-        </p>
-      </blockquote>
-      <figcaption class="blockquote-footer">
-        <cite title="Source Title">https://cohenslaw.com/</cite>
-      </figcaption>
-    </figure>
-  </div>
-  <!-- DART Defense -->
-  <div class="custom-card shadow" data-aos="fade-in">
-    <div class="custom-card-header">
-      <h4>
-        DART Admin
-      </h4>
+<div class="testimonial-container">
+    <!-- a -->
+    <div class="testimonial" data-aos="fade-right" >
+        <p class="testimonial-text">"Joseph is passionate about what he offers! He freely gives an hour of his time to chat about what ways you can convert traffic by making changes to your existing website. He believes in who he works with. Excited to get started and see positive change in my business. "</p>
+        <p class="testimonial-author">- April Bielefeldt
+            Your Photo Travel Guide</p>
     </div>
-    <div>
-      <figure class="custom-card-body">
-        <blockquote class="blockquote">
-          <p>Our non-profit, DART, Inc., needed a total website makeover.
-            Joe listened to our needs and goals and created us a wonderful new site
-            meeting all of requirements. Joe is a pleasure to work with and goes out
-            of his way to make the process enjoyable, fast and professional.</p>
-        </blockquote>
-        <figcaption class="blockquote-footer">
-          <cite title="Source Title">https://dartdefense.org/</cite>
-        </figcaption>
-      </figure>
+    <!-- b -->
+    <div class="testimonial" data-aos="fade-right">
+        <p class="testimonial-text">"Joseph demonstrated exceptional follow-through on his promises, ensuring that all agreed-upon objectives were precisely met on time. His professionalism and commitment to delivering quality results were genuinely commendable."</p>
+        <p class="testimonial-author">- Brittany Lindsay
+            A&B Billing Associates
+            Spring, TX</p>
     </div>
-  </div>
-  <!-- Pat Hauser -->
-  <div class="custom-card shadow" data-aos="fade-left">
-    <div class="custom-card-header">
-      <h4>
-        Pat Hauser
-      </h4>
+    <!-- c -->
+    <div class="testimonial" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="200">
+        <p class="testimonial-text">"Joseph has an authentic way of connecting to people, supporting them in their growth, and championing their success. I'd definitely refer him to anyone expanding their professional and business village of support."</p>
+        <p class="testimonial-author">- Jakaila Scaife
+            Umoya: Remembering Our Energetic Love Language
+            Energy Medicine</p>
     </div>
-    <div>
-      <figure class="custom-card-body">
-        <blockquote class="blockquote">
-          <p>Competent and responsive. joe made some changes to our website. very easy to contact and communicate with. customer service lives.</p>
-        </blockquote>
-        <figcaption class="blockquote-footer">
-          <cite title="Source Title">https://www.thestableatriverview.com/</cite>
-        </figcaption>
-      </figure>
+    <!-- d -->
+    <div class="testimonial" data-aos="fade-left" data-aos-delay="200">
+        <p class="testimonial-text">"Joseph is very passionate about helping you convert online leads to get more customers and increase revenue. "</p>
+        <p class="testimonial-author">- Char Ross
+            iBrand & Design
+            Business Coach</p>
     </div>
-  </div>
-  <!-- Amy Lam -->
-  <div class="custom-card shadow" data-aos="fade-left" data-aos-duration="1500">
-    <div class="custom-card-header">
-      <h4>
-        Amy Lam
-      </h4>
+    <!-- e -->
+    <div class="testimonial" data-aos="fade-left" data-aos-delay="300">
+        <p class="testimonial-text">"Joseph is great guy with great talents. "</p>
+        <p class="testimonial-author">- Curtis Burns
+            Growth Dev
+            Search Engine Marketing</p>
     </div>
-    <figure class="custom-card-body">
-      <blockquote class="blockquote">
-        <p>Joe was an absolute pleasure to work with! Our company needed a last minute website creator to assist with finishing up our website by the end of the year. I found Joe and he completely took the weight off my shoulders! He's experienced, knowledgeable, extremely kind, understanding, and accommodating. He was able to accomplish everything I wanted in just 3 days. </p>
-        <p>
-          I appreciated that he really took the time and effort to frequently communicate with me to make sure my expectations were being met. I will be keeping in touch for future projects and any website assistance! Thank you Joe!!! 😊
+    <!-- f -->
+    <div class="testimonial" data-aos="fade-left" >
+        <p class="testimonial-text">"He is the right perrson for the job..."</p>
+        <p class="testimonial-author">- Gary Capps
+            GLC Silver Enterprises
+            Member Marketing</p>
+    </div>
+    <!-- g -->
+    <div class="testimonial" data-aos="fade-center" >
+        <p class="testimonial-text">"Joseph has years of experience in web development! If you need someone to maintain your site and ensure compliance - I would highly recommend contacting Joseph!"</p>
+        <p class="testimonial-author">- Casey Peavey
+            MII Media & Marketing
+            Social Media Marketing</p>
+    </div>
+    <!-- h -->
+    <div class="testimonial" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="200">
+        <p class="testimonial-text">"A great developer with years of experience, hire him for your web design projects"</p>
+        <p class="testimonial-author">-Alpha Dennison II
+            Stampede Hosting
+            Web Developer </p>
+    </div>
+    <!-- i -->
+    <div class="testimonial" data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-delay="1200">
+        <p class="testimonial-text">"Joe is a very diligent, technology-savvy professional, who excels in many aspects. He was a great helping me design and host a new website for my law firm, being very responsive to my inquiries even outside normal business hours. I am very pleased to highly recommend Joe and his company."</p>
+        <p class="testimonial-author">-Ramon Urteaga
+            PatentXL Law Firm
+            Lawyer </p>
+    </div>
+    <!-- j -->
+    <div class="testimonial" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-delay="900">
+        <p class="testimonial-text">"Very professional and straightforward approach. Highly recommended."</p>
+        <p class="testimonial-author">- Dyego Sousa
+            DF Software
+            Information Technology Company</p>
+    </div>
+    <!-- k -->
+    <div class="testimonial" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-delay="1200">
+        <p class="testimonial-text">"Livengood Websites does an excellent job. Joseph is very knowledgeable and professional in his dealings with his clients. Projects are complete in a timely manner and the quality is "top-notch"."</p>
+        <p class="testimonial-author">-Eugene E. Clapp
+            The Clapp Group
+            Business Financing </p>
+    </div>
+    <!-- l -->
+    <div class="testimonial" data-aos="zoom-in" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-delay="200">
+        <p class="testimonial-text">"I hired Joe to re-do my law firm's website. I loved my old website, but after nearly twenty years with the company that had designed and built it for me, I had grown unhappy with the deterioration in the level of service I was receiving from that company and my site was losing visibility.<br>
 
-        </p>
-      </blockquote>
-      <figcaption class="blockquote-footer">
-        <cite title="Source Title">https://www.unitedrecycleservices.com/general-debris-pricing</cite>
-      </figcaption>
-    </figure>
-  </div>
-  <!-- Mary Despe -->
-  <div class="custom-card shadow" data-aos="fade-left">
-    <div class="custom-card-header">
-      <h4>
-        Mary Despe
-      </h4>
+            A good friend referred me to Joe. The old site was not built on a well-known platform, but Joe was able to copy all of the content from my own site -- most of which I had written myself -- and use it in the new site. Joe was a pleasure to work with. He was prompt, knowledgeable, he kept me informed, he listened to me, and his fees were reasonable. I highly recommend him."</p>
+        <p class="testimonial-author">- Mark Cohen - Real Estate Lawyer</p>
     </div>
-    <div>
-      <figure class="custom-card-body">
-        <blockquote class="blockquote">
-          <p>Joe is GREAT to work with. Super responsive and as a non-technical
-            person, I really appreciate that he would explain what I needed to
-            provide or expect when incorporating the changes and things I wanted my
-            website to do. I highly recommend!
-          </p>
-        </blockquote>
-        <figcaption class="blockquote-footer">
-          <cite title="Source Title">https://marydespe.com/</cite>
-        </figcaption>
-      </figure>
+    <!-- m -->
+    <div class="testimonial" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="500">
+        <p class="testimonial-text">"You guys want Greatness this is the man you go see very precise and clear and Joseph takes his time and patience to work with you definitely. Highly recommend"</p>
+        <p class="testimonial-author">- Anthony B.</p>
     </div>
-  </div>
-  <!-- Tom Thompson -->
-  <div class="custom-card shadow" data-aos="fade-in">
-    <div class="custom-card-header">
-      <h4>
-        Tom Thompson
-      </h4>
+    <!-- n -->
+    <div class="testimonial" data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-delay="200">
+        <p class="testimonial-text">"Livengood Websites offers premium customer service - if you aren't happy, he will make things right. I've worked with Joseph for several years and can recommend him to get the job done. He has many resources at his disposal and makes things happen."</p>
+        <p class="testimonial-author">- Tom Thompson</p>
     </div>
-    <div>
-      <figure class="custom-card-body">
-        <blockquote class="blockquote">
-          <p>Livengood Websites offers premium customer service - if you aren't
-            happy, he will make things right. I've worked with Joseph for several
-            years and can recommend him to get the job done. He has many resources
-            at his disposal and makes things happen.
-          </p>
-        </blockquote>
-        <figcaption class="blockquote-footer">
-          <cite title="Source Title">https://inventnowclub.com/</cite>
-        </figcaption>
-      </figure>
+    <!-- o -->
+    <div class="testimonial">
+        <p class="testimonial-text">"Joe is GREAT to work with. Super responsive and as a non-technical person, I really appreciate that he would explain what I needed to provide or expect when incorporating the changes and things I wanted my website to do. I highly recommend!"</p>
+        <p class="testimonial-author">- Mary Despe</p>
     </div>
-  </div>
-  <!-- Anthony B. -->
-  <div class="custom-card shadow" data-aos="fade-right">
-    <div class="custom-card-header">
-      <h4>
-        Anthony B.
-      </h4>
+    <!-- p -->
+    <div class="testimonial" data-aos="fade-down" data-aos-easing="ease-in-out" >
+        <p class="testimonial-text">"Joe Livengood designed DART's new and enhanced website. DART is a nonprofit organization devoted to violence prevention in workplaces and in relationships. <br>
+
+            His creativity and attention to detail were amazing. I worked closely with Joe throughout the process and rate his efforts as 5-stars."</p>
+        <p class="testimonial-author">- Paul Dusenbery - DART Defense</p>
     </div>
-    <div>
-      <figure class="custom-card-body">
-        <blockquote class="blockquote">
-          <p>You guys want Greatness this is the man you go see very precise and clear and Joseph takes his time and patience to work with you definitely. Highly recommend
-          </p>
-        </blockquote>
-        <figcaption class="blockquote-footer">
-          <cite title="Source Title">https://liveyoungdierichapparel.store/</cite>
-        </figcaption>
-      </figure>
+    <!-- q -->
+    <div class="testimonial" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="1000">
+        <p class="testimonial-text">"Was made a splash page that is converting very nicely. Thank-you"</p>
+        <p class="testimonial-author">- Jay-ann Ricard</p>
     </div>
-  </div>
-  <!-- Paul Dusenbery -->
-  <div class="custom-card shadow" data-aos="fade-in">
-    <div class="custom-card-header">
-      <h4>
-        Paul Dusenbery
-      </h4>
-    </div>
-    <figure class="custom-card-body">
-      <blockquote class="blockquote ">
-        <p>
-          Joe Livengood designed DART's new and enhanced website. DART is a nonprofit organization devoted to violence prevention in workplaces and in relationships
-        </p>
-        <p>
-          His creativity and attention to detail were amazing. I worked closely with Joe throughout the process and rate his efforts as 5-stars.
-        </p>
-      </blockquote>
-      <figcaption class="blockquote-footer">
-        <cite title="Source Title">https://dartdefense.org/</cite>
-      </figcaption>
-    </figure>
-  </div>
-  <!-- Ramon Urteaga -->
-  <div class="custom-card shadow" data-aos="fade-left">
-    <div class="custom-card-header">
-      <h4>
-        Ramon Urteaga - <small>PatentXL Law Firm</small>
-      </h4>
-    </div>
-    <figure class="custom-card-body">
-      <blockquote class="blockquote ">
-        <p>Joe is a very diligent, technology-savvy professional, who excels in many aspects. He was a great helping me design and host a new website for my law firm, being very responsive to my inquiries even outside normal business hours. I am very pleased to highly recommend Joe and his company.
-        </p>
-      </blockquote>
-      <figcaption class="blockquote-footer">
-        <cite title="Source Title">https://patentxl.com/</cite>
-      </figcaption>
-    </figure>
-  </div>
-  <!-- Eugene E. Clapp -->
-  <div class="custom-card shadow" data-aos="fade-right">
-    <div class="custom-card-header">
-      <h4>
-        Eugene E. Clapp - <small>The Clapp Group</small>
-      </h4>
-    </div>
-    <figure class="custom-card-body">
-      <blockquote class="blockquote ">
-        <p>"Livengood Websites does an excellent job. Joseph is very knowledgeable and professional in his dealings with his clients. Projects are complete in a timely manner and the quality is "top-notch"."
-        </p>
-      </blockquote>
-      <figcaption class="blockquote-footer">
-        <cite title="Source Title">https://the-clapp-group.com/</cite>
-      </figcaption>
-    </figure>
-  </div>
-  <!-- Donna Plunkett -->
-  <div class="custom-card shadow" data-aos="fade-in">
-    <div class="custom-card-header">
-      <h4>
-        Donna Plunkett - <small>DONNAMARIE Designs</small>
-      </h4>
-    </div>
-    <figure class="custom-card-body">
-      <blockquote class="blockquote ">
-        <p>"I’ve had the pleasure of corresponding with Joseph and I found it refreshing to be impressed with his dedication, purpose, and assistance to business owners looking to build their own website. He is sincere and honest which is something these days is hard to find. "
-        </p>
-      </blockquote>
-      <figcaption class="blockquote-footer">
-        <cite title="Source Title">https://www.etsy.com/shop/DONNAMARIEDesignsHJ</cite>
-      </figcaption>
-    </figure>
-  </div>
-  <!-- Dyego Sousa -->
-  <div class="custom-card shadow" data-aos="fade-right">
-    <div class="custom-card-header">
-      <h4>
-        Dyego Sousa - <small>DF Software</small>
-      </h4>
-    </div>
-    <figure class="custom-card-body">
-      <blockquote class="blockquote ">
-        <p>"Very professional and straightforward approach. Highly recommended."
-        </p>
-      </blockquote>
-      <figcaption class="blockquote-footer">
-        <cite title="Source Title">DF Software</cite>
-      </figcaption>
-    </figure>
-  </div>
-</main>
+
+
+</div>

@@ -195,6 +195,66 @@ hr {
 #disc ul {
   margin-left: 5dvw;
 }
+/* For modal content, mostly used on the portfolio page */
+
+/* Add Animation */
+.modal-content,
+.caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: -5px;
+  right: 10px;
+  color: var(--secondary);
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  z-index: 9999;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* TODO: 100% Image Width on Smaller Screens */
+
+  .modal-content {
+    margin: 40px auto;
+    display: block;
+    height: 95%;
+    width: 90%;
+    display: grid;
+    place-items: start center;
+  }
+  
+/* generic page styling */
 @media (min-width: 900px) {
   .custom-section,
   .custom-section-reverse {
@@ -464,6 +524,10 @@ details[open] summary ~ * {
 .partner {
   background-image: url("/assets/imgs/hero/partner.webp");
 }
+
+.joe {
+  background-image: url("/assets/imgs/workbench-g86b93d365_1280.webp");
+}
 .portfolio-bg {
   background-image: url("/assets/imgs/hero/portfolio-bg.webp");
   background-position: top 50% center;
@@ -567,10 +631,9 @@ video {
 .page-bg {
   background-image: var(--gradient);
 }
-.page-bg .hero-content {
-  margin: 80px 0;
-}
+
 .hero-content h1 {
+  padding-top: clamp(10px, 4vw, 70px);
   font-size: var(--hero-title);
   font-family: var(--title-font);
 }
@@ -1175,12 +1238,12 @@ video {
     "a b b f"
     "a g g j"
     "e k k k"
-    "l l l l"
-    "n n d d"
+    "l l l d"
+    "n n n d"
     "i i c c"
-    "o o o o"
-    "h h p p"
-    "m q p p";
+    "o o o q"
+    "m m p p"
+    "h h p p";
   }
  }
 

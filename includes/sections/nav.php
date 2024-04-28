@@ -1,9 +1,9 @@
 <header class="container">
   <div class="top-bar gradient d-none d-md-flex">
-    <!-- <div class="phone">
-      <a href="tel:17042759705">
-        <img width="30" src="/assets/imgs/icons/png-files/phone.png" alt="Phone: ">&nbsp; 1 (704) 275-9705</a>
-    </div> -->
+    <div class="phone">
+      <a href="tel:17049979007">
+        <img width="30" src="/assets/imgs/icons/png-files/phone.png" alt="Phone: ">&nbsp; 1 (704) 997-9007</a>
+    </div>
     <div class="email">
       <a href="mailto:info@joes.business">
         <img width="30" src="/assets/imgs/icons/png-files/envelope.png" alt="Email: ">&nbsp;

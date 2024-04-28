@@ -59,9 +59,10 @@ switch ($page) {
         // 404 detected from /about so let's add it here
     case "/about":
     case "/about/":
-        $site_title = "Meet Joseph Livengood";
-        $main_title = "Meet Joseph Livengood";
+        $site_title = "Meet Joe Livengood";
+        $main_title = "Meet Joe Livengood";
         $intro = "Independent Web Designer - Joe's Story";
+        $hero_bg_class = "joe";
         $meta_keywords = "
         Joe - Web Developer in North Carolina,
         Independent Web Designer - Joe's Story,
