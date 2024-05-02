@@ -43,6 +43,9 @@ body {
   font-size: var(--text-size);
   overflow-x: hidden;
 }
+.text-light {
+  color: var(--light-text-color);
+}
 .gradient {
   background-image: var(--gradient);
 }
@@ -635,7 +638,9 @@ video {
 .page-bg {
   background-image: var(--gradient);
 }
-
+.page-bg .hero-content {
+  margin: 80px 0;
+}
 .hero-content h1 {
   padding-top: clamp(10px, 4vw, 70px);
   font-size: var(--hero-title);
@@ -833,11 +838,12 @@ video {
 }
 
 @media screen and (max-width: 880px) {
-  .page-bg {
-    background-size: cover;
-    background-position: center;
+  #video-background {
+    /* height: 60vh; */
+    overflow: hidden;
+    object-fit: fill;
+    z-index: -1;
   }
-
   .dark-bg {
     background-color: #11111177;
     z-index: -1;
@@ -1129,56 +1135,6 @@ video {
   max-width: 900px;
   margin: auto;
 }
-/* most purchased banner */
-
-
-/* Wrapper for the ribbon, to control its positioning */
-/* Container for the ribbon to control its positioning */
-.most-purchased-banner {
-  width: 80px; /* Width adjusted for fit */
-  height: 224px; /* Height to provide enough wrap around the corner */
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  right: -2px; /* Slightly protruding to the right to give a wrapped look */
-}
-
-/* Styling for the ribbon itself */
-.ribbon {
-  font-size: 12px; /* Small font size for fitting text within the ribbon */
-  text-align: center;
-  transform: rotate(45deg); /* Rotated to appear as if wrapping the corner */
-  -webkit-transform: rotate(45deg); /* For Safari */
-  padding: 0 5px; /* Padding adjusted for text fit */
-  display: block;
-  background: #fc7046; /* Vivid color to stand out */
-  color: #fff; /* White text for readability */
-  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1); /* Shadow for depth */
-  line-height: 24px; /* Centering the text vertically */
-  width: 210px; /* Sufficient width to extend the ribbon across the corner */
-  position: absolute;
-  top: 0; /* Top alignment with the wrapper */
-  right: -10px; /* Right position adjusted to wrap properly */
-}
-
-
-
-
-
-.purchase-button {
-  background-color: #006400; /* Dark green for a 'go' color */
-  color: white;
-  text-decoration: none;
-  padding: 10px 25px;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.purchase-button:hover {
-  background-color: #004C00; /* Slightly darker green on hover */
-}
-
 /*  portfolio blocks */
 .portfolio {
   background-image: var(--gradient);
