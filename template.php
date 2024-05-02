@@ -168,11 +168,13 @@
             case "/google-analytics/":
             case "/tips-to-rank-on-google":
             case "/tips-to-rank-on-google/":
-
+            case "/desert-mirage":
+            case "/desert-mirage/":
 
                 include "includes/sections/post-page.php";
                 break;
-
+            
+                
             case "/How-To-Install-WordPress-Plugins/":
             case "/How-To-Install-WordPress-Plugins":
                 include 'includes/posts/How-To-Install-WordPress-Plugins.php';

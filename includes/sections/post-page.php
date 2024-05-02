@@ -30,8 +30,13 @@
         case "/google-analytics/":
           include 'includes/posts/Google-Analytics-4.php';
           break;
+        case "/desert-mirage":
+        case "/desert-mirage/":
+          include 'includes/posts/desert-mirage.php';
+            break;
         default:
           echo '<div style="min-height: 90vh; display: grid; place-items: center"><p>This blog is missing, <a href="/blog">Return to the blog page</a></p></div>';
+        
       }
       ?>
 
@@ -41,12 +46,16 @@
         <h4 class="list-group-item-title" aria-current="true">
           More posts
         </h4>
+        <a href="/Building-the-Digital-Landscape" class="list-group-item list-group-item-action">
+          Building a digital landscape
+        </a>
         <a href="/menu-development" class="list-group-item list-group-item-action">
           Menu Mastery: Boost Your Restaurant's Success
         </a>
         <a href="/website-maintenance" class="list-group-item list-group-item-action">What is Website Maintenance?</a>
         <a href="/tips-to-rank-on-google" class="list-group-item list-group-item-action">Tips to rank on Google</a>
         <a href="/google-analytics" class="list-group-item list-group-item-action">Using Google Analytics</a>
+        <a href="/desert-mirage" class="list-group-item list-group-item-action">The desert mirage</a>
         <a href="/blog" class="list-group-item list-group-item-action">View All Posts</a>
       </div>
     </nav>

@@ -573,6 +573,10 @@ details[open] summary ~ * {
 .pay {
   background-image: url("/assets/imgs/hero/pay.webp");
 }
+.desert-mirage {
+  background-image: url("/assets/imgs/hero/desert-mirage.webp");
+  background-size: contain;
+}
 video {
   position: absolute;
   top: 50%;
@@ -880,6 +884,9 @@ video {
     max-width: 250px;
     margin: auto;
   }
+  .desert-mirage {
+    background-size: cover;
+  }
 }
 
 /*  =================================== 
@@ -1052,7 +1059,7 @@ video {
   justify-content: center;
   padding: 50px;
 }
-
+/* pricing packages */
 .package {
   width: 350px;
   min-height: 350px;
@@ -1065,6 +1072,7 @@ video {
   );
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   transition: transform 0.2s ease-in-out;
+  position: relative;
 }
 
 .package-header {
@@ -1121,6 +1129,56 @@ video {
   max-width: 900px;
   margin: auto;
 }
+/* most purchased banner */
+
+
+/* Wrapper for the ribbon, to control its positioning */
+/* Container for the ribbon to control its positioning */
+.most-purchased-banner {
+  width: 80px; /* Width adjusted for fit */
+  height: 224px; /* Height to provide enough wrap around the corner */
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: -2px; /* Slightly protruding to the right to give a wrapped look */
+}
+
+/* Styling for the ribbon itself */
+.ribbon {
+  font-size: 12px; /* Small font size for fitting text within the ribbon */
+  text-align: center;
+  transform: rotate(45deg); /* Rotated to appear as if wrapping the corner */
+  -webkit-transform: rotate(45deg); /* For Safari */
+  padding: 0 5px; /* Padding adjusted for text fit */
+  display: block;
+  background: #fc7046; /* Vivid color to stand out */
+  color: #fff; /* White text for readability */
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1); /* Shadow for depth */
+  line-height: 24px; /* Centering the text vertically */
+  width: 210px; /* Sufficient width to extend the ribbon across the corner */
+  position: absolute;
+  top: 0; /* Top alignment with the wrapper */
+  right: -10px; /* Right position adjusted to wrap properly */
+}
+
+
+
+
+
+.purchase-button {
+  background-color: #006400; /* Dark green for a 'go' color */
+  color: white;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.purchase-button:hover {
+  background-color: #004C00; /* Slightly darker green on hover */
+}
+
 /*  portfolio blocks */
 .portfolio {
   background-image: var(--gradient);
@@ -1381,8 +1439,9 @@ video {
 ==================================== */
 
 .blog-page {
-  background-image: var(--gradient);
+  background-image: var(--gradient-lite);
   min-height: 80vh;
+  padding: var(--section-padding);
   display: grid;
   place-items: center;
 }
@@ -1422,7 +1481,7 @@ video {
   padding: 5px;
   text-align: left !important;
 }
-/* used on the post page at the top, some have dates and some don't */
+
 .blog-date {
   text-align: center;
   font-size: 1.2rem;
@@ -1433,14 +1492,15 @@ video {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .post-card {
   padding: 5px;
   border-radius: var(--radius);
-  border: 2px outset var(--accent);
+  border: 2px solid;
   box-shadow: var(--shadow);
   transition: 0.3s ease-in-out;
-  background-color: #e7e0e0b4;
+  background-color: #cccccc;
 
   container-type: inline-size;
   min-width: 350px;

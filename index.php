@@ -181,6 +181,13 @@ switch ($page) {
         $hero_bg_class = "site-care-bg";
         break;
         // Blog post pages
+        case "/desert-mirage":
+        case "/desert-mirage/": 
+            $main_title = "The Desert Mirage";
+            $site_title = "The Desert Mirage";
+            $intro = "An unoptimized site can make conversions as elusive as a mirage in the desert.";
+            $hero_bg_class = "desert-mirage";
+        break;
         case "/garden-vs-website":
         case "/garden-vs-website/": 
                 $main_title = "Digital Gardening: Cultivating Growth and Vitality in Website Maintenance";
