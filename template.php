@@ -171,6 +171,8 @@
             case "/tips-to-rank-on-google/":
             case "/desert-mirage":
             case "/desert-mirage/":
+            case "/gemini-vs-chatgtp":
+            case "/gemini-vs-chatgtp/":
 
                 include "includes/sections/post-page.php";
                 break;
@@ -205,7 +207,7 @@
                 // https://joesdigitalservices.com/testimonials/
             case "/testimonials":
             case "/testimonials/":
-                include 'includes/home.php';
+                include 'includes/testimonials.php';
                 break;
 
                 // https://joesdigitalservices.com/testimonials/
@@ -260,6 +262,9 @@
       }
       window.onload = loadAOS;
     </script>
+    <!-- Bootstrap Bundle with Popper -->
+<script src="assets/BS/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

@@ -7,39 +7,70 @@
       <p>
         To view them, click the image and they will display in a pop-up to load the full site without having to leave this site. If you prefer to open it in a new tab, just click the "visit site" link under the description.
       </p>
+      <p>
+        <strong>Info:</strong>
+        The ones that say "custom code" means I created them using 100% html,css and other code to build, the rest are on wordpress that are also customised.
+      </p>
     </div>
   </div>
 </section>
 
 <section class="portfolio">
   <div class="portfolio-inner">
-  <!-- <div class="portfolio-item custom-section-item">
+  <div class="portfolio-item custom-section-item">
       <div class="portfolio-item-inner">
         <div>
-      <strong>Custom coded</strong>
-        <img id="action-img" class="popup-img i" src="assets/imgs/portfolio/website-analysis.webp" alt="https://patentxl.com/" title="click to view full website in a popup">
+        <img id="action-img" class="popup-img i" src="assets/imgs/portfolio/ahtdesigns.webp" alt="https://ahtdesigns.com/" title="click to view full website in a popup">
         </div>
-        <h3 class="h"></h3>
+        <h3 class="h">A.H.T. Designs</h3>
         <div class="rt">
           <div>
           <p>
-          Book a 30-minute consultation for a website inspection.
+          Home Theater And Smart Home Solutions
           </p>
           
           </div>
-          <span><a href="https://websitemaintenance.online/" <?= $externalLinks ?>>
+          <span><a href="https://ahtdesigns.com/" <?= $externalLinks ?>>
               visit site
             </a></span>
         </div>
       </div>
-    </div> -->
+    </div>
     <!-- The Modal for  website-->
-    <!-- <div class="modal">
+    <div class="modal">
       <span class="close">&times;</span>
       <div class="modal-content">
-        <iframe style="width: 90%; margin: auto; height: 90%" src="https://websitemaintenance.online/" frameborder="0"></iframe>
+        <iframe style="width: 90%; margin: auto; height: 90%" src="https://ahtdesigns.com/" frameborder="0"></iframe>
       </div>
-    </div> -->
+    </div>
+  <div class="portfolio-item custom-section-item">
+      <div class="portfolio-item-inner">
+        <div>
+      <strong>Custom coded</strong>
+        <img id="action-img" class="popup-img i" src="assets/imgs/portfolio/shape-autim-academy.webp" alt="https://shapeautismacademy.com/" title="click to view full website in a popup">
+        </div>
+        <h3 class="h">Shape My Life</h3>
+        <div class="rt">
+          <div>
+          <p>
+          Autism Education and Homeschooling Support
+          </p>
+          
+          </div>
+          <span><a href="https://shapeautismacademy.com/" <?= $externalLinks ?>>
+              visit site
+            </a></span>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal for  website-->
+    <div class="modal">
+      <span class="close">&times;</span>
+      <div class="modal-content">
+        <iframe style="width: 90%; margin: auto; height: 90%" src="https://shapeautismacademy.com/" frameborder="0"></iframe>
+      </div>
+    </div>
+
     <div class="portfolio-item custom-section-item">
       <div class="portfolio-item-inner">
         <div>

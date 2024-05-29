@@ -3,6 +3,10 @@
     <div class="col-12 col-md-8 col-lg-8">
       <?php
       switch ($page) {
+        case "/gemini-vs-chatgtp":
+        case "/gemini-vs-chatgtp/":
+          include 'includes/posts/gemini-vs-chatgtp.php';
+          break;
         case "/garden-vs-website":
         case "/garden-vs-website/":
           include 'includes/posts/garden-vs-website.php';
@@ -46,6 +50,9 @@
         <h4 class="list-group-item-title" aria-current="true">
           More posts
         </h4>
+        <a href="/gemini-vs-chatgtp" class="list-group-item list-group-item-action">
+        Demystifying Gemini and ChatGPT
+        </a>
         <a href="/Building-the-Digital-Landscape" class="list-group-item list-group-item-action">
           Building a digital landscape
         </a>

@@ -5,6 +5,25 @@
     <div class="post-card">
             <div class="post-card-inner">
                 <div id="h">
+                    <a href="/gemini-vs-chatgtp">
+                        <h4>Demystifying Gemini and ChatGPT: A Comparison of Features and Pricing</h4>
+                    </a>
+                    <hr>
+                </div>
+                <p>
+                Explore the key differences between Google's Gemini and OpenAI's ChatGPT, including features, pricing, and which AI chatbot is right for you.
+                </p>
+                <div id="rt">
+                    <em class="blog-date">posted - 05/17/2024</em><br>
+                    <div class="custom-btn">
+                        <a href="/gemini-vs-chatgtp">read post</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="post-card">
+            <div class="post-card-inner">
+                <div id="h">
                     <a href="/desert-mirage">
                         <h4>The Desert Mirage</h4>
                     </a>

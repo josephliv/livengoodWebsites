@@ -34,7 +34,7 @@ switch ($page) {
     case "/":
     case "/index":
         $site_title = "Custom Web Design Services in North Carolina";
-        $main_title = "Are you Struggling to convert visitors into customers?";
+        $main_title = "Transform Your Website into a Powerful Business Tool";
         $meta_description = "Boost your online presence with the leading SEO company in North Carolina. Our expert team delivers results-driven SEO services for businesses of all sizes.";
         $meta_keywords = "north carolina website design, cheap website company,
         web design companies in north carolina,
@@ -44,7 +44,7 @@ switch ($page) {
         seo company north carolina,
         seo davie county
         ";
-        $intro = "Discover how a strategically designed website can turn your traffic into revenue.";
+        $intro = "Are You Struggling To Convert Visitors Into Customers?";
         break;
         // Google was showing a 404 with this url, the testimonials are on the home page
     case "/partner":
@@ -181,6 +181,14 @@ switch ($page) {
         $hero_bg_class = "site-care-bg";
         break;
         // Blog post pages
+        case "/gemini-vs-chatgtp":
+            $main_title = "Demystifying Gemini and ChatGPT:";
+            $intro = "A Comparison of Features and Pricing";
+            $site_title = "Gemini vs. ChatGPT: A Comprehensive Comparison of AI Chatbots"; 
+            $meta_keywords = "bard, gemini, bard google, ai, bard ai, chat gtp, gemini vs chatgpt, Gemini AI, ChatGPT, AI chatbot comparison, Language models, Google AI, OpenAI, Gemini free vs. paid, ChatGPT free vs. paid, AI features, AI pricing, Text generation, Multi-modal AI, Conversational AI"; 
+            $meta_description = "Explore the key differences between Google's Gemini and OpenAI's ChatGPT, including features, pricing, and which AI chatbot is right for you.";
+            $hero_bg_class = "chat-bots";
+            break;
         case "/desert-mirage":
         case "/desert-mirage/": 
             $main_title = "The Desert Mirage";
@@ -308,8 +316,11 @@ switch ($page) {
         // redirects to prevent 404 in Google console
     case "/testimonials":
     case "/testimonials/":
-        header("Location: /");
-        exit();
+        $main_title = "Livengood Websites Testimonials";
+        $intro = "Hear from Satisfied Clients";
+        $meta_description = "Explore testimonials from happy clients of Livengood Websites. Discover how our services have benefited businesses like yours.";
+        $meta_keywords = "Web design testimonials, client reviews, customer feedback, website development success stories";
+        $hero_bg_class = "testimonial-hero-bg";
         break;
     case "/feed/":
     case "/comments/feed/":
