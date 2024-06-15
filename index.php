@@ -336,11 +336,11 @@ switch ($page) {
         // promo offer
     case "/pricing":
     case "/pricing/":
-        $main_title = "Kick start your online success";
+        $main_title = "Beyond the Price Tag: Strategic Partnerships";
         $meta_keywords = "web development pricing, professional website design for start up business, small business website, mobile-friendly website, user-friendly design, web development offer, affordable web design, website pricing, web designer near Statesville, NC";
         $meta_description = "Get pricing for your website and we will work within your budget. Get online fast within the next week for under $500!";
-        $site_title = "Exclusive Deals!";
-        $intro = "Kick start your online success!";
+        $site_title = "Beyond the Price Tag: Strategic Partnerships";
+        $intro = "We Believe in Solutions, Not Just Services";
         $hero_bg_class = "pay";
         break;
         case "/pay":
@@ -362,9 +362,9 @@ if ($page === "/robots.txt") {
     include 'robots.txt';
     return;
 }
-if ($page === "/files") {
-    include 'files.html';
-    return;
-}
+// if ($page === "/files") {
+//     include 'files.html';
+//     return;
+// }
 
 include "template.php";

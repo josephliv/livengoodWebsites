@@ -1032,10 +1032,12 @@ video {
 
 /* promo page styles */
 .promo-page {
-  background-image: url("/assets/imgs/hero/pay.webp");
-  background-size: cover;
+  background-image: url('/assets/imgs/bg-maintenance.png');
+  background-size: 250px;
   background-attachment: fixed;
   padding-bottom: 2em;
+  background-color: #1f1c1ccc;
+  background-blend-mode: overlay;
 }
 .promo-heading {
   background-color: rgba(245, 245, 220, 0.884);
@@ -1045,28 +1047,48 @@ video {
   box-shadow: 0 0 15px #000;
 }
 .promo-intro {
-  background-color: #000000cc;
+  background-color: var(--light-bg);
   padding: 5px;
   min-height: 250px;
   display: grid;
   place-content: center;
   border-bottom: 1px solid #fff;
   box-shadow: 0 0 15px #000;
-  color: var(--light-text-color);
+  padding: 50px 0;
 }
 .promo-intro div {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
-  color: var(--light-text-color);
+  color: var(--primary);
 }
-
-
 .promo-container {
   display: flex;
   flex-wrap: wrap;
   gap: 2.4rem;
   justify-content: center;
   padding: 50px;
+}
+.feature-grid {
+  display: flex;
+  flex-wrap: wrap; 
+ justify-content: space-around;
+ align-items: center;
+  gap: 20px;
+}
+
+.feature { /* Each feature item */
+  border: 1px solid #ccc; 
+  padding: 20px;
+  text-align: center;
+  flex-basis: 200px;
+}
+
+.feature h4 {
+  margin-top: 10px;
+}
+
+.feature p {
+  font-size: 0.9em;
 }
 /* pricing packages */
 .package {
@@ -1141,8 +1163,9 @@ video {
 }
 .pricing-terms p {
   color: var(--light-text-color);
-  max-width: 900px;
-  margin: auto;
+  max-width: 800px;
+  margin: 30px auto;
+  font-size: 1.5em;
 }
 /*  portfolio blocks */
 .portfolio {
