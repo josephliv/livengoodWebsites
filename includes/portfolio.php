@@ -2,21 +2,72 @@
   <div class="narrow-section bg py-4">
     <div>
       <p>
-        These are recent sites that I was given the honor to build for previous clients who I work with every month. The images below are from a screenshot and may be different from the website itself due to updates and changes as requested by the client.
+        These are recent sites that I was given the honor to build for previous clients. The images below are from a screenshot and may be different from the website itself due to updates and changes as requested by the client.
       </p>
       <p>
-        To view them, click the image and they will display in a pop-up to load the full site without having to leave this site. If you prefer to open it in a new tab, just click the "visit site" link under the description.
+        To view them, click the image and they will display in a pop-up to load the full site without having to leave this site. Please note, some of these sites do not allow loading in iframes, so in that case, please just click the "visit site" link instead.
       </p>
-      <p>
-        <strong>Info:</strong>
-        The ones that say "custom code" means I created them using 100% html,css and other code to build, the rest are on wordpress that are also customised.
-      </p>
+     
     </div>
   </div>
 </section>
 
 <section class="portfolio">
   <div class="portfolio-inner">
+  <div class="portfolio-item custom-section-item">
+      <div class="portfolio-item-inner">
+        <div>
+        <strong>Custom coded</strong>
+        <img id="action-img" class="popup-img i" src="/assets/imgs/portfolio/nonprofitfoundersclub.webp" alt="https://nonprofitfoundersclub.com/" title="click to view full website in a popup">
+        </div>
+        <h3 class="h">Nonprofit Founders Club</h3>
+        <div class="rt">
+          <div>
+          <p>
+          Guidance and Community Support for Your Nonprofit Success.
+          </p>
+          
+          </div>
+          <span><a href="https://nonprofitfoundersclub.com/" <?= $externalLinks ?>>
+              visit site
+            </a></span>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal for  website-->
+    <div class="modal">
+      <span class="close">&times;</span>
+      <div class="modal-content">
+        <iframe style="width: 90%; margin: auto; height: 90%" src="https://nonprofitfoundersclub.com/" frameborder="0"></iframe>
+      </div>
+    </div>
+  <div class="portfolio-item custom-section-item">
+      <div class="portfolio-item-inner">
+        <div>
+        <img id="action-img" class="popup-img i" src="assets/imgs/portfolio/Phoenix-rising-travel.png" alt="https://phoenixrisingtravel.org/" title="click to view full website in a popup">
+        </div>
+        <h3 class="h">Phoenix Rising Travel Services, Inc.</h3>
+        <div class="rt">
+          <div>
+          <p>
+          Individualized transport services for the disabled.
+          </p>
+          
+          </div>
+          <span><a href="https://phoenixrisingtravel.org/" <?= $externalLinks ?>>
+              visit site
+            </a></span>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal for  website-->
+    <div class="modal">
+      <span class="close">&times;</span>
+      <div class="modal-content">
+        <iframe style="width: 90%; margin: auto; height: 90%" src="https://phoenixrisingtravel.org/" frameborder="0"></iframe>
+      </div>
+    </div>
+
   <div class="portfolio-item custom-section-item">
       <div class="portfolio-item-inner">
         <div>
