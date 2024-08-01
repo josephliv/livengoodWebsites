@@ -3,17 +3,6 @@
 
 <head>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4MSKEW1D4N"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-4MSKEW1D4N');
-    </script>
     <meta charset="UTF-8" />
     <meta name="google-site-verification" content="GKX9_rUdeEZ6cCwMf0ZuuXqEiMv6DjjdIgmvbQibgVs" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />

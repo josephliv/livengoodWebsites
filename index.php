@@ -45,6 +45,7 @@ switch ($page) {
         seo davie county
         ";
         $intro = "Are You Struggling To Convert Visitors Into Customers?";
+        $hero_bg_class = "partner";
         break;
         // Google was showing a 404 with this url, the testimonials are on the home page
     case "/partner":

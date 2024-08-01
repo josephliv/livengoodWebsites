@@ -1,4 +1,4 @@
-<header class="container">
+<header>
   <div class="top-bar gradient d-none d-md-flex">
     <div class="phone">
       <a href="tel:17049979007">
@@ -25,12 +25,6 @@
         <li class="dropdown">
           <a style="cursor: default;" href="#">Services &#x2193;</a>
           <ul class="dropdown-menu">
-            <li>
-              <a class="<?php if ($page == '/online-food-ordering-app-development' || $page == '/online-food-ordering-app-development/') echo 'active-nav'; ?>" href="/online-food-ordering-app-development/">Food App</a>
-            </li>
-            <li>
-              <a class="<?php if ($page == '/business-boosters' || $page == '/business-boosters/') echo 'active-nav'; ?>" href="/business-boosters">Business Boosters</a>
-            </li>
             <li>
               <a class="<?php if ($page == '/website-maintenance-services' || $page == '/website-maintenance-services/') echo 'active-nav'; ?>" href="/website-maintenance-services">maintenance</a>
             </li>
@@ -69,12 +63,8 @@
     <ul>
       <li><a class="<?php if ($page == '/') echo 'active-nav'; ?>" href="/" href="/">Home</a></li>
       <li><a class="<?php if ($page == '/meet-joe' || $page == '/meet-joe/') echo 'active-nav'; ?>" href="/meet-joe">meet joe </a></li>
-      <li>
-        <a class="<?php if ($page == '/online-food-ordering-app-development' || $page == '/online-food-ordering-app-development/') echo 'active-nav'; ?>" href="/online-food-ordering-app-development/">Food App</a>
-      </li>
-      <li>
-        <a class="<?php if ($page == '/business-boosters' || $page == '/business-boosters/') echo 'active-nav'; ?>" href="/business-boosters">Business Boosters</a>
-      </li>
+      
+      
       <li>
         <a class="<?php if ($page == '/website-maintenance-services' || $page == '/website-maintenance-services/') echo 'active-nav'; ?>" href="/website-maintenance-services">maintenance</a>
       </li>
