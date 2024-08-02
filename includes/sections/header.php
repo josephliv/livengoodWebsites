@@ -1,6 +1,6 @@
 <!-- Conditional for homepage background video -->
 <?php include 'nav.php'; ?>
-<div class="main-hero <?= $hero_bg_class; ?>">">
+<div class="main-hero <?= $hero_bg_class; ?>">
   <div class="hero-content">
     <!-- Hero Content -->
     <div class="hero-content-inner">

@@ -1,9 +1,9 @@
 
 <section class="promo-page">
 <div class="promo-intro">
-    <div>
+    <div class="px-4">
         <h2>Peace of Mind for Your Website</h2>
-        <p>Our maintenance plans keep your website running smoothly, so you can focus on what matters most – your business.</p>
+        <p>Our maintenance plans keep your website running smoothly, so you can focus on what matters most - your business.</p>
         <a href="/website-maintenance-services" class="learn-more-link">What is website maintenance? Learn more here</a>
 
         <div class="feature-grid">

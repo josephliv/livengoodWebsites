@@ -921,8 +921,8 @@ details[open] summary ~ * {
 
 /* promo page styles */
 .promo-page {
-  background-image: url("/assets/imgs/bg-maintenance.png");
-  background-size: 250px;
+  background-image: url("/assets/imgs/website-maintenance-bg.webp");
+  background-size: cover;
   background-attachment: fixed;
   padding-bottom: 2em;
   background-color: #1f1c1ccc;
