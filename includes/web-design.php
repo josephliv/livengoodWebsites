@@ -1,12 +1,12 @@
 
 <div class="site-care-hero">
-  <div class="site-care-hero-inner">
+  <div class="narrow-section">
   <p>Crafting visually stunning, user-friendly, and SEO-optimized websites in North Carolina, tailored to echo your brand's unique ethos.</p>
 
   <h3>Introduction</h3>
 
   <p>
-  In today's digital landscape, your website is often the first interaction potential customers have with your business. A professionally designed website is essential in making a memorable first impression, establishing credibility, and fostering customer trust. At [Your Company], a leading web design company in North Carolina, we specialize in crafting bespoke websites that not only captivate but convert.
+  In today's digital landscape, your website often serves as the first interaction potential customers have with your business. A professionally designed website is crucial for making a memorable first impression, establishing credibility, and fostering customer trust. At [Your Company], a premier web design firm in North Carolina, we specialize in creating bespoke websites that captivate and convert.
   </p>
   </div>
   </div>
@@ -16,7 +16,7 @@
     <h4 id="title">Custom Web Design</h4>
     <div id="disc">
       <p>
-      Every brand is unique, and your website should reflect that. Our designers work closely with you to bring your vision to life, ensuring a unique, visually appealing, and brand-consistent online presence. As one of the top web design companies in North Carolina, we pride ourselves on delivering personalized solutions that resonate with your target audience.
+      Every brand is unique, and your website should reflect that. Our designers collaborate closely with you to bring your vision to life, ensuring a visually appealing and brand-consistent online presence. As a top web design company in North Carolina, we deliver personalized solutions that resonate with your target audience.
       </p>
     </div>
     <img id="img" loading="lazy" src="/assets/imgs/website-platforms.jpg" alt="custom web design in north carolina">
@@ -38,7 +38,7 @@
       <h4 id="title">SEO Optimization</h4>
       <div id="disc">
       <p>
-      A beautiful website is only effective if it's seen. Our web design and web development in North Carolina services include SEO optimization to improve your site's visibility on search engines, driving more organic traffic to your site.
+      A beautiful website is only effective if it's seen. Our web design and development services in North Carolina include SEO optimization to enhance your site's visibility on search engines, driving more organic traffic and increasing your reach.
       </p>
     </div>
     <img id="img" loading="lazy" src="/assets/imgs/targeted-seo-strategies.jpeg" alt="SEO Optimization">
@@ -49,8 +49,8 @@
       <h4 id="title">Website Hosting and Maintenance Services</h4>
       <div id="disc">
       <p>
-      Secure, reliable website hosting and maintenance services are crucial for maintaining a dynamic online presence. We provide robust hosting solutions including Virtual Private Server (VPS) hosting, ensuring enhanced performance and security for your website.</p>
-      <p> Coupled with our regular <a href="/website-maintenance-services">website maintenance services</a>, we ensure your site remains updated, secure, and performing at its peak, thus fostering a seamless online experience for your visitors.
+      Secure and reliable website hosting and maintenance are vital for maintaining a dynamic online presence. We offer robust hosting solutions, including Virtual Private Server (VPS) hosting, to ensure enhanced performance and security for your website.</p>
+      <p> Coupled with our regular <a href="/website-maintenance-services">website maintenance services</a>,we keep your site updated, secure, and performing at its best, providing a seamless experience for your visitors.
       </p>
     </div>
     <img id="img" loading="lazy" src="/assets/imgs/hosting-maintenance.jpg" alt="hosting and maintenance">
@@ -61,7 +61,7 @@
       <h4 id="title">E-commerce Solutions</h4>
       <div id="disc">
       <p>
-      Whether you're a small local shop or a large online retailer, our web development in North Carolina team can craft an intuitive, user-friendly e-commerce website to elevate your online shopping experience.
+      Whether you're a small local shop or a large online retailer, our North Carolina web development team can create an intuitive, user-friendly e-commerce website to elevate your online shopping experience.
       </p>
     </div>
     <img id="img" loading="lazy" src="/assets/imgs/ecommerce-solutions.jpg" alt="E-commerce Solutions">
@@ -74,18 +74,13 @@
     </h3>
     <hr>
     <p>
-    Discover our extensive <a href="/portfolio">portfolio</a> showcasing our innovative North Carolina website design projects, demonstrating our aptitude in creating diverse, engaging, and effective online platforms.
+    Discover our extensive <a href="/portfolio">portfolio</a> showcasing innovative nationwide website design projects. Our portfolio demonstrates our expertise in creating diverse, engaging, and effective online platforms.
     </p>
     <p>
-      <em>
-        “Competent and responsive. joe made some changes to our website. very easy to contact and communicate with. customer service lives.” - Pat Hauser
-      </em>
-    </p>
-    <p>
-    Are you ready to transform your online presence with a cutting-edge, professionally designed website? Contact the esteemed web design company North Carolina businesses trust. 
+    Are you ready to transform your online presence with a cutting-edge, professionally designed website? Contact the web design company North Carolina businesses trust.
     </p>
     <div class="custom-btn">
-      <a <?= $externalLinks; ?> href="https://calendly.com/livengoodwebsites/30min">Schedule a meeting</a>
+      <a <?= $externalLinks; ?> href="https://calendly.com/livengoodwebsites">Schedule a meeting</a>
     </div>
   </div>
 </div>

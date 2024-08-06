@@ -20,7 +20,7 @@
     <!-- <li class="list-group-item">Phone: 1 (704) 275-9705</li>
     <li class="list-group-item">Alt Phone: 1 (336) 941-1203</li> -->
     <li class="list-group-item">email: <a href="mailto:info@joes.business">info@joes.business</a></li>
-    <li class="list-group-item"><a <?= $externalLinks; ?> href="https://calendly.com/livengoodwebsites/30min" class="card-link">Schedule a call</a></li>
+    <li class="list-group-item"><a <?= $externalLinks; ?> href="https://calendly.com/livengoodwebsites/" class="card-link">Schedule a call</a></li>
   </ul>
     
   </div>
