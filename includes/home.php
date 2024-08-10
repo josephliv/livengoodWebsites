@@ -1,4 +1,4 @@
-<div class="narrow-section" data-aos="zoom-in" data-aos-duration="1000">
+<div class="intro-section" data-aos="zoom-in" data-aos-duration="1000">
   <h4>Bringing Small Businesses More Conversions with Custom Web Design</h4>
   <hr>
   <p>

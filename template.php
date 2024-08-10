@@ -60,7 +60,7 @@
         <div>
             <h3 class="text-center text-light">Schedule Your Free 1-hour strategy session today.</h3>
             <div class="custom-btn">
-                <a href="https://calendly.com/livengoodwebsites" <?= $externalLinks; ?> >Book Now</a>
+                <a href="https://calendly.com/livengoodwebsites/strategy-session" <?= $externalLinks; ?> >Book Now</a>
             </div>
             <p class="text-center text-light m-0">
                 <small>For Serious Inquiries Only.</small>

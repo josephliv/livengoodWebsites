@@ -172,13 +172,13 @@ switch ($page) {
     case "/website-maintenance-services/":
     case "/site-care":
     case "/site-care/":
-        $main_title = "All-inclusive Website Maintenance Packages";
+        $main_title = "Website Maintenance Services";
         $site_title = "Website Maintenance Services";
         $meta_keywords = "
         website maintenance, web care packages, all-inclusive web services, affordable website support, Livengood Websites, comprehensive website care, website security, performance optimization, SEO monitoring, content updates, emergency web support, professional web maintenance
         ";
         $meta_description = "Explore Livengood Websites' All-inclusive Website Maintenance Packages. Offering seamless, comprehensive, and affordable care for your online presence. Get top-notch website security, performance optimization, SEO, content updates, and emergency support. Perfect for businesses seeking reliable web maintenance.";
-        $intro = "Seamless, Comprehensive, and Affordable Care for Your Online Presence";
+        $intro = "Why Website Maintenance is Crucial";
         $hero_bg_class = "site-care-bg";
         break;
         // Blog post pages
@@ -341,10 +341,10 @@ switch ($page) {
         $meta_keywords = "web development pricing, professional website design for start up business, small business website, mobile-friendly website, user-friendly design, web development offer, affordable web design, website pricing, web designer near Statesville, NC";
         $meta_description = "Get pricing for your website and we will work within your budget. Get online fast within the next week for under $500!";
         $site_title = "Beyond the Price Tag: Strategic Partnerships";
-        $intro = "We Believe in Solutions, Not Just Services";
+        $intro = "Website Design & Revamp Services";
         $hero_bg_class = "pay";
         break;
-        case "/pay":
+    case "/pay":
             $site_title = "Make a payment"; 
             $main_title = "Make a payment";
             $hero_bg_class = "pay";

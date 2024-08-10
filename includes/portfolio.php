@@ -1,5 +1,5 @@
-<section class="bg">
-  <div class="narrow-section bg py-4">
+
+  <div class="intro-section bg py-4">
     <div>
       <p>
         These are recent sites that I was given the honor to build for previous clients. The images below are from a screenshot and may be different from the website itself due to updates and changes as requested by the client.
@@ -10,7 +10,7 @@
      
     </div>
   </div>
-</section>
+
 
 <section class="portfolio">
   <div class="portfolio-inner">
@@ -126,13 +126,13 @@
       <div class="portfolio-item-inner">
         <div>
       <strong>Custom coded</strong>
-        <img id="action-img" class="popup-img i" src="assets/imgs/portfolio/website-analysis.webp" alt="https://patentxl.com/" title="click to view full website in a popup">
+        <img id="action-img" class="popup-img i" src="assets/imgs/portfolio/website-analysis.webp" alt="https://websitemaintenance.online/" title="click to view full website in a popup">
         </div>
-        <h3 class="h">Free website anaylsis splash page</h3>
+        <h3 class="h">Free Strategy Session splashpage</h3>
         <div class="rt">
           <div>
           <p>
-          Book a 30-minute consultation for a website inspection.
+          Learn ways to get your visitors to convert and buy your services.
           </p>
           
           </div>
@@ -250,27 +250,7 @@
       </div>
     </div>
 
-    <div class="portfolio-item custom-section-item">
-      <div class="portfolio-item-inner">
-        <img id="stroud-img" class="popup-img i" src="assets/imgs/portfolio/stroud.png" alt="https://cohenslaw.com" title="click to view full website in a popup">
-        <h3 class="h">NTier Construction </h3>
-        <div class="rt">
-          <p>
-            Site completed using Wordpress and Elementor.
-          </p>
-          <span><a href="https://ntierconstruction.com/" <?= $externalLinks ?>>
-              visit site
-            </a></span>
-        </div>
-      </div>
-    </div>
-    <!-- The Modal -->
-    <div class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <iframe style="width: 90%; margin: auto; height: 90%" src="https://ntierconstruction.com" frameborder="0"></iframe>
-      </div>
-    </div>
+    
     <?php
     // ***********************/
     //  Mark Cohen's website 

@@ -58,6 +58,13 @@ body {
   background-color: #ccc;
   padding: 3px 8px;
 }
+/* introduction part on most pages */
+.intro-section {
+  max-width: 900px; 
+  padding: 20px;
+  margin: auto;
+  text-align: justify;
+}
 strong {
   font-weight: 700;
 }
@@ -142,13 +149,11 @@ hr {
 }
 
 .narrow-section {
-  display: grid;
-  min-height: 200px;
-  place-items: center;
-  max-width: 1200px;
+  max-width: 900px;
   margin: auto;
   text-align: justify;
   padding: var(--section-padding);
+  background-color: #ffffffbb;
 }
 
 /* Grid template to be used for the pages that contain images */
@@ -160,6 +165,8 @@ hr {
   border: 2px groove var(--accent);
   border-radius: var(--radius);
   box-shadow: 2px 2px 15px #222;
+  max-width: 400px; 
+  margin: auto; 
 }
 .page .custom-btn img {
   border: none;
@@ -319,30 +326,18 @@ hr {
   grid-area: img;
 }
 
-/* site care page hero styling */
-.site-care-hero {
+/* maintenance page hero styling */
+.maintenance-intro {
   background-image: url("/assets/imgs/site-care-bg.jpeg");
   background-size: contain;
   background-position: right center;
   background-repeat: no-repeat;
   background-color: #cdd1d2;
+  min-height: 300px;
+  display: grid;
+  place-items: center;
 }
-.site-care-hero-inner {
-  max-width: 1200px;
-  padding: var(--block-padding);
-  background-color: #cdd1d2cc;
-}
-.site-care-hero-inner ul {
-  list-style-type: circle;
-  margin-left: 5%;
-}
-@media (min-width: 60em) {
-  .site-care-hero-inner {
-    background-color: #cdd1d2cc;
-    padding: var(--section-padding);
-    background-color: none;
-  }
-}
+
 /* food post styling */
 .restaurant-post {
   display: grid;
@@ -980,7 +975,7 @@ details[open] summary ~ * {
 .feature p {
   font-size: 0.9em;
 }
-/* pricing packages */
+/* pricing packages Now located on the maintenance page*/
 .package {
   width: 350px;
   min-height: 350px;
@@ -1057,6 +1052,68 @@ details[open] summary ~ * {
   margin: 30px auto;
   font-size: 1.5em;
 }
+/* pricing page that focuses mostly on getting them to book with me */
+/* General Section Styling */
+/* Pricing Intro Section */
+.pricing-intro {
+  padding: 60px 0;
+  background-color: var(--light-bg);
+}
+
+
+/* Pricing Details Styling */
+.pricing-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.pricing-overview, .cta-section {
+  flex: 1 1 45%;
+  background-color: var(--light-text-color);
+  padding: 40px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-overview:hover, .cta-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-overview h3, .cta-section h4 {
+  font-size: 2em;
+  margin-bottom: 25px;
+  color: var(--primary-lite);
+  font-weight: 600;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 10px;
+}
+
+.pricing-overview p, .cta-section p {
+  font-size: 1.2em;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.cta-section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.cta-section ul li {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+
+
+
 /*  portfolio blocks */
 .portfolio {
   background-image: var(--gradient);

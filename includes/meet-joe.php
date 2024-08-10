@@ -1,5 +1,5 @@
-<div class="bg">
-    <div class="narrow-section">
+
+    <div class="intro-section">
         <div>
             <p>
             Hello, I'm Joe, a dedicated Web Developer right here in North Carolina. My journey began as a coding novice back in 2015 (more about that below), fueled by passion and curiosity. </p>
@@ -8,7 +8,6 @@
             </p>
         </div>
     </div>
-   </div> 
 
     <!-- main section 1 -->
     <div class="page">
