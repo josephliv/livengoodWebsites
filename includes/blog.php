@@ -1,8 +1,23 @@
-
-
 <section id="blog-posts" class="blog-page">
     <div class="blog-page-inner">
-    <div class="post-card">
+        <div class="post-card">
+            <div class="post-card-inner">
+                <div id="h">
+                    <a href="/worlds-longest-css">
+                        <h4>The Website with the World's Longest CSS File: A Developer's Tale of Epic Proportions</h4>
+                    </a>
+                    <img src="/assets/imgs/post-images/frustrated-developer-staring-at-a-computer-screen.webp" alt="Humorous depiction of a frustrated developer with a long CSS loading bar">
+                </div>
+                <p>In a world where a single line of code can change everything, one developer dared to create a CSS file so massive, it takes 3 hours to load. This is the story of that epic tale...</p>
+                <div id="rt">
+                    <em class="blog-date">posted - 08/15/2024</em><br>
+                    <div class="custom-btn">
+                        <a href="/worlds-longest-css">read post</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="post-card">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/gemini-vs-chatgtp">
@@ -11,7 +26,7 @@
                     <hr>
                 </div>
                 <p>
-                Explore the key differences between Google's Gemini and OpenAI's ChatGPT, including features, pricing, and which AI chatbot is right for you.
+                    Explore the key differences between Google's Gemini and OpenAI's ChatGPT, including features, pricing, and which AI chatbot is right for you.
                 </p>
                 <div id="rt">
                     <em class="blog-date">posted - 05/17/2024</em><br>
@@ -21,7 +36,7 @@
                 </div>
             </div>
         </div>
-    <div class="post-card">
+        <div class="post-card">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/desert-mirage">
@@ -30,7 +45,7 @@
                     <hr>
                 </div>
                 <p>
-                Looking for conversions on an unmaintained website? That is like searching for water in the desert! 🌵 Let's quench your thirst for leads with some website TLC.
+                    Looking for conversions on an unmaintained website? That is like searching for water in the desert! 🌵 Let's quench your thirst for leads with some website TLC.
                 </p>
                 <div id="rt">
                     <em class="blog-date">posted - 04/28/2024</em><br>
@@ -40,7 +55,7 @@
                 </div>
             </div>
         </div>
-    <div class="post-card">
+        <div class="post-card">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/garden-vs-website">
@@ -57,7 +72,7 @@
                 </div>
             </div>
         </div>
-    <div class="post-card">
+        <div class="post-card">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/effective-website-maintenance">
@@ -74,7 +89,7 @@
                 </div>
             </div>
         </div>
-    <div class="post-card">
+        <div class="post-card">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/Building-the-Digital-Landscape">
@@ -91,7 +106,7 @@
                 </div>
             </div>
         </div>
-    <div class="post-card">
+        <div class="post-card">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/menu-development">
@@ -108,7 +123,7 @@
                 </div>
             </div>
         </div>
-    <div class="post-card">
+        <div class="post-card">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/website-maintenance">
@@ -125,7 +140,7 @@
                 </div>
             </div>
         </div>
-    <div class="post-card">
+        <div class="post-card">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/google-analytics">
@@ -142,7 +157,7 @@
                 </div>
             </div>
         </div>
-    <div class="post-card">
+        <div class="post-card">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/seo-strategies/">
@@ -150,7 +165,7 @@
                     </a>
                     <hr>
                 </div>
-                <p>Search Engine Optimization (SEO) is one of the most imperative components of any digital marketing strategy, and with good reason. This article explains  </p>
+                <p>Search Engine Optimization (SEO) is one of the most imperative components of any digital marketing strategy, and with good reason. This article explains </p>
                 <div id="rt">
                     <em class="blog-date">posted - 5/13/2023</em><br>
                     <div class="custom-btn">

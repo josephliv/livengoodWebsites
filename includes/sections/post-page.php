@@ -38,6 +38,10 @@
         case "/desert-mirage/":
           include 'includes/posts/desert-mirage.php';
             break;
+        case "/worlds-longest-css":
+        case "/worlds-longest-css/":
+          include 'includes/posts/worlds-longest-css.php';
+            break;  
         default:
           echo '<div style="min-height: 90vh; display: grid; place-items: center"><p>This blog is missing, <a href="/blog">Return to the blog page</a></p></div>';
         
@@ -46,6 +50,7 @@
 
     </div>
     <nav class="posts-side-bar col-lg-3 col-md-3 col-12 my-3">
+      <img src="/assets/imgs/post-images/<?= $post_image; ?>" alt="<?= $alt_text; ?>">
       <div class="list-group">
         <h4 class="list-group-item-title" aria-current="true">
           More posts

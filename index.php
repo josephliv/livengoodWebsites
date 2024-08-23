@@ -10,6 +10,8 @@ $intro = "";
 $externalLinks = 'target="_blank" rel="nofollow noopener"';
 $meta_description = "";
 $meta_keywords = "";
+$post_image = "";
+
 // to pull in the background image for pages when needed.
 $hero_bg_class = "monitor-bg";
 $social_links = '
@@ -182,6 +184,14 @@ switch ($page) {
         $hero_bg_class = "site-care-bg";
         break;
         // Blog post pages
+        case "/worlds-longest-css": 
+           $main_title = "The Website with the World's Longest CSS File: A Developer's Tale of Epic Proportions"; 
+           $intro = "A wild journey through 2.3 trillion lines of CSS, three-hour load times, and the ultimate test of a developer's patience."; 
+           $meta_keywords = "web development, CSS, coding humor, developer challenges, funny coding stories, extreme web design, programming humor";
+           $meta_description = "Discover the hilarious tale of a developer who created a CSS file with over 2.3 trillion lines of code and the outrageous challenges that followed."; 
+            $post_image = "frustrated-developer-staring-at-a-computer-screen.webp";
+            $alt_text = strlen($meta_description) > 125 ? substr($meta_description, 0, 122) . '...' : $meta_description;
+            break;
         case "/gemini-vs-chatgtp":
             $main_title = "Demystifying Gemini and ChatGPT:";
             $intro = "A Comparison of Features and Pricing";

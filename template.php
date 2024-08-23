@@ -14,7 +14,12 @@
     
     <link rel="shortlink" href="https://livengoodwebsites.com/" />
     <link rel="stylesheet" href="assets/BS/bootstrap-5.1.3-dist/css/bootstrap.min.css">
-
+<!-- Open Graph Tags for social media sharing: -->
+    <meta property="og:title" content="<?= $main_title; ?>">
+<meta property="og:description" content="<?= $meta_description; ?>">
+<meta property="og:image" content="/assets/imgs/post-images/<?= $post_image; ?>"> 
+<meta property="og:url" content="https://yourwebsite.com/<?= $page ?>"> 
+<meta property="og:type" content="article">
     <!-- my own styling -->
     <link rel="stylesheet" href="/assets/reset.css" />
     <link rel="stylesheet" href="/assets/styles.css?l=<?= time(); ?>" />
@@ -144,6 +149,7 @@
                 include 'includes/blog.php';
                 break;
                 // Blog post pages
+            case "/worlds-longest-css":
             case "/garden-vs-website":
             case "/garden-vs-website/":
             case "/effective-website-maintenance":
