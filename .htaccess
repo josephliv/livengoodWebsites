@@ -1,9 +1,9 @@
 # Enable Rewrite Engine
 RewriteEngine On
-#RewriteCond %{HTTPS} off [OR]
-#RewriteCond %{HTTP_HOST} ^www\. [NC]
-#RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
-#RewriteRule ^ https://%1%{REQUEST_URI} [L,NE,R=301]
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [L,NE,R=301]
 
 # Redirect /index.php/any-page to /any-page
 RewriteRule ^index\.php/(.*)$ /$1 [R=301,L]

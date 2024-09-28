@@ -47,7 +47,7 @@ switch ($page) {
         seo davie county
         ";
         $intro = "Are You Struggling To Convert Visitors Into Customers?";
-        $hero_bg_class = "partner";
+        $hero_bg_class = "blue-gradient";
         break;
         // Google was showing a 404 with this url, the testimonials are on the home page
     case "/partner":
@@ -373,9 +373,9 @@ if ($page === "/robots.txt") {
     include 'robots.txt';
     return;
 }
-// if ($page === "/files") {
-//     include 'files.html';
-//     return;
-// }
+if ($page === "/files") {
+    include 'files.html';
+    return;
+}
 
 include "template.php";

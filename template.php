@@ -11,15 +11,15 @@
     <meta property="og:url" content="https://livengoodwebsites.com/" />
     <meta property="og:site_name" content="Custom Web Design & SEO Services in Salisbury NC and surrounding areas." />
     <meta name="keywords" content="<?= $meta_keywords; ?>" />
-    
+
     <link rel="shortlink" href="https://livengoodwebsites.com/" />
     <link rel="stylesheet" href="assets/BS/bootstrap-5.1.3-dist/css/bootstrap.min.css">
-<!-- Open Graph Tags for social media sharing: -->
+    <!-- Open Graph Tags for social media sharing: -->
     <meta property="og:title" content="<?= $main_title; ?>">
-<meta property="og:description" content="<?= $meta_description; ?>">
-<meta property="og:image" content="/assets/imgs/post-images/<?= $post_image; ?>"> 
-<meta property="og:url" content="https://yourwebsite.com/<?= $page ?>"> 
-<meta property="og:type" content="article">
+    <meta property="og:description" content="<?= $meta_description; ?>">
+    <meta property="og:image" content="/assets/imgs/post-images/<?= $post_image; ?>">
+    <meta property="og:url" content="https://yourwebsite.com/<?= $page ?>">
+    <meta property="og:type" content="article">
     <!-- my own styling -->
     <link rel="stylesheet" href="/assets/reset.css" />
     <link rel="stylesheet" href="/assets/styles.css?l=<?= time(); ?>" />
@@ -52,7 +52,7 @@
 </head>
 
 <body>
-   
+
 
     <!-- =================================
       | Top header with logo and nav links and hero |
@@ -61,17 +61,7 @@
 
     <!-- Main content -->
 
-    <div class="gradient-reverse introduction py-md-4 py-2 <?php echo ($page == '/pay') ? 'd-none' : ''; ?>" id="top">
-        <div>
-            <h3 class="text-center text-light">Schedule Your Free 1-hour strategy session today.</h3>
-            <div class="custom-btn">
-                <a href="https://calendly.com/livengoodwebsites/strategy-session" <?= $externalLinks; ?> >Book Now</a>
-            </div>
-            <p class="text-center text-light m-0">
-                <small>For Serious Inquiries Only.</small>
-            </p>
-        </div>
-    </div>
+   
     <div class="page-content">
         <?php
         // For page rendering
@@ -171,8 +161,8 @@
 
                 include "includes/sections/post-page.php";
                 break;
-            
-                
+
+
             case "/How-To-Install-WordPress-Plugins/":
             case "/How-To-Install-WordPress-Plugins":
                 include 'includes/posts/How-To-Install-WordPress-Plugins.php';
@@ -224,7 +214,7 @@
 | The Footer element  |
 ==================================== -->
     <?php include 'includes/sections/footer.php'; ?>
-    
+
 
     <!-- =================================
             | The back to top button  |
@@ -232,33 +222,33 @@
     <a href="#" onclick="topFunction()" id="myBtn" title="Go to top">
         To Top
     </a>
-  <script>
-      function loadAOS() {
-        if(window.innerWidth > 768) {
-          var aosCSS = document.createElement('link');
-          aosCSS.href = 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css';
-          aosCSS.rel = 'stylesheet';
-          document.head.appendChild(aosCSS);
+    <script>
+        function loadAOS() {
+            if (window.innerWidth > 768) {
+                var aosCSS = document.createElement('link');
+                aosCSS.href = 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css';
+                aosCSS.rel = 'stylesheet';
+                document.head.appendChild(aosCSS);
 
-          var aosJS = document.createElement('script');
-          aosJS.src = 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js';
-          document.head.appendChild(aosJS);
+                var aosJS = document.createElement('script');
+                aosJS.src = 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js';
+                document.head.appendChild(aosJS);
 
-          aosJS.onload = function() {
-            AOS.init({
-          offset: 200, // Change offset to trigger animations sooner or later (pixels)
-          duration: 600, // Duration of animation (milliseconds)
-          easing: 'ease-in-out', // Animation easing function
-          once: true, // Whether animation should happen only once or every time you scroll up and down
-          // More options...
-        });
-          };
+                aosJS.onload = function() {
+                    AOS.init({
+                        offset: 200, // Change offset to trigger animations sooner or later (pixels)
+                        duration: 600, // Duration of animation (milliseconds)
+                        easing: 'ease-in-out', // Animation easing function
+                        once: true, // Whether animation should happen only once or every time you scroll up and down
+                        // More options...
+                    });
+                };
+            }
         }
-      }
-      window.onload = loadAOS;
+        window.onload = loadAOS;
     </script>
     <!-- Bootstrap Bundle with Popper -->
-<script src="assets/BS/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/BS/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

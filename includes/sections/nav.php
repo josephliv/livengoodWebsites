@@ -1,4 +1,4 @@
-<header>
+<header id="top">
   <div class="top-bar gradient d-none d-md-flex">
     <div class="phone">
       <a href="tel:17049979007">

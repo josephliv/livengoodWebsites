@@ -10,7 +10,7 @@
     <div class="carousel-inner" style="padding-bottom: 50px;">
         
       <div class="carousel-item active">
-            <div class="testimonial-slide-item p-2">"Joe is certainly capable of designing websites, but he has the unique quality in the tech world of understanding business and having excellent communication skills. "<div class="author"> John Burns</div></div>
+            <div class="testimonial-slide-item p-2">"Joseph is great in business and with people. He knows how to make you feel at ease. He is also very good at what he does. Loved all of his assistance. I highly recommend him. Thanks"<div class="author"> Joanna Sherrod</div></div>
       </div>
       <div class="carousel-item">
             <div class="testimonial-slide-item p-2">"A genuine privilege meeting Joseph today at a Smart Connect!!! Very professional, well-versed, and experienced in his business!"<div class="author"> Ruth Aldana-Ricketts</div></div>
@@ -46,4 +46,4 @@
     </button>
   </div>
 
-  <div class="custom-btn"><a href="/testimonials">View More</a></div>
+  <div class="cta-button"><a href="/testimonials">View More</a></div>
