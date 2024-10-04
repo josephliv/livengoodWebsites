@@ -21,9 +21,9 @@
     <nav class="nav-menu">
       <ul>
         <li><a class="<?php if ($page == '/') echo 'active-nav'; ?>" href="/" href="/">Home</a></li>
-        <li><a class="<?php if ($page == '/meet-joe' || $page == '/meet-joe/') echo 'active-nav'; ?>" href="/meet-joe">about</a></li>
+        <li><a class="<?php if ($page == '/meet-joe' || $page == '/meet-joe/') echo 'active-nav'; ?>" href="/meet-joe">Meet Joe</a></li>
         <li class="dropdown">
-          <a style="cursor: default;" href="#">Services &#x2193;</a>
+          <a style="cursor: default;" href="#">Services</a>
           <ul class="dropdown-menu">
             <li>
               <a class="<?php if ($page == '/website-maintenance-services' || $page == '/website-maintenance-services/') echo 'active-nav'; ?>" href="/website-maintenance-services">maintenance</a>

@@ -13,7 +13,7 @@ $meta_keywords = "";
 $post_image = "";
 
 // to pull in the background image for pages when needed.
-$hero_bg_class = "monitor-bg";
+$hero_bg_class = "partner";
 $social_links = '
 <div class="social-links">
 <a href="https://www.facebook.com/joesdigitalservices">
@@ -36,18 +36,18 @@ switch ($page) {
     case "/":
     case "/index":
         $site_title = "Custom Web Design Services in North Carolina";
-        $main_title = "Transform Your Website into a Powerful Business Tool";
-        $meta_description = "Boost your online presence with the leading SEO company in North Carolina. Our expert team delivers results-driven SEO services for businesses of all sizes.";
-        $meta_keywords = "north carolina website design, cheap website company,
-        web design companies in north carolina,
+        $main_title = "Transform Your Online Presence and Drive More Clients to Your Business";
+        $meta_description = "Boost your online presence with the leading SEO company in North Carolina. We offer SEO, website design and marketing services for businesses of all sizes.";
+        $meta_keywords = "north carolina website design,
+        web design companies in north carolina, social media marketing,
         web design company north carolina,
         web development in north carolina,
         website hosting and maintenance services,
         seo company north carolina,
         seo davie county
         ";
-        $intro = "Are You Struggling To Convert Visitors Into Customers?";
-        $hero_bg_class = "blue-gradient";
+        $intro = "Learn how to convert your website visitors into loyal customers with actionable tips and marketing.";
+
         break;
         // Google was showing a 404 with this url, the testimonials are on the home page
     case "/partner":
@@ -174,13 +174,13 @@ switch ($page) {
     case "/website-maintenance-services/":
     case "/site-care":
     case "/site-care/":
-        $main_title = "Website Maintenance Services";
-        $site_title = "Website Maintenance Services";
+        $main_title = "Reliable Website Maintenance Services";
+        $site_title = "Reliable Website Maintenance Services";
         $meta_keywords = "
         website maintenance, web care packages, all-inclusive web services, affordable website support, Livengood Websites, comprehensive website care, website security, performance optimization, SEO monitoring, content updates, emergency web support, professional web maintenance
         ";
         $meta_description = "Explore Livengood Websites' All-inclusive Website Maintenance Packages. Offering seamless, comprehensive, and affordable care for your online presence. Get top-notch website security, performance optimization, SEO, content updates, and emergency support. Perfect for businesses seeking reliable web maintenance.";
-        $intro = "Why Website Maintenance is Crucial";
+        $intro = "Let us handle the maintenance so you can focus on growing your business.";
         $hero_bg_class = "site-care-bg";
         break;
         // Blog post pages

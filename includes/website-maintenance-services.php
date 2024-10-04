@@ -1,12 +1,23 @@
 <section class="maintenance-intro">
   <div class="intro-section">
-    <p>Your website is the digital front door to your business, often making the first impression on potential customers. Just like any valuable asset, it requires regular upkeep to stay in top shape. </p>
-    <p>
-      Ongoing maintenance ensures your site remains secure, up-to-date, and performing at its best, helping you avoid costly issues down the road. With our maintenance services, you can focus on growing your business while we keep your website running smoothly.
-    </p>
+    <h3>The Importance of Ongoing Website Maintenance</h3>
+   <hr>
+    <p>Your website is the backbone of your online presence. Regular maintenance ensures it stays secure, efficient, and ready to serve your customers. Don't let small issues become big problems—stay ahead with ongoing care. </p>
+    
   </div>
 </section>
+<section class="home-section-maintenance">
+  <div class="home-section-maintenance-inner">
+    <div class="container maintenance-content py-3" data-aos="zoom-in">
+      <h4>Stay Smooth, Stay Secure: Effortless Website Maintenance That Works for You</h4>
+      <hr>
+      <p> We team up with proactive businesses to keep their websites performing at their best. With regular updates, content edits, enhanced security, and efficient operation, your site will stay reliable and ready for your customers.</p>
+      <p> Enjoy peace of mind with our simple monthly flat fee without the need for lengthy contracts or rebuilds, just ongoing care to keep your website running at its peak. </p>
+      <p>See our pricing packages <a href="#pricing">here</a></p>
+    </div>
 
+  </div>
+</section>
 <div class="page">
   <article>
     <div class="custom-section">
@@ -57,7 +68,7 @@
   </article>
 </div>
 
-<section class="promo-page">
+<section class="promo-page" id="pricing">
   <div class="promo-intro">
     <div class="px-4">
       <h2>Peace of Mind for Your Website</h2>
@@ -87,7 +98,7 @@
         </div>
       </div>
 
-      <p>We offer affordable plans to meet your online needs so you can focus on running your business.</p>
+      <h5>We offer affordable plans to meet your online needs so you can focus on running your business.</h5>
     </div>
   </div>
 
@@ -109,7 +120,7 @@
       </div>
       <div class="alternative-plan">
         <p>Keep your website secure and updated. Peace of mind for essential maintenance.</p>
-        <div class="custom-btn"><a href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-3DM857398N252322AMC5DCFA">Get Started</a></div>
+        <div class="cta-button"><a href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-3DM857398N252322AMC5DCFA">Get Started</a></div>
       </div>
     </div>
 
@@ -131,7 +142,7 @@
       <div class="alternative-plan">
         <h5>Standard Package</h5>
         <p>Includes Basic features with the flexibility to keep content fresh. Ideal for regular updates.</p>
-        <div class="custom-btn"><a href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-3DM857398N252322AMC5DCFA">Get Started</a></div>
+        <div class="cta-button"><a href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-3DM857398N252322AMC5DCFA">Get Started</a></div>
       </div>
     </div>
 
@@ -153,14 +164,14 @@
       <div class="alternative-plan">
         <h5>Premium Package</h5>
         <p>Maximize your website’s potential with in-depth insights and priority support.</p>
-        <div class="custom-btn"><a href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-3DM857398N252322AMC5DCFA">Get Started</a></div>
+        <div class="cta-button"><a href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-3DM857398N252322AMC5DCFA">Get Started</a></div>
       </div>
     </div>
   </div>
 
   <div class="pricing-terms">
     <h5>Not sure where to start?</h5>
-    <p>Book a free 1-hour strategy session to discuss your goals and get actionable tips.</p>
-    <div class="custom-btn"><a href="https://calendly.com/livengoodwebsites/strategy-session">Book Your Free Strategy Session</a></div>
+    <p>Book a free strategy session to discuss your goals and get actionable tips.</p>
+   
   </div>
 </section>

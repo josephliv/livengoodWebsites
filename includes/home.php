@@ -1,55 +1,67 @@
 <div class="intro-section" data-aos="zoom-in" data-aos-duration="1000">
-  <h4>Bringing Small Businesses More Conversions with Custom Web Design</h4>
+  <h4>Is your website bringing in the traffic and clients you need to grow your business?</h4>
   <hr>
   <p>
-  Many businesses struggle with online platforms that fail to deliver results. Recognizing this critical issue, we provide targeted solutions that transform your online presence into a powerful conversion tool. Discover what’s preventing people from booking with you during our free strategy session. I will provide specific tips to help you increase your bookings and boost your monthly revenue.
+  If not, it’s time for a change. At Livengood Websites, we specialize in creating high-converting single-page websites designed to attract, engage, and convert visitors into loyal clients. Plus, we combine our expert social media marketing strategies to drive targeted traffic directly to your site.
+
+Looking to drive even more sales? <a href="#seo"> Learn more about how social media management can boost your business.</a>
   </p>
 </div>
 <section class="bg py-4 testimonial-slider-session">
-<?php include 'includes/sections/testimonialsSlider.php'; ?>
+  <?php include 'includes/sections/testimonialsSlider.php'; ?>
 </section>
-<section class="home-section-maintenance" data-aos="fade-right">
-  <div class="home-section-maintenance-inner">
-    <div class="container maintenance-content py-3" data-aos="zoom-in">
-      <h4>Stay Smooth, Stay Secure: Effortless Website Maintenance That Works for You</h4>
+<section class="page" data-aos="fade-right">
+  <div class="custom-section">
+    <img id="img" src="/assets/imgs/single-page.png" alt="highly converting splash page">
+    <div class="py-3" data-aos="zoom-in">
+      <h4 id="title">Imagine a website that works for you 24/7</h4>
       <hr>
+      <div id="disc">
       <p>
-        We collaborate with proactive businesses to enhance their website's performance and reliability, ensuring minimal downtime and sustained efficiency. Explore our <a href="/website-maintenance-services">website maintenance</a> services to see how we can help you concentrate on growing your business. We offer consistent enhancements, timely updates, and solid security—no rebuilds or lengthy contracts required. Benefit from our straightforward, monthly flat fee model for simplicity and efficiency, keeping your website at peak performance.
+      It's constantly delivering more leads, more sales, and more success. With our proven approach, you can turn your online presence into a powerful tool for generating revenue and growing your business.
       </p>
+      <h4>What We Offer:</h4>
+      <ul>
+        <li>A high-converting single-page website tailored to your business needs</li>
+        <li>Expert social media marketing to bring targeted traffic to your website</li>
+        <li>A proven formula for increasing conversions and boosting your income</li>
+      </ul>
     </div>
-
+    </div>
   </div>
+</section>
+<section class="bg">
+  <div class="narrow-section">
+  <h4>Ready to See Results?</h4>
+  <p>
+  Let’s discuss how we can make your website work harder for you. Book a free strategy session today, and I’ll walk you through the exact formula for online success—helping you grow your business and increase your income.
+  </p>
+ 
+  <div class="cta-button">
+    <a href="https://calendly.com/joesdigitalservices/website-strategy">Book A Strategy Session</a>
+  </div>
+</div>
 </section>
 
 
 <section class="home-section-seo" id="seo" data-aos="fade-left">
   <div class="home-section-seo-inner">
     <div class="container seo-content">
-      <h4>Boost Your Visibility: Expert SEO Monitoring & Insightful Monthly Reports</h4>
+      <h4>Boost Your Visibility & Drive More Sales: Comprehensive SEO & Social Media Management</h4>
       <hr>
       <div data-aos="zoom-in">
-        <p>
-        We not only ensure your site runs smoothly and securely but also keep a vigilant eye on Google Search Console and Analytics. we actively monitor your Google Search Console and Analytics. We regularly check and make strategic adjustments to enhance your site's organic reach.  You'll receive detailed reports showcasing the changes and improvements made to maintain and enhance your online visibility. Trust us to manage your website's performance and SEO health, so you can focus on growing your business.</p>
+
+        <p>We don't just keep your site running smoothly and securely; we actively manage your online presence to increase traffic and sales. With a combination of <strong>expert SEO monitoring</strong> and <strong>targeted social media marketing</strong>, we ensure your business gets noticed where it matters most.</p>
+
+        <h3>SEO Monitoring & Reporting</h3>
+        <p>We keep a close eye on your Google Search Console and Analytics, making strategic adjustments to enhance your site's organic reach. You'll receive detailed monthly reports outlining the improvements made to boost your online visibility.</p>
+
+        <h3>Social Media Management</h3>
+        <p>From consistent, engaging posts to targeted campaigns, we manage your social media to drive traffic and increase sales. By leveraging top platforms like Facebook, Instagram, and LinkedIn, we'll help you reach a wider audience and grow your customer base.</p>
+
+        <p>Trust us to handle both your SEO and social media needs so you can focus on what you do best—growing your business.</p>
+        
       </div>
     </div>
   </div>
 </section>
-
-<div class="page">
-  <article data-aos="fade-in">
-    <div class="custom-section-reverse">
-      <h4 id="title">Highly Recommended on Alignable</h4>
-      <div id="disc">
-        <p>
-          Being recommended on Alignable is a testament to the trust and satisfaction of those I've had the pleasure of working with. I invite you to join this journey, where your website isn't just built, but is crafted with intention, skill, and a spirit of service.
-        </p>
-      </div>
-      <div id="img">
-
-        <a <?= $externalLinks; ?> href="https://www.alignable.com/mocksville-nc/livengood-websites-2"><img alt="Highly Recommended by Locals On Alignable" width="280px" title="Highly Recommended by Locals On Alignable" src="https://www.alignable.com/assets/badge/highly-recommended.png" /></a>
-
-      </div>
-
-    </div>
-  </article>
-</div>

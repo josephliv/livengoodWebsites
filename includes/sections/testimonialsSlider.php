@@ -10,16 +10,16 @@
     <div class="carousel-inner" style="padding-bottom: 50px;">
         
       <div class="carousel-item active">
-            <div class="testimonial-slide-item p-2">"Joseph is great in business and with people. He knows how to make you feel at ease. He is also very good at what he does. Loved all of his assistance. I highly recommend him. Thanks"<div class="author"> Joanna Sherrod</div></div>
+            <div class="testimonial-slide-item p-2">Joseph is a Great Business person and willing to help everyone, I recommend everyone to connect with him"<div class="author"> Jeff Serbus</div></div>
       </div>
       <div class="carousel-item">
-            <div class="testimonial-slide-item p-2">"A genuine privilege meeting Joseph today at a Smart Connect!!! Very professional, well-versed, and experienced in his business!"<div class="author"> Ruth Aldana-Ricketts</div></div>
+            <div class="testimonial-slide-item p-2">"When you need to get it right the first time, Joseph Livengood is at your service. "<div class="author"> Gregory Santana</div></div>
       </div>
       <div class="carousel-item">
-            <div class="testimonial-slide-item p-2">"Great guy down to earth dedicated to his work looking forward to our work together would highly recommend"<div class="author"> Roberto Diaz</div></div>
+            <div class="testimonial-slide-item p-2">"He has knowledge that can save your business money."<div class="author">Susan O'Hara</div></div>
       </div>
       <div class="carousel-item">
-            <div class="testimonial-slide-item p-2">"Sometimes you don't need an entirely new website. Sometimes all you need is a little tuneup. Okay, often a whole new website. That's where Joseph comes into play because he can do both."<div class="author"> Maxwell D Toliver</div></div>
+            <div class="testimonial-slide-item p-2">"First, a terrific guy, second a firm grasp of his abilities and how you can take advantage of that to add to your online presence. Highly recommend!"<div class="author"> Patrick Kelly</div></div>
         </div>
       
       <div class="carousel-item">

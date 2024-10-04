@@ -52,7 +52,7 @@
 </head>
 
 <body>
-
+<img src="https://www.sociamonials.com/tracking.php?t=l&tid=29522" width="1" height="1">
 
     <!-- =================================
       | Top header with logo and nav links and hero |
@@ -61,7 +61,6 @@
 
     <!-- Main content -->
 
-   
     <div class="page-content">
         <?php
         // For page rendering
@@ -213,6 +212,7 @@
     <!-- =================================
 | The Footer element  |
 ==================================== -->
+
     <?php include 'includes/sections/footer.php'; ?>
 
 
@@ -220,7 +220,7 @@
             | The back to top button  |
             ====================================  -->
     <a href="#" onclick="topFunction()" id="myBtn" title="Go to top">
-        To Top
+        Scroll to the Top
     </a>
     <script>
         function loadAOS() {

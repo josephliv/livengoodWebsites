@@ -20,7 +20,7 @@
         Every brand is unique, and your website should show that. I work closely with you to bring your vision to life, creating a website that looks great and matches your brand. As a top web design professional in North Carolina, I provide personalized solutions that connect with your audience.
         </p>
       </div>
-      <img id="img" loading="lazy" src="/assets/imgs/website-platforms.jpg" alt="custom web design in north carolina">
+      <img id="img" loading="lazy" src="/assets/imgs/peace-of-mind.jpeg" alt="custom web design in north carolina">
     </div>
   </article>
 
@@ -84,8 +84,6 @@
     <p>
     Are you ready to improve your online presence with a professionally designed website?
     </p>
-    <div class="custom-btn">
-      <a <?= $externalLinks; ?> href="https://calendly.com/livengoodwebsites/strategy-session">Schedule a Free Strategy Session</a>
-    </div>
+    
   </div>
 </div>

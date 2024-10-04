@@ -23,7 +23,4 @@
     </ul>
     <p>This session is completely free and comes with no obligation.</p>
   </div>
-  <div class="custom-btn my-4">
-      <a href="https://calendly.com/livengoodwebsites/strategy-session">Book Your Free Strategy Session</a>
-    </div>
 </section>

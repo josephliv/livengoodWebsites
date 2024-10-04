@@ -1,21 +1,20 @@
-<footer>
+<!-- Book a Strategy Session CTA above the footer -->
+<div class="bottom-cta">
+  <div class="cta-button">
+    <a href="https://calendly.com/joesdigitalservices/website-strategy">Book A Strategy Session</a>
+  </div>
+</div>
 
+<footer>
     <div class="footer-sections">
-        <div class="footer-logo"><a href="/"><img src="/assets/imgs/logo-blue.webp" alt="Livengood websites | North carolina website designer"></a></div>
+        <div class="footer-logo">
+            <a href="/"><img src="/assets/imgs/logo-blue.webp" alt="Livengood websites | North Carolina website designer"></a>
+        </div>
         <div class="footer-section">
             <div class="footer-title">Reach Out</div>
             📞 <a href="tel:17049979007">1 (704) 997-9007</a><br>
             📧 <a href="mailto:info@joes.business">info@joes.business</a>
         </div>
-
-        <?php 
-        //  <div class="footer-section">
-        //     <div class="footer-title">Navigate</div>
-        //     <a href="/">Home</a><br>
-        //     <a href="/portfolio">Portfolio</a><br>
-        //     <a href="/contact">Contact</a>
-        // </div> 
-        ?>
 
         <div class="footer-section">
             <div class="footer-title">Connect with Us</div>
@@ -24,6 +23,7 @@
     </div>
     <div class="copy">© <?= date('Y'); ?> Livengood Websites. All Rights Reserved.</div>
 </footer>
+
 <!-- Start of Tawk.to Script 
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();

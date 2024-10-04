@@ -3,11 +3,10 @@
   /* color varables */
   --primary: #002f60;
   --primary-lite: #425c93;
-  --secondary: #28a745;
-  --accent: #ff551d;
-  --accent-lite: #ff551d80;
+  --secondary: rgba(243, 82, 8, 0.878);
+  --accent: rgb(255, 81, 0);
   --light-bg: #dff8d5;
-
+  --link-hover: #297e04;
   /* font colors */
   --text-color: #1a1b1d;
   --light-text-color: #e6f4f1;
@@ -52,9 +51,7 @@ body {
 .gradient-lite {
   background: linear-gradient(15deg, #808080, #ffffff);
 }
-.blue-gradient {
-  background: linear-gradient(90deg, #002244, #0066cc);
-}
+
 .verse {
   font-style: italic;
   font-size: 0.8em;
@@ -101,7 +98,6 @@ strong {
 }
 p,
 li {
-  font-family: var(--text-font);
   font-weight: 400;
   font-size: var(--text-size);
 }
@@ -110,13 +106,29 @@ ul {
   padding-left: 0;
 }
 a {
+  position: relative;
   text-decoration: none;
-  font-family: var(--text-font);
   color: var(--secondary);
   font-weight: bold;
 }
+a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px; /* Thickness of the underline */
+  background-color: var(--link-hover); /* Color of the underline */
+  bottom: -2px; /* Position it just below the text */
+  left: 50%; /* Start from the center */
+  transition: all 0.4s ease; /* Smooth transition */
+  transform: translateX(-50%);
+}
 a:hover {
-  color: var(--accent);
+  color: var(--link-hover);
+}
+a:hover::after {
+  width: 100%; /* Full underline on hover */
+  left: 0; /* Expand outward from center */
+  transform: translateX(0);
 }
 details summary {
   cursor: pointer;
@@ -170,8 +182,8 @@ h5 {
 }
 hr {
   width: 300px;
-  margin: 1.5rem auto;
-  border-bottom: 2px dotted var(--secondary);
+  margin: 1.5rem 0 ;
+  border-bottom: 3px solid;
 }
 
 /* for some titles to be the primary color */
@@ -184,7 +196,6 @@ hr {
   margin: auto;
   text-align: justify;
   padding: var(--section-padding);
-  background-color: #ffffffbb;
 }
 
 /* Grid template to be used for the pages that contain images */
@@ -394,32 +405,59 @@ details[open] summary ~ * {
 /* =================================== 
 | Hero section and place that holds the title |
 ==================================== */
-.main-hero {
+.main-hero { 
+  background: linear-gradient(90deg, #002f60 0%, #425c93 100%);
+  padding: 50px 20px;
+  min-height: 600px; /* Ensures the hero section has a minimum height */
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  background-color: #00000085; 
-  background-blend-mode: overlay;
-  padding: 20px; 
-  background-size: contain;
-  background-position: center;
+  align-items: center; /* Vertically center content */
 }
+
+.hero-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero-content-inner {
-  text-align: center;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center; /* Vertically center elements inside */
   color: var(--light-text-color);
-  text-shadow: var(--text-shadow);
-  margin: 30px auto;
-  max-width: 900px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  max-width: 1200px;
+  width: 100%; /* Ensures the content spans the full width */
 }
+
+.hero-content-inner > div {
+  flex: 1;
+}
+
+.hero-img {
+  max-width: 420px;
+  height: 350px;
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center center; /* Centers the background image */
+  border: 1px solid #ccc; /* Optional: Add a border for consistency */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
 .hero-content-inner h1 {
   font-family: var(--title-font);
-  font-size: var(--hero-title);
+  font-size: 48px; /* Larger font for a bold headline */
+  line-height: 1.2; /* Adjust line height for better spacing */
+  margin-bottom: 20px;
+  font-weight: bold;
 }
+
 .hero-content-inner h2 {
-  margin: auto;
   font-size: 24px;
-  /* font-size: calc(2rem * .8); */
+  font-weight: 300; /* Lighter font weight for subheading */
+  max-width: 700px; /* Restrict subheading width */
 }
 
 .home-sub-title {
@@ -453,7 +491,7 @@ details[open] summary ~ * {
 
 /* dynamic hero background per page when needed */
 .web-design {
-  background-image: url("/assets/imgs/peace-of-mind.jpeg");
+  background-image: url("/assets/imgs/website-platforms.jpg");
 }
 .partner {
   background-image: url("/assets/imgs/hero/partner.webp");
@@ -461,7 +499,7 @@ details[open] summary ~ * {
 }
 
 .joe {
-  background-image: url("/assets/imgs/workbench-g86b93d365_1280.webp");
+  background-image: url("/assets/imgs/joe-livengood.jpeg");
 }
 .portfolio-bg {
   background-image: url("/assets/imgs/hero/portfolio-bg.webp");
@@ -518,6 +556,7 @@ details[open] summary ~ * {
   background-image: url("/assets/imgs/hero/Gemini_vs_chatgtp.jpeg");
 }
 /* Call to action buttons */
+
 .cta-button a {
   text-decoration: none;
   display: inline-block;
@@ -525,8 +564,8 @@ details[open] summary ~ * {
   font-size: 24px;
   border: 2px solid var(--light-bg);
   padding: 14px 70px;
+  margin: 40px auto;
   border-radius: 50px;
-  margin: 20px auto;
   text-align: center;
   position: relative; /* This is important for the pseudo-element positioning */
   background-color: var(--accent);
@@ -540,10 +579,10 @@ details[open] summary ~ * {
   position: absolute;
   top: 0;
   left: -100%;
-  width: 100%;
+  width: 30%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.3); /* Flash effect color */
-  transition: 0.3s;
+  background: #ffffff5f; /* Flash effect color */
+  transition: .6s;
   z-index: 1;
 }
 
@@ -560,18 +599,18 @@ details[open] summary ~ * {
 
 /* logo and menu items */
 .logo-container img {
-  width: 200px;
+  width: 280px;
+ margin: 30px auto; 
 }
 /* Logo and Navbar styles */
 .logo-nav-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 10px;
   position: sticky;
   top: 0;
   box-shadow: 0 0 15px var(--primary-lite);
-  border: 1px solid var(--accent-lite);
+  border: 1px solid var(--accent);
 }
 .nav-menu ul {
   list-style: none;
@@ -583,25 +622,54 @@ details[open] summary ~ * {
 .nav-menu li {
   margin: 0 20px;
 }
-
 .nav-menu a {
   color: var(--primary);
   text-decoration: none;
   font-size: var(--nav-menu);
   font-weight: bold;
-  transition: 0.5s ease-in-out;
+  transition: color 0.4s ease, background-position 0.4s ease, border-bottom-color 0.4s ease;
   text-transform: capitalize;
-  border-bottom: 3px solid transparent;
-  border-top: 3px solid transparent;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 3px solid transparent; /* Start with no visible border */
 }
 
 .nav-menu a:hover {
-  border-color: var(--primary);
+  color: var(--accent); /* Text changes to accent color */
+  border-bottom-color: var(--accent); /* Border animates to accent color */
+  background: linear-gradient(90deg, var(--accent), var(--accent)); /* Add a background gradient */
+  background-size: 100% 3px; /* Background underline effect */
+  background-position: 0 100%; /* Start from bottom */
+  background-repeat: no-repeat;
 }
-.nav-menu .active-nav {
-  border-color: var(--accent);
-  color: var(--accent);
+.nav-menu a::after {
+  display: none; /* Disable the hover underline effect for navbar links */
 }
+.nav-menu a::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--accent); /* This will be the hover underline color */
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+.nav-menu a:hover::before {
+  visibility: visible;
+  width: 100%; /* The underline grows from left to right */
+}
+
+.nav-menu a.active-nav {
+  opacity: .6;
+}
+
+
+
+
 /* Style the dropdown menu */
 .dropdown > .dropdown-menu {
   display: none;
@@ -705,7 +773,7 @@ details[open] summary ~ * {
   cursor: pointer;
   position: fixed;
   top: 20px;
-  left: 20px;
+  right: 20px;
   z-index: 100;
 }
 
@@ -748,6 +816,7 @@ details[open] summary ~ * {
   .logo-container {
     text-align: center;
     width: 100%;
+    margin: 20px auto;
   }
 
   .logo-container img {
@@ -795,6 +864,7 @@ details[open] summary ~ * {
 /*  =================================== 
     home page content styling
 =================================== */
+
 .home-section-maintenance,
 .home-section-seo {
   padding: var(--section-padding);
@@ -812,7 +882,10 @@ details[open] summary ~ * {
   justify-content: center;
   color: var(--light-text-color);
 }
-.home-section-maintenance-inner {
+
+.home-section-maintenance-inner,
+.home-section-singlepage-inner
+ {
   max-width: 100%;
   text-align: center;
 }
@@ -880,7 +953,7 @@ details[open] summary ~ * {
   }
   .seo-content {
     padding: var(--block-padding);
-    background-color: #d7dadbe2;
+    background-color: #ffffff9d;
   }
   .home-section-seo-inner {
     max-width: 900px;
@@ -894,7 +967,6 @@ details[open] summary ~ * {
   }
   .seo-content {
     padding: var(--block-padding);
-    background-color: transparent;
   }
   .home-section-seo-inner {
     max-width: 1000px;
@@ -1617,65 +1689,78 @@ Contact form
   color: var(--accent);
   text-decoration: underline;
 }
+/* bottom call to action section */
+.bottom-cta {
+  background: var(--gradient-reverse);
+  text-align: center;
+}
+
+
+
+@media (max-width: 768px) {
+  .cta-button a {
+    font-size: 16px; /* Slightly smaller font for smaller screens */
+    padding: 12px 25px; /* Adjust padding on smaller screens */
+  }
+}
+
 
 /* ================================= 
 | The Footer element  |
 ==================================== */
 
-footer {
-  border-top: 3px solid var(--primary);
-  background: linear-gradient(to top, var(--primary), #ccc);
-  color: var(--light-text-color);
-  padding: 20px;
+/* CTA Button Styling */
+.bottom-cta {
   text-align: center;
-  font-family: Arial, sans-serif;
 }
-@media (max-width: 764px) {
-  footer {
-    padding-bottom: 60px;
-  }
-}
-footer a {
+
+/* Footer Styling */
+footer {
+  background: linear-gradient(to right, #ffffff, var(--primary));
+  padding: 20px 0;
+  text-align: center;
   color: var(--light-text-color);
-  text-decoration: none;
-  margin: 0 10px;
-  transition: color 0.3s;
-}
-
-footer a:hover {
-  color: var(--accent);
-}
-
-.footer-logo {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-  font-size: 24px;
-  font-weight: bold;
 }
 
 .footer-sections {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 40px;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.footer-section {
-  text-align: left;
+.footer-logo {
+  margin-bottom: 20px;
 }
-
 .footer-title {
-  font-weight: bold;
-  margin-bottom: 10px;
   font-family: var(--title-font);
-  color: var(--text-color);
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
+
+
+footer a {
+  color: var(--light-text-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 .copy {
-  margin-top: 20px;
-  text-align: left;
-  color: var(--text-color);
+  font-size: 14px;
+  color: #999;
 }
+
+@media (max-width: 768px) {
+  .footer-sections {
+    flex-direction: column;
+  }
+}
+
 
 /* ================================= 
 | The back to top button  |
@@ -1683,27 +1768,26 @@ footer a:hover {
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 0;
+  bottom: 150px;
   width: fit-content;
-  left: 50%;
+  right: 50px;
   font-size: 0.8em;
   z-index: 9999;
   outline: none;
-  color: var(--primary);
-  background-color: var(--light-bg);
+  color: #333;
+  background-color: rgba(243, 244, 246, .5);
   padding: 5px 5px 5px 10px;
 
-  border-radius: 50% 50% 0 0;
-  border: 1px solid var(--accent);
-  border-bottom: none;
+  border-radius: 10px;
+  border: 3px groove;
   box-shadow: -2px -2px 15px 4px #363636;
   opacity: 0;
   animation: appear-in 1.5s ease-in-out forwards;
 }
 
 #myBtn:hover {
-  background-color: var(--primary);
-  color: var(--accent);
+  background-color: rgba(243, 244, 246, .9);
+  border: none;
 }
 
 @keyframes appear-in {
