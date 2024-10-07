@@ -31,6 +31,9 @@
             <li>
               <a class="<?php if ($page == '/web-design' || $page == '/web-design/') echo 'active-nav'; ?>" href="/web-design">web design</a>
             </li>
+            <li>
+              <a class="<?php if ($page == '/marketing' || $page == '/marketing/') echo 'active-nav'; ?>" href="/marketing">Social Media Marketing</a>
+            </li>
           </ul>
         </li>
         <li>

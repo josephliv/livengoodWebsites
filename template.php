@@ -130,6 +130,10 @@
             case "/pricing/":
                 include 'includes/pricing.php';
                 break;
+            case "/marketing":
+            case "/marketing/":
+                include 'includes/marketing.php';
+                break;
                 //blog page with posts
             case "/blog":
             case "/blog/":

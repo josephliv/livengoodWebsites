@@ -51,7 +51,7 @@ Looking to drive even more sales? <a href="#seo"> Learn more about how social me
       <hr>
       <div data-aos="zoom-in">
 
-        <p>We don't just keep your site running smoothly and securely; we actively manage your online presence to increase traffic and sales. With a combination of <strong>expert SEO monitoring</strong> and <strong>targeted social media marketing</strong>, we ensure your business gets noticed where it matters most.</p>
+        <p>We don't just keep your site running smoothly and securely; we actively manage your online presence to increase traffic and sales.<br> With a combination of <strong>expert SEO monitoring</strong> and <a href="/marketing">targeted social media marketing</a>, we ensure your business gets noticed where it matters most.</p>
 
         <h3>SEO Monitoring & Reporting</h3>
         <p>We keep a close eye on your Google Search Console and Analytics, making strategic adjustments to enhance your site's organic reach. You'll receive detailed monthly reports outlining the improvements made to boost your online visibility.</p>
