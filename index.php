@@ -356,9 +356,9 @@ switch ($page) {
         break;
     case "/marketing":
     case "/marketing/":
-        $main_title = "Social Media Marketing Subscription"; 
-        $site_title = "Social Media Marketing Subscription";
-        $intro = "Boost Your Online Presence with Custom Social Media Marketing Packages";
+        $site_title = "Social Media Marketing Subscription"; 
+        $main_title = "Unlock Exclusive Marketing Packages";
+        $intro = "Limited-Time Discounts to Elevate Your Brand!";
         $meta_description = "Affordable social media marketing subscriptions to grow your business. Choose from our Basic, Advanced, or More Advanced plans with AI-generated content and videos.";
         $meta_keywords = "social media marketing, marketing subscription, AI-generated content, social media posts, business marketing, content creation, AI images, AI videos, marketing plans";
         $hero_bg_class="social";
