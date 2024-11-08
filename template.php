@@ -52,7 +52,7 @@
 </head>
 
 <body>
-<img src="https://www.sociamonials.com/tracking.php?t=l&tid=29522" width="1" height="1">
+    <img src="https://www.sociamonials.com/tracking.php?t=l&tid=29522" width="1" height="1">
 
     <!-- =================================
       | Top header with logo and nav links and hero |
@@ -122,6 +122,8 @@
                 break;
             case "/website-maintenance-services":
             case "/website-maintenance-services/":
+            case "/maintenance":
+            case "/maintenance/":
             case "/site-care":
             case "/site-care/":
                 include 'includes/website-maintenance-services.php';
@@ -222,9 +224,9 @@
 
     <!-- =================================
             | The back to top button  |
-            ====================================  -->
+        ====================================  -->
     <a href="#" onclick="topFunction()" id="myBtn" title="Go to top">
-        Scroll to the Top
+      ⬆️
     </a>
     <script>
         function loadAOS() {

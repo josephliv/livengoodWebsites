@@ -22,10 +22,7 @@
       <ul>
         <li><a class="<?php if ($page == '/') echo 'active-nav'; ?>" href="/" href="/">Home</a></li>
         <li><a class="<?php if ($page == '/meet-joe' || $page == '/meet-joe/') echo 'active-nav'; ?>" href="/meet-joe">Meet Joe</a></li>
-        <li class="dropdown">
-          <a style="cursor: default;" href="#">Services</a>
-          <ul class="dropdown-menu">
-            <li>
+        <li>
               <a class="<?php if ($page == '/website-maintenance-services' || $page == '/website-maintenance-services/') echo 'active-nav'; ?>" href="/website-maintenance-services">maintenance</a>
             </li>
             <li>
@@ -34,17 +31,20 @@
             <li>
               <a class="<?php if ($page == '/marketing' || $page == '/marketing/') echo 'active-nav'; ?>" href="/marketing">Social Media Marketing</a>
             </li>
-          </ul>
-        </li>
+            <?php 
+        // <li class="dropdown">
+        //   <a style="cursor: default;" href="#">Services</a>
+        //   <ul class="dropdown-menu">
+        //   </ul>
+        // </li>
+        ?>
         <li>
           <a class="<?php if ($page == '/portfolio' || $page == '/portfolio/') echo 'active-nav'; ?>" href="/portfolio">portfolio</a>
         </li>
         <li>
           <a class="<?php if ($page == '/blog' || $page == '/blog/') echo 'active-nav'; ?>" href="/blog">blog</a>
         </li>
-        <li>
-          <a class="<?php if ($page == '/pay' || $page == '/pay/') echo 'active-nav'; ?>" href="/pay">payments</a>
-        </li>
+        
         <li>
           <a class="<?php if ($page == '/contact' || $page == '/contact/') echo 'active-nav'; ?>" href="/contact">Contact</a>
         </li>
@@ -68,9 +68,7 @@
       <li>
         <a class="<?php if ($page == '/website-maintenance-services' || $page == '/website-maintenance-services/') echo 'active-nav'; ?>" href="/website-maintenance-services">maintenance</a>
       </li>
-      <li>
-        <a class="<?php if ($page == '/portfolio' || $page == '/portfolio/') echo 'active-nav'; ?>" href="/portfolio">portfolio</a>
-      </li>
+      
       <li>
         <a class="<?php if ($page == '/marketing' || $page == '/marketing/') echo 'active-nav'; ?>" href="/marketing">marketing</a>
       </li>
@@ -78,11 +76,12 @@
         <a class="<?php if ($page == '/web-design' || $page == '/web-design/') echo 'active-nav'; ?>" href="/web-design">web design</a>
       </li>
       <li>
-        <a class="<?php if ($page == '/blog' || $page == '/blog/') echo 'active-nav'; ?>" href="/blog">blog</a>
+        <a class="<?php if ($page == '/portfolio' || $page == '/portfolio/') echo 'active-nav'; ?>" href="/portfolio">portfolio</a>
       </li>
       <li>
-        <a class="<?php if ($page == '/pay' || $page == '/pay/') echo 'active-nav'; ?>" href="/pay">payments</a>
+        <a class="<?php if ($page == '/blog' || $page == '/blog/') echo 'active-nav'; ?>" href="/blog">blog</a>
       </li>
+     
       <li>
         <a class="<?php if ($page == '/contact' || $page == '/contact/') echo 'active-nav'; ?>" href="/contact">Contact</a>
       </li>

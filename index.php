@@ -47,7 +47,7 @@ switch ($page) {
         seo davie county
         ";
         $intro = "Learn how to convert your website visitors into loyal customers with actionable tips and marketing.";
-
+        //$hero_bg_class = "";
         break;
         // Google was showing a 404 with this url, the testimonials are on the home page
     case "/partner":
@@ -172,6 +172,8 @@ switch ($page) {
         break;
     case "/website-maintenance-services":
     case "/website-maintenance-services/":
+    case "/maintenance": 
+    case "/maintenance/":
     case "/site-care":
     case "/site-care/":
         $main_title = "Reliable Website Maintenance Services";
@@ -361,7 +363,7 @@ switch ($page) {
         $intro = "Limited-Time Discounts to Elevate Your Brand!";
         $meta_description = "Affordable social media marketing subscriptions to grow your business. Choose from our Basic, Advanced, or More Advanced plans with AI-generated content and videos.";
         $meta_keywords = "social media marketing, marketing subscription, AI-generated content, social media posts, business marketing, content creation, AI images, AI videos, marketing plans";
-        $hero_bg_class="social";
+        $hero_bg_class="marketing-video";
         
         break;
     case "/pay":

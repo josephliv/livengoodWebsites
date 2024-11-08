@@ -1,9 +1,18 @@
 <!-- Book a Strategy Session CTA above the footer -->
 <div class="bottom-cta">
-  <div class="cta-button">
-    <a href="https://calendly.com/joesdigitalservices/website-strategy">Book A Strategy Session</a>
-  </div>
+    <h4>🚀 Ready to elevate your brand? Don’t just sit there—make a move! 
+    </h4>
+    <p>Looks like you've explored our services and saw how we can transform your business!</p>
+    <p>
+    So... Before you go, <strong style="color: gold;">let me sweeten the deal</strong>. Book a FREE strategy session with me, and let’s discuss how we can specifically tailor our services to meet your unique needs!
+    </p>
+    <p>
+        👉 Don’t miss out—your brand’s potential is waiting!</p>
+    <div class="cta-button mb-0">
+        <a href="https://calendly.com/livengoodwebsites/strategy-session">Book Your Free Strategy Session</a>
+    </div>
 </div>
+
 
 <footer>
     <div class="footer-sections">

@@ -11,14 +11,19 @@
  };
 
  function scrollFunction() {
-   if (
-     document.body.scrollTop > 180 ||
-     document.documentElement.scrollTop > 180
-   ) {
-     mybutton.style.display = "block";
-   } else {
-     mybutton.style.display = "none";
-   }
+  if (!/Mobi|Android/i.test(navigator.userAgent)) {
+    window.onscroll = function () {
+      scrollFunction();
+    };
+  
+    function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+  }
  }
 
  // When the user clicks on the button, scroll to the top of the document

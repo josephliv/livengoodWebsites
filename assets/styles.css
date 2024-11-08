@@ -39,6 +39,11 @@ body {
   font-size: var(--text-size);
   overflow-x: hidden;
 }
+body, input, textarea, button, select {
+  caret-color: transparent; /* Hides the blinking text cursor */
+  outline: none;             /* Removes the focus outline, if any */
+}
+
 .text-light {
   color: var(--light-text-color);
 }
@@ -64,6 +69,12 @@ body {
   padding: 20px;
   margin: auto;
   text-align: justify;
+}
+.home-intro-section {
+  background: var(--gradient-reverse);
+  padding: 30px;
+  text-align: center;
+  color: var(--light-text-color)
 }
 .modal-fullscreen .modal-content {
   width: 100%;
@@ -164,8 +175,6 @@ details[open] p {
   details summary > * {
     display: inline;
   }
-
-  /* Plus any other <details>/<summary> styles you want IE to ignore. */
 }
 
 h1,
@@ -423,6 +432,7 @@ details[open] summary ~ * {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px 0 ;
 }
 
 .hero-content-inner {
@@ -442,6 +452,7 @@ details[open] summary ~ * {
 .hero-img {
   max-width: 420px;
   height: 350px;
+  position: relative;
   border-radius: 40px;
   background-size: cover; /* Ensures the image covers the entire area */
   background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -453,7 +464,7 @@ details[open] summary ~ * {
 
 .hero-content-inner h1 {
   font-family: var(--title-font);
-  font-size: 48px; /* Larger font for a bold headline */
+  font-size: clamp(32px, calc(1rem + 2vw), 48px); /* Larger font for a bold headline */
   line-height: 1.2; /* Adjust line height for better spacing */
   margin-bottom: 20px;
   font-weight: bold;
@@ -488,13 +499,44 @@ details[open] summary ~ * {
   /* Styles for the background image on all other pages */
   .main-hero {
     min-height: 500px;
-
+    position: relative;
   }
 }
 
 
 
 /* dynamic hero background per page when needed */
+.main-hero #home-video, 
+.main-hero #marketing-video {
+  display: none; 
+}
+/* To display the video on the home page */
+.main-hero .home-video #home-video {
+  display: block; /* Ensures the element is displayed */
+    width: 100%; /* Full viewport width */
+    height: 100%; /* Full viewport height */
+    object-fit: cover; /* Ensures the video covers the full area without distortion */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the video perfectly */
+    z-index: 0; 
+    border-radius: 40px;
+    border: 2px groove var(--accent);
+}
+.main-hero .marketing-video #marketing-video {
+  display: block; /* Ensures the element is displayed */
+    width: 100%; /* Full viewport width */
+    height: 100%; /* Full viewport height */
+    object-fit: cover; /* Ensures the video covers the full area without distortion */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the video perfectly */
+    z-index: 0; 
+    border-radius: 40px;
+    border: 2px groove var(--accent);
+}
 .web-design {
   background-image: url("/assets/imgs/website-platforms.jpg");
 }
@@ -607,6 +649,9 @@ details[open] summary ~ * {
 
 
 /* logo and menu items */
+.logo-container {
+  padding: 0 10px;
+}
 .logo-container img {
   width: 280px;
  margin: 30px auto; 
@@ -873,117 +918,61 @@ details[open] summary ~ * {
 /*  =================================== 
     home page content styling
 =================================== */
-
-.home-section-maintenance,
-.home-section-seo {
-  padding: var(--section-padding);
-}
-.home-section-maintenance {
-  background-image: url("/assets/imgs/hosting-maintenance.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-color: #1f1c1ccc;
+.services-container {
+  background: url("/assets/imgs/seo.jpg") center / cover no-repeat;
+  background-color: #11111177;
   background-blend-mode: overlay;
   min-height: 500px;
-  display: grid;
-  place-items: center;
-  justify-content: center;
-  color: var(--light-text-color);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
 }
 
-.home-section-maintenance-inner,
-.home-section-singlepage-inner
- {
-  max-width: 100%;
+.service-box {
+  max-width: 300px;
+  padding: 20px;
   text-align: center;
-}
-@media (min-width: 900px) {
-  .home-section-maintenance {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center left;
-    min-height: 550px;
-    display: grid;
-    place-items: center;
-    justify-content: end;
-  }
-  .maintenance-content {
-    background-color: #d7dadbe2;
-  }
-  .home-section-maintenance-inner {
-    max-width: 900px;
-    padding-left: 5em;
-    text-align: left;
-    color: var(--text-color);
-  }
-}
-@media (min-width: 1420px) {
-  .home-section-maintenance {
-    background-color: #cdd1d2e3;
-    background-blend-mode: normal;
-  }
-  .home-section-maintenance-inner {
-    max-width: 1000px;
-    padding-left: 5em;
-    text-align: left;
-    color: var(--text-color);
-  }
+  color: #333; /* Dark text color for better readability */
+  background-color: #f0f0f0; /* Light gray background */
+  border-radius: 8px; /* Rounded corners */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  text-decoration: none; /* Removes underline from links */
 }
 
-.home-section-seo {
-  background-image: url("/assets/imgs/seo.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-color: #000000cc;
-  background-blend-mode: overlay;
-  min-height: 500px;
-  display: grid;
-  place-items: center;
-  justify-content: center;
-  color: var(--light-text-color);
+.service-box:hover {
+  transform: translateY(-5px); /* Lifts the box on hover */
+  color: #ffffff; /* Changes text color to white on hover */
 }
-.home-section-seo-inner {
-  max-width: 100%;
-  text-align: center;
-  padding-left: 0;
+
+.icon {
+  font-size: 30px; /* Adjust the size of the icon */
+  margin-bottom: 10px; /* Space below the icon */
 }
-@media (min-width: 900px) {
-  .home-section-seo {
-    background-size: contain;
-    background-color: #ffffff5f;
-    background-repeat: no-repeat;
-    background-position: center right;
-    min-height: 500px;
-    display: grid;
-    place-items: center;
-    justify-content: start;
-  }
-  .seo-content {
-    padding: var(--block-padding);
-    background-color: #ffffff9d;
-  }
-  .home-section-seo-inner {
-    max-width: 900px;
-    text-align: left;
-    color: var(--text-color);
-  }
+
+.service-box .headline {
+  margin: 10px 0;
+  font-size: 1.2em;
 }
-@media (min-width: 1400px) {
-  .home-section-seo {
-    background-blend-mode: normal;
-  }
-  .seo-content {
-    padding: var(--block-padding);
-  }
-  .home-section-seo-inner {
-    max-width: 1000px;
-    padding-left: 5em;
-    text-align: left;
-    color: var(--text-color);
-  }
+
+.service-box p {
+  font-size: 0.9em;
 }
+/* Specific hover colors for each service */
+#website-design:hover, #website-design:hover::before {
+  background-color: #2179ee; /* Blue for design */
+}
+
+#maintenance:hover, #maintenance:hover::before {
+  background-color: #34c759; /* Green for maintenance */
+}
+
+#social-media-marketing:hover, #social-media-marketing:hover::before {
+  background-color: #ff9500; /* Orange for marketing */
+}
+
 /* promo div */
 .promo-div,
 .toggle-promo {
@@ -1654,28 +1643,60 @@ Contact form
 /* ================================= 
 Social Media marketing page
 ==================================== */
+.tooltip-icon {
+  color: #000;
+  background-color: white;
+  cursor: help !important;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: .8em;
+}
 
+.tooltip-content {
+  display: none;
+  position: absolute;
+  background-color: var(--primary);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 300px;
+  font-size: 16px;
+  z-index: 1000;
+  margin-top: 5px;
+}
 /* introduction */
 .social-introduction {
-    max-width: 1000px;
+    max-width: 1200px;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     color: var(--primary); 
 }
-
-.social-introduction h3 {
-    color: var(--primary); /* Matches primary color */
+.social-introduction p {
+  max-width: 600px;
+}
+.social-introduction h4 {
+    color: var(--accent); /* Matches primary color */
     font-weight: bold;
-    text-align: center;
     margin-bottom: 20px;
+}
+.social-introduction img {
+  border-radius: 40px;
+  border: 2px groove var(--accent);
 }
 
 .social-how-to {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    max-width: 600px;
     margin-bottom: 30px;
 }
 
@@ -1729,12 +1750,11 @@ Social Media marketing page
     color: #fff; /* Keep the text white */
 }
 
-
 .social-introduction p:last-of-type {
-    text-align: center;
+   
     font-size: 18px;
     font-weight: bold;
-    color: var(--accent); /* Emphasize the final call to action */
+  
 }
 
 @media (max-width: 768px) {
@@ -2012,8 +2032,18 @@ Social Media marketing page
 .bottom-cta {
   background: var(--gradient-reverse);
   text-align: center;
+  padding: 20px 0;
 }
-
+.bottom-cta p, 
+.bottom-cta h4 {
+  color: var(--light-text-color);
+  max-width: 900px; 
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
+.bottom-cta .cta-button a {
+  margin: 5px auto;
+}
 
 
 @media (max-width: 768px) {
@@ -2027,11 +2057,6 @@ Social Media marketing page
 /* ================================= 
 | The Footer element  |
 ==================================== */
-
-/* CTA Button Styling */
-.bottom-cta {
-  text-align: center;
-}
 
 /* Footer Styling */
 footer {
@@ -2071,7 +2096,7 @@ footer a:hover {
 
 .copy {
   font-size: 14px;
-  color: #999;
+  color: var(--text-color);
 }
 
 @media (max-width: 768px) {
@@ -2087,33 +2112,25 @@ footer a:hover {
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 150px;
-  width: fit-content;
-  right: 50px;
-  font-size: 0.8em;
+  bottom: 40vh;
+  right: 15px; 
   z-index: 9999;
-  outline: none;
-  color: #333;
-  background-color: rgba(243, 244, 246, .5);
-  padding: 5px 5px 5px 10px;
-
-  border-radius: 10px;
-  border: 3px groove;
-  box-shadow: -2px -2px 15px 4px #363636;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
   opacity: 0;
+  transform: scale(1.2);
   animation: appear-in 1.5s ease-in-out forwards;
 }
 
 #myBtn:hover {
-  background-color: rgba(243, 244, 246, .9);
-  border: none;
+  transform: scale(1.7);
+  box-shadow: 0 4px 8px 0 var(--primary);
 }
 
 @keyframes appear-in {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
