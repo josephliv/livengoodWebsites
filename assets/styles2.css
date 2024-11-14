@@ -1,82 +1,305 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Slab:wght@700&display=swap");
+/* Importing a futuristic Google font */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+/* Defining a futuristic color palette */
 :root {
-  /* color varables */
-  --primary: #002f60;
-  --primary-lite: #425c93;
-  --secondary: #28a745;
-  --accent: #b78a00;
-  --accent-lite: #fc704680;
-  --light-bg: #dff8d5;
-  /* font colors */
-  --text-color: #1a1b1d;
-  --light-text-color: #e6f4f1;
-  /* fonts */
-  --title-font: "Roboto Slab", serif;
-  --text-font: "Lato", sans-serif;
-  --text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
-    2px 2px 0 #000, 2px 2px 60px var(--light-text-color);
-  /* font sizes */
-  --hero-title: clamp(1.5rem, 3.5cqw, 2.6rem);
-  --title-size: clamp(1em, 2.3cqw, 1.2em);
-  --page-title-size: clamp(1.3rem, 2cqw, 0.8em);
-  --text-size: 1.2rem;
-  --nav-menu: 1rem;
-  /* for other styles */
-  --radius: 6px;
-  --shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.6);
+  --primary: #0d0e18b3;
+  --primary-lite: #101d2ad9;
+  --secondary: rgba(243, 82, 8, 1);
+  --accent: #ff5c00;
+  --light-bg: #1a1a1a;
+  --link-hover: #39ff14;
+  --neon-blue: #00bfff;
+  --neon-green: #00FF00;
+  --neon-purple: #8a00ff;
+  --neon-yellow: #ffea00;
+  --futuristic-grey: #7f8c8d;
+  --text-color: #d1d5db;
+  --light-text-color: #f3f4f6;
+  --border-glow: rgba(15, 240, 252, 0.4);
 
-  --block-padding: 5px 15px;
-  --section-padding: 5dvh 20px;
+  /* Font Colors */
+  --text-color: #d1d5db; /* Light gray for readable text */
+  --light-text-color: #f3f4f6; /* Soft white for readability on dark backgrounds */
 
-  --gradient: linear-gradient(to bottom, var(--primary), var(--primary-lite));
-  --gradient-reverse: linear-gradient(
-    to top,
-    var(--primary),
-    var(--primary-lite)
-  );
+  /* Fonts */
+  --title-font: "Orbitron", sans-serif; /* Futuristic font for titles */
+  --text-font: "Roboto", sans-serif; /* Readable sans-serif font */
+  --text-shadow: 2px 2px 8px rgba(0, 200, 255, 0.3); /* Subtle glow */
+
+  /* Font Sizes */
+  --hero-title: clamp(2rem, 5vw, 3rem); /* Large hero titles */
+  --title-size: clamp(1.3rem, 2.5vw, 1.5rem); /* Medium titles */
+  --page-title-size: clamp(1.2rem, 2vw, 1.3rem); /* Subheading size */
+  --text-size: 1rem; /* General text size */
+  --nav-menu: 1rem; /* Menu text size */
+
+  /* Shadows and Radius */
+  --radius: 6px; /* Defined rounded corners */
+  --shadow: 0 6px 15px rgba(15, 240, 252, 0.2); /* Softer shadow for glow */
+
+  /* Padding */
+  --block-padding: 8px 15px; /* Comfortable padding */
+  --section-padding: 5vh 15px; /* Section spacing */
+
+  /* Gradient Backgrounds */
+  --gradient: linear-gradient(135deg, #0b0b24, #141438); /* Dark gradient */
+  --gradient-reverse: linear-gradient(45deg, #141438, #0b0b24);
 }
-/* mobile or default styles */
+
+
+
 body {
+  background: var(--gradient);
+  color: var(--text-color);
   font-family: var(--text-font);
-  font-size: var(--text-size);
   overflow-x: hidden;
 }
+
+/* Headers */
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: var(--neon-blue); /* Neon blue as the primary accent color */
+  text-transform: uppercase;
+  text-shadow: 2px 2px 10px var(--neon-purple); /* Neon purple for a glowing shadow */
+}
+
+.neon-border {
+  position: relative;
+  padding: 20px; /* Adjust as needed */
+  background-color: #0f0e0e; /* Background color */
+  border-radius: 8px; /* Optional: for rounded corners */
+  overflow: hidden; /* To ensure the glow doesn't bleed out */
+}
+
+.neon-border::before,
+.neon-border::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px; /* Match the border radius */
+  z-index: -1; /* Place behind the element */
+}
+
+.neon-border::before {
+  box-shadow: 
+    0 0 10px #00ccff, /* Neon blue */
+    0 0 20px #00ccff,
+    0 0 30px #00ccff;
+}
+
+.neon-border::after {
+  box-shadow: 
+    0 0 10px #ff2b92, /* Neon pink */
+    0 0 20px #ff2b92,
+    0 0 30px #ff2b92;
+}
+
+/* Different colors for each side */
+.neon-border {
+  box-shadow: 
+    5px 0 10px #00ccff, /* Right side neon blue */
+   -5px 0 10px #ff2b92, /* Left side neon pink */
+    0 5px 10px #a400ff, /* Bottom side neon purple */
+    0 -5px 10px #ff4f00; /* Top side neon orange */
+}
+/* Buttons */
+button, .btn {
+  
+  background-color: var(--secondary-accent);
+  color: #fff;
+  padding: 10px 20px;
+  border: 2px solid var(--secondary-accent);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px var(--border-glow);
+}
+
+button:hover, .btn:hover {
+  background-color: var(--primary-accent);
+  border-color: var(--primary-accent);
+  color: #0d0d2b;
+  transform: scale(1.05);
+}
+
+/* Links */
+a {
+  color: var(--primary-accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--secondary-accent);
+  text-shadow: 0 0 5px var(--border-glow);
+}
+/* Cards */
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border-glow);
+  padding: 20px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(15, 240, 252, 0.8);
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(90deg, #0d0d2b, #212172);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.navbar a {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.navbar a:hover {
+  color: var(--secondary-accent);
+  text-shadow: 0 0 8px var(--border-glow);
+}
+
+/* Updated styles with futuristic theme */
+
+.text-light {
+  color: var(--primary-accent); /* Neon cyan */
+}
+
 .gradient {
-  background-image: var(--gradient);
+  background-image: linear-gradient(135deg, var(--primary), var(--primary-accent)); /* Sci-fi gradient */
 }
+
 .gradient-reverse {
-  background-image: var(--gradient-reverse);
+  background-image: linear-gradient(135deg, var(--primary-accent), var(--primary)); /* Reverse gradient for contrast */
 }
+
 .gradient-lite {
-  background: linear-gradient(15deg, #808080, #ffffff);
+  background: linear-gradient(15deg, #1a1a40, #333366); /* Light futuristic gradient */
 }
+
 .verse {
   font-style: italic;
   font-size: 0.8em;
-  background-color: #ccc;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
   padding: 3px 8px;
+  color: var(--text-color);
+  border-left: 2px solid var(--secondary-accent);
 }
+
+/* Introduction part on most pages */
+.intro-section {
+  max-width: 900px;
+  padding: 20px;
+  margin: auto;
+  text-align: justify;
+  color: var(--text-color);
+  background: rgba(13, 13, 43, 0.8); /* Dark futuristic background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--border-glow);
+}
+
+.home-intro-section {
+  background: var(--gradient-reverse);
+  padding: 30px;
+  text-align: center;
+  color: var(--text-color);
+  box-shadow: 0 4px 15px rgba(15, 240, 252, 0.8);
+}
+
+.modal-fullscreen .modal-content {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--primary-accent);
+  border-radius: 10px;
+  background-color: rgba(13, 13, 43, 0.95); /* Dark transparent background */
+  box-shadow: 0 4px 10px var(--border-glow);
+}
+
+.modal-fullscreen .modal-body {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  color: var(--text-color);
+}
+
+.modal-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1050;
+  background-color: transparent;
+  border: 0;
+  color: var(--secondary-accent);
+}
+
+.btn-close {
+  padding: 10px;
+  margin: 10px;
+  color: var(--primary-accent);
+  font-size: 1.2rem;
+}
+
 strong {
   font-weight: 700;
+  color: var(--secondary-accent); /* Use secondary accent for emphasis */
 }
+
 p,
 li {
-  font-family: var(--text-font);
   font-weight: 400;
-  font-size: var(--text-size);
+  font-size: 1rem;
+  color: var(--text-color);
 }
+
 ul {
-  /* to counter bootstrap */
-  padding-left: 0;
+  padding-left: 20px; /* Adding consistent spacing for readability */
 }
-a {
+
+p a:not(.logo-container) {
+  position: relative;
   text-decoration: none;
-  font-family: var(--text-font);
-  color: var(--secondary);
+  color: var(--primary-accent);
   font-weight: bold;
+  transition: color 0.4s ease;
 }
-a:hover {
-  color: var(--accent);
+
+p a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: var(--secondary-accent);
+  bottom: -2px;
+  left: 50%;
+  transition: all 0.4s ease;
+  transform: translateX(-50%);
+}
+
+p a:hover {
+  color: var(--secondary-accent);
+}
+
+p a:hover::after {
+  width: 100%;
+  left: 0;
+  transform: translateX(0);
 }
 details summary {
   cursor: pointer;
@@ -84,11 +307,14 @@ details summary {
   transition: 0.5s ease-in-out;
 }
 details summary:hover {
-  background-color: #ccc;
+  background-color: rgba(255, 255, 255, 0.1); /* Light futuristic hover */
 }
+
 .bg {
-  background-color: #e6e6e6;
+  background-color: rgba(13, 13, 43, 0.8); 
+  padding: 20px 5px;
 }
+
 details p {
   max-height: 0;
   overflow: hidden;
@@ -108,80 +334,128 @@ details[open] p {
   details summary > * {
     display: inline;
   }
-
-  /* Plus any other <details>/<summary> styles you want IE to ignore. */
 }
 
 h1,
 h2 {
-  font-family: var(--title-font);
   font-weight: 700;
   text-transform: capitalize;
+  text-shadow: 1px 1px 8px var(--border-glow);
 }
+
 h3,
 h4 {
   font-size: var(--page-title-size);
   font-weight: 700;
   text-transform: capitalize;
 }
+
 h5 {
-  font-weight: bold;
-  font-family: var(--title-font);
+  font-weight: bold; 
+  color: var(--secondary-accent); /* Accent color for emphasis */
 }
+
 hr {
   width: 300px;
-  margin: 1.5rem auto;
-  border-bottom: 2px dotted var(--secondary);
+  margin: 1.5rem 0;
+  border-bottom: 3px solid var(--primary-accent);
 }
 
 /* for some titles to be the primary color */
 .primary {
-  color: var(--primary);
+  color: var(--primary-accent);
 }
 
-.narrow-section {
-  display: grid;
-  min-height: 200px;
-  place-items: center;
-  max-width: 1200px;
+
+/* ================================= 
+| Grid Template for Image Pages
+================================= */
+.page  {
+  max-width: 1400px;
   margin: auto;
-  text-align: justify;
-  padding: var(--section-padding);
 }
-
-/* Grid template to be used for the pages that contain images */
 .page h3 {
   font-weight: 600;
-  color: var(--primary);
+  color: var(--primary-accent); /* Updated for neon cyan color */
 }
+
 .page img {
-  border: 2px groove var(--accent);
+  border: 2px groove var(--secondary-accent); /* Neon accent border */
   border-radius: var(--radius);
-  box-shadow: 2px 2px 15px #222;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.8); /* Dark shadow for depth */
+  max-width: 400px;
+  margin: auto;
 }
-.page .custom-btn img {
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  display: inline;
-  margin-right: 10px;
-  width: 60px;
-}
-.page .custom-btn {
-  padding: none;
-}
+
 .page h4 {
-  color: var(--primary);
-  font-family: var(--title-font);
+  color: var(--primary-accent);
+  
   font-weight: 700;
   text-transform: capitalize;
   text-align: center;
 }
 
+
+
+#disc ul {
+  margin-left: 5vw;
+}
+
+/* ================================= 
+| Modal Content Animation
+================================= */
+.modal-content,
+.caption {
+  animation: zoom 0.6s ease-in-out; /* Animation for modal elements */
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: -5px;
+  right: 10px;
+  color: var(--secondary-accent); /* Use accent color for close button */
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  z-index: 9999;
+}
+
+.close:hover,
+.close:focus {
+  color: rgba(187, 187, 187, 0.8); /* Subtle hover color */
+  text-decoration: none;
+  cursor: pointer;
+}
+/* TODO: 100% Image Width on Smaller Screens */
+.modal-content {
+  margin: 40px auto;
+  display: block;
+  height: 95%;
+  width: 90%;
+  display: grid;
+  place-items: start center;
+  border-radius: 10px;
+  background-color: rgba(13, 13, 43, 0.9); /* Dark transparent background */
+  box-shadow: 0 4px 10px var(--border-glow); /* Futuristic glow effect */
+}
+/* ================================= 
+| Custom Section Layouts - Mobile
+================================= */
 .custom-section,
 .custom-section-reverse {
+  width: 100%; /* Full width */
   padding: var(--block-padding);
-  margin: 0 auto;
+  margin: 20px 10px; /* Remove horizontal auto margin */
   display: grid;
   justify-content: center;
   gap: 1rem;
@@ -190,437 +464,1903 @@ hr {
     "img"
     "disc";
 }
-#disc ul {
-  margin-left: 5dvw;
+#disc {
+  padding: 20px;
 }
-.content {
-    font-size: 18px;
-  }
-  .content p {
-    text-align: justify;
-    font-size: 0.9rem;
-    font-style: italic;
-  }
-  .content p img {
-    height: 20px;
-    float: left;
-    margin-right: 20px;
-  }
-.business-boosters {
-    background-color: #999;
-    min-height: 60vh;
-    display: grid;
-    place-items: center;
-  }
-/* ================================= 
-Contact form 
-==================================== */
-.contact-page {
-    background-color: #ffffff62;
+@media (min-width: 900px) {
+  .custom-section,
+  .custom-section-reverse {
+    padding: var(--section-padding);
+    background-color: rgba(13, 13, 43, 0.8); /* Dark background with transparency */
+    border-radius: 10px;
+    width: 100%; /* Take full width */
   }
 
-/* testimonial for small screens or mobile */
-/* larger media screen is located  */
-  .testimonial-container {
-    max-width: 1300px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    padding: 2em 5px;
-  }
-/* blog page */
-.blog-page {
-    background-image: var(--gradient);
-    min-height: 80vh;
-    display: grid;
-    place-items: center;
-  }
-  .blog-page-inner h4 {
-    text-align: center;
-    text-transform: capitalize;
-    font-family: var(--title-font);
-    font-weight: 700;
-    letter-spacing: 3px;
-    font-size: 0.9em;
-  }
-  .list-group-item-title {
-    font-family: var(--title-font);
-    color: var(--accent);
-    font-size: var(--title-size);
-    text-align: center;
-    padding: var(--block-padding);
-  }
-  
-  /* posts with images */
-  .flex-area {
-    display: flex;
-    gap: 1rem;
-    justify-content: space-around;
+  .custom-section {
     align-items: center;
-    flex-wrap: wrap;
+    gap: 1.5rem;
+    grid-template-areas:
+      "title title title title"
+      "img img disc disc";
   }
-  .blockquote-footer {
-    font-size: 0.5em;
-  }
-  .post-content {
-    width: min(50rem, 80%, 100%);
-  }
-  .code {
-    background-color: #373737;
-    color: white;
-    padding: 5px;
-    text-align: left !important;
-  }
-  /* used on the post page at the top, some have dates and some don't */
-  .blog-date {
-    text-align: center;
-    font-size: 1.2rem;
-    text-transform: capitalize;
-    font-style: italic;
-  }
-  .blog-page-inner {
-    display: flex;
+
+  .custom-section-reverse {
+    display: grid;
     gap: 1rem;
-    flex-wrap: wrap;
+    grid-template-areas:
+      "title title title title"
+      "disc disc img img";
   }
-  .post-card {
-    padding: 5px;
-    border-radius: var(--radius);
-    border: 2px outset var(--accent);
-    box-shadow: var(--shadow);
-    transition: 0.3s ease-in-out;
-    background-color: #e7e0e0b4;
-  
-    container-type: inline-size;
-    min-width: 350px;
-    margin-inline: auto;
-    max-width: 800px;
-    flex-grow: 1;
-  }
-  
-  .post-card:hover {
-    box-shadow: none;
-    background-color: #e7e0e0ea;
-  }
-  /* the inner part of the post card container */
-  
-  .post-card-inner h4 {
-    color: var(--primary);
-  }
-  .post-card-inner p {
-    font-size: var(--text-size);
-    color: var(--text-color);
-  }
-  .post-card img {
-    max-width: 200px;
-    margin: 5px auto;
-    border-radius: var(--radius);
-    border: 3px outset var(--accent);
-  }
-  .terminal {
-    margin: 10px 5px;
-    color: #fff !important;
-    background: #313131;
-    padding: 5px;
-    box-shadow: 0 0 15px #999;
+}
+
+@media (min-width: 1100px) {
+  .page h4 {
     text-align: left;
   }
-  .grid-section {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    margin: 20px auto;
+
+  .custom-section,
+  .custom-section-reverse {
+    width: 100%; /* Full width */
+    align-items: center;
+    background-color: var(--primary); /* Darker background for large screens */
+    border-radius: 15px;
+    margin: 30px auto;
   }
-  /* ================================= 
-    | The 404 page  |
+
+  .custom-section-reverse {
+    grid-template-areas:
+      "title  img"
+      "disc  img";
+  }
+
+  .custom-section {
+    align-items: center;
+    gap: 1rem;
+    grid-template-areas:
+      "img title"
+      "img disc";
+  }
+}
+
+/* grid parts for the pages that uses them as the main content*/
+/* ms = main small and ml = main large   */
+#title {
+  grid-area: title;
+  grid-row: span -1;
+}
+#disc {
+  grid-area: disc;
+  margin: auto;
+}
+#img {
+  grid-area: img;
+}
+
+/* Maintenance page hero styling */
+.maintenance-intro {
+  background-image: url("/assets/imgs/site-care-bg.jpeg");
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-color: var(--primary); /* Dark futuristic background */
+  min-height: 300px;
+  display: grid;
+  place-items: center;
+  color: var(--text-color);
+}
+
+/* Food post styling */
+.restaurant-post {
+  display: grid;
+  place-items: center;
+  background-color: rgba(13, 13, 43, 0.9); /* Slightly lighter dark background */
+  min-height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px var(--border-glow);
+}
+
+.restaurant-post-inner {
+  max-width: 900px;
+  padding: var(--block-padding);
+  color: var(--text-color);
+}
+
+details[open] summary ~ * {
+  animation: details-ele 0.5s ease-in-out;
+}
+
+@keyframes details-ele {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Light links styling */
+.light-links a {
+  color: var(--primary-accent); /* Use primary accent for link color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.light-links a:hover {
+  color: var(--secondary-accent); /* Change to secondary accent on hover */
+}
+
+
+/* dynamic hero background per page when needed */
+.main-hero #home-video, 
+.main-hero #marketing-video {
+  display: none; 
+}
+/* To display the video on the home page */
+.main-hero .home-video #home-video {
+  display: block; /* Ensures the element is displayed */
+    width: 100%; /* Full viewport width */
+    height: 100%; /* Full viewport height */
+    object-fit: cover; /* Ensures the video covers the full area without distortion */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the video perfectly */
+    z-index: 0; 
+    border-radius: 40px;
+    border: 2px groove var(--accent);
+}
+.main-hero .marketing-video #marketing-video {
+  display: block; /* Ensures the element is displayed */
+    width: 100%; /* Full viewport width */
+    height: 100%; /* Full viewport height */
+    object-fit: cover; /* Ensures the video covers the full area without distortion */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the video perfectly */
+    z-index: 0; 
+    border-radius: 40px;
+    border: 2px groove var(--accent);
+}
+.web-design {
+  background-image: url("/assets/imgs/website-platforms.jpg");
+}
+.partner {
+  background-image: url("/assets/imgs/hero/partner.webp");
+  background-size: cover;
+}
+
+.joe {
+  background-image: url("/assets/imgs/joe-livengood.jpeg");
+}
+.portfolio-bg {
+  background-image: url("/assets/imgs/hero/portfolio-bg.webp");
+  background-position: top 50% center;
+}
+.blog-bg {
+  background-image: url("/assets/imgs/hero/support.jpeg");
+}
+.contact-bg {
+  background-image: url("/assets/imgs/hero/contact-us.jpg");
+}
+.food-bg {
+  background-image: url("/assets/imgs/hero/kitchen.jpg");
+}
+.food-bg-post {
+  background-image: url("/assets/imgs/food-app.webp");
+}
+.monitor-bg {
+  background-image: url("/assets/imgs/hero/monitor.webp");
+}
+.business-bg {
+  background-image: url("/assets/imgs/hero/business.jpg");
+}
+.site-care-bg {
+  background-image: url("/assets/imgs/hero/security.webp");
+}
+.promo-bg {
+  background-image: url("/assets/imgs/hero/promo-bg.webp");
+}
+.testimonial-hero-bg {
+  background-image: url("/assets/imgs/hero/testimonials.webp");
+}
+.pageError {
+  background-image: url("/assets/imgs/hero/pageError.jpg");
+  background-position: top center 50%;
+}
+.digital-bg {
+  background-image: url("/assets/imgs/hero/digital-landscape.webp");
+}
+.garden-bg {
+  background-image: url("/assets/imgs/hero/website-maintenance-and-gardeningbg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.pay {
+  background-image: url("/assets/imgs/hero/pay.webp");
+}
+.desert-mirage {
+  background-image: url("/assets/imgs/hero/desert-mirage.webp");
+  background-size: contain;
+}
+.chat-bots {
+  background-image: url("/assets/imgs/hero/Gemini_vs_chatgtp.jpeg");
+}
+.social {
+  background-image: url("/assets/imgs/hero/social.webp");
+}
+/* =================================== 
+| Hero section and place that holds the title |
+==================================== */
+.main-hero { 
+  background-color: var(--primary-lite);
+  background-image: url("/assets/imgs/website-hero-bg.webp");
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+.hero-content {
+  min-height: 600px;
+  padding: 50px 20px; /* Updated to ensure padding consistency */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content-inner {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  color: var(--neon-blue); /* Updated for consistency with the neon blue theme */
+  text-shadow: 2px 2px 10px var(--neon-purple); /* Neon purple glow for text */
+  max-width: 1200px;
+  width: 100%;
+}
+
+.hero-content-inner > div {
+  flex: 1;
+}
+
+.hero-img {
+  max-width: 420px;
+  height: 350px;
+  position: relative;
+  border-radius: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 1px solid var(--neon-blue); /* Neon blue border for consistency */
+  box-shadow: 0 4px 10px var(--neon-green); /* Neon pink soft futuristic shadow */
+}
+
+.hero-content-inner h1 {
+  font-size: clamp(32px, calc(1rem + 2vw), 48px);
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: var(--neon-green); /* Neon pink bright accent for headline */
+}
+
+.home-sub-title {
+  color: var(--secondary-accent);
+  font-size: var(--title-size);
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+/* Styles for the background image on all other pages */
+@media (min-width: 60em) {
+  .site-title h1 {
+    font-size: var(--hero-title);
+    text-align: center;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: var(--primary-accent);
+  }
+
+  .main-hero {
+    min-height: 500px;
+    position: relative;
+  }
+}
+/* Call to action buttons */
+/* CTA Button Base Styles */
+.cta-button {
+  margin: 5px auto;  /* Centered horizontally */
+  color: var(--light-bg);
+  background-color: var(--accent);  /* Make sure --accent is defined as a vibrant color */
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 6px 15px var(--neon-blue);  /* Consistent neon blue shadow */
+  position: relative;
+  overflow: hidden;
+  max-width: fit-content;
+  display: inline-block;  /* Ensure button is properly formatted */
+}
+
+.cta-button a { /* Anchor tag within the button */
+  text-decoration: none;
+  color: inherit;  /* Maintain text color consistency */
+  display: block;  /* Make the link fill the button */
+}
+
+/* Pseudo-elements for dynamic visual effects */
+.cta-button::before,
+.cta-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-button::before { /* Background glow effect */
+  background: linear-gradient(to right, rgba(0, 204, 255, 0.3), rgba(255, 43, 146, 0.3));
+  filter: blur(8px);
+}
+
+.cta-button::after { /* Animated border line */
+  background: linear-gradient(to right, var(--neon-blue), var(--neon-green));
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+/* Hover Effects */
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px var(--neon-blue), 0 0 20px var(--neon-green); /* Intensified shadows */
+}
+
+.cta-button:hover::after {
+  transform: scaleX(1);
+  animation: line-animation 1s ease-in-out forwards;
+}
+
+@keyframes line-animation {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.cta-button:hover::before {
+  background: rgba(255, 255, 255, 0.2); /* Subtle white overlay for hover */
+  filter: blur(12px); /* Enhanced blur effect */
+}
+
+
+/* Logo and menu items */
+.logo-container {
+  padding: 0 10px;
+}
+
+.logo-container img {
+  width: 280px;
+  margin: 30px auto;
+}
+
+
+/* ================================= 
+| Top Bar with Contact Info and Social Links
+================================== */
+.top-bar {
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--primary-lite); /* Dark transparent background for a sleek look */
+  box-shadow: 0 4px 8px var(--border-glow); /* Soft neon glow for subtle depth */
+}
+
+.top-bar a {
+  color: var(--neon-blue); /* Neon blue for vibrant text color */
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+  text-decoration: none; /* Remove underline for a cleaner look */
+  padding: 5px 10px; /* Adequate padding for better clickability */
+}
+
+.top-bar a:hover {
+  color: var(--neon-green); /* Switching to neon green on hover for a bright contrast */
+}
+
+
+
+.social-links {
+  display: flex;
+  gap: 1.2rem; /* Slightly larger gap for visual balance */
+  justify-content: center;
+}
+.top-bar img {
+  display: inline;
+}
+
+.social-links img {
+  display: inline;
+  width: 50px; /* Slightly larger for emphasis */
+  border-radius: 50%; /* Rounded for a modern look */
+  padding: 3px;
+  border: 2px solid var(--neon-blue); /* Updated to neon blue for a vibrant border */
+  background-color: var(--light-text-color); /* Dark background for neon colors to pop */
+  box-shadow: 0 0 10px var(--neon-blue, 0.3); /* Soft neon glow with blue light */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect */
+.social-links img:hover {
+  background-color: var(--accent); /* Neon orange accent on hover */
+  box-shadow: 0 0 15px var(--neon-green, 0.5), 0 0 30px var(--neon-blue, 0.5); /* Enhanced dual glow for a dynamic effect */
+  transform: scale(1.1); /* Slight enlargement on hover */
+}
+
+/* Logo and Navbar styles */
+/* ================================= 
+| Navbar and Logo Styling
+================================== */
+/* Enhanced Navbar Container */
+.logo-nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding: 5px 15px; /* Increased padding for more space */
+  background-color: var(--primary);
+  box-shadow: 0 0 20px var(--neon-blue), 0 0 10px var(--neon-green); /* Dynamic neon colors for a dual glow shadow */
+  border-bottom: 2px solid var(--neon-green); /* Consistent neon green for border */
+  z-index: 9;
+}
+
+/* Logo Container with Glow */
+.logo-container img {
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--neon-blue); /* Subtle neon blue glow around logo */
+  flex-shrink: 0;
+  padding: 5px; /* Adjust padding to avoid cutting off any part of the image */
+  height: 85px; /* Maintain a larger logo size for visibility */
+  transition: transform 0.3s ease; /* Smooth transform effect for a nice hover animation */
+}
+
+.logo-container img:hover {
+  transform: scale(1.1); /* Slightly enlarges logo on hover for interactive feedback */
+}
+
+/* Navigation Menu Styles */
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* Added gap for balanced spacing */
+  margin: 0;
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+/* Gradient Text Effect and Animation */
+.nav-menu a {
+  color: var(--neon-blue); /* Basic color, fallback for browsers not supporting gradient text */
+  background-image: linear-gradient(45deg, var(--neon-green), var(--neon-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Specific to WebKit for transparent text with gradient */
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 5px;
+  filter: brightness(1);
+  display: inline-block; /* Ensures the background-clip text effect works correctly */
+}
+
+.nav-menu a:hover {
+  filter: brightness(1.5); /* Enhance brightness on hover for a glowing effect */
+  transform: scale(1.1); /* Slightly larger scale on hover */
+  animation: neonGlow 1.5s infinite alternate;
+}
+
+/* Animation for Neon Glow Effect */
+@keyframes neonGlow {
+  from {
+    text-shadow: 0 0 5px var(--neon-blue), 0 0 10px var(--neon-blue);
+  }
+  to {
+    text-shadow: 0 0 20px var(--neon-green), 0 0 30px var(--neon-green);
+  }
+}
+
+/* Hover Underline Effect */
+.nav-menu a::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--secondary); /* Secondary color for the underline */
+  transition: width 0.4s ease, left 0.4s ease;
+}
+
+.nav-menu a:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+/* Active Navigation Link */
+.nav-menu a.active-nav {
+  opacity: 0.9;
+  background-image: linear-gradient(to right, var(--neon-purple), var(--neon-green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px var(--neon-purple), 0 0 20px var(--neon-green); /* Vibrant text shadow for active link */
+}
+
+/* ================================= 
+| Mobile Menu Button Styling
+================================= */
+.mobile-menu-button {
+  display: none; /* Hidden by default */
+  background-color: var(--neon-blue); /* Futuristic neon blue */
+  color: var(--light-bg); /* Using dark background color for text for contrast */
+  border: 1px solid var(--neon-green); /* Neon pink border */
+  border-radius: 4px;
+  padding: 8px 15px;
+  cursor: pointer;
+  position: fixed;
+  top: 40px;
+  right: 10px;
+  z-index: 100;
+  box-shadow: 0 2px 5px var(--neon-green); /* Subtle neon pink glow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+}
+
+.mobile-menu-button:hover {
+  transform: scale(1.1); /* Slight enlargement on hover */
+  box-shadow: 0 4px 12px var(--neon-green); /* Intensified neon pink glow on hover */
+}
+
+/* ================================= 
+| Mobile Menu Sidebar Styling
+================================= */
+.mobile-menu-sidebar {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -260px; /* Initially hidden */
+  overflow-x: hidden;
+  box-shadow: 0 4px 8px var(--neon-blue); /* Subtle neon blue glow */
+  background-color: rgba(0, 47, 96, 0.95); /* Dark transparent background */
+  padding: var(--block-padding);
+  z-index: 99;
+  transition: left 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Sidebar Active State */
+.mobile-menu-sidebar.is-active {
+  left: 0; /* Slide in from the left */
+  box-shadow: 4px 0 15px var(--neon-blue); /* Neon blue glow on the right edge */
+}
+
+/* Sidebar Menu Items */
+.sidebar-menu li {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: var(--light-bg); /* Using dark background color for text for contrast */
+  padding: 15px 0;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.sidebar-menu li:hover {
+  color: var(--neon-green); /* Neon pink accent color on hover */
+  transform: translateX(10px); /* Slide right on hover for effect */
+}
+
+/* Responsive Display */
+@media (max-width: 768px) {
+  .mobile-menu-button {
+    display: block; /* Show button on mobile */
+    z-index: 99;
+  }
+}
+
+
+@media screen and (max-width: 880px) {
+  #video-background {
+    /* height: 60vh; */
+    overflow: hidden;
+    object-fit: fill;
+    z-index: -1;
+  }
+
+  .dark-bg {
+    background-color: rgba(17, 17, 17, 0.5); /* Dark translucent background */
+    z-index: -1;
+  }
+
+  .logo-container {
+    text-align: center;
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .logo-container img {
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  .mobile-menu-button {
+    display: block;
+    margin-left: 2%;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .mobile-menu-sidebar {
+    display: block; /* Show the mobile menu sidebar on small screens */
+    padding: 80px 10px 5px 20px;
+    width: fit-content;
+  }
+
+  .sidebar-menu a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--text-color); /* Consistent text color */
+    display: block;
+    transition: background-color 0.3s;
+  }
+
+  .mobile-menu-sidebar a:hover {
+    background-color: var(--primary-accent); /* Accent background on hover */
+    color: var(--text-color); /* Consistent hover text color */
+  }
+
+  .sidebar-header img {
+    /* logo */
+    max-width: 250px;
+    margin: auto;
+  }
+
+  .desert-mirage {
+    background-size: cover;
+  }
+}
+
+/* =================================== 
+   Home page content styling
+=================================== */
+.services-container {
+  background: url("/assets/imgs/seo.jpg") center / cover no-repeat;
+  background-color: rgba(17, 17, 17, 0.5); /* Dark overlay */
+  background-blend-mode: overlay;
+  min-height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.service-box {
+  max-width: 300px;
+  padding: 25px;
+  text-align: center;
+  color: var(--light-bg); /* Using dark background color for text for contrast */
+  background: linear-gradient(145deg, var(--primary-lite), var(--primary)); /* Updated gradient for depth using primary colors */
+  border: 1px solid var(--neon-blue); /* Neon blue border for a futuristic look */
+  border-radius: 12px; /* Softer rounded corners */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5), 0 0 15px var(--neon-green); /* Neon pink glow for depth */
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+/* Hover Effect */
+.service-box:hover {
+  transform: translateY(-8px) scale(1.05); /* Subtle lift and scale */
+  background-color: var(--primary); /* Slightly darker on hover using primary color */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6), 0 0 20px var(--neon-blue); /* Enhanced blue glow and depth */
+}
+
+/* Optional Headline Styling */
+.service-box .headline {
+  font-size: 1.4rem;
+  color: var(--neon-green); /* Neon pink accent color for the headline */
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-shadow: 0 0 8px var(--neon-green); /* Neon pink subtle glow */
+}
+
+/* Description Text */
+.service-box p {
+  font-size: 1rem;
+  color: var(--light-text-color); /* Softer light background color for text readability */
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+
+/* Pricing packages located on the maintenance page */
+/* ================================= 
+| Promo Div and Toggle Animation 
+================================= */
+.promo-div,
+.toggle-promo {
+  display: none; /* Initially hidden */
+}
+
+.promo-txt {
+  display: block;
+}
+
+/* Enhanced Promo Animation */
+@keyframes promo-ele {
+  0% {
+    transform: translateX(100vw) scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(10px) scale(1.05); /* Bounce effect */
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* ================================= 
+| Promo Page Background and Layout
+================================= */
+.promo-page {
+  background: radial-gradient(circle at center, var(--primary-lite), var(--primary)); /* Updated with color variables */
+  color: var(--light-bg); /* Updated for better readability */
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Promo Heading with Futuristic Styling */
+.promo-heading {
+  background-color: rgba(245, 245, 220, 0.9);
+  color: var(--neon-green); /* Neon pink for a vibrant look */
+  text-align: center;
+  padding: 1.5em;
+  border-bottom: 5px ridge var(--neon-blue); /* Neon blue ridge for emphasis */
+  box-shadow: 0 0 20px var(--neon-blue); /* Neon blue glow */
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: pulseGlow 1.5s infinite alternate; /* Subtle glowing animation */
+}
+
+@keyframes pulseGlow {
+  from {
+    box-shadow: 0 0 15px var(--neon-green);
+  }
+  to {
+    box-shadow: 0 0 25px var(--neon-green); /* Consistent neon pink glow */
+  }
+}
+
+/* Promo Intro Section */
+.promo-intro {
+  background-color: var(--primary); /* Dark primary background */
+  padding: 50px 0;
+  min-height: 250px;
+  display: grid;
+  place-content: center;
+  border-bottom: 1px solid var(--neon-green); /* Neon pink solid border */
+  box-shadow: 0 0 15px var(--neon-green); /* Neon pink shadow for depth */
+}
+
+.promo-intro div {
+  max-width: 1300px;
+  margin: auto;
+  color: var(--neon-blue); /* Neon blue text for contrast */
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* ================================= 
+| Promo Container and Feature Grid 
+================================= */
+.promo-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+  justify-content: center;
+  padding: 50px;
+}
+.feature-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Feature Boxes with Glowing Borders and Hover Animation */
+.feature {
+  border: 2px solid var(--neon-blue); /* Neon blue border for initial state */
+  padding: 30px;
+  text-align: center;
+  flex-basis: 250px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1); /* Light background for contrast */
+  color: var(--light-bg); /* Updated for better readability */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Subtle initial shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-10px) scale(1.05); /* Lifts and enlarges on hover */
+  background-color: rgba(255, 255, 255, 0.15); /* Slightly darker on hover */
+  box-shadow: 0 0 25px var(--neon-green); /* Intensified neon pink glow on hover */
+  border-color: var(--neon-green); /* Neon pink border on hover for added vibrancy */
+}
+
+.feature h4 {
+  margin-top: 10px;
+  font-size: 1.3rem;
+  color: var(--neon-green); /* Neon pink for headings for a vibrant look */
+  font-weight: bold;
+  text-shadow: 0 0 8px var(--neon-blue); /* Neon blue glow for text */
+}
+
+.feature p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--light-bg); /* Light background color text for readability */
+  margin-top: 10px;
+}
+
+
+/* ================================= 
+| Media Queries for Responsive Design
+================================= */
+@media (max-width: 768px) {
+  .promo-intro div {
+    font-size: 1rem;
+    padding: 20px; /* Reduced padding for smaller screens */
+  }
+
+  .promo-container {
+    padding: 30px; /* Slightly reduced padding for a tighter layout */
+  }
+
+  .feature {
+    flex-basis: 100%; /* Stack feature boxes on smaller screens */
+    padding: 20px; /* Reduced padding to conserve space */
+    margin: 10px 0; /* Added margin for better separation between features */
+    border: 2px solid var(--neon-blue); /* Ensures visibility of the border on smaller screens */
+    box-shadow: 0 0 10px var(--neon-green); /* Slightly reduced shadow intensity for a cleaner look */
+  }
+}
+
+/* ================================= 
+| Package Container Styling
+================================= */
+.package {
+  width: 350px;
+  min-height: 350px;
+  border-radius: 12px;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--primary-lite), /* Dark, semi-transparent navy */
+    var(--primary), /* Deep blue with transparency */
+    var(--neon-cyan) /* Light neon cyan for a futuristic glow */
+  );
+  box-shadow: 0 0 15px var(--neon-blue); /* Soft outer neon blue glow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Header with Futuristic Accent */
+.package-header {
+  background-color: var(--neon-green);
+  color: var(--light-bg);
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.package-header p {
+  margin: 0;
+}
+
+/* Alternative Plan Section */
+.alternative-plan {
+  background-color: var(--primary-lite); /* Secondary color for alternatives */
+  color: var(--light-bg);
+  text-align: center;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.package span {
+  font-weight: 900;
+  color: var(--neon-green); /* Highlighted neon pink accent color */
+}
+
+/* Package Heading Styling */
+.package h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: var(--neon-green);
+  text-shadow: 0 0 8px var(--neon-blue); /* Neon blue glow effect */
+}
+
+/* List of Package Features */
+.package ul {
+  list-style: none;
+  padding: 15px;
+  border: 1px solid rgba(152, 152, 152, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+}
+
+.package li:not(:last-child) {
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(152, 152, 152, 0.5);
+  padding-bottom: 5px;
+}
+
+/* Hover Effect for Package */
+.package:hover {
+  transform: scale(1.08); /* Slight enlargement on hover */
+  box-shadow: 0 10px 30px var(--neon-green), 0 0 20px var(--neon-blue); /* Elevated neon glow effect */
+  background-color: rgba(255, 255, 255, 0.95);
+}
+/* ================================= 
+| Package Container Styling
+================================= */
+.package {
+  width: 350px;
+  min-height: 350px;
+  border-radius: 12px;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--primary-lite), /* Dark, semi-transparent navy */
+    var(--primary), /* Deep blue with transparency */
+    var(--neon-cyan) /* Light neon cyan for a futuristic glow */
+  );
+  box-shadow: 0 0 15px var(--neon-blue); /* Soft outer neon blue glow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Header with Futuristic Accent */
+.package-header {
+  background-color: var(--neon-green);
+  color: var(--light-bg);
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.package-header p {
+  margin: 0;
+}
+
+/* Alternative Plan Section */
+.alternative-plan {
+  background-color: var(--primary-lite); /* Secondary color for alternatives */
+  color: var(--light-bg);
+  text-align: center;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.package span {
+  font-weight: 900;
+  color: var(--neon-green); /* Highlighted neon pink accent color */
+}
+
+/* Package Heading Styling */
+.package h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: var(--neon-green);
+  text-shadow: 0 0 8px var(--neon-blue); /* Neon blue glow effect */
+}
+
+/* List of Package Features */
+.package ul {
+  list-style: none;
+  padding: 15px;
+  border: 1px solid rgba(152, 152, 152, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+}
+
+.package li:not(:last-child) {
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(152, 152, 152, 0.5);
+  padding-bottom: 5px;
+}
+
+/* Hover Effect for Package */
+.package:hover {
+  transform: scale(1.08); /* Slight enlargement on hover */
+  box-shadow: 0 10px 30px var(--neon-green), 0 0 20px var(--neon-blue); /* Elevated neon glow effect */
+  background-color: rgba(255, 255, 255, 0.95);
+}
+/* Portfolio blocks */
+.portfolio {
+  background-image: linear-gradient(to bottom right, var(--primary), var(--neon-purple), var(--neon-green));
+  min-height: 60vh;
+  padding: var(--section-padding);
+}
+
+
+.portfolio h3 {
+  color: var(--neon-green); /* Using neon pink for a vivid heading color */
+  font-size: 1.5rem; /* Slightly larger for emphasis */
+}
+
+.portfolio-inner,
+.blog-page-inner,
+.business-inner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+  max-width: 90%;
+  padding: var(--section-padding);
+  margin: auto;
+}
+
+.portfolio-item,
+.service-item {
+  padding: 5px;
+  border-radius: var(--radius);
+  transition: 0.3s ease-in-out; /* Smooth transitions for hover effects */
+  background-color: var(--primary-lite); 
+  overflow: auto;
+  min-width: 300px;
+  max-width: 600px;
+  flex-grow: 1;
+  container-type: inline-size; /* Ensuring container type is correctly specified for layout */
+  text-align: center;
+}
+
+
+.portfolio-item img,
+.service-item img {
+  max-width: 280px;
+  height: auto;
+  margin: 5px auto;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.portfolio-item a,
+.service-item a {
+  color: var(--neon-blue); /* Neon blue for links */
+}
+
+.portfolio-item strong,
+.service-item strong {
+  color: var(--light-bg); /* Light background color for text for better contrast */
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.portfolio-item:hover,
+.service-item:hover {
+  box-shadow: 0 8px 15px var(--neon-blue); /* Neon blue hover shadow effect */
+  background-color: var(--primary-lite); /* Lighten on hover */
+}
+
+@container (inline-size > 500px) {
+  .portfolio-item-inner,
+  .service-item-inner {
+    display: grid;
+    gap: 0.8rem;
+    grid-template-areas:
+      "h h h h"
+      "i i i rt"
+      "i i i rt";
+  }
+
+  /* Image */
+  .portfolio-item .i,
+  .service-item .i {
+    grid-area: i;
+    align-self: center;
+  }
+
+  /* Header or title */
+  .portfolio-item-inner .h,
+  .service-item .h {
+    grid-area: h;
+    font-size: 1.5rem;
+    color: var(--primary-accent); /* Accent color for titles */
+  }
+
+  /* Description and button */
+  .portfolio-item-inner .rt,
+  .service-item .rt {
+    grid-area: rt;
+    border-left: 1px dotted var(--primary-accent); /* Accent color for border */
+    padding: 5px;
+    align-self: center;
+  }
+}
+
+/* Home page slider with testimonials */
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.testimonial-slider-session {
+  position: relative;
+  min-height: 500px;
+  display: grid;
+  place-items: center;
+  background-color: rgba(13, 13, 43, 0.85); /* Slightly adjusted transparency for a deeper contrast */
+  box-shadow: 0 4px 10px var(--neon-blue); /* Neon blue for soft shadow effect */
+  color: var(--light-bg); /* Light background text color for better visibility */
+}
+
+.testimonial-slide-item {
+  position: relative;
+  padding: 30px 10px !important;
+  margin: 10px auto;
+  background-color: rgba(255, 255, 255, 0.9); /* Light background with higher transparency */
+  border: 1px solid var(--neon-green); /* Neon pink subtle border */
+  border-radius: 5px;
+  text-align: center;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+}
+
+.testimonial-slide-item .author {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--neon-green); /* Neon pink accent color for author text */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.8); /* Slightly darker background for better visibility */
+  border-radius: 50%; /* Circular shape maintained */
+  padding: 10px; /* Adequate padding for easier interaction */
+}
+
+
+/* Testimonial grid area */
+.testimonial {
+  background: linear-gradient(135deg, #0d0d2b 0%, #1a1f2c 50%, #00ccff 100%);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 4px;
+}
+
+
+.testimonial-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--neon-blue); /* Neon blue for text to add a vibrant touch */
+}
+
+.testimonial-author {
+  font-size: 16px;
+  color: var(--primary); /* Neon pink for author to highlight their name */
+  text-align: right;
+  margin-top: 10px;
+  font-style: italic;
+}
+.testimonial-container {
+  background: linear-gradient(to top right, #1a1f2c 0%, #0d0d2b 50%, #24243e 100%);
+}
+@media (min-width: 50em) {
+  .testimonial-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "a b b f"
+      "a g g j"
+      "e k k k"
+      "l l l d"
+      "n n n d"
+      "i i c c"
+      "o o o q"
+      "m m p p"
+      "h h p p";
+  }
+}
+
+/* large screens */
+@media (min-width: 70em) {
+  .testimonial-container {
+    max-width: 90%;
+    margin: 30px auto;
+    padding: var(--section-padding);
+    display: grid;
+    gap: 1.8rem;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas:
+      "a a b b g g f e"
+      "l l l j k k k k"
+      "l l l j n n d d"
+      "i i c c n n o o"
+      "i i c c h h o o"
+      "p p p p m m q q";
+  }
+}
+
+
+
+/* April Bielefeldt*/
+.testimonial-container div.testimonial:nth-child(1) {
+  grid-area: a;
+}
+/* Brittany Lindsay */
+.testimonial-container div.testimonial:nth-child(2) {
+  grid-area: b;
+}
+/* Jakaila Scaife */
+.testimonial-container div.testimonial:nth-child(3) {
+  grid-area: c;
+}
+/* Char Ross*/
+.testimonial-container div.testimonial:nth-child(4) {
+  grid-area: d;
+}
+/* Curtis Burns */
+.testimonial-container div.testimonial:nth-child(5) {
+  grid-area: e;
+}
+/* Gary Capps */
+.testimonial-container div.testimonial:nth-child(6) {
+  grid-area: f;
+}
+/* Casey Peavey */
+.testimonial-container div.testimonial:nth-child(7) {
+  grid-area: g;
+}
+/* Alpha Dennison II */
+.testimonial-container div.testimonial:nth-child(8) {
+  grid-area: h;
+}
+/* Ramon Urteaga */
+.testimonial-container div.testimonial:nth-child(9) {
+  grid-area: i;
+}
+/* Dyego Sousa */
+.testimonial-container div.testimonial:nth-child(10) {
+  grid-area: j;
+}
+/*Eugene E. Clapp */
+.testimonial-container div.testimonial:nth-child(11) {
+  grid-area: k;
+}
+/* Mark Cohen */
+.testimonial-container div.testimonial:nth-child(12) {
+  grid-area: l;
+}
+/* Anthony B. */
+.testimonial-container div.testimonial:nth-child(13) {
+  grid-area: m;
+}
+
+/*Tom Thompson */
+.testimonial-container div.testimonial:nth-child(14) {
+  grid-area: n;
+}
+/*Mary Despe*/
+.testimonial-container div.testimonial:nth-child(15) {
+  grid-area: o;
+}
+/*Paul Dusenbery*/
+.testimonial-container div.testimonial:nth-child(16) {
+  grid-area: p;
+}
+/*Jay-ann Ricard*/
+.testimonial-container div.testimonial:nth-child(17) {
+  grid-area: q;
+}
+
+/* blog page */
+.post-card {
+  padding: 10px;
+  border-radius: var(--radius);
+  transition: 0.3s ease-in-out;
+  background-color: rgba(15, 1, 107, 0.8); /* Light grey background, consider making it slightly darker if needed */
+  container-type: inline-size;
+  min-width: 350px;
+  margin-inline: auto;
+  max-width: 800px;
+  flex-grow: 1;
+}
+
+.post-card:hover {
+  box-shadow: 0 8px 16px var(--neon-blue); /* Intensified neon blue shadow on hover for a dynamic effect */
+  background-color: rgba(45, 62, 149, 0.9); /* Lighten background on hover for a subtle interactive response */
+}
+
+/* Inner part of the post card container */
+.post-card-inner h4 {
+  color: var(--neon-green); /* Neon pink accent color for titles to stand out */
+}
+
+.post-card-inner p {
+  font-size: var(--text-size); /* Ensure this variable is defined or replace with a specific value like 1rem */
+  color: var(--text-color); /* Typically, this should be a high-contrast color for readability */
+}
+
+.post-card img {
+  max-width: 200px;
+  margin: 5px auto;
+  border-radius: var(--radius);
+  border: 3px outset var(--neon-blue); /* Neon blue accent border for images */
+}
+
+
+@container (inline-size > 500px) {
+  .post-card-inner p {
+    display: block;
+  }
+
+  .post-card-inner {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-areas:
+      "h h h h"
+      "p p p rt";
+  }
+
+  .post-card-inner #h {
+    grid-area: h;
+  }
+
+  .post-card-inner p {
+    grid-area: p;
+  }
+
+  .post-card-inner #rt {
+    grid-area: rt;
+    border-left: 1px dotted var(--primary-accent);
+    padding: 5px;
+    align-self: center;
+  }
+}
+/* =================================== 
+| The post page with sidebar and the blog page
+==================================== */
+.terminal {
+  margin: 10px 5px;
+  color: #fff !important;
+  background: #313131; /* Dark terminal background */
+  padding: 5px;
+  box-shadow: 0 0 15px var(--border-glow); /* Futuristic shadow */
+  text-align: left;
+  border-radius: 5px;
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 20px auto;
+}
+
+@media (min-width: 60em) {
+  .grid-section {
+    max-width: 1400px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .posts-side-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    background-color: rgba(240, 240, 240, 0.9); /* Light translucent background */
+    padding: var(--block-padding);
+    height: 100vh; /* Fixed height for sidebar */
+    overflow-y: auto;
+    box-shadow: 0 4px 10px var(--border-glow); /* Subtle glow for sidebar */
+  }
+
+  .posts > article {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+}
+/* ================================= 
+Social Media Marketing page
+==================================== */
+.tooltip-icon {
+  color: var(--text-color);
+  background-color: rgba(255, 255, 255, 0.9); /* Light background */
+  cursor: help !important;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 0.8em;
+}
+
+.tooltip-content {
+  display: none;
+  position: absolute;
+  background-color: var(--primary-accent);
+  color: var(--text-color);
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 300px;
+  font-size: 16px;
+  z-index: 1000;
+  margin-top: 5px;
+}
+
+/* Introduction section */
+.social-introduction {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px var(--border-glow); /* Soft glow shadow */
+  color: var(--primary-accent);
+}
+
+.social-introduction p {
+  max-width: 600px;
+}
+
+.social-introduction h4 {
+  color: var(--secondary-accent); /* Accent color */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.social-introduction img {
+  border-radius: 40px;
+  border: 2px groove var(--secondary-accent); /* Accent border */
+}
+
+.social-how-to {
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.social-how-to ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-how-to ul li {
+  background-color: rgba(240, 240, 240, 0.9); /* Light background */
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  color: var(--light-bg);
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-how-to ul li strong {
+  color: var(--primary-accent); /* Bold primary accent */
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .social-how-to {
+    grid-template-columns: 1fr;
+  }
+}
+/* Style the summary element */
+.social-details summary {
+  margin: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: var(--light-bg); /* Light background for the summary */
+  color: var(--text-color); /* White or light text color */
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  outline: none;
+  display: list-item; /* Keep list behavior */
+}
+
+.social-details summary:hover {
+  background-color: var(--primary-accent); /* Darken on hover */
+  color: #fff; /* Keep the text white */
+}
+
+.social-introduction p:last-of-type {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+  .social-introduction {
+    padding: 20px;
+  }
+
+  .social-introduction ul li {
+    font-size: 13px; /* Smaller font for mobile */
+  }
+
+  .social-introduction h3 {
+    font-size: 22px;
+  }
+}
+/* Social Media Pricing */
+
+.social-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  background-color: var(--primary);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px var(--border-glow);
+}
+
+.social-pricing-table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.limited-time {
+  background-color: var(--secondary);
+  color: var(--text-color);
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.limited-time:hover {
+  transform: scale(1.05);
+  background-color: var(--accent);
+  box-shadow: 0 8px 15px rgba(243, 82, 8, 0.4);
+}
+
+.checkmark-list {
+  border-radius: 8px;
+  padding: 10px;
+  background-color: var(--light-bg);
+  list-style: none;
+  text-align: left;
+  color: var(--text-color);
+}
+
+.checkmark-list li {
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.checkmark-list li::before {
+  content: '\2713';
+  color: var(--neon-yellow);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.extra-option {
+  background-color: var(--primary);
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  animation: slideInUpFuturistic 0.8s ease-out, fadeInFuturistic 1s ease-in-out;
+}
+
+@keyframes fadeInFuturistic {
+  0% {
+      opacity: 0;
+      filter: blur(3px);
+  }
+  100% {
+      opacity: 1;
+      filter: blur(0);
+  }
+}
+
+@keyframes slideInUpFuturistic {
+  0% {
+      transform: translateY(20px) scale(0.95);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+  }
+}
+.social-pricing-plan {
+  position: relative;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: var(--primary-lite);
+
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.social-pricing-plan:hover {
+  transform: scale(1.05);
+}
+
+.narrow-section {
+  max-width: 900px;
+  margin: 20px auto;
+  text-align: justify;
+  padding: var(--section-padding); /* Ensure this variable is set for consistent spacing */
+  color: var(--light-bg); /* Light text for better contrast against a dark background */
+  background: linear-gradient(145deg, rgba(13, 13, 43, 0.85), rgba(0, 0, 0, 0.6)); /* Gradient background for added depth */
+  border-radius: var(--radius); /* Smooth corners for a modern look */
+  box-shadow: 0 4px 8px var(--neon-blue); /* Neon blue glow to enhance depth */
+}
+.narrow-section h3 {
+  font-size: 1.8rem; /* Adjust size as needed */
+  color: var(--neon-green); /* Bright color for visibility and theme consistency */
+  text-shadow: 0 2px 4px rgba(196, 196, 196, 0.5); /* Subtle shadow to enhance readability */
+  margin-bottom: 10px; /* Adds space below the header */
+  font-weight: bold; /* Increase weight for emphasis */
+}
+/* ================================= 
+    | The 404 Page |
 ==================================== */
 .page-404 {
-    background-image: linear-gradient(to right, #f06, #9f6);
-  }
-  
-  .error {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    margin: auto;
-    padding: 4em 0;
-    gap: 3rem; /* added a gap between image and links */
-  }
-  
-  .error img {
-    max-width: 50%; /* adjust as needed */
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .site-map-404 {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: var(--block-padding);
-  }
-  
-  .site-map-404 ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .site-map-404 li a {
-    color: var(--primary);
-    text-decoration: none;
-    transition: 300ms ease-in-out;
-    font-weight: 600;
-  }
-  
-  .site-map-404 li a:hover {
-    color: var(--accent);
-    text-decoration: underline;
-  }
-  /* responsive card mode */
-  @container (inline-size > 500px) {
-    .post-card-inner p {
-      display: block;
-    }
-    .post-card-inner {
-      display: grid;
-      gap: 0.5rem;
-      grid-template-areas:
-        "h h h h"
-        "p p p rt";
-    }
-    .post-card-inner #h {
-      grid-area: h;
-    }
-    .post-card-inner p {
-      grid-area: p;
-    }
-    .post-card-inner #rt {
-      grid-area: rt;
-      border-left: 1px dotted var(--accent);
-      padding: 5px;
-      align-self: center;
-    }
-  }
-/* ================================= 
-| The Footer element  |
-==================================== */
+  background-image: linear-gradient(to right, var(--primary-accent), var(--secondary-accent)); /* Futuristic gradient */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-footer {
-    border-top: 3px solid var(--primary);
-    background: linear-gradient(to top, var(--primary), #ccc);
-    color: var(--light-text-color);
-    padding: 60px;
-    text-align: center;
-    font-family: Arial, sans-serif;
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 4em 0;
+  gap: 3rem;
+}
+
+.error img {
+  max-width: 50%; /* Adjust as needed */
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(15, 240, 252, 0.4); /* Futuristic glow shadow */
+}
+
+.site-map-404 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: var(--block-padding);
+}
+
+.site-map-404 ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.site-map-404 li a {
+  color: var(--primary-accent); /* Primary accent color */
+  text-decoration: none;
+  transition: color 300ms ease-in-out, text-shadow 300ms ease-in-out;
+  font-weight: 600;
+}
+
+.site-map-404 li a:hover {
+  color: var(--secondary-accent); /* Hover accent color */
+  text-decoration: underline;
+  text-shadow: 0 0 5px var(--secondary-accent); /* Futuristic glow on hover */
+}
+/* Bottom call-to-action section */
+.bottom-cta {
+  background: var(--gradient-reverse); /* Reversed gradient for dynamic effect */
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 -4px 10px rgba(15, 240, 252, 0.3); /* Subtle top glow */
+}
+
+.bottom-cta p, 
+.bottom-cta h4 {
+  color: var(--text-color); /* Consistent light text color */
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Adds subtle shadow for depth */
+}
+
+
+@media (max-width: 768px) {
+  .cta-button a {
+    font-size: 16px;
+    padding: 12px 25px; /* Adjusted padding for smaller screens */
   }
-  footer a {
-    color: var(--light-text-color);
-    text-decoration: none;
-    margin: 0 10px;
-    transition: color 0.3s;
-  }
-  
-  footer a:hover {
-    color: var(--accent);
-  }
-  
-  .footer-logo {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .footer-sections {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 40px;
-  }
-  
-  .footer-section {
-    text-align: left;
-  }
-  
-  .footer-title {
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-family: var(--title-font);
-    color: var(--text-color);
-  }
-  .copy {
-    margin-top: 20px;
-    text-align: left;
-    color: var(--text-color);
-  }
-  /* ================================= 
-| The back to top button  |
+}
+/* ================================= 
+| The Footer Element |
 ==================================== */
-#myBtn {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    width: fit-content;
-    left: 50%;
-    font-size: 0.8em;
-    z-index: 9999;
-    outline: none;
-    color: var(--primary);
-    background-color: var(--light-bg);
-    padding: 5px 5px 5px 10px;
-  
-    border-radius: 50% 50% 0 0;
-    border: 1px solid var(--accent);
-    border-bottom: none;
-    box-shadow: -2px -2px 15px 4px #363636;
+/* Footer Styling */
+footer {
+  background: var(--gradient);
+  padding: 20px;
+  text-align: center;
+  color: var(--text-color); /* Ensure high contrast for readability */
+  box-shadow: 0 -5px 10px rgba(var(--neon-blue-rgb), 0.3); /* Neon blue soft glow at the top */
+}
+
+.footer-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.footer-title {
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--secondary-accent); /* Neon color for titles to enhance visibility */
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Enhanced text shadow for depth */
+}
+
+footer a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: var(--neon-green); /* Bright neon green on hover for a dynamic effect */
+  text-shadow: 0 0 5px var(--neon-green); /* Neon green glow to highlight on hover */
+}
+
+.copy {
+  font-size: 14px;
+  color: var(--text-color);
+  opacity: 0.85;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .footer-sections {
+    flex-direction: column;
+  }
+}
+
+/* The Back to Top Button Styling */
+.top-btn {
+  display: none; /* Initially hidden */
+  position: fixed;
+  bottom: 120px; 
+  right: 15px;
+  z-index: 9999;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  opacity: 0;
+  transform: scale(1.2);
+  background-color: var(--primary); /* Use a dynamic accent color */
+  border-radius: 50%; /* Perfectly rounded for a modern, sleek look */
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(15, 240, 252, 0.3); /* Subtle glowing effect */
+  animation: appear-in-futuristic 1.5s ease-in-out forwards;
+}
+.top-btn:visible {
+  display: block; /* Make sure button is visible for hover to work */
+  opacity: 1; /* Ensure button is fully opaque */
+}
+.top-btn:hover {
+  transform: scale(1.7); /* Noticeably enlarges on hover for a fun, interactive effect */
+  box-shadow: 0 8px 20px var(--link-hover); /* Brighter and more intense glow on hover */
+}
+
+/* Animation for the 'Back to Top' Button */
+@keyframes appear-in-futuristic {
+  0% {
     opacity: 0;
-    animation: appear-in 1.5s ease-in-out forwards;
+    transform: scale(0.8) translateY(30px) rotate(-20deg); /* Begin with a small size and slight rotation for drama */
+    box-shadow: 0 0 5px rgba(15, 240, 252, 0.1); /* Start with a very faint glow */
   }
-  
-  #myBtn:hover {
-    background-color: var(--primary);
-    color: var(--accent);
+  50% {
+    opacity: 0.5;
+    transform: scale(1.3) translateY(-10px) rotate(10deg); /* Midway pop effect for attention */
+    box-shadow: 0 4px 10px rgba(15, 240, 252, 0.3); /* Increase glow as button becomes more visible */
   }
-  
-  @keyframes appear-in {
-    0% {
-      opacity: 0;
-    }
-  
-    100% {
-      opacity: 1;
-    }
+  100% {
+    opacity: 1;
+    transform: scale(1.2) translateY(0) rotate(0deg); /* Settle into final position with no rotation */
+    box-shadow: 0 6px 15px rgba(15, 240, 252, 0.5); /* Strong glow to ensure visibility */
   }
-/* mid size screens or tablets */
-@media (min-width: 900px) {
-  
-    .custom-section,
-    .custom-section-reverse {
-      padding: var(--section-padding);
-    }
-    .custom-section {
-      align-items: center;
-      gap: 1.5rem;
-      grid-template-areas:
-        "title title title title"
-        "img img disc disc";
-    }
-  
-    .custom-section-reverse {
-      display: grid;
-      max-width: 1300px;
-      gap: 1rem;
-      grid-template-areas:
-        "title title title title "
-        "disc disc img img";
-    }
-    /* home page styling */
-    .home-section-maintenance {
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center left;
-        min-height: 550px;
-        display: grid;
-        place-items: center;
-        justify-content: end;
-      }
-      .maintenance-content {
-        background-color: #d7dadbe2;
-      }
-      .home-section-maintenance-inner {
-        max-width: 900px;
-        padding-left: 5em;
-        text-align: left;
-        color: var(--text-color);
-      }
-      .home-section-seo {
-        background-size: contain;
-        background-color: #ffffff5f;
-        background-repeat: no-repeat;
-        background-position: center right;
-        min-height: 500px;
-        display: grid;
-        place-items: center;
-        justify-content: start;
-      }
-      .seo-content {
-        padding: var(--block-padding);
-        background-color: #d7dadbe2;
-      }
-      .home-section-seo-inner {
-        max-width: 900px;
-        text-align: left;
-        color: var(--text-color);
-      }
-      .testimonial-container {
-        display: grid;
-        grid-template-columns: repeat(minmax(300px, 1fr));
-        grid-auto-rows: minmax(min-content, auto);
-    
-        grid-gap: 10px;
-      }
-      
-      /* testimonial area update 4/15/24 */
-    .testimonial-container h4 {
-      font-size: var(--title-size);
-      color: var(--primary);
-    }
-    .testimonial-container h3 {
-      color: var(--accent);
-    }
-    .testimonial-container p {
-      font-size: 0.9em;
-    }
-    .testimonial {
-      background-color: beige;
-      border: 1px groove #000;
-      border-radius: 0.25rem;
-      padding: 15px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      border-left: 5px solid var(--primary);
-      grid-row: span 1;
-    
-    }
-    .testimonial.large {
-      grid-row: span 6;
-      grid-column: span 3;
-    }
-    .testimonial.mid {
-      grid-column: span 2;
-      grid-row: span 1;
-    }
-    /* blog page larger screens  */ 
-    .grid-section {
-        max-width: 1400px;
-        margin: auto;
-        grid-template-columns: 1fr 1fr;
-      }
-      .posts-side-bar {
-        position: sticky;
-        top: 0;
-        z-index: 1030;
-        background-color: var(--light-bg);
-        padding: var(--block-padding);
-        height: 100vh; 
-        overflow-y: auto;
-        box-shadow: var(--shadow);
-      }
-      .posts > article {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1rem;
-      }
-      footer {
-        border-top: 3px solid var(--primary);
-        background: linear-gradient(to top, var(--primary), #ccc);
-        color: var(--light-text-color);
-        padding: 20px;
-        text-align: center;
-        font-family: Arial, sans-serif;
-      }
-  }
+}
+
 
 

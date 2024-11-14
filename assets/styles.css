@@ -665,6 +665,7 @@ details[open] summary ~ * {
   top: 0;
   box-shadow: 0 0 15px var(--primary-lite);
   border: 1px solid var(--accent);
+  background-color: var(--light-bg);
 }
 .nav-menu ul {
   list-style: none;
@@ -1798,65 +1799,7 @@ Social Media marketing page
     margin-top: 40px;
 }
 
-.social-pricing-plan {
-    background-color: var(--primary-lite);
-    padding: 30px; /* More padding for better readability */
-    border-radius: 15px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
-    cursor: default; 
-}
 
-.social-pricing-plan:hover {
-    transform: translateY(-15px); /* Higher elevation on hover */
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.9); /* Deeper shadow on hover */
-}
-.social-container h3 {
-  color: var(--primary);
-  text-align: center;
-  font-size: var(--hero-title);
-  font-family: var(--title-font);
-}
-.social-pricing-plan h4 {
-    color: var(--light-text-color);
-    font-size: 26px; /* Increased font size */
-    letter-spacing: 1px; /* Slight letter spacing for elegance */
-    transition: color 0.4s ease-in-out;
-    font-family: var(--title-font);
-}
-
-.social-pricing-plan:hover h4 {
-    color: var(--accent);
-}
-
-.social-pricing-plan p {
-    color: #fff;
-    margin: 15px 0;
-    font-size: 17px; /* Slightly increased font size */
-    opacity: 0.85;
-    transition: opacity 0.4s ease-in-out, color 0.4s ease-in-out;
-}
-.social-pricing-plan strong {
-  color: gold;
-}
-.social-pricing-plan:hover p {
-    opacity: 1;
-    /* color: var(--accent); */
-}
-
-.social-price {
-    font-size: 1.4em; /* Larger font for prices */
-    font-weight: bold;
-    margin-bottom: 25px;
-    transition: transform 0.4s ease-in-out;
-}
-
-.social-pricing-plan:hover .social-price {
-    transform: scale(1.1); /* Slight bounce effect on hover */
-}
 .limited-time {
   background-color: #ff4500; /* Bold, eye-catching color */
   color: white; /* Contrast text */

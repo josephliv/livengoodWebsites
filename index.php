@@ -17,17 +17,17 @@ $hero_bg_class = "partner";
 $social_links = '
 <div class="social-links">
 <a href="https://www.facebook.com/joesdigitalservices">
-     <img width="30" class="icon" src="/assets/imgs/icons/png-files/facebook-filled.png" alt="Joseph Livengood on facebook" title="Facebook Page">
+     <img class="icon" src="/assets/imgs/icons/facebook.png" alt="Joseph Livengood on facebook" title="Facebook Page">
  </a>
 
  <a href="https://www.linkedin.com/in/joseph-livengood-a403b7130/">
-     <img width="30" class="icon" src="/assets/imgs/icons/png-files/linkedin-original.png" alt="Joseph Livengood on LinkedIn" title="LinkedIn">
+     <img class="icon" src="assets/imgs/icons/linkedin.png" alt="Joseph Livengood on LinkedIn" title="LinkedIn">
  </a>
- <a href="https://www.youtube.com/channel/UCAgEWX1qEHetRThckh8GZGw">
-     <img width="30" class="icon" src="/assets/imgs/icons/png-files/youtube.png" alt="Joseph Livengood on Youtube" title="Youtube">
+ <a href="https://www.instagram.com/joesdigitalservices/">
+     <img class="icon" src="assets/imgs/icons/instagram.png" alt="Joseph Livengood on Youtube" title="instagram">
  </a>
  <a href="https://twitter.com/creativejoe101">
-     <img width="30" class="icon" src="/assets/imgs/icons/png-files/twitter-filled.png" alt="Joseph Livengood on Twitter" title="Twitter">
+     <img class="icon" src="assets/imgs/icons/x.png" alt="Joseph Livengood on Twitter" title="Twitter">
  </a>
 </div>';
 // For page rendering

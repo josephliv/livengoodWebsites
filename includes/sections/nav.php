@@ -1,5 +1,5 @@
 <header id="top">
-  <div class="top-bar gradient d-none d-md-flex">
+  <div class="top-bar d-none d-md-flex">
     <div class="phone">
       <a href="tel:17049979007">
         <img width="30" src="/assets/imgs/icons/png-files/phone.png" alt="Phone: ">&nbsp; 1 (704) 997-9007</a>
@@ -15,7 +15,7 @@
   <div class="logo-nav-container">
     <div class="logo-container">
       <a href="/">
-        <img src="/assets/imgs/logo-blue.webp" alt="Livengood Websites">
+        <img src="/assets/imgs/Livengood-p2.webp" alt="Livengood Websites">
       </a>
     </div>
     <nav class="nav-menu">

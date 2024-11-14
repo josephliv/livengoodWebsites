@@ -8,8 +8,10 @@
     </p>
     <p>
         👉 Don’t miss out—your brand’s potential is waiting!</p>
-    <div class="cta-button mb-0">
+        <div class="d-flex justify-content-center">
+    <div class="cta-button mb-0 " >
         <a href="https://calendly.com/livengoodwebsites/strategy-session">Book Your Free Strategy Session</a>
+    </div>
     </div>
 </div>
 

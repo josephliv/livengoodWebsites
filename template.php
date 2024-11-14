@@ -18,11 +18,11 @@
     <meta property="og:title" content="<?= $main_title; ?>">
     <meta property="og:description" content="<?= $meta_description; ?>">
     <meta property="og:image" content="/assets/imgs/post-images/<?= $post_image; ?>">
-    <meta property="og:url" content="https://yourwebsite.com/<?= $page ?>">
+    <meta property="og:url" content="https://livengoodwebsites.com/<?= $page ?>">
     <meta property="og:type" content="article">
     <!-- my own styling -->
     <link rel="stylesheet" href="/assets/reset.css" />
-    <link rel="stylesheet" href="/assets/styles.css?l=<?= time(); ?>" />
+    <link rel="stylesheet" href="/assets/styles2.css?l=<?= time(); ?>" />
     <?php if ($page == "/partner" || $page == "/partner/") {
         // Include layout.css on all pages except home
         echo '<link rel="stylesheet" href="includes/partner/main.css" />';
@@ -36,7 +36,7 @@
         <?= $site_title; ?> | Livengood Websites, North Carolina
     </title>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9K3RMVMFJP"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4MSKEW1D4N"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -45,7 +45,7 @@
         }
         gtag('js', new Date());
 
-        gtag('config', 'G-9K3RMVMFJP');
+        gtag('config', 'G-4MSKEW1D4N');
     </script>
     <!-- for the back to top button -->
     <script src="/assets/script.js" defer></script>
@@ -225,7 +225,7 @@
     <!-- =================================
             | The back to top button  |
         ====================================  -->
-    <a href="#" onclick="topFunction()" id="myBtn" title="Go to top">
+    <a href="#" onclick="topFunction()" id="myBtn" class="top-btn" title="Go to top">
       ⬆️
     </a>
     <script>

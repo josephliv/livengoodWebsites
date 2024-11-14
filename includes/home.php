@@ -22,7 +22,7 @@
   <?php include 'includes/sections/testimonialsSlider.php'; ?>
 </section>
 <section class="page" data-aos="fade-right">
-  <div class="custom-section">
+  <div class="custom-section neon-border">
     <img id="img" src="/assets/imgs/single-page.png" alt="highly converting splash page">
     <div class="py-3" data-aos="zoom-in">
       <h4 id="title">Imagine a website that works for you 24/7</h4>

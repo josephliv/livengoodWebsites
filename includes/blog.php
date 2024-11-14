@@ -1,6 +1,6 @@
 <section id="blog-posts" class="blog-page">
     <div class="blog-page-inner">
-        <div class="post-card">
+        <!-- <div class="post-card neon-border">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/worlds-longest-css">
@@ -16,8 +16,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="post-card">
+        </div> -->
+        <div class="post-card neon-border">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/gemini-vs-chatgtp">
@@ -36,7 +36,7 @@
                 </div>
             </div>
         </div>
-        <div class="post-card">
+        <div class="post-card neon-border">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/desert-mirage">
@@ -55,7 +55,7 @@
                 </div>
             </div>
         </div>
-        <div class="post-card">
+        <div class="post-card neon-border">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/garden-vs-website">
@@ -72,7 +72,7 @@
                 </div>
             </div>
         </div>
-        <div class="post-card">
+        <div class="post-card neon-border">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/effective-website-maintenance">
@@ -89,7 +89,7 @@
                 </div>
             </div>
         </div>
-        <div class="post-card">
+        <div class="post-card neon-border">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/Building-the-Digital-Landscape">
@@ -106,7 +106,7 @@
                 </div>
             </div>
         </div>
-        <div class="post-card">
+        <div class="post-card neon-border">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/menu-development">
@@ -123,7 +123,7 @@
                 </div>
             </div>
         </div>
-        <div class="post-card">
+        <div class="post-card neon-border">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/website-maintenance">
@@ -140,7 +140,7 @@
                 </div>
             </div>
         </div>
-        <div class="post-card">
+        <div class="post-card neon-border">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/google-analytics">
@@ -157,7 +157,7 @@
                 </div>
             </div>
         </div>
-        <div class="post-card">
+        <div class="post-card neon-border">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/seo-strategies/">
@@ -174,7 +174,7 @@
                 </div>
             </div>
         </div>
-        <div class="post-card">
+        <div class="post-card neon-border">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/tips-to-rank-on-google/">
@@ -193,7 +193,7 @@
                 </div>
             </div>
         </div>
-        <div class="post-card">
+        <div class="post-card neon-border">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/How-To-Install-WordPress-Plugins/">
@@ -213,7 +213,7 @@
             </div>
         </div>
 
-        <div class="post-card">
+        <div class="post-card neon-border">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/How-To-Fix-Skype-White-Screen/">
@@ -232,7 +232,7 @@
             </div>
         </div>
 
-        <div class="post-card">
+        <div class="post-card neon-border">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/How-To-Move-A-Wordpress-Site/">
@@ -250,7 +250,7 @@
             </div>
         </div>
 
-        <div class="post-card">
+        <div class="post-card neon-border">
             <div class="post-card-inner">
                 <div id="h">
                     <a href="/Importing-Contacts-from-gmail-to-Thunderbird/">

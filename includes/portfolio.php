@@ -1,6 +1,6 @@
 
-  <div class="intro-section bg py-4">
-    <div>
+  <div class="narrow-section py-4">
+    <div class="">
       <p>
         These are recent sites that I was given the honor to build for previous clients. The images below are from a screenshot and may be different from the website itself due to updates and changes as requested by the client.
       </p>
@@ -12,9 +12,9 @@
   </div>
 
 
-<section class="portfolio">
+<section class="">
   <div class="portfolio-inner">
-  <div class="portfolio-item custom-section-item">
+  <div class="portfolio-item neon-border">
       <div class="portfolio-item-inner">
         <div>
         <strong>Custom coded</strong>
@@ -41,7 +41,7 @@
         <iframe style="width: 90%; margin: auto; height: 90%" src="https://nonprofitfoundersclub.com/" frameborder="0"></iframe>
       </div>
     </div>
-  <div class="portfolio-item custom-section-item">
+  <div class="portfolio-item neon-border">
       <div class="portfolio-item-inner">
         <div>
         <img id="action-img" class="popup-img i" src="assets/imgs/portfolio/Phoenix-rising-travel.png" alt="https://phoenixrisingtravel.org/" title="click to view full website in a popup">
@@ -68,7 +68,7 @@
       </div>
     </div>
 
-  <div class="portfolio-item custom-section-item">
+  <div class="portfolio-item neon-border">
       <div class="portfolio-item-inner">
         <div>
         <img id="action-img" class="popup-img i" src="assets/imgs/portfolio/ahtdesigns.webp" alt="https://ahtdesigns.com/" title="click to view full website in a popup">
@@ -94,7 +94,7 @@
         <iframe style="width: 90%; margin: auto; height: 90%" src="https://ahtdesigns.com/" frameborder="0"></iframe>
       </div>
     </div>
-  <div class="portfolio-item custom-section-item">
+  <div class="portfolio-item neon-border">
       <div class="portfolio-item-inner">
         <div>
       <strong>Custom coded</strong>
@@ -122,7 +122,7 @@
       </div>
     </div>
 
-    <div class="portfolio-item custom-section-item">
+    <div class="portfolio-item neon-border">
       <div class="portfolio-item-inner">
         <div>
       <strong>Custom coded</strong>
@@ -152,7 +152,7 @@
     </div>
 
     <!-- sand hills karate club -->
-    <div class="portfolio-item custom-section-item">
+    <div class="portfolio-item neon-border">
       <div class="portfolio-item-inner">
         <div>
       <strong>Custom coded</strong>
@@ -179,7 +179,7 @@
     </div>
 
     <!-- patent law site -->
-    <div class="portfolio-item custom-section-item">
+    <div class="portfolio-item neon-border">
       <div class="portfolio-item-inner">
         <img id="action-img" class="popup-img i" src="assets/imgs/portfolio/patentXL.webp" alt="https://patentxl.com/" title="click to view full website in a popup">
 
@@ -204,7 +204,7 @@
     </div>
 
 <!-- The church of the living God -->
-    <div class="portfolio-item custom-section-item">
+    <div class="portfolio-item neon-border">
       <div class="portfolio-item-inner">
         <img id="cotlg-img" class="popup-img i" src="assets/imgs/portfolio/cotlg.png" alt="https://cotlgstatesville.com/" title="click to view full website in a popup">
 
@@ -228,7 +228,7 @@
       </div>
     </div>
 <!-- Ambition life royalty -->
-<div class="portfolio-item custom-section-item">
+<div class="portfolio-item neon-border">
       <div class="portfolio-item-inner">
         <img id="alr-img" class="popup-img i" src="assets/imgs/portfolio/liveYoungDieRich.webp" alt="https://liveyoungdierichapparel.store/" title="click to view full website in a popup">
         <h3 class="h">Ambition Life Royalty (ALR)</h3>
@@ -257,7 +257,7 @@
     //************************* */
     ?>
 
-    <div class="portfolio-item custom-section-item">
+    <div class="portfolio-item neon-border">
       <div class="portfolio-item-inner">
         <img id="cohen-img" class="popup-img i" src="assets/imgs/portfolio/cohenslaw.png" alt="https://cohenslaw.com" title="click to view full website in a popup">
         <h3 class="h">Mark Cohen </h3>
@@ -280,7 +280,7 @@
     </div>
 
 
-    <div class="portfolio-item custom-section-item">
+    <div class="portfolio-item neon-border">
       <div class="portfolio-item-inner">
         <div>
       <strong>Custom coded</strong>
@@ -312,7 +312,7 @@
     //************************* */
     ?>
 
-    <div class="portfolio-item custom-section-item">
+    <div class="portfolio-item neon-border">
       <div class="portfolio-item-inner">
         <div>
       <strong>Custom coded</strong>
@@ -337,7 +337,7 @@
       </div>
     </div>
    <!-- mediation splash page -->
-    <div class="portfolio-item custom-section-item">
+    <div class="portfolio-item neon-border">
       <div class="portfolio-item-inner">
         <div>
       <strong>Custom coded</strong>
@@ -368,7 +368,7 @@
     //************************* */
     ?>
 
-    <div class="portfolio-item custom-section-item">
+    <div class="portfolio-item neon-border">
       <div class="portfolio-item-inner">
         <div>
       <strong>Custom coded</strong>
@@ -393,7 +393,7 @@
       </div>
     </div>
           <!-- the pcp usa -->
-          <div class="portfolio-item custom-section-item">
+          <div class="portfolio-item neon-border">
       <div class="portfolio-item-inner">
         <div>
         <img id="easement-img" class="popup-img i" src="assets/imgs/portfolio/pcp-usa.png" alt="https://thepcpusa.com" title="click to view full website in a popup">
@@ -418,7 +418,7 @@
     </div>
 
     <!-- Butler county pcp usa  -->
-    <div class="portfolio-item custom-section-item">
+    <div class="portfolio-item neon-border">
       <div class="portfolio-item-inner">
         <div>
         <img id="easement-img" class="popup-img i" src="assets/imgs/portfolio/butler-pcp-usa.png" alt="https://butler.thepcpusa.com" title="click to view full website in a popup">

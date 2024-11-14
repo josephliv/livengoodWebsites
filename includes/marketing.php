@@ -37,7 +37,7 @@
     <h3>Act Fast! These Exclusive Offers Won't Last Long!</h3>
     <div class="social-pricing-table">
       <!-- Starter Social Boost Plan -->
-      <div class="social-pricing-plan">
+      <div class="social-pricing-plan neon-border">
         <h4>Starter Social Boost</h4>
         <p>Setup Fee: $150</p>
         <p>Price: <strong>$375/month</strong></p>
@@ -52,7 +52,7 @@
       </div>
 
       <!-- Pro Content Growth Plan -->
-      <div class="social-pricing-plan">
+      <div class="social-pricing-plan neon-border">
         <h4>Pro Content Growth</h4>
         <p>Setup Fee: $235</p>
         <p>Price: <strong>$575/month</strong></p>
@@ -68,7 +68,7 @@
       </div>
 
       <!-- Elite Engagement Power Plan -->
-      <div class="social-pricing-plan">
+      <div class="social-pricing-plan neon-border">
         <h4>Elite Engagement Power</h4>
         <p>Setup Fee: $325</p>
         <p>Price:<strong> $725/month</strong></p>
