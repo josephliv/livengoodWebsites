@@ -11,9 +11,9 @@ $externalLinks = 'target="_blank" rel="nofollow noopener"';
 $meta_description = "";
 $meta_keywords = "";
 $post_image = "";
-
+$hero_main_bg = "";
 // to pull in the background image for pages when needed.
-$hero_bg_class = "partner";
+$hero_main_img = "partner";
 $social_links = '
 <div class="social-links">
 <a href="https://www.facebook.com/joesdigitalservices">
@@ -24,10 +24,10 @@ $social_links = '
      <img class="icon" src="assets/imgs/icons/linkedin.png" alt="Joseph Livengood on LinkedIn" title="LinkedIn">
  </a>
  <a href="https://www.instagram.com/joesdigitalservices/">
-     <img class="icon" src="assets/imgs/icons/instagram.png" alt="Joseph Livengood on Youtube" title="instagram">
+     <img class="icon" src="assets/imgs/icons/instagram.png" alt="Joseph Livengood on Instagram" title="instagram">
  </a>
  <a href="https://twitter.com/creativejoe101">
-     <img class="icon" src="assets/imgs/icons/x.png" alt="Joseph Livengood on Twitter" title="Twitter">
+     <img class="icon" src="assets/imgs/icons/x.png" alt="Joseph Livengood on X" title="X">
  </a>
 </div>';
 // For page rendering
@@ -36,7 +36,7 @@ switch ($page) {
     case "/":
     case "/index":
         $site_title = "Custom Web Design Services in North Carolina";
-        $main_title = "Transform Your Online Presence and Drive More Clients to Your Business";
+        $main_title = "Stop Losing Customers to Your Competitors' Websites";
         $meta_description = "Boost your online presence with the leading SEO company in North Carolina. We offer SEO, website design and marketing services for businesses of all sizes.";
         $meta_keywords = "north carolina website design,
         web design companies in north carolina, social media marketing,
@@ -47,7 +47,7 @@ switch ($page) {
         seo davie county
         ";
         $intro = "Learn how to convert your website visitors into loyal customers with actionable tips and marketing.";
-        //$hero_bg_class = "";
+        //$hero_main_img = "";
         break;
         // Google was showing a 404 with this url, the testimonials are on the home page
     case "/partner":
@@ -55,7 +55,7 @@ switch ($page) {
         $site_title = "Partner with Livengood Websites";
         $main_title = "Become Our Partner"; 
         $intro = "Join Us in Building Success Together"; 
-        $hero_bg_class = "partner";   
+        $hero_main_img = "partner";   
         break;
     case "/meet-joe":
     case "/meet-joe/":
@@ -65,7 +65,7 @@ switch ($page) {
         $site_title = "Meet Joe Livengood";
         $main_title = "Meet Joe Livengood";
         $intro = "Independent Web Designer - Joe's Story";
-        $hero_bg_class = "joe";
+        $hero_main_img = "joe";
         $meta_keywords = "
         Joe - Web Developer in North Carolina,
         Independent Web Designer - Joe's Story,
@@ -99,11 +99,11 @@ switch ($page) {
         Integrated payment solutions for restaurants,
         Mobile ordering for restaurants,
         Online food ordering platform";
-        $hero_bg_class = "food-bg";
+        $hero_main_img = "food-bg";
         break;
         // Food app details
     case "/food-app-details":
-        $hero_bg_class = "food-bg-post";
+        $hero_main_img = "food-bg-post";
         $site_title = "Food app details";
         $main_title = "Showcasing Our Digital Dining Experience";
         $intro = "A Glimpse into the Future of Online Ordering";
@@ -114,7 +114,7 @@ switch ($page) {
         $main_title = "Request Services & Quote";
         $site_title = "Request Services";
         $intro = "Please fill out this quick form to better assist you";
-        $hero_bg_class = "food-bg";
+        $hero_main_img = "food-bg";
         break;
         // a request received page 
     case "/request-received":
@@ -130,7 +130,8 @@ switch ($page) {
         $meta_description = "Sites built and maintained by Livengood Websites";
         $meta_keywords = "Joseph's portfolio, Joseph's previous work, website portfolio, Joseph Livengood reviews";
         $js_path = 'src="/assets/portfolio.js"';
-        $hero_bg_class = "portfolio-bg";
+        $hero_main_img = "portfolio-hero-bg";
+        $hero_main_bg = "";
         break;
 
     case "/blog":
@@ -138,9 +139,10 @@ switch ($page) {
     case "/feed/":
     case "/feed":
         $site_title = "Blog";
-        $main_title = "Blog Page";
-        $intro = "Welcome to my Blog.";
-        $hero_bg_class = "blog-bg";
+        $main_title = "Explore Insights and Ideas";
+        $intro = "Welcome to the hub of creativity and knowledge.";
+        $hero_main_img = "blog-bg";
+        $hero_main_bg = "blog-hero-bg";
         $canonical = "/blog";
         break;
     case "/chat-bot":
@@ -160,7 +162,8 @@ switch ($page) {
         $main_title = "North Carolina Website Design";
         $site_title = "Web Design Services";
         $intro = "Elevate Your Online Presence";
-        $hero_bg_class = "web-design";
+        $hero_main_img = "web-design";
+        $hero_main_bg = "webdesign";
         break;
     case "/business-boosters":
     case "/business-boosters/":
@@ -168,7 +171,7 @@ switch ($page) {
         $meta_description = "These are great business boosters to help you get or save money.";
         $main_title = "Give your Business that boost it needs for Growth";
         $intro = "Our innovative solutions that help your business succeed.";
-        $hero_bg_class = "business-bg";
+        $hero_main_img = "business-bg";
         break;
     case "/website-maintenance-services":
     case "/website-maintenance-services/":
@@ -176,14 +179,15 @@ switch ($page) {
     case "/maintenance/":
     case "/site-care":
     case "/site-care/":
-        $main_title = "Reliable Website Maintenance Services";
-        $site_title = "Reliable Website Maintenance Services";
+        $main_title = "Website Maintenance That Actually Works";
+        $site_title = "Website Maintenance That Actually Works";
         $meta_keywords = "
         website maintenance, web care packages, all-inclusive web services, affordable website support, Livengood Websites, comprehensive website care, website security, performance optimization, SEO monitoring, content updates, emergency web support, professional web maintenance
         ";
         $meta_description = "Explore Livengood Websites' All-inclusive Website Maintenance Packages. Offering seamless, comprehensive, and affordable care for your online presence. Get top-notch website security, performance optimization, SEO, content updates, and emergency support. Perfect for businesses seeking reliable web maintenance.";
-        $intro = "Let us handle the maintenance so you can focus on growing your business.";
-        $hero_bg_class = "site-care-bg";
+        $intro = "We keep your site running. You keep crushing business goals.";
+        $hero_main_img = "site-care-bg";
+        $hero_main_bg = "website-maintenance";
         break;
         // Blog post pages
         case "/worlds-longest-css": 
@@ -200,14 +204,14 @@ switch ($page) {
             $site_title = "Gemini vs. ChatGPT: A Comprehensive Comparison of AI Chatbots"; 
             $meta_keywords = "bard, gemini, bard google, ai, bard ai, chat gtp, gemini vs chatgpt, Gemini AI, ChatGPT, AI chatbot comparison, Language models, Google AI, OpenAI, Gemini free vs. paid, ChatGPT free vs. paid, AI features, AI pricing, Text generation, Multi-modal AI, Conversational AI"; 
             $meta_description = "Explore the key differences between Google's Gemini and OpenAI's ChatGPT, including features, pricing, and which AI chatbot is right for you.";
-            $hero_bg_class = "chat-bots";
+            $hero_main_img = "chat-bots";
             break;
         case "/desert-mirage":
         case "/desert-mirage/": 
             $main_title = "The Desert Mirage";
             $site_title = "The Desert Mirage";
             $intro = "An unoptimized site can make conversions as elusive as a mirage in the desert.";
-            $hero_bg_class = "desert-mirage";
+            $hero_main_img = "desert-mirage";
         break;
         case "/garden-vs-website":
         case "/garden-vs-website/": 
@@ -228,13 +232,13 @@ switch ($page) {
                 ,User Engagement
                 ,Site Performance"; 
                 $meta_description = "Explore the art of 'Digital Gardening' and unlock the secrets to a thriving online presence.";
-                $hero_bg_class = "garden-bg"; 
+                $hero_main_img = "garden-bg"; 
                 break;
         case "/effective-website-maintenance":
         case "/effective-website-maintenance/":
            $main_title = "10 Essential tips to help you maintain a website that shines";
            $intro = "Tips for Effective Website Maintenance";
-           $hero_bg_class = "site-care-bg"; 
+           $hero_main_img = "site-care-bg"; 
            $meta_keywords = "website maintenance, web development, SEO, user experience, security, responsive design";
            $meta_description = "Learn 10 essential tips for maintaining your website effectively, whether you use custom HTML and CSS, Elementor Pro for WordPress, or any other platform.";
            $canonical = "https://livengoodwebsites.com/effective-website-maintenance";
@@ -257,7 +261,7 @@ switch ($page) {
         $site_title = "Web Development Insights in North Carolina";
         $main_title = "Building the Digital Landscape";
         $intro = "Web Development Insights in North Carolina";
-        $hero_bg_class = "digital-bg";
+        $hero_main_img = "digital-bg";
         break;
     case "/menu-development":
     case "/menu-development/":
@@ -272,7 +276,7 @@ switch ($page) {
         $main_title = "Boosting your restaurant's success";
         $meta_description = "Transform your restaurant's menu into a powerhouse for success. Discover essential strategies for menu mastery, pricing, and more. Elevate your dining experience today!";
         $intro = "Essential Strategies for Restaurant Owners";
-        $hero_bg_class = "food-bg";
+        $hero_main_img = "food-bg";
         break;
     case "/website-maintenance":
     case "/website-maintenance/":
@@ -333,7 +337,8 @@ switch ($page) {
         $intro = "Hear from Satisfied Clients";
         $meta_description = "Explore testimonials from happy clients of Livengood Websites. Discover how our services have benefited businesses like yours.";
         $meta_keywords = "Web design testimonials, client reviews, customer feedback, website development success stories";
-        $hero_bg_class = "testimonial-hero-bg";
+        $hero_main_img = "testimonial-hero-bg";
+        $hero_main_bg = "testimonials";
         break;
     case "/feed/":
     case "/comments/feed/":
@@ -344,7 +349,8 @@ switch ($page) {
     case "/contact":
         $intro = "We would love to hear from you.";
         $main_title = "Get in touch";
-        $hero_bg_class = "contact-bg";
+        $hero_main_img = "contact-bg";
+        $hero_main_bg = "contact";
         break;
         // promo offer
     case "/pricing":
@@ -354,7 +360,7 @@ switch ($page) {
         $meta_description = "Get pricing for your website and we will work within your budget. Get online fast within the next week for under $500!";
         $site_title = "Beyond the Price Tag: Strategic Partnerships";
         $intro = "Website Design & Revamp Services";
-        $hero_bg_class = "pay";
+        $hero_main_img = "pay";
         break;
     case "/marketing":
     case "/marketing/":
@@ -363,19 +369,21 @@ switch ($page) {
         $intro = "Limited-Time Discounts to Elevate Your Brand!";
         $meta_description = "Affordable social media marketing subscriptions to grow your business. Choose from our Basic, Advanced, or More Advanced plans with AI-generated content and videos.";
         $meta_keywords = "social media marketing, marketing subscription, AI-generated content, social media posts, business marketing, content creation, AI images, AI videos, marketing plans";
-        $hero_bg_class="marketing-video";
-        
+        $hero_main_img="marketing-video";
+        $hero_main_bg = "marketing";
         break;
     case "/pay":
             $site_title = "Make a payment"; 
             $main_title = "Make a payment";
-            $hero_bg_class = "pay";
+            $hero_main_img = "pay";
+            $hero_main_bg = "pay-bg";
             break;
         // Page not found
     default:
         $main_title = "404";
         $intro = "OOOps that page doesn't exist!";
-        $hero_bg_class = "pageError";
+        $hero_main_img = "pageError";
+        $hero_main_bg = "error";
 };
 if ($page === "/site-map.xml" || $page === "/sitemap.xml") {
     include 'sitemap.xml';

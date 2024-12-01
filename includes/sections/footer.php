@@ -1,41 +1,67 @@
 <!-- Book a Strategy Session CTA above the footer -->
-<div class="bottom-cta">
-    <h4>🚀 Ready to elevate your brand? Don’t just sit there—make a move! 
-    </h4>
-    <p>Looks like you've explored our services and saw how we can transform your business!</p>
-    <p>
-    So... Before you go, <strong style="color: gold;">let me sweeten the deal</strong>. Book a FREE strategy session with me, and let’s discuss how we can specifically tailor our services to meet your unique needs!
-    </p>
-    <p>
-        👉 Don’t miss out—your brand’s potential is waiting!</p>
-        <div class="d-flex justify-content-center">
-    <div class="cta-button mb-0 " >
-        <a href="https://calendly.com/livengoodwebsites/strategy-session">Book Your Free Strategy Session</a>
+<section class="bottom-cta">
+    <div class="cta-content">
+        <h3 class="cta-title">Ready to level up your online game?</h3>
+        <p class="cta-text">Grab a free strategy session. Get a custom roadmap. Start seeing results.</p>
+
+        <div class="cta-button-wrapper">
+            <a href="https://calendly.com/livengoodwebsites/strategy-session" class="cta-button">
+                Claim Your Strategy Session
+                <span class="arrow-icon">→</span>
+            </a>
+            <span class="spots-left">Limited spots available this month</span>
+        </div>
     </div>
-    </div>
-</div>
+</section>
 
 
 <footer>
-    <div class="footer-sections">
-        <div class="footer-logo">
-            <a href="/"><img src="/assets/imgs/logo-blue.webp" alt="Livengood websites | North Carolina website designer"></a>
-        </div>
-        <div class="footer-section">
-            <div class="footer-title">Reach Out</div>
-            📞 <a href="tel:17049979007">1 (704) 997-9007</a><br>
-            📧 <a href="mailto:info@joes.business">info@joes.business</a>
+    <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+            <a href="/" class="footer-logo">
+                <img src="/assets/imgs/logo-blue.webp" alt="Livengood websites | North Carolina website designer" width="180" height="auto">
+            </a>
+            <p class="brand-tagline">Making NC businesses look good online since 2020</p>
         </div>
 
-        <div class="footer-section">
-            <div class="footer-title">Connect with Us</div>
-            <?= $social_links; ?>
+        <!-- Contact Column -->
+        <div class="footer-contact">
+            <h4 class="footer-title">Let's Talk Business</h4>
+            <div class="contact-footer-data">
+
+                <a href="tel:17049979007">
+                    <img width="30" src="/assets/imgs/icons/png-files/phone.png" alt="Phone: ">&nbsp; 1 (704) 997-9007</a>
+
+
+                <a href="mailto:info@joes.business">
+                    <img width="30" src="/assets/imgs/icons/png-files/envelope.png" alt="Email: ">&nbsp;
+                    info@joes.business</a>
+
+            </div>
+        </div>
+
+        <!-- Social Column -->
+        <div class="footer-social">
+            <h4 class="footer-title">Follow Our Journey</h4>
+            <div class="social-links">
+                <?= $social_links; ?>
+            </div>
         </div>
     </div>
-    <div class="copy">© <?= date('Y'); ?> Livengood Websites. All Rights Reserved.</div>
+
+    <div class="footer-bottom">
+        <div class="copy">
+            © <?= date('Y'); ?> Livengood Websites. All Rights Reserved.
+        </div>
+        <nav class="legal-links">
+            <a href="/privacy">Privacy</a>
+            <a href="/terms">Terms</a>
+        </nav>
+    </div>
 </footer>
 
-<!-- Start of Tawk.to Script 
+<!-- Start of Tawk.to Script -->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
@@ -46,5 +72,5 @@ s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
-</script>-->
+</script>
 <!--End of Tawk.to Script-->

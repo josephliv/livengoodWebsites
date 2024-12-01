@@ -1,20 +1,20 @@
 <div class="home-intro-section" >
-  <h4 data-aos="zoom-in" data-aos-duration="1000">Services that we can offer</h4>
+  <h3 data-aos="zoom-in" data-aos-duration="1000">Services that we can offer</h3>
 </div>
 <div class="services-container">
     <a href="/web-design" class="service-box" id="website-design">
         <div class="icon">&#128395;</div> <!-- Unicode for pencil (Website Design) -->
-        <h3 class="headline">Innovative Website Design</h3>
-        <p>Create a stunning first impression with a beautifully designed website that captures your brand's essence.</p>
+        <h4 class="headline">Innovative Website Design</h4>
+        <p>Revenue-Focused Websites That Pay For Themselves in 90 Days.</p>
     </a>
     <a href="/website-maintenance-services" class="service-box" id="maintenance">
         <div class="icon">&#128295;</div> <!-- Unicode for wrench (Maintenance) -->
-        <h3 class="headline">Reliable Maintenance</h3>
+        <h4 class="headline">Reliable Maintenance</h4>
         <p>Ensure your website performs smoothly with our comprehensive maintenance services.</p>
     </a>
     <a href="/marketing" class="service-box" id="social-media-marketing">
         <div class="icon">&#128247;</div> <!-- Unicode for camera (Social Media Marketing) -->
-        <h3 class="headline">Dynamic Social Media Marketing</h3>
+        <h4 class="headline">Dynamic Social Media Marketing</h4>
         <p>Expand your reach and engage effectively with your audience through tailored social media strategies.</p>
     </a>
 </div>

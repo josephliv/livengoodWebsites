@@ -1,0 +1,98 @@
+<nav class="nav-menu">
+      <ul>
+        <li><a class="<?php if ($page == '/') echo 'active-nav'; ?>" href="/" href="/">Home</a></li>
+        <li><a class="<?php if ($page == '/meet-joe' || $page == '/meet-joe/') echo 'active-nav'; ?>" href="/meet-joe">Meet Joe</a></li>
+        <li>
+              <a class="<?php if ($page == '/website-maintenance-services' || $page == '/website-maintenance-services/') echo 'active-nav'; ?>" href="/website-maintenance-services">maintenance</a>
+            </li>
+            <li>
+              <a class="<?php if ($page == '/web-design' || $page == '/web-design/') echo 'active-nav'; ?>" href="/web-design">web design</a>
+            </li>
+            <li>
+              <a class="<?php if ($page == '/marketing' || $page == '/marketing/') echo 'active-nav'; ?>" href="/marketing">Social Media Marketing</a>
+            </li>
+        <li>
+          <a class="<?php if ($page == '/portfolio' || $page == '/portfolio/') echo 'active-nav'; ?>" href="/portfolio">portfolio</a>
+        </li>
+        <li>
+          <a class="<?php if ($page == '/blog' || $page == '/blog/') echo 'active-nav'; ?>" href="/blog">blog</a>
+        </li>
+        
+        <li>
+          <a class="<?php if ($page == '/contact' || $page == '/contact/') echo 'active-nav'; ?>" href="/contact">Contact</a>
+        </li>
+      </ul>
+    </nav> 
+
+    Styles 
+    /* Navigation Menu Styles */
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* Added gap for balanced spacing */
+  margin: 0;
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+/* Gradient Text Effect and Animation */
+.nav-menu a {
+  color: var(--neon-blue); /* Basic color, fallback for browsers not supporting gradient text */
+  background-image: linear-gradient(45deg, var(--neon-green), var(--neon-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Specific to WebKit for transparent text with gradient */
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 5px;
+  filter: brightness(1);
+  display: inline-block; /* Ensures the background-clip text effect works correctly */
+}
+
+.nav-menu a:hover {
+  filter: brightness(1.5); /* Enhance brightness on hover for a glowing effect */
+  transform: scale(1.1); /* Slightly larger scale on hover */
+  animation: neonGlow 1.5s infinite alternate;
+}
+
+/* Animation for Neon Glow Effect */
+@keyframes neonGlow {
+  from {
+    text-shadow: 0 0 5px var(--neon-blue), 0 0 10px var(--neon-blue);
+  }
+  to {
+    text-shadow: 0 0 20px var(--neon-green), 0 0 30px var(--neon-green);
+  }
+}
+
+/* Hover Underline Effect */
+.nav-menu a::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--secondary); /* Secondary color for the underline */
+  transition: width 0.4s ease, left 0.4s ease;
+}
+
+.nav-menu a:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+/* Active Navigation Link */
+.nav-menu a.active-nav {
+  opacity: 0.9;
+  background-image: linear-gradient(to right, var(--neon-purple), var(--neon-green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px var(--neon-purple), 0 0 20px var(--neon-green); /* Vibrant text shadow for active link */
+}

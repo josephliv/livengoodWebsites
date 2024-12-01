@@ -1,6 +1,6 @@
 <!-- Conditional for homepage background video -->
 
-<div class="main-hero">
+<div class="main-hero <?= $hero_main_bg; ?>">
   <?php include 'nav.php'; ?>
   <div class="hero-content">
     <!-- Hero Content -->
@@ -19,10 +19,10 @@
         <h2><?= $intro; ?></h2>
         <hr>
         <div class="cta-button">
-          <a target="_blank" href="https://calendly.com/livengoodwebsites/strategy-session">Book A strategy Session</a>
+          <a target="_blank" href="https://calendly.com/livengoodwebsites/strategy-session">Let's Talk Strategy</a>
         </div>
       </div>
-      <div class="d-none d-lg-block hero-img <?= $hero_bg_class; ?>">
+      <div class="d-none d-lg-block hero-img <?= $hero_main_img; ?>">
       <iframe id="marketing-video" src="https://www.youtube.com/embed/BhkYFjLHxfI?autoplay=1&controls=1&mute=1&playlist=BhkYFjLHxfI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         <button class="<?php if ($page != '/marketing') echo 'd-none'; ?>"
     id="play-button" 

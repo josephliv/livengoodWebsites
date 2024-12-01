@@ -23,6 +23,7 @@
     <!-- my own styling -->
     <link rel="stylesheet" href="/assets/reset.css" />
     <link rel="stylesheet" href="/assets/styles2.css?l=<?= time(); ?>" />
+    <link rel="stylesheet" href="/assets/hero-bg.css?l=<?= time(); ?>" />
     <?php if ($page == "/partner" || $page == "/partner/") {
         // Include layout.css on all pages except home
         echo '<link rel="stylesheet" href="includes/partner/main.css" />';
@@ -52,7 +53,7 @@
 </head>
 
 <body>
-    <img src="https://www.sociamonials.com/tracking.php?t=l&tid=29522" width="1" height="1">
+    <img src="https://www.sociamonials.com/tracking.php?t=l&tid=29522" width="1" height="1" alt="social media engagement">
 
     <!-- =================================
       | Top header with logo and nav links and hero |
@@ -228,6 +229,19 @@
     <a href="#" onclick="topFunction()" id="myBtn" class="top-btn" title="Go to top">
       ⬆️
     </a>
+    <script type="text/javascript">
+      (
+        function() {
+          var sbSiteSecret = "b9b64d2a-b837-4bee-8a4d-04b3541c388e";
+          window.sitebehaviourTrackingSecret = sbSiteSecret;
+          var scriptElement = document.createElement('script');
+          scriptElement.async = true;
+          scriptElement.id = "site-behaviour-script-v2";
+          scriptElement.src = "https://sitebehaviour-cdn.fra1.cdn.digitaloceanspaces.com/index.min.js?sitebehaviour-secret=" + sbSiteSecret;
+          document.head.appendChild(scriptElement); 
+        }
+      )()
+</script>
     <script>
         function loadAOS() {
             if (window.innerWidth > 768) {
