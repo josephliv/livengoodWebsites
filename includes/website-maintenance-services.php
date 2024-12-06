@@ -2,17 +2,17 @@
     <div class="container">
         <div class="mission-content" data-aos="fade-up">
             <div class="mission-header">
-                <h3 class="cyber-glitch" data-text="Digital Infrastructure Protocol">Digital Infrastructure Protocol</h3>
+                <h3 class="cyber-glitch" data-text="Digital Infrastructure Protocol">Website Care That Works While You Sleep</h3>
                 <div class="cyber-line"></div>
             </div>
             
             <div class="mission-body">
-                <p class="lead-text">Your digital storefront never sleeps. Neither does our maintenance system.</p>
+                <p class="lead-text">Your business runs 24/7. Your website maintenance should too.</p>
                 
                 <div class="value-prop">
-                    <p>Zero contracts. Zero hassle. One flat fee for total digital dominance.</p>
-                    <a href="#pricing" class="cyber-button">
-                        <span>View Packages</span>
+                    <p>Zero contracts. Zero hassle. One simple price for complete peace of mind.</p>
+                    <a href="#packages" class="cyber-button">
+                        <span>View Plans</span>
                         <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -22,10 +22,10 @@
 </section>
 
 
-<section class="promo-page" id="pricing">
+<section class="promo-page">
 <div class="promo-intro">
     <div class="glitch-container">
-        <h2 class="glitch" data-text="System Maintenance Protocol">System Maintenance Protocol</h2>
+        <h2 class="glitch" data-text="What You Get:">What You Get:</h2>
         <div class="scan-line"></div>
     </div>
     <div class="intro-content">
@@ -40,8 +40,8 @@
             <i class="fas fa-sync-alt"></i>
           </div>
           <div class="feature-content">
-            <h4>System Updates</h4>
-            <p>Automated core updates maintain peak performance and security protocols</p>
+            <h4>✓ System Updates</h4>
+            <p>We keep your site fresh and secure with automatic & manual software updates</p>
             <div class="feature-glow"></div>
           </div>
         </div>
@@ -51,8 +51,8 @@
             <i class="fas fa-shield-alt"></i>
           </div>
           <div class="feature-content">
-            <h4>Advanced Security</h4>
-            <p>Real-time threat detection with quantum-grade firewall protection</p>
+            <h4>✓ Rock-Solid Security</h4>
+            <p>Real-time protection against hackers and threats</p>
             <div class="feature-glow"></div>
           </div>
         </div>
@@ -62,8 +62,8 @@
             <i class="fas fa-database"></i>
           </div>
           <div class="feature-content">
-            <h4>Neural Backups</h4>
-            <p>Continuous data preservation with redundant secure storage</p>
+            <h4>✓ Smart Backups</h4>
+            <p>Your site is automatically backed up daily, stored safely off-site</p>
             <div class="feature-glow"></div>
           </div>
         </div>
@@ -73,8 +73,8 @@
             <i class="fas fa-satellite"></i>
           </div>
           <div class="feature-content">
-            <h4>Quantum Monitoring</h4>
-            <p>24/7 AI-powered uptime surveillance and response systems</p>
+            <h4>✓ Always Watching</h4>
+            <p>24/7 monitoring to catch issues before they become problems</p>
             <div class="feature-glow"></div>
           </div>
         </div>
@@ -84,8 +84,8 @@
             <i class="fas fa-headset"></i>
           </div>
           <div class="feature-content">
-            <h4>Elite Support</h4>
-            <p>Direct access to senior tech specialists for rapid resolution</p>
+            <h4>✓ Direct Access to Me</h4>
+            <p>Skip the middleman - you'll work directly with me, the owner and tech expert</p>
             <div class="feature-glow"></div>
           </div>
         </div>
@@ -93,9 +93,9 @@
     </div>
   </div>
   <div class="price-intro">
-    <h5 class="neo-text">Choose your power level. We'll handle the upgrades.</h5>
+    <h5 class="neo-text">Pick your plan. We'll handle everything else.</h5>
 </div>
-  <div class="promo-container">
+  <div class="promo-container" id="packages">
     <!-- Basic Package -->
     <div class="package" data-tier="basic">
       <div class="package-content">

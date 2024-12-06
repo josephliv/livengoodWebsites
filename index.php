@@ -62,21 +62,13 @@ switch ($page) {
         // 404 detected from /about so let's add it here
     case "/about":
     case "/about/":
-        $site_title = "Meet Joe Livengood";
+        $site_title = "Joe Livengood | North Carolina Web Designer & Developer";
         $main_title = "Meet Joe Livengood";
-        $intro = "Independent Web Designer - Joe's Story";
+        $intro = "Building Digital Solutions with Southern Hospitality";
         $hero_main_img = "joe";
+        $meta_description = "Joe Livengood | North Carolina-based web designer creating custom, effective websites for local businesses. Clear communication, timely delivery, and results-driven solutions.";
         $meta_keywords = "
-        Joe - Web Developer in North Carolina,
-        Independent Web Designer - Joe's Story,
-        Joe's Journey: From Coding Novice to Expert Web Developer,
-        North Carolina's Trusted Web Designer: Get to Know Joe,
-        Meet Joe: Crafting Websites and Digital Solutions in North Carolina,
-        Behind the Code: Joe's Web Design Philosophy,
-        Personalized Web Development: Joe's Approach,
-        Joe: Merging Creativity and Code for Unique Web Solutions,
-        The Man Behind North Carolina's Best Websites,
-        Web Development with a Personal Touch: Dive into Joe's Portfolio";
+        Joe Livengood, North Carolina web designer, website development NC, Charlotte web designer, custom website design, small business web developer, local web design services, affordable web design NC";
         $canonical = "/about";
         break;
     case "/online-food-ordering-app-development":
@@ -369,7 +361,7 @@ switch ($page) {
         $intro = "Limited-Time Discounts to Elevate Your Brand!";
         $meta_description = "Affordable social media marketing subscriptions to grow your business. Choose from our Basic, Advanced, or More Advanced plans with AI-generated content and videos.";
         $meta_keywords = "social media marketing, marketing subscription, AI-generated content, social media posts, business marketing, content creation, AI images, AI videos, marketing plans";
-        $hero_main_img="marketing-video";
+        
         $hero_main_bg = "marketing";
         break;
     case "/pay":

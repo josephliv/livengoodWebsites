@@ -37,7 +37,7 @@
     <h3>Act Fast! These Exclusive Offers Won't Last Long!</h3>
     <div class="social-pricing-table">
       <!-- Starter Social Boost Plan -->
-      <div class="social-pricing-plan neon-border">
+      <div class="social-pricing-plan ">
         <h4>Starter Social Boost</h4>
         <p>Setup Fee: $150</p>
         <p>Price: <strong>$375/month</strong></p>

@@ -14,14 +14,15 @@
     <!-- Social Links -->
     <?= $social_links; ?>
   </div>
+  <div class="mobile-btn-container">
+    <button class="mobile-menu-button" aria-label="Menu">&#9776;</button>
+  </div>
   <div class="logo-nav-container">
     <div class="logo-container">
       <a href="/">
         <img src="/assets/imgs/Livengood-p2.webp" alt="Livengood Websites">
       </a>
     </div>
-    <!-- Mobile Menu Button -->
-<button class="mobile-menu-button">&#9776;</button>
     <nav class="nav-menu">
       <ul>
         <li><a class="<?php if ($page == '/') echo 'active-nav'; ?>" href="/" href="/">Home</a></li>
@@ -62,61 +63,61 @@
 <!-- Mobile Menu Sidebar -->
 
 
-  <nav class="sidebar-menu mobile-menu-sidebar">
-    <ul>
-      <li><a class="<?php if ($page == '/') echo 'active-nav'; ?>" href="/" href="/">Home</a></li>
-      <li><a class="<?php if ($page == '/meet-joe' || $page == '/meet-joe/') echo 'active-nav'; ?>" href="/meet-joe">meet joe </a></li>
+<nav class="sidebar-menu mobile-menu-sidebar">
+  <ul>
+    <li><a class="<?php if ($page == '/') echo 'active-nav'; ?>" href="/" href="/">Home</a></li>
+    <li><a class="<?php if ($page == '/meet-joe' || $page == '/meet-joe/') echo 'active-nav'; ?>" href="/meet-joe">meet joe </a></li>
 
 
-      <li>
-        <a class="<?php if ($page == '/website-maintenance-services' || $page == '/website-maintenance-services/') echo 'active-nav'; ?>" href="/website-maintenance-services">maintenance</a>
-      </li>
+    <li>
+      <a class="<?php if ($page == '/website-maintenance-services' || $page == '/website-maintenance-services/') echo 'active-nav'; ?>" href="/website-maintenance-services">maintenance</a>
+    </li>
 
-      <li>
-        <a class="<?php if ($page == '/marketing' || $page == '/marketing/') echo 'active-nav'; ?>" href="/marketing">marketing</a>
-      </li>
-      <li>
-        <a class="<?php if ($page == '/web-design' || $page == '/web-design/') echo 'active-nav'; ?>" href="/web-design">web design</a>
-      </li>
-      <li>
-        <a class="<?php if ($page == '/portfolio' || $page == '/portfolio/') echo 'active-nav'; ?>" href="/portfolio">portfolio</a>
-      </li>
-      <li>
-        <a class="<?php if ($page == '/blog' || $page == '/blog/') echo 'active-nav'; ?>" href="/blog">blog</a>
-      </li>
+    <li>
+      <a class="<?php if ($page == '/marketing' || $page == '/marketing/') echo 'active-nav'; ?>" href="/marketing">marketing</a>
+    </li>
+    <li>
+      <a class="<?php if ($page == '/web-design' || $page == '/web-design/') echo 'active-nav'; ?>" href="/web-design">web design</a>
+    </li>
+    <li>
+      <a class="<?php if ($page == '/portfolio' || $page == '/portfolio/') echo 'active-nav'; ?>" href="/portfolio">portfolio</a>
+    </li>
+    <li>
+      <a class="<?php if ($page == '/blog' || $page == '/blog/') echo 'active-nav'; ?>" href="/blog">blog</a>
+    </li>
 
-      <li>
-        <a class="<?php if ($page == '/contact' || $page == '/contact/') echo 'active-nav'; ?>" href="/contact">Contact</a>
-      </li>
-    </ul>
+    <li>
+      <a class="<?php if ($page == '/contact' || $page == '/contact/') echo 'active-nav'; ?>" href="/contact">Contact</a>
+    </li>
+  </ul>
 
-  </nav>
+</nav>
 
 <script>
   const menuButton = document.querySelector('.mobile-menu-button');
-const sidebar = document.querySelector('.sidebar-menu');
+  const sidebar = document.querySelector('.sidebar-menu');
 
-function toggleMenu() {
+  function toggleMenu() {
     sidebar.classList.toggle('active');
     document.body.classList.toggle('menu-open');
-}
+  }
 
-menuButton.addEventListener('click', toggleMenu);
+  menuButton.addEventListener('click', toggleMenu);
 
-// Close menu when clicking anywhere on the blurred overlay
-document.addEventListener('click', (e) => {
+  // Close menu when clicking anywhere on the blurred overlay
+  document.addEventListener('click', (e) => {
     if (
-        document.body.classList.contains('menu-open') && 
-        !sidebar.contains(e.target) && 
-        !menuButton.contains(e.target)
+      document.body.classList.contains('menu-open') &&
+      !sidebar.contains(e.target) &&
+      !menuButton.contains(e.target)
     ) {
-        toggleMenu();
+      toggleMenu();
     }
-});
+  });
 
-// Close menu when clicking links
-const menuLinks = document.querySelectorAll('.sidebar-menu a');
-menuLinks.forEach(link => {
+  // Close menu when clicking links
+  const menuLinks = document.querySelectorAll('.sidebar-menu a');
+  menuLinks.forEach(link => {
     link.addEventListener('click', toggleMenu);
-});
+  });
 </script>

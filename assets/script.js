@@ -1,13 +1,5 @@
-const mobileMenuButton = document.querySelector(".mobile-menu-button");
 
-const mobileMenuSidebar = document.querySelector(".mobile-menu-sidebar");
 
-// This is to open the entire menu on mobile devices
-const openMenu = () => {
-  mobileMenuSidebar.classList.toggle("is-active");
-};
-
-mobileMenuButton.addEventListener("click", openMenu);
 
 // Back to the top button
 //Get the button
@@ -47,5 +39,3 @@ for (let element of detailsElements) {
     }
   });
 }
-
-

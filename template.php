@@ -11,6 +11,7 @@
     <meta property="og:url" content="https://livengoodwebsites.com/" />
     <meta property="og:site_name" content="Custom Web Design & SEO Services in Salisbury NC and surrounding areas." />
     <meta name="keywords" content="<?= $meta_keywords; ?>" />
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 
     <link rel="shortlink" href="https://livengoodwebsites.com/" />
     <link rel="stylesheet" href="assets/BS/bootstrap-5.1.3-dist/css/bootstrap.min.css">
@@ -29,6 +30,7 @@
         echo '<link rel="stylesheet" href="includes/partner/main.css" />';
     } ?>
 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="/assets/imgs/favicon.ico">
     <link rel="canonical" href="https://livengoodwebsites.com<?= $canonical; ?>" />
@@ -227,9 +229,9 @@
             | The back to top button  |
         ====================================  -->
     <a href="#" onclick="topFunction()" id="myBtn" class="top-btn" title="Go to top">
-      ⬆️
+    <i class="fas fa-angle-up"></i>
     </a>
-    <script type="text/javascript">
+   <script type="text/javascript">
       (
         function() {
           var sbSiteSecret = "b9b64d2a-b837-4bee-8a4d-04b3541c388e";
@@ -241,32 +243,7 @@
           document.head.appendChild(scriptElement); 
         }
       )()
-</script>
-    <script>
-        function loadAOS() {
-            if (window.innerWidth > 768) {
-                var aosCSS = document.createElement('link');
-                aosCSS.href = 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css';
-                aosCSS.rel = 'stylesheet';
-                document.head.appendChild(aosCSS);
-
-                var aosJS = document.createElement('script');
-                aosJS.src = 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js';
-                document.head.appendChild(aosJS);
-
-                aosJS.onload = function() {
-                    AOS.init({
-                        offset: 200, // Change offset to trigger animations sooner or later (pixels)
-                        duration: 600, // Duration of animation (milliseconds)
-                        easing: 'ease-in-out', // Animation easing function
-                        once: true, // Whether animation should happen only once or every time you scroll up and down
-                        // More options...
-                    });
-                };
-            }
-        }
-        window.onload = loadAOS;
-    </script>
+</script> 
     <!-- Bootstrap Bundle with Popper -->
     <script src="assets/BS/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
 
