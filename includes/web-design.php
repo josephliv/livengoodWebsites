@@ -1,5 +1,5 @@
-<div class="site-care-hero">
-  <div class="narrow-section">
+<div class="introduction">
+ 
     <p><em>Creating beautiful, easy-to-use, and SEO-friendly websites in North Carolina that reflect your brand.</em></p>
 
     <h3>Introduction</h3>
@@ -8,7 +8,7 @@
     Today, your website is often the first place potential customers interact with your business. A well-designed website makes a great first impression, builds trust, and shows your credibility.</p>
     <p> As an independent web designer in North Carolina, I create custom websites that engage and convert visitors. Unlike many others, I work alone, so every site is personally crafted by me, ensuring a unique and dedicated approach to your project.
     </p>
-  </div>
+
 </div>
 
 <div class="page">  

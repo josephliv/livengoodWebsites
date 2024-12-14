@@ -44,7 +44,8 @@
 
   /* Padding */
   --block-padding: 8px 15px; /* Comfortable padding */
-  --section-padding: 5vh 15px; /* Section spacing */
+  --section-padding: clamp(3vh, 5vw + 10px, 8vh) 15px;
+
 
   /* Gradient Backgrounds */
   --gradient: linear-gradient(135deg, #0b0b24, #141438); /* Dark gradient */
@@ -365,13 +366,13 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   padding: 15px 30px;
-  background: rgba(13, 14, 24, 0.85); /* Slightly transparent */
+  background: rgba(13, 14, 24, 0.85); 
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 92, 0, 0.1);
-  position: sticky; /* Ensures stickiness */
-  top: 0; /* Sticks to the top */
-  z-index: 1000; /* Ensures it stays on top of other elements */
+  position: sticky; 
+  top: 0; 
+  z-index: 1000; 
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -745,7 +746,55 @@ body.menu-open::after {
 }
 }
 
-/* Updated styles with futuristic theme */
+/* introduction area on some pages */ 
+.introduction {
+  padding: 40px 20px;
+  background: var(--gradient); /* Gradient background for sleek look */
+  color: var(--light-text-color); /* Light text for readability */
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+  position: relative;
+  max-width: 1000px; /* Max width for content */
+  margin: 0 auto; /* Center the content */
+}
+
+.introduction p {
+  font-family: var(--text-font);
+  font-size: 1.125rem; /* Responsive font size for readability */
+  color: var(--text-color); /* Standard text color */
+  line-height: 1.6;
+  max-width: 700px; /* Set a max width for paragraph */
+  margin: 0 auto 20px; /* Center paragraphs with space below */
+  padding: 0 15px;
+}
+
+.introduction h3 {
+  
+  color: var(--neon-blue); /* Neon blue heading for emphasis */
+  margin-bottom: 15px;
+  text-transform: uppercase; /* Make heading stand out */
+  letter-spacing: 2px; /* Add some space between letters for style */
+  text-shadow: 2px 2px 8px rgba(0, 255, 255, 0.5); /* Soft glowing effect */
+}
+
+
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+  .introduction {
+    padding: 30px 15px; /* Reduced padding for mobile */
+  }
+
+  .introduction p {
+    font-size: 1rem; /* Slightly smaller text for mobile */
+  }
+
+  .introduction h3 {
+    font-size: 2rem; /* Smaller heading on mobile */
+  }
+}
+
 
 .text-light {
   color: var(--primary-accent); /* Neon cyan */
@@ -772,58 +821,6 @@ body.menu-open::after {
   border-left: 2px solid var(--secondary-accent);
 }
 
-/* Introduction part on most pages */
-.intro-section {
-  max-width: 900px;
-  padding: 20px;
-  margin: auto;
-  text-align: justify;
-  color: var(--text-color);
-  background: rgba(13, 13, 43, 0.8); /* Dark futuristic background */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px var(--border-glow);
-}
-
-.home-intro-section {
-  background: var(--gradient-reverse);
-  padding: 30px;
-  text-align: center;
-  color: var(--text-color);
-  box-shadow: 0 4px 15px rgba(15, 240, 252, 0.8);
-}
-
-.modal-fullscreen .modal-content {
-  width: 100%;
-  height: 100%;
-  border: 1px solid var(--primary-accent);
-  border-radius: 10px;
-  background-color: rgba(13, 13, 43, 0.95); /* Dark transparent background */
-  box-shadow: 0 4px 10px var(--border-glow);
-}
-
-.modal-fullscreen .modal-body {
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  color: var(--text-color);
-}
-
-.modal-header {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1050;
-  background-color: transparent;
-  border: 0;
-  color: var(--secondary-accent);
-}
-
-.btn-close {
-  padding: 10px;
-  margin: 10px;
-  color: var(--primary-accent);
-  font-size: 1.2rem;
-}
 
 strong {
   font-weight: 700;
@@ -970,53 +967,7 @@ hr {
   margin-left: 5vw;
 }
 
-/* ================================= 
-| Modal Content Animation
-================================= */
-.modal-content,
-.caption {
-  animation: zoom 0.6s ease-in-out; /* Animation for modal elements */
-}
 
-@keyframes zoom {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: -5px;
-  right: 10px;
-  color: var(--secondary-accent); /* Use accent color for close button */
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-  z-index: 9999;
-}
-
-.close:hover,
-.close:focus {
-  color: rgba(187, 187, 187, 0.8); /* Subtle hover color */
-  text-decoration: none;
-  cursor: pointer;
-}
-/* TODO: 100% Image Width on Smaller Screens */
-.modal-content {
-  margin: 40px auto;
-  display: block;
-  height: 95%;
-  width: 90%;
-  display: grid;
-  place-items: start center;
-  border-radius: 10px;
-  background-color: rgba(13, 13, 43, 0.9); /* Dark transparent background */
-  box-shadow: 0 4px 10px var(--border-glow); /* Futuristic glow effect */
-}
 /* ================================= 
 | Custom Section Layouts - Mobile
 ================================= */
@@ -1351,7 +1302,8 @@ details[open] summary ~ * {
 /* Mobile optimization */
 @media (max-width: 768px) {
   .hero-content-inner {
-      padding: 6rem 1.5rem;
+      padding: var(--block-padding);
+      min-height: 70vh ;
   }
   
   .hero-content-inner h1 {
@@ -1489,41 +1441,6 @@ details[open] summary ~ * {
   animation: shimmer 3s infinite linear;
 }
 
-/* Add a subtle background effect */
-.home-intro-section::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 200px;
-  height: 200px;
-  background: var(--accent);
-  opacity: 0.1;
-  filter: blur(80px);
-  border-radius: 50%;
-  z-index: -1;
-  animation: pulse 4s infinite ease-in-out;
-}
-
-@keyframes shimmer {
-  0% {
-      background-position: -200% center;
-  }
-  100% {
-      background-position: 200% center;
-  }
-}
-
-@keyframes pulse {
-  0%, 100% {
-      transform: translate(-50%, -50%) scale(1);
-  }
-  50% {
-      transform: translate(-50%, -50%) scale(1.2);
-  }
-}
-
 /* Make it responsive */
 @media (max-width: 768px) {
   .home-intro-section {
@@ -1650,7 +1567,8 @@ details[open] summary ~ * {
   text-shadow: 0 0 8px var(--border-glow);
 }
 
-.cyber-line {
+.cyber-line
+{
   height: 2px;
   width: 100%;
   background: linear-gradient(90deg, 
@@ -2216,109 +2134,299 @@ details[open] summary ~ * {
 
 
 /* ================================= 
-/* Portfolio blocks */
+/* Portfolio page styling */
 /* ================================= */
-.portfolio {
-  background-image: linear-gradient(to bottom right, var(--primary), var(--neon-purple), var(--neon-green));
-  min-height: 60vh;
+.portfolio-section {
   padding: var(--section-padding);
-}
-
-
-.portfolio h3 {
-  color: var(--neon-green); /* Using neon pink for a vivid heading color */
-  font-size: 1.5rem; /* Slightly larger for emphasis */
-}
-
-.portfolio-inner,
-.blog-page-inner,
-.business-inner {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1.8rem;
-  max-width: 90%;
-  padding: var(--section-padding);
-  margin: auto;
-}
-
-.portfolio-item,
-.service-item {
-  padding: 5px;
-  border-radius: var(--radius);
-  transition: 0.3s ease-in-out; /* Smooth transitions for hover effects */
   background-color: var(--primary-lite); 
-  overflow: auto;
-  min-width: 300px;
-  max-width: 600px;
-  flex-grow: 1;
-  container-type: inline-size; /* Ensuring container type is correctly specified for layout */
-  text-align: center;
+  background-image: url('/assets/imgs/portfolio/bg.jpeg');
+  background-size: cover; 
+  background-position: center center; 
+  background-blend-mode: overlay; 
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.portfolio-inner {
+  position: relative;
+  z-index: 2; /* Ensures content stays above the overlay */
 }
 
 
-.portfolio-item img,
-.service-item img {
-  max-width: 280px;
-  height: auto;
-  margin: 5px auto;
+.portfolio-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* Ensures equal spacing between items */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.portfolio-item {
+  position: relative;
+  background-color: var(--primary-lite);
   border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
   cursor: pointer;
 }
 
-.portfolio-item a,
-.service-item a {
-  color: var(--neon-blue); /* Neon blue for links */
+.portfolio-item:hover {
+  transform: translateY(-10px); /* Hover effect */
+  box-shadow: 0 12px 30px rgba(15, 240, 252, 0.3); /* Glowing hover effect */
 }
 
-.portfolio-item strong,
-.service-item strong {
-  color: var(--light-bg); /* Light background color for text for better contrast */
-  text-transform: uppercase;
-  font-size: 16px;
+.portfolio-item-inner {
+  padding: var(--section-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.portfolio-item:hover,
-.service-item:hover {
-  box-shadow: 0 8px 15px var(--neon-blue); /* Neon blue hover shadow effect */
-  background-color: var(--primary-lite); /* Lighten on hover */
+.portfolio-item img.popup-img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  transition: transform 0.3s ease;
 }
 
-@container (inline-size > 500px) {
-  .portfolio-item-inner,
-  .service-item-inner {
-    display: grid;
-    gap: 0.8rem;
-    grid-template-areas:
-      "h h h h"
-      "i i i rt"
-      "i i i rt";
+.portfolio-item img.popup-img:hover {
+  transform: scale(1.05); /* Hover scaling effect */
+}
+
+.portfolio-item .h {
+  font-family: var(--title-font);
+  font-size: var(--title-size);
+  color: var(--text-color);
+  margin-top: 15px;
+  transition: color 0.3s ease;
+}
+
+.portfolio-item .h:hover {
+  color: var(--neon-blue); /* Title hover effect */
+}
+
+.portfolio-item .rt p {
+  font-family: var(--text-font);
+  font-size: var(--text-size);
+  color: var(--futuristic-grey);
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.portfolio-item .rt span a {
+  color: var(--secondary);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.portfolio-item .rt span a:hover {
+  color: var(--neon-blue); /* Link hover effect */
+}
+
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+  z-index: 9;
+  animation: fadeIn 0.5s ease; /* Modal animation */
+}
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  max-width: 90%;
+  max-height: 90vh;
+  background-color: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: auto;
+  animation: scaleIn 0.3s ease; /* Modal content scale animation */
+}
+
+.modal img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+/* Ensure the modal has a higher stacking order than other elements */
+.modal {
+  z-index: 1050; 
+}
+
+/* Body scroll lock */
+body.modal-open {
+  overflow: hidden; /* Disables body scrolling when modal is open */
+}
+
+/* Optional: Add a smooth transition to hide the "back to top" button */
+.top-btn {
+  transition: opacity 0.3s ease;
+}
+
+body.modal-open .top-btn {
+  opacity: 0; /* Hides the back-to-top button */
+  pointer-events: none; /* Prevent interaction */
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.4rem; /* Slightly smaller for elegance */
+  color: var(--light-text-color); /* Neon blue for modern look */
+  background-color: rgba(0, 200, 255, 0.6);
+  border: none;
+  font-family: var(--title-font);
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  padding: 8px 14px; /* Adjust padding for balanced proportions */
+  border-radius: 50%; /* Circular button */
+  box-shadow: 0 0 12px rgba(0, 200, 255, 0.5); /* Subtle neon glow */
+  z-index: 1051; /* Ensure it's above all content */
+}
+
+.close:hover {
+  color: var(--neon-green); /* Change text color to neon green on hover */
+  background-color: rgba(0, 255, 0, 0.2); /* Change background to green on hover */
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.8); /* Neon green glow effect on hover */
+  transform: scale(1.1); /* Slight scale effect on hover */
+}
+
+.close:active {
+  transform: scale(0.95); /* Shrink effect on click */
+  box-shadow: 0 0 12px rgba(0, 255, 0, 0.4); /* Softer glow when pressed */
+  background-color: rgba(0, 255, 0, 0.3); /* Darker green background when clicked */
+}
+
+
+@media (max-width: 700px) {
+  .portfolio-section {
+    background-size: contain;
+    background-attachment: fixed;
+    padding: 40px 10px;
+  }
+  .close {
+    top: 100px;
+    right: -20px;
+    z-index: 999;
+    background-color: var(--light-bg);
+    font-size: 1.2rem !important;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transform: rotate(90deg); 
   }
 
-  /* Image */
-  .portfolio-item .i,
-  .service-item .i {
-    grid-area: i;
-    align-self: center;
+  .close:hover {
+    transform: rotate(45deg) scale(1.1); /* Keep the rotation effect on hover */
   }
 
-  /* Header or title */
-  .portfolio-item-inner .h,
-  .service-item .h {
-    grid-area: h;
+  .close:active {
+    transform: rotate(45deg) scale(0.95); /* Keep the rotation effect when clicked */
+  }
+}
+/* Modal close animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/* Modal Close Animation */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes scaleOut {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.8);
+  }
+}
+
+/* Modal when closed */
+.modal.closing {
+  animation: fadeOut 0.3s ease forwards, scaleOut 0.3s ease forwards;
+}
+
+.modal-content.closing {
+  animation: scaleOut 0.3s ease forwards;
+}
+
+/* Scrollbar for modal */
+::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-color);
+  border-radius: var(--radius);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-hover);
+}
+
+/* Mobile Friendly */
+@media (max-width: 768px) {
+  .portfolio-item {
+    width: 100%;
+    max-width: 300px; /* Limit max width for small screens */
+  }
+
+  .portfolio-item-inner {
+    padding: 15px;
+  }
+
+  .portfolio-item .h {
+    font-size: 1.4rem;
+  }
+
+  .portfolio-item .rt p {
+    font-size: 0.9rem;
+  }
+
+  .modal-content {
+    max-width: 95%;
+    max-height: 85vh;
+  }
+
+  .close {
     font-size: 1.5rem;
-    color: var(--primary-accent); /* Accent color for titles */
-  }
-
-  /* Description and button */
-  .portfolio-item-inner .rt,
-  .service-item .rt {
-    grid-area: rt;
-    border-left: 1px dotted var(--primary-accent); /* Accent color for border */
-    padding: 5px;
-    align-self: center;
   }
 }
+
+
+
+
 
 /* Home page slider with testimonials */
 .testimonial-section {
@@ -3107,24 +3215,14 @@ Social Media Marketing page
 .social-pricing-plan:hover {
   transform: scale(1.05);
 }
+/* ================================= 
+    | introduction, used for intro areas |
+==================================== */
 
-.narrow-section {
-  max-width: 900px;
-  margin: 20px auto;
-  text-align: justify;
-  padding: var(--section-padding); /* Ensure this variable is set for consistent spacing */
-  color: var(--light-bg); /* Light text for better contrast against a dark background */
-  background: linear-gradient(145deg, rgba(13, 13, 43, 0.85), rgba(0, 0, 0, 0.6)); /* Gradient background for added depth */
-  border-radius: var(--radius); /* Smooth corners for a modern look */
-  box-shadow: 0 4px 8px var(--neon-blue); /* Neon blue glow to enhance depth */
-}
-.narrow-section h3 {
-  font-size: 1.8rem; /* Adjust size as needed */
-  color: var(--neon-green); /* Bright color for visibility and theme consistency */
-  text-shadow: 0 2px 4px rgba(196, 196, 196, 0.5); /* Subtle shadow to enhance readability */
-  margin-bottom: 10px; /* Adds space below the header */
-  font-weight: bold; /* Increase weight for emphasis */
-}
+
+
+
+
 /* ================================= 
     | The 404 Page |
 ==================================== */
@@ -3420,7 +3518,7 @@ footer > * {
   position: fixed;
   bottom: 120px; 
   right: 15px;
-  z-index: 9999;
+  z-index: 2;
   cursor: pointer;
   opacity: 0;
   transform: scale(1.2);

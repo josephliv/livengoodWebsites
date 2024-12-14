@@ -29,7 +29,7 @@
   </div>
 
 </div>
-<div class="narrow-section" id="marketing-cost">
+<div class="introduction" id="marketing-cost">
   <p>By partnering with us for your social media marketing, you ensure your business stays competitive in the digital age, all while freeing up your time and resources for what truly matters—running your business.</p>
 </div>
 <section class="gradient-lite py-4">

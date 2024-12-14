@@ -1,4 +1,4 @@
-<div class="intro-section">
+<div class="introduction">
     <div>
         <p>
         Hi, I'm Joe. Since 2020, I've been focused on one thing: building websites that help 
@@ -8,6 +8,7 @@
         <p>
             Based in North Carolina, I've transformed what started as a curious 'let me figure this out' moment into a God-given passion for creating websites that truly serve a purpose.
         </p>
+        <p>
         Here's my promise: I don't do generic, template-based websites. If you're looking for a quick drag-and-drop solution, there are plenty of those out there. But if you want something that makes your competitors nervous and your visitors to click 'contact' - let's have a conversation.
         </p>
         
@@ -113,7 +114,7 @@
     </article>
 </div>
 <div class="bg">
-    <div class="narrow-section">
+    <div class="introduction">
         <p>
             What sets me apart? I genuinely care about your success. It's not just about writing code - it's about creating digital solutions that honor both your vision and values.
         </p>
